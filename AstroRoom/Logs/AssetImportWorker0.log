@@ -1,0 +1,382 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.631; Version 2009; 64bit' Language: 'pl' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52660
+Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 51.67 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 1.06 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5671
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001944 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 49.75 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.638 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002387 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2962 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3417.
+Total: 2.591700 ms (FindLiveObjects: 0.372200 ms CreateObjectMapping: 0.079800 ms MarkObjects: 2.037600 ms  DeleteObjects: 0.101200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/URP/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(08e161b7787ae0949bdd04e1a3392dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/UniversalRenderPipelineAsset.asset using Guid(08e161b7787ae0949bdd04e1a3392dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beda4bc55d5710028fea94a8cd7210ec') in 0.027647 seconds
+  Import took 0.031885 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.820 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2833 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.1 MB.
+System memory in use after: 130.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3422.
+Total: 2.386000 ms (FindLiveObjects: 0.304800 ms CreateObjectMapping: 0.078400 ms MarkObjects: 1.945700 ms  DeleteObjects: 0.056000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1831.489610 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon_normals.png
+  artifactKey: Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon_normals.png using Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ed88db7edfc9fce12910a89d095d76') in 0.070339 seconds
+  Import took 0.074557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.314574 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon.jpg
+  artifactKey: Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon.jpg using Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202451805033fbe389a74daf58ade79f') in 0.025111 seconds
+  Import took 0.029418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.806391 seconds.
+  path: Assets/Resources/Custom/Textures/saturnringpattern.png
+  artifactKey: Guid(884073490a0d5a14eaf3a476bfcf1238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/saturnringpattern.png using Guid(884073490a0d5a14eaf3a476bfcf1238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce17238ad7eaa95df63c9a3f2684b5e7') in 0.006610 seconds
+  Import took 0.012434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.709795 seconds.
+  path: Assets/Resources/Custom/Textures/saturnringpattern.png
+  artifactKey: Guid(884073490a0d5a14eaf3a476bfcf1238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/saturnringpattern.png using Guid(884073490a0d5a14eaf3a476bfcf1238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6404c783df3c0fdd76074e0fcc439066') in 0.032430 seconds
+  Import took 0.036921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.040775 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon.jpg
+  artifactKey: Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon.jpg using Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd6e72ece5ae8f05b49f87cf23e8aff') in 0.021760 seconds
+  Import took 0.025984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.230074 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon_spec.png
+  artifactKey: Guid(6bced84fbc6b926478b52b2f89bf54e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon_spec.png using Guid(6bced84fbc6b926478b52b2f89bf54e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a336a02170c4250a1645db1098dc1b') in 0.020736 seconds
+  Import took 0.024948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.342617 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon_normals.png
+  artifactKey: Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon_normals.png using Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4fc9c097227ef617056da9e0b3c419') in 0.021672 seconds
+  Import took 0.025927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.151425 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon_normals.png
+  artifactKey: Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon_normals.png using Guid(715885c9a8c3c13449fa19621305d609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b182c3614dddce076948a43b1f7426') in 0.024305 seconds
+  Import took 0.028597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.233432 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/CelestialBodys
+  artifactKey: Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/CelestialBodys using Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3bbaec2d02e800b841ad934335840b') in 0.001804 seconds
+  Import took 0.006018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.745132 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/CelestialBodies
+  artifactKey: Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/CelestialBodies using Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e28653ee1c2f1a7e285cabd19f506926') in 0.001817 seconds
+  Import took 0.005647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.674687 seconds.
+  path: Assets/Resources/Custom/Textures/8k_sun.jpg
+  artifactKey: Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/8k_sun.jpg using Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3080e272d2fb686c0c518bfaacefb672') in 0.021612 seconds
+  Import took 0.025862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Custom/Textures/uranusringtrans (1).png
+  artifactKey: Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/uranusringtrans (1).png using Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce1db742926799583e5a374e97044fd') in 0.006997 seconds
+  Import took 0.010689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Custom/Textures/8k_sun.jpg
+  artifactKey: Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/8k_sun.jpg using Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3080e272d2fb686c0c518bfaacefb672') in 0.021515 seconds
+  Import took 0.025179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Custom/Textures/venusmap.jpg
+  artifactKey: Guid(b47f144fb679e6f4896cadcc70cf1e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/venusmap.jpg using Guid(b47f144fb679e6f4896cadcc70cf1e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c97d405b8866005a96306d342cfa1f') in 0.011277 seconds
+  Import took 0.015245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Custom/Textures/neptunemap (1).jpg
+  artifactKey: Guid(097f3e67b0b0db448963a4b2d3bb4487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/neptunemap (1).jpg using Guid(097f3e67b0b0db448963a4b2d3bb4487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba16276aba6c76d5f6a0efff30c2c76') in 0.010964 seconds
+  Import took 0.015105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Resources/Custom/Textures/marsmap1k.jpg
+  artifactKey: Guid(02096b1ec40436f4e92632668ae5330b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/marsmap1k.jpg using Guid(02096b1ec40436f4e92632668ae5330b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1277d0e1c99787008504b1db207f15d5') in 0.010849 seconds
+  Import took 0.014797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Resources/Custom/Textures/saturnmap (1).jpg
+  artifactKey: Guid(6bfd4483928a50f4eb9230d0dff132d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/saturnmap (1).jpg using Guid(6bfd4483928a50f4eb9230d0dff132d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15632100037c25f79a057ea7f525dea') in 0.018291 seconds
+  Import took 0.022516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Resources/Custom/Textures/SunEclipseBloom.png
+  artifactKey: Guid(b38e2f4c17c803a46b01423c4349e5b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/SunEclipseBloom.png using Guid(b38e2f4c17c803a46b01423c4349e5b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256a60161f3cac1481fbeb328b59c4d4') in 0.059484 seconds
+  Import took 0.063882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Resources/Custom/Textures/jupitermap (1).jpg
+  artifactKey: Guid(130217feb611b5a4aaf62ebc8f1d6df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/jupitermap (1).jpg using Guid(130217feb611b5a4aaf62ebc8f1d6df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94dd702f5eae458ec2cccd373938fb54') in 0.010806 seconds
+  Import took 0.014516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Resources/Custom/Textures/saturnringcolor.jpg
+  artifactKey: Guid(edcd5b44b20e0f748a03c7f53340d004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/saturnringcolor.jpg using Guid(edcd5b44b20e0f748a03c7f53340d004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7085f255135bfb30d4ac51810e211a9d') in 0.005650 seconds
+  Import took 0.009515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_spec.png
+  artifactKey: Guid(f9b334a1e1cbec34a84fd9bd7a4d1ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_spec.png using Guid(f9b334a1e1cbec34a84fd9bd7a4d1ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc3e5832fe43ff10f21ff0b8846419f') in 0.020550 seconds
+  Import took 0.024365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d94c831d324616194c59e74cd158fe') in 0.008829 seconds
+  Import took 0.012598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Custom/Textures/8k_sun_emmision.png
+  artifactKey: Guid(cfe3579003844634f8eca7bdfd52e814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/8k_sun_emmision.png using Guid(cfe3579003844634f8eca7bdfd52e814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb375f2be26237b7b12ebe5f6c844e81') in 0.020844 seconds
+  Import took 0.025277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_normal.png
+  artifactKey: Guid(a464609fca39851439f2e217cf062a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_normal.png using Guid(a464609fca39851439f2e217cf062a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e1fd1599407e9d6572d310235dc153') in 0.020292 seconds
+  Import took 0.024473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Resources/Custom/Textures/mercurymap.jpg
+  artifactKey: Guid(b4f597eac25d3ce4aab05698b8b3f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/mercurymap.jpg using Guid(b4f597eac25d3ce4aab05698b8b3f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b66840160e22ad1400bd039a003c2b') in 0.011942 seconds
+  Import took 0.016182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Custom/Textures/Ring.png
+  artifactKey: Guid(9b7d23e793d8279448444984f5dcb692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/Ring.png using Guid(9b7d23e793d8279448444984f5dcb692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b62289d672b583173b71028f1c8af7') in 0.007760 seconds
+  Import took 0.011771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Resources/Custom/Textures/land_ocean_ice_cloud_4096.png
+  artifactKey: Guid(b2a4b6ee2204fd3419b231ce8e4d5903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/land_ocean_ice_cloud_4096.png using Guid(b2a4b6ee2204fd3419b231ce8e4d5903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24163af809974a8257dbe84f3bc9ce44') in 0.021903 seconds
+  Import took 0.026332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192.png
+  artifactKey: Guid(a6f5e021faa7f334f80784e8c63bcef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192.png using Guid(a6f5e021faa7f334f80784e8c63bcef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f9b7b8c3f2cd777802b7d6cbe8d413') in 0.021233 seconds
+  Import took 0.025201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Custom/Textures/Circle32px.png
+  artifactKey: Guid(ebe3636156a6fc94aab7cea881a0d9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/Circle32px.png using Guid(ebe3636156a6fc94aab7cea881a0d9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a1f917e6bbda0dbdd5558b4f04c868') in 0.006653 seconds
+  Import took 0.010895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Resources/Custom/Textures/uranusmap (1).jpg
+  artifactKey: Guid(ba8dd07fe4c159742bed479ebcfb36e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/uranusmap (1).jpg using Guid(ba8dd07fe4c159742bed479ebcfb36e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240ccb45f5e7174f3762a42a4fbb995a') in 0.009629 seconds
+  Import took 0.013440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Resources/Custom/Textures/uranusringcolour (1).jpg
+  artifactKey: Guid(b96f201bfc33f5f44954b75918cdfa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/uranusringcolour (1).jpg using Guid(b96f201bfc33f5f44954b75918cdfa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '912fb598fc7e684f01c3733bfac9f66d') in 0.006138 seconds
+  Import took 0.010325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 258.312924 seconds.
+  path: Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_normal.png
+  artifactKey: Guid(a464609fca39851439f2e217cf062a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/land_ocean_ice_cloud_8192_normal.png using Guid(a464609fca39851439f2e217cf062a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a7f4087871a931812365be95216c4e') in 0.024503 seconds
+  Import took 0.028959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.698685 seconds.
+  path: Assets/Resources/Custom/Textures/2k_moon_spec.png
+  artifactKey: Guid(6bced84fbc6b926478b52b2f89bf54e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/2k_moon_spec.png using Guid(6bced84fbc6b926478b52b2f89bf54e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b08dcaa597ae51aee4f3577739119fd') in 0.010937 seconds
+  Import took 0.015356 seconds .
+
