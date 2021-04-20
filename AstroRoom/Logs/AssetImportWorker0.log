@@ -380,3 +380,4 @@ Received Import Request.
 Start importing Assets/Resources/Custom/Textures/2k_moon_spec.png using Guid(6bced84fbc6b926478b52b2f89bf54e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b08dcaa597ae51aee4f3577739119fd') in 0.010937 seconds
   Import took 0.015356 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
