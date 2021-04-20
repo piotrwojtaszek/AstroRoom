@@ -1,0 +1,182 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.631; Version 2009; 64bit' Language: 'pl' Physical Memory: 16302 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50033
+Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 50.31 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.87 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5671
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001917 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.89 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.949 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002747 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.17 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2962 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.0 MB.
+System memory in use after: 133.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3406.
+Total: 2.608600 ms (FindLiveObjects: 0.283300 ms CreateObjectMapping: 0.075100 ms MarkObjects: 2.169300 ms  DeleteObjects: 0.079600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Custom/UI
+  artifactKey: Guid(ddd4e10225f39ed4d8f9d75fb03c4c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/UI using Guid(ddd4e10225f39ed4d8f9d75fb03c4c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabcf797b4ae600e8009ba253603b28a') in 0.005435 seconds
+  Import took 0.009142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.736531 seconds.
+  path: Assets/Resources/Custom/Models
+  artifactKey: Guid(3afeec418a03aa9479bb08b3faa0c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Models using Guid(3afeec418a03aa9479bb08b3faa0c0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff7e159c58ec9c2ca8cfcdc3ac60898') in 0.001805 seconds
+  Import took 0.006286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.986250 seconds.
+  path: Assets/Resources/Custom/Prefabs
+  artifactKey: Guid(fa258325b4b8e7a4788ad06252096247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs using Guid(fa258325b4b8e7a4788ad06252096247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e6d69c112312a302e4db8a07a3a288') in 0.001843 seconds
+  Import took 0.006066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.977244 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D
+  artifactKey: Guid(8b3a75b89592ba841956c600ffc39e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D using Guid(8b3a75b89592ba841956c600ffc39e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd2b7c63f328b5c9a97b5450a39de28') in 0.001856 seconds
+  Import took 0.006019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.995059 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Planets
+  artifactKey: Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Planets using Guid(6a90d8acd38eea247ad95bf237ef6b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3c9b48dded6232b02e19e248bc2092') in 0.001794 seconds
+  Import took 0.006202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.737042 seconds.
+  path: Assets/Resources/Custom/Scriptable
+  artifactKey: Guid(d203f2ffa20368b46a9411ddbceb1002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable using Guid(d203f2ffa20368b46a9411ddbceb1002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad59d877a606f96c86ed0a0e5cb7c202') in 0.001861 seconds
+  Import took 0.006231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.787434 seconds.
+  path: Assets/Scripts/TeleportController.cs
+  artifactKey: Guid(8834acebb086b8947ba9ddf0046fd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TeleportController.cs using Guid(8834acebb086b8947ba9ddf0046fd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38be5a541de8ab0e2981d5bb222ca24f') in 0.022602 seconds
+  Import took 0.026893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.903528 seconds.
+  path: Assets/Scripts/Player
+  artifactKey: Guid(071e768dccb7ad64d8079ae946de4fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player using Guid(071e768dccb7ad64d8079ae946de4fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6abee6ea78856f245c7aa2d20e0a75f') in 0.001872 seconds
+  Import took 0.006135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.413622 seconds.
+  path: Assets/Scripts/Player/Rig
+  artifactKey: Guid(d3b1a227bc6dc3f4994f243e8a81e33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/Rig using Guid(d3b1a227bc6dc3f4994f243e8a81e33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811956d975f082f150e9f404a96427a4') in 0.001819 seconds
+  Import took 0.005981 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2832 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.3 MB.
+System memory in use after: 124.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3410.
+Total: 2.397700 ms (FindLiveObjects: 0.305800 ms CreateObjectMapping: 0.074700 ms MarkObjects: 1.961600 ms  DeleteObjects: 0.054700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
