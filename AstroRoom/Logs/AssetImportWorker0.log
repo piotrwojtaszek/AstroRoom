@@ -2358,3 +2358,19 @@ Total: 2.558300 ms (FindLiveObjects: 0.301400 ms CreateObjectMapping: 0.074600 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 3393.413605 seconds.
+  path: Assets/Resources/Custom/Prefabs/UI/Comparison
+  artifactKey: Guid(209ed0ad368bfb14593b86db99c16270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/UI/Comparison using Guid(209ed0ad368bfb14593b86db99c16270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74afcacd889b053ddc5e3adbbeb1fd67') in 0.006982 seconds
+  Import took 0.011951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.280425 seconds.
+  path: Assets/Resources/Custom/Prefabs/UI/Comparison/Comparison.prefab
+  artifactKey: Guid(4f7fcb7fbb5409949903c2390a6bc5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/UI/Comparison/Comparison.prefab using Guid(4f7fcb7fbb5409949903c2390a6bc5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a32cdb4101e0ba8c388ba60461b31192') in 0.086650 seconds
+  Import took 0.091560 seconds .
+
