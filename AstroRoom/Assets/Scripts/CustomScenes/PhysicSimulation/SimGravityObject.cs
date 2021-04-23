@@ -22,6 +22,8 @@ public class SimGravityObject : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         velocity = initialVelocity;
+        if (bodyType == BodyType.Moon)
+            transform.parent = relativeTo.transform;
     }
 
     private void UpdateVelocity(SimGravityObject[] allBodies)
@@ -40,17 +42,30 @@ public class SimGravityObject : MonoBehaviour
         }
     }
 
-    private void UpdateVelocity(SimGravityObject otherBody)
+    private void UpdateVelocityPlanet(SimGravityObject[] allBodies)
     {
+        foreach (var otherBody in allBodies)
+        {
+            if (otherBody.bodyType == BodyType.Static)
+            {
+                if (otherBody != this)
+                {
+                    float sqrDst = (otherBody.rb.position - rb.position).sqrMagnitude;
+                    Vector3 forceDir = (otherBody.rb.position - rb.position).normalized;
 
-        if (relativeTo == null)
-            return;
+                    Vector3 acceleration = SimController.Instance.gravitionalConstant * forceDir * otherBody.rb.mass / sqrDst;
+                    velocity += acceleration * SimController.Instance.timeStep;
+                }
+            }
+        }
 
-        float sqrDst = (otherBody.rb.position - rb.position).sqrMagnitude;
-        Vector3 forceDir = (otherBody.rb.position - rb.position).normalized;
+    }
 
-        Vector3 acceleration = SimController.Instance.gravitionalConstant * forceDir  * otherBody.rb.mass / sqrDst;
-        velocity += acceleration * SimController.Instance.timeStep;
+    private void UpdateVelocityMoon(SimGravityObject relative)
+    {
+        float dst = (relative.rb.position - rb.position).magnitude;
+        transform.RotateAround(transform.parent.position, Vector3.up, 50 * Time.deltaTime * SimController.Instance.timeStep);
+
     }
 
     public void UpdateVelocity(float timeStep)
@@ -66,8 +81,11 @@ public class SimGravityObject : MonoBehaviour
         if (bodyType == BodyType.Free)
             UpdateVelocity(allBodies);
 
+        if (bodyType == BodyType.Planet)
+            UpdateVelocityPlanet(allBodies);
+
         if (bodyType == BodyType.Moon)
-            UpdateVelocity(relativeTo);
+            UpdateVelocityMoon(relativeTo);
         UpdateVelocity(SimController.Instance.timeStep);
     }
 }

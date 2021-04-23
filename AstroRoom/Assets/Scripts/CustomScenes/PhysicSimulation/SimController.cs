@@ -32,14 +32,6 @@ public class SimController : MonoBehaviour
         }
     }
 
-    private void SimulatedFixedUpdate()
-    {
-        for (int i = 0; i < bodies.Length; i++)
-        {
-            bodies[i].Move(bodies);
-        }
-    }
-
     public float timeStep = .01f;
     public float gravitionalConstant = 66.7f;
 }
