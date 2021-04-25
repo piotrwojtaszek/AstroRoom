@@ -10,8 +10,8 @@ public class ConstelationEditor : Editor
 
     private string editorMode = "Change to EDGE mode";
     public bool edgeMode = false;
+    ConstelationController baseScript;
 
-    List<GameObject> helpers = new List<GameObject>();
 
     public override void OnInspectorGUI()
     {
@@ -35,13 +35,13 @@ public class ConstelationEditor : Editor
             if (edgeMode)
             {
                 editorMode = "Change to NODE mode";
-                DestroyHelpers();
+
+                CreateHelpers();
             }
 
             if (edgeMode==false)
             {
-                ConstelationController baseScript = target as ConstelationController;
-                CreateHelpers(baseScript);
+                DestroyHelpers();
                 editorMode = "Change to EDGE mode";
             }
         }
@@ -50,7 +50,7 @@ public class ConstelationEditor : Editor
 
     public void OnSceneGUI()
     {
-        ConstelationController baseScript = target as ConstelationController;
+        baseScript = target as ConstelationController;
         if (baseScript == null)
             return;
 
@@ -110,22 +110,24 @@ public class ConstelationEditor : Editor
         }
     }*/
 
-    public void CreateHelpers(ConstelationController controller)
+    public void CreateHelpers()
     {
-        foreach (Node node in controller.constelationPreset.nodes)
+        foreach (Node node in baseScript.constelationPreset.nodes)
         {
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             sphere.transform.position = node.position;
-            helpers.Add(sphere);
+            sphere.transform.localScale = Vector3.one * .25f;
+            baseScript.helpers.Add(sphere);
         }
     }
 
     public void DestroyHelpers()
     {
-        foreach(GameObject obj in helpers)
+        for(int i =0;i< baseScript.helpers.Count;i++)
         {
-            helpers.Remove(obj);
-            DestroyImmediate(obj);
+            Object.DestroyImmediate(baseScript.helpers[i]);
         }
+
+        baseScript.helpers.Clear();
     }
 }
