@@ -8,7 +8,7 @@ public class SOConstelationBase : ScriptableObject
     public List<Node> nodes = new List<Node>();
     public List<Edge> edges = new List<Edge>();
 
-    public void AddNode(Vector2 _position)
+    public void AddNode(Vector3 _position)
     {
         nodes.Add(new Node(_position));
 
@@ -32,7 +32,6 @@ public class SOConstelationBase : ScriptableObject
     
 }
 
-[System.Serializable]
 public class Edge
 {
     public Node from;
