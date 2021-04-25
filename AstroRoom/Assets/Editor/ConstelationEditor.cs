@@ -10,6 +10,9 @@ public class ConstelationEditor : Editor
 
     private string editorMode = "Change to EDGE mode";
     public bool edgeMode = false;
+
+    List<GameObject> helpers = new List<GameObject>();
+
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
@@ -32,10 +35,13 @@ public class ConstelationEditor : Editor
             if (edgeMode)
             {
                 editorMode = "Change to NODE mode";
+                DestroyHelpers();
             }
 
             if (edgeMode==false)
             {
+                ConstelationController baseScript = target as ConstelationController;
+                CreateHelpers(baseScript);
                 editorMode = "Change to EDGE mode";
             }
         }
@@ -103,4 +109,23 @@ public class ConstelationEditor : Editor
             
         }
     }*/
+
+    public void CreateHelpers(ConstelationController controller)
+    {
+        foreach (Node node in controller.constelationPreset.nodes)
+        {
+            GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            sphere.transform.position = node.position;
+            helpers.Add(sphere);
+        }
+    }
+
+    public void DestroyHelpers()
+    {
+        foreach(GameObject obj in helpers)
+        {
+            helpers.Remove(obj);
+            DestroyImmediate(obj);
+        }
+    }
 }
