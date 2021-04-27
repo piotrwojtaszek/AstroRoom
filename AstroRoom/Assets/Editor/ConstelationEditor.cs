@@ -5,13 +5,11 @@ using UnityEditor;
 [CustomEditor(typeof(ConstelationController))]
 public class ConstelationEditor : Editor
 {
-
     private Editor _editor;
 
     private string editorMode = "Change to EDGE mode";
     public bool edgeMode = false;
     ConstelationController baseScript;
-
 
     public override void OnInspectorGUI()
     {
@@ -35,13 +33,10 @@ public class ConstelationEditor : Editor
             if (edgeMode)
             {
                 editorMode = "Change to NODE mode";
-
-                CreateHelpers();
             }
 
             if (edgeMode==false)
             {
-                DestroyHelpers();
                 editorMode = "Change to EDGE mode";
             }
         }
@@ -51,7 +46,7 @@ public class ConstelationEditor : Editor
     public void OnSceneGUI()
     {
         baseScript = target as ConstelationController;
-        if (baseScript == null)
+        if (baseScript == null || baseScript.constelationPreset == null)
             return;
 
         GUIStyle nodeTextStyle = new GUIStyle();
@@ -81,6 +76,7 @@ public class ConstelationEditor : Editor
                 nodeIndex++;
                 Repaint();
             }
+
         }
         SceneView.RepaintAll();
 
@@ -109,25 +105,4 @@ public class ConstelationEditor : Editor
             
         }
     }*/
-
-    public void CreateHelpers()
-    {
-        foreach (Node node in baseScript.constelationPreset.nodes)
-        {
-            GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            sphere.transform.position = node.position;
-            sphere.transform.localScale = Vector3.one * .25f;
-            baseScript.helpers.Add(sphere);
-        }
-    }
-
-    public void DestroyHelpers()
-    {
-        for(int i =0;i< baseScript.helpers.Count;i++)
-        {
-            Object.DestroyImmediate(baseScript.helpers[i]);
-        }
-
-        baseScript.helpers.Clear();
-    }
 }

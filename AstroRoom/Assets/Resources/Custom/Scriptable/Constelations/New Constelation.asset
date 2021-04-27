@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
   m_Name: New Constelation
   m_EditorClassIdentifier: 
-  constelationFragments: []
+  nodes:
+  - position: {x: -0.4955267, y: 0.7352502, z: 0}
+  - position: {x: -0.0004083207, y: 0.47132847, z: 0}
+  - position: {x: 0.016326845, y: -0.007003367, z: 0}
