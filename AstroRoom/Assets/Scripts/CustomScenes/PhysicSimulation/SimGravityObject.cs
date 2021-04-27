@@ -35,7 +35,7 @@ public class SimGravityObject : MonoBehaviour
                 float sqrDst = (otherBody.rb.position - rb.position).sqrMagnitude;
                 Vector3 forceDir = (otherBody.rb.position - rb.position).normalized;
 
-                Vector3 acceleration = SimController.Instance.gravitionalConstant * forceDir * otherBody.rb.mass / sqrDst;
+                Vector3 acceleration = Constant.gravitionalConstant * forceDir * otherBody.rb.mass / sqrDst;
                 velocity += acceleration * SimController.Instance.timeStep;
             }
 
@@ -53,7 +53,7 @@ public class SimGravityObject : MonoBehaviour
                     float sqrDst = (otherBody.rb.position - rb.position).sqrMagnitude;
                     Vector3 forceDir = (otherBody.rb.position - rb.position).normalized;
 
-                    Vector3 acceleration = SimController.Instance.gravitionalConstant * forceDir * otherBody.rb.mass / sqrDst;
+                    Vector3 acceleration = Constant.gravitionalConstant * forceDir * otherBody.rb.mass / sqrDst;
                     velocity += acceleration * SimController.Instance.timeStep;
                 }
             }
@@ -63,8 +63,9 @@ public class SimGravityObject : MonoBehaviour
 
     private void UpdateVelocityMoon(SimGravityObject relative)
     {
-        float dst = (relative.rb.position - rb.position).magnitude;
-        transform.RotateAround(transform.parent.position, Vector3.up, 50 * Time.deltaTime * SimController.Instance.timeStep);
+
+        transform.RotateAround(transform.parent.position, transform.up , 5f * Time.deltaTime);
+
 
     }
 
