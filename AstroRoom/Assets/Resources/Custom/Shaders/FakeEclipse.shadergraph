@@ -1480,7 +1480,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "89555ef469c54d2792b5ae0ba40e1df0",
     "m_Id": 0,
-    "m_DisplayName": "ShadowOffset",
+    "m_DisplayName": "EclipseShadowOffset",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
