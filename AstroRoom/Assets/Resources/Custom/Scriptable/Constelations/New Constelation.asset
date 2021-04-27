@@ -13,6 +13,21 @@ MonoBehaviour:
   m_Name: New Constelation
   m_EditorClassIdentifier: 
   nodes:
-  - position: {x: -0.4955267, y: 0.7352502, z: 0}
-  - position: {x: -0.0004083207, y: 0.47132847, z: 0}
-  - position: {x: 0.016326845, y: -0.007003367, z: 0}
+  - id: 1
+    position: {x: -0.3304244, y: 0.6896115, z: 0}
+  - id: 3
+    position: {x: -0.34740257, y: 0.1456548, z: 0}
+  - id: 4
+    position: {x: 0.3670355, y: 0.13399601, z: 0}
+  - id: 5
+    position: {x: 0.687308, y: 0.93794835, z: 0}
+  - id: 6
+    position: {x: 1.1282495, y: 1.0780385, z: 0}
+  - id: 7
+    position: {x: -1.0998294, y: 0.980001, z: 0}
+  - id: 8
+    position: {x: 0.40985906, y: 0.67513084, z: 0}
+  edges:
+  - id: 0
+    point_1: 0
+    point_2: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 [CustomEditor(typeof(ConstelationController))]
 public class ConstelationEditor : Editor
 {
@@ -11,11 +12,20 @@ public class ConstelationEditor : Editor
     public bool edgeMode = false;
     ConstelationController baseScript;
 
+
+    SerializedProperty m_RemoveNodeId;
+
+    private void OnEnable()
+    {
+        m_RemoveNodeId = serializedObject.FindProperty("removeNodeID");
+    }
+
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
         EditorGUILayout.Space();
         serializedObject.Update();
+
 
         var myAsset = serializedObject.FindProperty("constelationPreset");
         if (myAsset.objectReferenceValue == null)
@@ -23,7 +33,7 @@ public class ConstelationEditor : Editor
         CreateCachedEditor(myAsset.objectReferenceValue, null, ref _editor);
         _editor.OnInspectorGUI();
 
-        serializedObject.ApplyModifiedProperties();
+
 
 
 
@@ -35,12 +45,24 @@ public class ConstelationEditor : Editor
                 editorMode = "Change to NODE mode";
             }
 
-            if (edgeMode==false)
+            if (edgeMode == false)
             {
                 editorMode = "Change to EDGE mode";
             }
         }
 
+        m_RemoveNodeId.intValue = EditorGUILayout.IntField(m_RemoveNodeId.displayName, m_RemoveNodeId.intValue);
+
+        if (GUILayout.Button("Add new node"))
+        {
+            baseScript.constelationPreset.AddNode(baseScript.transform.position);
+        }
+
+        if (GUILayout.Button("Remove node"))
+        {
+            baseScript.constelationPreset.RemoveNode(m_RemoveNodeId.intValue);
+        }
+        serializedObject.ApplyModifiedProperties();
     }
 
     public void OnSceneGUI()
@@ -52,12 +74,19 @@ public class ConstelationEditor : Editor
         GUIStyle nodeTextStyle = new GUIStyle();
         Handles.color = Color.red;
         nodeTextStyle.fontSize = 20;
-        int nodeIndex = 0;
 
 
 
         if (edgeMode)
         {
+            foreach (var edge in baseScript.constelationPreset.edges)
+            {
+                Vector3 pos1;
+                Vector3 pos2;
+                edge.GetPositions(baseScript.constelationPreset.nodes, out pos1, out pos2);
+
+                Handles.DrawLine(pos1, pos2);
+            }
 
         }
         else
@@ -71,9 +100,8 @@ public class ConstelationEditor : Editor
                 node.position = (Vector2)Handles.FreeMoveHandle(node.position, Quaternion.identity, .125f, Vector3.zero, Handles.SphereHandleCap);
 
 
-                Handles.Label(node.position, nodeIndex.ToString(), nodeTextStyle);
+                Handles.Label(node.position, node.id.ToString(), nodeTextStyle);
 
-                nodeIndex++;
                 Repaint();
             }
 

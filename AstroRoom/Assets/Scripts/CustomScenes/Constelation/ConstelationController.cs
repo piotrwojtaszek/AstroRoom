@@ -5,5 +5,5 @@ using UnityEngine;
 public class ConstelationController : MonoBehaviour
 {
     public SOConstelationBase constelationPreset = null;
-    
+    [SerializeField]int removeNodeID;
 }
