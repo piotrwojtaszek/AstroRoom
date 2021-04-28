@@ -5,93 +5,41 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
+    public Vector3 origin;
+    public GameObject prefab;
     public List<Node> nodes = new List<Node>();
     public List<Edge> edges = new List<Edge>();
 
     public void AddNode(Vector3 _position)
     {
         nodes.Add(new Node(_position));
-
+        GameObject socket = Instantiate(prefab, _position, Quaternion.identity);
+        socket.GetComponent<ConstelationSocket>().node = nodes[nodes.Count - 1];
         Debug.Log("Add node");
     }
 
-    public void RemoveNode(int id)
+    public void RemoveNode(GameObject toRemove)
     {
-        /*        foreach(Edge edge in edges)
-                {
-                    if(edge.point_1 == node.id || edge.point_2 == node.id)
-                    {
-                        edges.Remove(edge);
-                    }
-                }*/
-
-        int idToRemove = -1;
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            if (nodes[i].id == id)
-                idToRemove = i;
-        }
-        if (idToRemove != -1)
-            nodes.RemoveAt(idToRemove);
-
-        Debug.Log("Remove node");
+        
+        nodes.Remove(toRemove.GetComponent<ConstelationSocket>().node);
+        DestroyImmediate(toRemove);
+        Debug.Log("Destroy");
     }
 
 }
 [System.Serializable]
 public class Edge
 {
-    public static int counter;
-    public int id;
-    public int point_1;
-    public int point_2;
-
-    public Edge()
-    {
-        this.id = counter;
-        counter++;
-    }
-
-    public void GetPositions(List<Node> nodes, out Vector3 pos1, out Vector3 pos2)
-    {
-        pos1 = Vector3.zero;
-        pos2 = Vector3.zero;
-
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            if (nodes[i].id == point_1)
-            {
-                pos1 = nodes[i].position;
-            }
-
-            if (nodes[i].id == point_2)
-            {
-                pos2 = nodes[i].position;
-            }
-        }
-    }
+    public Node point_1;
+    public Node point_2;
 }
 [System.Serializable]
 public class Node
 {
-    public static int counter;
-    public int id;
     public Vector3 position;
-    /*    public List<Edge> edges;*/
-    public Node()
-    {
-        this.position = Vector3.one;
-        /*        this.edges = new List<Edge>();*/
-        this.id = counter;
-        counter++;
-        Debug.Log("Counter: " + counter);
-    }
-
     public Node(Vector3 _position)
     {
-        this.position = _position;
-        /*        this.edges = new List<Edge>();*/
-        this.id = counter;
-        counter++;
+        position = _position;
+
     }
 }

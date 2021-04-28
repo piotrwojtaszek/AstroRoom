@@ -8,8 +8,8 @@ public class ConstelationEditor : Editor
 {
     private Editor _editor;
 
-    private string editorMode = "Change to EDGE mode";
-    public bool edgeMode = false;
+
+    /*    public bool edgeMode = false;*/
     ConstelationController baseScript;
 
 
@@ -37,7 +37,7 @@ public class ConstelationEditor : Editor
 
 
 
-        if (GUILayout.Button(editorMode))
+        /*if (GUILayout.Button(editorMode))
         {
             edgeMode = !edgeMode;
             if (edgeMode)
@@ -49,19 +49,19 @@ public class ConstelationEditor : Editor
             {
                 editorMode = "Change to EDGE mode";
             }
-        }
+        }*/
 
-        m_RemoveNodeId.intValue = EditorGUILayout.IntField(m_RemoveNodeId.displayName, m_RemoveNodeId.intValue);
+        /* m_RemoveNodeId.intValue = EditorGUILayout.IntField(m_RemoveNodeId.displayName, m_RemoveNodeId.intValue);
 
-        if (GUILayout.Button("Add new node"))
-        {
-            baseScript.constelationPreset.AddNode(baseScript.transform.position);
-        }
+         if (GUILayout.Button("Add new node"))
+         {
+             baseScript.constelationPreset.AddNode(baseScript.transform.position);
+         }
 
-        if (GUILayout.Button("Remove node"))
-        {
-            baseScript.constelationPreset.RemoveNode(m_RemoveNodeId.intValue);
-        }
+         if (GUILayout.Button("Remove node"))
+         {
+             baseScript.constelationPreset.RemoveNode(m_RemoveNodeId.intValue);
+         }*/
         serializedObject.ApplyModifiedProperties();
     }
 
@@ -76,36 +76,30 @@ public class ConstelationEditor : Editor
         nodeTextStyle.fontSize = 20;
 
 
+        /*
+                if (edgeMode)
+                {
+                    foreach (var edge in baseScript.constelationPreset.edges)
+                    {
 
-        if (edgeMode)
+                    }
+
+                }
+                else
+                {*/
+        foreach (var node in baseScript.constelationPreset.nodes)
         {
-            foreach (var edge in baseScript.constelationPreset.edges)
-            {
-                Vector3 pos1;
-                Vector3 pos2;
-                edge.GetPositions(baseScript.constelationPreset.nodes, out pos1, out pos2);
 
-                Handles.DrawLine(pos1, pos2);
-            }
+/*            node.position = Handles.PositionHandle(node.position, Quaternion.identity);
 
+
+
+            Handles.Label(node.position, node.id.ToString(), nodeTextStyle);*/
+
+            Repaint();
         }
-        else
-        {
-            foreach (var node in baseScript.constelationPreset.nodes)
-            {
 
-                /*            node.position = Handles.PositionHandle(node.position, Quaternion.identity);*/
-
-
-                node.position = (Vector2)Handles.FreeMoveHandle(node.position, Quaternion.identity, .125f, Vector3.zero, Handles.SphereHandleCap);
-
-
-                Handles.Label(node.position, node.id.ToString(), nodeTextStyle);
-
-                Repaint();
-            }
-
-        }
+        /*}*/
         SceneView.RepaintAll();
 
     }
@@ -133,4 +127,14 @@ public class ConstelationEditor : Editor
             
         }
     }*/
+
+    void Input(ConstelationController baseScript)
+    {
+        Event guiEvent = Event.current;
+
+        if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 && guiEvent.shift)
+        {
+
+        }
+    }
 }
