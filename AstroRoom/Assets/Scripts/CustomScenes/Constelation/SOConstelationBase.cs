@@ -5,10 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
-    public Vector3 origin;
     public List<Node> nodes = new List<Node>();
     public List<Edge> edges = new List<Edge>();
 
+
+    #region Editor Window Stuff
     public void AddNode(Vector3 _position, GameObject prefab)
     {
         nodes.Add(new Node(_position));
@@ -29,10 +30,10 @@ public class SOConstelationBase : ScriptableObject
         }
         if (edgeIdToRemove != -1)
             edges.RemoveAt(edgeIdToRemove);
-
+        CheckConknection(toRemove.GetComponent<ConstelationSocket>().node);
         nodes.Remove(toRemove.GetComponent<ConstelationSocket>().node);
         DestroyImmediate(toRemove);
-        Debug.Log("Destroy");
+
     }
 
     public void AddEdge(Node _point_1, Node _point_2, GameObject prefab)
@@ -55,6 +56,23 @@ public class SOConstelationBase : ScriptableObject
         GameObject edgeObject = Instantiate(prefab, Vector3.zero, Quaternion.identity);
         edgeObject.GetComponent<ConstelationEdgeDebug>().edge = newEdge;
     }
+
+    public void CheckConknection(Node _node)
+    {
+        GameObject[] lines = GameObject.FindGameObjectsWithTag("DebugEdge");
+        foreach (GameObject edgeObj in lines)
+        {
+            ConstelationEdgeDebug edge = edgeObj.GetComponent<ConstelationEdgeDebug>();
+
+            if (edge.edge.point_1 == _node || edge.edge.point_2 == _node)
+            {
+                edges.Remove(edge.edge);
+                DestroyImmediate(edgeObj);
+            }
+        }
+    }
+
+    #endregion
 }
 [System.Serializable]
 public class Edge

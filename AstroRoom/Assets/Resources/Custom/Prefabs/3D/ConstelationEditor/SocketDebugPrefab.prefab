@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2090851925556636893}
   - component: {fileID: 6718191537005624690}
   m_Layer: 0
-  m_Name: Socket
-  m_TagString: Untagged
+  m_Name: SocketDebugPrefab
+  m_TagString: DebugNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

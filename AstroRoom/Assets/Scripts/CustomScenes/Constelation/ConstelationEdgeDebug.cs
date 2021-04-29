@@ -11,7 +11,6 @@ public class ConstelationEdgeDebug : MonoBehaviour
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        Debug.Log("Get renderer");
     }
     private void Update()
     {

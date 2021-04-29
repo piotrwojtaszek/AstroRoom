@@ -6,7 +6,6 @@ using UnityEngine;
 public class ConstelationSocket : MonoBehaviour
 {
     public Node node;
-
     private void Update()
     {
         node.position = transform.localPosition;

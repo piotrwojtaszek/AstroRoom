@@ -16,35 +16,37 @@ public class ConstelationWindow : EditorWindow
 
     }
 
-
-
     private void OnGUI()
     {
         GUILayout.BeginHorizontal();
         GUILayout.Label("Constelation Preset", EditorStyles.boldLabel);
         constelationPreset = EditorGUILayout.ObjectField(constelationPreset, typeof(SOConstelationBase), true) as SOConstelationBase;
         GUILayout.EndHorizontal();
+
         GUILayout.Space(10);
+
         GUILayout.BeginHorizontal();
         GUILayout.Label("Node Prefab");
         debugNodePrefab = EditorGUILayout.ObjectField(debugNodePrefab, typeof(GameObject), true) as GameObject;
         GUILayout.EndHorizontal();
+
         GUILayout.BeginHorizontal();
         GUILayout.Label("Edge Prefab");
         debugEdgePrefab = EditorGUILayout.ObjectField(debugEdgePrefab, typeof(GameObject), true) as GameObject;
         GUILayout.EndHorizontal();
         GUILayout.Space(10);
+
         if (GUILayout.Button("Add node"))
         {
             constelationPreset.AddNode(Vector3.zero, debugNodePrefab);
         }
 
-
-        if (GUILayout.Button("Add edge"))
-        {
-            /*            constelationPreset.AddEdge(selected[0].GetComponent<ConstelationSocket>().node, selected[1].GetComponent<ConstelationSocket>().node);
-                        selected.Clear();*/
-        }
+        if (Selection.activeGameObject != null)
+            if (Selection.activeGameObject.CompareTag("DebugNode"))
+                if (GUILayout.Button("Delete node"))
+                {
+                    constelationPreset.RemoveNode(Selection.activeGameObject);
+                }
 
         this.Repaint();
     }
