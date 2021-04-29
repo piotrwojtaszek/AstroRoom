@@ -12,5 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
   m_Name: New Constelation
   m_EditorClassIdentifier: 
-  nodes: []
-  edges: []
+  nodes:
+  - position: {x: -2.15, y: 1.14, z: 0}
+  - position: {x: -3.48, y: 2.75, z: 0}
+  - position: {x: 0, y: 3.324, z: 0}
+  edges:
+  - point_1:
+      position: {x: -2.15, y: 1.14, z: 0}
+    point_2:
+      position: {x: -3.48, y: 2.75, z: 0}
+  - point_1:
+      position: {x: -2.15, y: 1.14, z: 0}
+    point_2:
+      position: {x: 0, y: 3.324, z: 0}
+  - point_1:
+      position: {x: -3.48, y: 2.75, z: 0}
+    point_2:
+      position: {x: 0, y: 3.324, z: 0}

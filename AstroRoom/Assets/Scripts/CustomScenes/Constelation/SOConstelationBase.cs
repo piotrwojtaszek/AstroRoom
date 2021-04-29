@@ -9,13 +9,19 @@ public class SOConstelationBase : ScriptableObject
     public List<Edge> edges = new List<Edge>();
 
 
+    #region Game Scene Stuff
+
+
+
+
+    #endregion
+
     #region Editor Window Stuff
     public void AddNode(Vector3 _position, GameObject prefab)
     {
         nodes.Add(new Node(_position));
         GameObject socket = Instantiate(prefab, _position, Quaternion.identity);
         socket.GetComponent<ConstelationSocket>().node = nodes[nodes.Count - 1];
-        Debug.Log("Add node");
     }
 
     public void RemoveNode(GameObject toRemove)
@@ -57,6 +63,11 @@ public class SOConstelationBase : ScriptableObject
         edgeObject.GetComponent<ConstelationEdgeDebug>().edge = newEdge;
     }
 
+    public void RemoveEdge(Edge edge)
+    {
+        edges.Remove(edge);
+    }
+
     public void CheckConknection(Node _node)
     {
         GameObject[] lines = GameObject.FindGameObjectsWithTag("DebugEdge");
@@ -66,7 +77,7 @@ public class SOConstelationBase : ScriptableObject
 
             if (edge.edge.point_1 == _node || edge.edge.point_2 == _node)
             {
-                edges.Remove(edge.edge);
+                RemoveEdge(edge.edge);
                 DestroyImmediate(edgeObj);
             }
         }

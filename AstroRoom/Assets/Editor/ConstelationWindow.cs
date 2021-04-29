@@ -48,6 +48,13 @@ public class ConstelationWindow : EditorWindow
                     constelationPreset.RemoveNode(Selection.activeGameObject);
                 }
 
+        if (Selection.activeGameObject != null)
+            if (Selection.activeGameObject.CompareTag("DebugEdge"))
+                if (GUILayout.Button("Delete connection"))
+                {
+                    constelationPreset.RemoveEdge(Selection.activeGameObject.GetComponent<ConstelationEdgeDebug>().edge);
+                }
+
         this.Repaint();
     }
 
