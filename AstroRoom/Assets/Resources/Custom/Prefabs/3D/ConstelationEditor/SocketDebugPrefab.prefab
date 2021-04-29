@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2090851925556636895}
   - component: {fileID: 2090851925556636894}
   - component: {fileID: 2090851925556636893}
-  - component: {fileID: 6718191537005624690}
+  - component: {fileID: 751473245739809686}
   m_Layer: 0
   m_Name: SocketDebugPrefab
   m_TagString: DebugNode
@@ -96,7 +96,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6718191537005624690
+--- !u!114 &751473245739809686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,8 +105,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090851925556636892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f757efce64a140f44a824253d7c1f7fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 5de7485267087fe4788b648725b44f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   node:
     position: {x: 0, y: 0, z: 0}
+  constelationBase: {fileID: 0}

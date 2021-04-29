@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 [ExecuteAlways]
 public class ConstelationNodeDebug : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class ConstelationNodeDebug : MonoBehaviour
     public SOConstelationBase constelationBase;
     private void Update()
     {
-        int index = constelationBase.nodes.BinarySearch(node);
+        int index = constelationBase.nodes.IndexOf(node);
         constelationBase.nodes[index].position = transform.localPosition;
     }
 }

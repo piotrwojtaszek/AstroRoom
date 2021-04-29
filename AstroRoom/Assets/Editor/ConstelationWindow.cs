@@ -70,7 +70,7 @@ public class ConstelationWindow : EditorWindow
 
         if (Keyboard.current.jKey.isPressed && Keyboard.current.leftCtrlKey.isPressed && selected.Length == 2)
         {
-            constelationPreset.AddEdge(selected[0].GetComponent<ConstelationSocket>().node, selected[1].GetComponent<ConstelationSocket>().node, debugEdgePrefab);
+            constelationPreset.AddEdge(selected[0].GetComponent<ConstelationNodeDebug>().node, selected[1].GetComponent<ConstelationNodeDebug>().node, debugEdgePrefab);
         }
 
         Repaint();

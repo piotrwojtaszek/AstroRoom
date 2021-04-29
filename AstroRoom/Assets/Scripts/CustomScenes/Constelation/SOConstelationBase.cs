@@ -21,7 +21,9 @@ public class SOConstelationBase : ScriptableObject
     {
         nodes.Add(new Node(_position));
         GameObject socket = Instantiate(prefab, _position, Quaternion.identity);
-        socket.GetComponent<ConstelationSocket>().node = nodes[nodes.Count - 1];
+        socket.GetComponent<ConstelationNodeDebug>().node = nodes[nodes.Count - 1];
+        socket.GetComponent<ConstelationNodeDebug>().constelationBase = this;
+
     }
 
     public void RemoveNode(GameObject toRemove)
@@ -29,15 +31,15 @@ public class SOConstelationBase : ScriptableObject
         int edgeIdToRemove = -1;
         for (int i = 0; i < edges.Count; i++)
         {
-            if (edges[i].point_1 == toRemove.GetComponent<ConstelationSocket>().node || edges[i].point_2 == toRemove.GetComponent<ConstelationSocket>().node)
+            if (edges[i].point_1 == toRemove.GetComponent<ConstelationNodeDebug>().node || edges[i].point_2 == toRemove.GetComponent<ConstelationNodeDebug>().node)
             {
                 edgeIdToRemove = i;
             }
         }
         if (edgeIdToRemove != -1)
             edges.RemoveAt(edgeIdToRemove);
-        CheckConknection(toRemove.GetComponent<ConstelationSocket>().node);
-        nodes.Remove(toRemove.GetComponent<ConstelationSocket>().node);
+        CheckConknection(toRemove.GetComponent<ConstelationNodeDebug>().node);
+        nodes.Remove(toRemove.GetComponent<ConstelationNodeDebug>().node);
         DestroyImmediate(toRemove);
 
     }
