@@ -44,10 +44,16 @@ public class SOConstelationBase : ScriptableObject
             if (edge.point_1 == newEdge.point_1 && edge.point_2 == newEdge.point_2)
             {
                 duplicate = true;
+                return;
             }
         }
-        if (duplicate == false)
-            edges.Add(newEdge);
+        if (duplicate)
+            return;
+
+
+        edges.Add(newEdge);
+        GameObject edgeObject = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+        edgeObject.GetComponent<ConstelationEdgeDebug>().edge = newEdge;
     }
 }
 [System.Serializable]
