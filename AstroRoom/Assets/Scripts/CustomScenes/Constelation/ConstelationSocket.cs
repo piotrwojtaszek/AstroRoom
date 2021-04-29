@@ -11,9 +11,4 @@ public class ConstelationSocket : MonoBehaviour
     {
         node.position = transform.localPosition;
     }
-
-    public void DestroyMe()
-    {
-
-    }
 }

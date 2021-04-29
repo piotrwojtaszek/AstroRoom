@@ -6,39 +6,64 @@ using UnityEngine.InputSystem;
 public class ConstelationWindow : EditorWindow
 {
     public SOConstelationBase constelationPreset;
-
-    public GameObject selected;
+    public GameObject debugNodePrefab;
+    public GameObject debugEdgePrefab;
 
     [MenuItem("Window/Constelation")]
     public static void ShowWindow()
     {
         GetWindow<ConstelationWindow>("Composition");
+
     }
+
+
 
     private void OnGUI()
     {
+        GUILayout.BeginHorizontal();
         GUILayout.Label("Constelation Preset", EditorStyles.boldLabel);
-
         constelationPreset = EditorGUILayout.ObjectField(constelationPreset, typeof(SOConstelationBase), true) as SOConstelationBase;
-        selected = EditorGUILayout.ObjectField(selected, typeof(GameObject), true) as GameObject;
-
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Node Prefab");
+        debugNodePrefab = EditorGUILayout.ObjectField(debugNodePrefab, typeof(GameObject), true) as GameObject;
+        GUILayout.EndHorizontal();
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Edge Prefab");
+        debugEdgePrefab = EditorGUILayout.ObjectField(debugEdgePrefab, typeof(GameObject), true) as GameObject;
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
         if (GUILayout.Button("Add node"))
         {
-            constelationPreset.AddNode(Vector3.zero);
+            constelationPreset.AddNode(Vector3.zero, debugNodePrefab);
         }
 
-        selected = Selection.activeGameObject;
+
+        if (GUILayout.Button("Add edge"))
+        {
+            /*            constelationPreset.AddEdge(selected[0].GetComponent<ConstelationSocket>().node, selected[1].GetComponent<ConstelationSocket>().node);
+                        selected.Clear();*/
+        }
+
+        this.Repaint();
     }
 
-    private void OnSelectionChange()
+    private void OnInspectorUpdate()
     {
-
+        Repaint();
     }
 
     private void Update()
     {
-        if (Keyboard.current.aKey.isPressed && selected != null)
-            constelationPreset.RemoveNode(selected);
+
+        GameObject[] selected = Selection.gameObjects;
+
+        if (Keyboard.current.jKey.isPressed && Keyboard.current.leftCtrlKey.isPressed && selected.Length == 2)
+        {
+            constelationPreset.AddEdge(selected[0].GetComponent<ConstelationSocket>().node, selected[1].GetComponent<ConstelationSocket>().node, debugEdgePrefab);
+        }
+
         Repaint();
     }
 }
