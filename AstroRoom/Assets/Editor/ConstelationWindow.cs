@@ -87,28 +87,29 @@ public class ConstelationWindow : EditorWindow
             {
                 GUILayout.BeginHorizontal();
                 GUIStyle style = new GUIStyle();
-                style.fixedWidth = 20;
-                style.normal.textColor = Color.white;
                 style.alignment = TextAnchor.MiddleCenter;
-                GUILayout.Label(" ", style);
+
+                GUILayout.Label(" ", GUILayout.Width(30));
                 for (int i = 0; i < adjMatrix.GetLength(0); i++)
                 {
-                    GUILayout.Label(i.ToString());
+                    GUILayout.Label(i.ToString(), GUILayout.Width(29));
                 }
                 GUILayout.EndHorizontal();
                 for (int i = 0; i < adjMatrix.GetLength(0); i++)
                 {
                     GUILayout.BeginHorizontal();
-                    GUILayout.Label(i.ToString(), style);
+                    GUILayout.Label(i.ToString(), GUILayout.Width(30));
                     for (int j = 0; j < adjMatrix.GetLength(1); j++)
                     {
                         if (i == j)
                         {
-                            GUILayout.Label("-");
+                            GUIStyle label = new GUIStyle();
+                            label.fixedWidth = 30;
+                            GUILayout.Label("", label);
                         }
                         else
                         {
-                            adjMatrix[i, j] = EditorGUILayout.Toggle(adjMatrix[i, j]);
+                            adjMatrix[i, j] = EditorGUILayout.Toggle(adjMatrix[i, j], GUILayout.Width(30));
                         }
 
                     }
