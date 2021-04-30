@@ -14,10 +14,9 @@ public class ConstelationNodeDebug : MonoBehaviour
 
     public void CreateNode(Vector3 position, SOConstelationBase _constelationBase)
     {
-        node = new Node(position);
+   /*     node = new Node(position);*/
 
         constelationBase = _constelationBase;
-        constelationBase.nodes.Add(node);
     }
     private void Update()
     {

@@ -3,120 +3,118 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.InputSystem;
+using System.Linq;
 public class ConstelationWindow : EditorWindow
 {
-    public SOConstelationBase constelationPreset;
-    public GameObject debugNodePrefab;
-    public GameObject debugEdgePrefab;
-
-    public List<Node> _nodes = new List<Node>();
-    public List<Edge> _edges = new List<Edge>();
+    public int nodesCount;
+    public bool[,] adjMatrix;
+    public List<GameObject> helpers;
+    public List<Node> nodes;
+    int tempNodesCount;
+    bool displayMatrixToggle = false;
     [MenuItem("Window/Constelation")]
     public static void ShowWindow()
     {
         GetWindow<ConstelationWindow>("Composition");
     }
 
-    private void Awake()
-    {
-
-    }
-
     private void OnGUI()
     {
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("Constelation Preset", EditorStyles.boldLabel);
-        constelationPreset = EditorGUILayout.ObjectField(constelationPreset, typeof(SOConstelationBase), true) as SOConstelationBase;
-        GUILayout.EndHorizontal();
 
-        GUILayout.Space(10);
-
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("Node Prefab");
-        debugNodePrefab = EditorGUILayout.ObjectField(debugNodePrefab, typeof(GameObject), true) as GameObject;
-        GUILayout.EndHorizontal();
-
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("Edge Prefab");
-        debugEdgePrefab = EditorGUILayout.ObjectField(debugEdgePrefab, typeof(GameObject), true) as GameObject;
-        GUILayout.EndHorizontal();
-        GUILayout.Space(10);
-
-
-        if (GUILayout.Button("Save"))
+        /*constelationPreset = EditorGUILayout.ObjectField(constelationPreset, typeof(SOConstelationBase), true) as SOConstelationBase;*/
+        if (nodesCount == 0)
         {
-            Save();
+            GUILayout.Label("How many nodes?");
+
+            tempNodesCount = EditorGUILayout.IntField(tempNodesCount);
+            if (GUILayout.Button("Confirm"))
+            {
+
+                nodesCount = tempNodesCount;
+                adjMatrix = new bool[nodesCount, nodesCount];
+                helpers = new List<GameObject>();
+                nodes = new List<Node>();
+            }
+            Repaint();
         }
 
-        /*if (GUILayout.Button("Add node"))
+        if (nodesCount != 0)
         {
-            constelationPreset.AddNode(debugNodePrefab);
-        }
-
-        if (Selection.activeGameObject != null)
-            if (Selection.activeGameObject.CompareTag("DebugNode"))
-                if (GUILayout.Button("Delete node"))
+            if (GUILayout.Button("Display matrix"))
+            {
+                string row = "";
+                for (int i = 0; i < adjMatrix.GetLength(0); i++)
                 {
-                    constelationPreset.RemoveNode(Selection.activeGameObject);
+
+                    for (int j = 0; j < adjMatrix.GetLength(1); j++)
+                    {
+                        if (adjMatrix[i, j] == false)
+                            row += "0";
+                        if (adjMatrix[i, j] == true)
+                            row += "1";
+                        row += " ";
+                    }
+                    row += '\n';
                 }
+                Debug.Log(row);
+            }
 
-        if (Selection.activeGameObject != null)
-            if (Selection.activeGameObject.CompareTag("DebugEdge"))
-                if (GUILayout.Button("Delete connection"))
+            /*            if (GUILayout.Button("Add node") && helpers.Count< adjMatrix.GetLength(0))
+                        {
+                            Node node = new Node(Vector3.zero, helpers.Count);
+                            nodes.Add(node);
+                            Repaint();
+                        }*/
+
+            if (GUILayout.Button("Restart"))
+            {
+                nodesCount = 0;
+                foreach (GameObject helper in helpers)
                 {
-                    constelationPreset.RemoveEdge(Selection.activeGameObject.GetComponent<ConstelationEdgeDebug>().edge);
-                }*/
+                    DestroyImmediate(helper);
+                }
+                helpers.Clear();
+                nodes.Clear();
+            }
+            if (GUILayout.Button("Display adj matrix"))
+            {
+                displayMatrixToggle = !displayMatrixToggle;
+            }
 
-        if (GUILayout.Button("Add node"))
-        {
-            AddNode();
+
+
+            if (displayMatrixToggle)
+            {
+                GUILayout.BeginHorizontal();
+                GUIStyle style = new GUIStyle();
+                style.fixedWidth = 20;
+                style.normal.textColor = Color.white;
+                style.alignment = TextAnchor.MiddleCenter;
+                GUILayout.Label(" ", style);
+                for (int i = 0; i < adjMatrix.GetLength(0); i++)
+                {
+                    GUILayout.Label(i.ToString());
+                }
+                GUILayout.EndHorizontal();
+                for (int i = 0; i < adjMatrix.GetLength(0); i++)
+                {
+                    GUILayout.BeginHorizontal();
+                    GUILayout.Label(i.ToString(), style);
+                    for (int j = 0; j < adjMatrix.GetLength(1); j++)
+                    {
+                        if (i == j)
+                        {
+                            GUILayout.Label("-");
+                        }
+                        else
+                        {
+                            adjMatrix[i, j] = EditorGUILayout.Toggle(adjMatrix[i, j]);
+                        }
+
+                    }
+                    GUILayout.EndHorizontal();
+                }
+            }
         }
-
-        this.Repaint();
-    }
-
-    private void OnInspectorUpdate()
-    {
-        Repaint();
-    }
-
-    private void Update()
-    {
-        GameObject[] selected = Selection.gameObjects;
-
-        if (Keyboard.current.jKey.isPressed && Keyboard.current.leftCtrlKey.isPressed && selected.Length == 2)
-        {
-            AddEdge(selected[0], selected[1]);
-        }
-
-        Repaint();
-    }
-
-    private void AddNode()
-    {
-        if (GameObject.Find("CONSTELATION") == null)
-            new GameObject("CONSTELATION");
-
-        GameObject temp = Instantiate(debugNodePrefab, GameObject.Find("CONSTELATION").transform);
-    }
-
-
-    private void AddEdge(GameObject selected_1, GameObject selected_2)
-    {
-        if (GameObject.Find("CONSTELATION") == null)
-            new GameObject("CONSTELATION");
-
-        GameObject temp = Instantiate(debugEdgePrefab, GameObject.Find("CONSTELATION").transform);
-    }
-
-    private void Save()
-    {
-        constelationPreset.nodes.Clear();
-        foreach (Transform helper in GameObject.Find("CONSTELATION").transform)
-        {
-            if (helper.CompareTag("DebugNode"))
-                constelationPreset.nodes.Add(new Node(helper.position));
-        }
-        constelationPreset.edges = _edges;
     }
 }
