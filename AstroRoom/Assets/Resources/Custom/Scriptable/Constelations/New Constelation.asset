@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: New Constelation
   m_EditorClassIdentifier: 
   nodes:
-  - position: {x: -1.22, y: 0.99, z: 0}
-  - position: {x: 0.97, y: 2.11, z: 0}
-  edges:
-  - point_1:
-      position: {x: 0.97, y: 2.11, z: 0}
-    point_2:
-      position: {x: -1.22, y: 0.99, z: 0}
+  - position: {x: 1.7, y: 0, z: 0}
+  - position: {x: -2.79, y: 1.05, z: 0}
+  - position: {x: 2.66, y: 2.56, z: 0}
+  edges: []
