@@ -24,6 +24,9 @@ public class ConstelationInSceneHelperEditor : Editor
         if (baseScript.constelationPreset == null)
             return;
 
+        if (baseScript.constelationPreset.adjMatrix == null)
+            baseScript.constelationPreset.adjMatrix = new bool[0, 0];
+
         if (baseScript.constelationPreset.adjMatrix.GetLength(0) == 0)
         {
             GUILayout.BeginHorizontal();
@@ -105,13 +108,17 @@ public class ConstelationInSceneHelperEditor : Editor
             }
             GUILayout.EndHorizontal();
         }
+
         serializedObject.ApplyModifiedProperties();
     }
     private void OnSceneGUI()
     {
         ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
-        if (baseScript.constelationPreset == null || baseScript.constelationPreset.nodes.Length == 0)
+        if (baseScript.constelationPreset == null || baseScript.constelationPreset.adjMatrix == null)
             return;
+        if (baseScript.constelationPreset.nodes.Length == 0)
+            return;
+
         foreach (Node node in baseScript.constelationPreset.nodes)
         {
             node.position = Handles.PositionHandle(node.position, Quaternion.identity);
