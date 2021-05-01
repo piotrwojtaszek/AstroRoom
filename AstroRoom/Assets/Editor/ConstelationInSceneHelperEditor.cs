@@ -5,5 +5,97 @@ using UnityEditor;
 [CustomEditor(typeof(ConstelationInSceneHelper))]
 public class ConstelationInSceneHelperEditor : Editor
 {
-    
+
+    public int tmpMatrixSize;
+    SerializedProperty constelationPreset;
+
+    void OnEnable()
+    {
+        constelationPreset = serializedObject.FindProperty("constelationPreset");
+    }
+    public override void OnInspectorGUI()
+    {
+        ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
+
+        EditorGUILayout.PropertyField(constelationPreset, new GUIContent("Constelation preset"));
+        serializedObject.ApplyModifiedProperties();
+        if (baseScript.constelationPreset == null)
+            return;
+
+        if (baseScript.matrixSize == 0)
+        {
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("How many nodes?");
+
+            tmpMatrixSize = EditorGUILayout.IntField(tmpMatrixSize);
+            if (GUILayout.Button("Confirm"))
+            {
+
+                baseScript.matrixSize = tmpMatrixSize;
+                baseScript.adjMatrix = new bool[baseScript.matrixSize, baseScript.matrixSize];
+                baseScript.nodes = new Node[10];
+                for (int i = 0; i < baseScript.nodes.Length; i++)
+                {
+                    Node node = new Node(new Vector3(i, 0));
+                    baseScript.nodes[i] = node;
+                }
+            }
+            GUILayout.EndHorizontal();
+        }
+
+        if (baseScript.matrixSize != 0)
+        {
+            GUILayout.BeginHorizontal();
+            GUIStyle style = new GUIStyle();
+            style.alignment = TextAnchor.MiddleCenter;
+
+            GUILayout.Label(" ", GUILayout.Width(30));
+            for (int i = 0; i < baseScript.adjMatrix.GetLength(0); i++)
+            {
+                GUILayout.Label(i.ToString(), GUILayout.Width(29));
+            }
+            GUILayout.EndHorizontal();
+            for (int i = 0; i < baseScript.adjMatrix.GetLength(0); i++)
+            {
+                GUILayout.BeginHorizontal();
+                GUILayout.Label(i.ToString(), GUILayout.Width(30));
+                for (int j = 0; j < baseScript.adjMatrix.GetLength(1); j++)
+                {
+                    if (i == j)
+                    {
+                        GUIStyle label = new GUIStyle();
+                        label.fixedWidth = 30;
+                        GUILayout.Label("", label);
+                    }
+                    else
+                    {
+                        baseScript.adjMatrix[i, j] = EditorGUILayout.Toggle(baseScript.adjMatrix[i, j], GUILayout.Width(30));
+                    }
+                }
+                GUILayout.EndHorizontal();
+            }
+        }
+
+
+
+        serializedObject.ApplyModifiedProperties();
+    }
+    private void OnSceneGUI()
+    {
+        ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
+        if (baseScript.constelationPreset == null)
+            return;
+        foreach (Node node in baseScript.nodes)
+        {
+            node.position = Handles.PositionHandle(node.position, Quaternion.identity);
+        }
+
+
+    }
+
+    private void Save(ConstelationInSceneHelper constelationInSceneHelper)
+    {
+        constelationInSceneHelper.adjMatrix
+    }
+
 }

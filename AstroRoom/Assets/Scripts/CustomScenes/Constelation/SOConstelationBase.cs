@@ -6,6 +6,7 @@ using UnityEngine;
 public class SOConstelationBase : ScriptableObject
 {
     public bool[,] adjMatrix;
+    public Node[] nodes;
 }
 [System.Serializable]
 public class Edge
@@ -20,11 +21,9 @@ public class Edge
 [System.Serializable]
 public class Node
 {
-    public int id;
     public Vector3 position;
-    public Node(Vector3 _position, int _id)
+    public Node(Vector3 _position)
     {
         position = _position;
-        id = _id;
     }
 }

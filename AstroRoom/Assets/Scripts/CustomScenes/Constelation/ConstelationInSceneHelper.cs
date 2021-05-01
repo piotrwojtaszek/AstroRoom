@@ -5,28 +5,24 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ConstelationInSceneHelper : MonoBehaviour
 {
-    public static ConstelationInSceneHelper Instance;
-
-    void OnEnable()
-    {
-        Instance = this;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SOConstelationBase constelationPreset;
+    public int matrixSize;
+    public bool[,] adjMatrix;
+    public Node[] nodes;
 
     void OnDrawGizmos()
     {
-        // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, 1);
+        for (int i = 0; i < nodes.Length; i++)
+        {
+            Gizmos.DrawSphere(nodes[i].position, .125f);
+        }
+        // Draw a yellow sphere at the transform's position
+    }
+
+    public void Save()
+    {
+        constelationPreset.adjMatrix = adjMatrix;
+        constelationPreset.nodes = nodes;
     }
 }
