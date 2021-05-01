@@ -22,7 +22,7 @@ public class ConstelationInSceneHelperEditor : Editor
         if (baseScript.constelationPreset == null)
             return;
 
-        if (baseScript.matrixSize == 0)
+        if (baseScript.constelationPreset.adjMatrix == null)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label("How many nodes?");
@@ -31,35 +31,35 @@ public class ConstelationInSceneHelperEditor : Editor
             if (GUILayout.Button("Confirm"))
             {
 
-                baseScript.matrixSize = tmpMatrixSize;
-                baseScript.adjMatrix = new bool[baseScript.matrixSize, baseScript.matrixSize];
-                baseScript.nodes = new Node[10];
-                for (int i = 0; i < baseScript.nodes.Length; i++)
+                /*              baseScript.constelationPreset.matrixSize = tmpMatrixSize;*/
+                baseScript.constelationPreset.adjMatrix = new bool[tmpMatrixSize, tmpMatrixSize];
+                baseScript.constelationPreset.nodes = new Node[tmpMatrixSize];
+                for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
                 {
-                    Node node = new Node(new Vector3(i, 0));
-                    baseScript.nodes[i] = node;
+                    Node node = new Node(new Vector3(i, 1f));
+                    baseScript.constelationPreset.nodes[i] = node;
                 }
             }
             GUILayout.EndHorizontal();
         }
 
-        if (baseScript.matrixSize != 0)
+        if (baseScript.constelationPreset.adjMatrix != null)
         {
             GUILayout.BeginHorizontal();
             GUIStyle style = new GUIStyle();
             style.alignment = TextAnchor.MiddleCenter;
 
             GUILayout.Label(" ", GUILayout.Width(30));
-            for (int i = 0; i < baseScript.adjMatrix.GetLength(0); i++)
+            for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
             {
                 GUILayout.Label(i.ToString(), GUILayout.Width(29));
             }
             GUILayout.EndHorizontal();
-            for (int i = 0; i < baseScript.adjMatrix.GetLength(0); i++)
+            for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                for (int j = 0; j < baseScript.adjMatrix.GetLength(1); j++)
+                for (int j = 0; j < baseScript.constelationPreset.adjMatrix.GetLength(1); j++)
                 {
                     if (i == j)
                     {
@@ -69,7 +69,7 @@ public class ConstelationInSceneHelperEditor : Editor
                     }
                     else
                     {
-                        baseScript.adjMatrix[i, j] = EditorGUILayout.Toggle(baseScript.adjMatrix[i, j], GUILayout.Width(30));
+                        baseScript.constelationPreset.adjMatrix[i, j] = EditorGUILayout.Toggle(baseScript.constelationPreset.adjMatrix[i, j], GUILayout.Width(30));
                     }
                 }
                 GUILayout.EndHorizontal();
@@ -83,9 +83,9 @@ public class ConstelationInSceneHelperEditor : Editor
     private void OnSceneGUI()
     {
         ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
-        if (baseScript.constelationPreset == null)
+        if (baseScript.constelationPreset == null || baseScript.constelationPreset.nodes.Length == 0)
             return;
-        foreach (Node node in baseScript.nodes)
+        foreach (Node node in baseScript.constelationPreset.nodes)
         {
             node.position = Handles.PositionHandle(node.position, Quaternion.identity);
         }
@@ -93,9 +93,9 @@ public class ConstelationInSceneHelperEditor : Editor
 
     }
 
-    private void Save(ConstelationInSceneHelper constelationInSceneHelper)
-    {
-        constelationInSceneHelper.adjMatrix
-    }
+    /*    private void Save(ConstelationInSceneHelper constelationInSceneHelper)
+        {
+            constelationInSceneHelper.constelationPreset.adjMatrix
+        }*/
 
 }

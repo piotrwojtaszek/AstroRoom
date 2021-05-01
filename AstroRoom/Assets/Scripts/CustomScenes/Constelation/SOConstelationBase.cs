@@ -7,6 +7,7 @@ public class SOConstelationBase : ScriptableObject
 {
     public bool[,] adjMatrix;
     public Node[] nodes;
+/*    public int matrixSize;*/
 }
 [System.Serializable]
 public class Edge
