@@ -5,7 +5,6 @@ using System.Linq;
 [ExecuteAlways]
 public class ConstelationNodeDebug : MonoBehaviour
 {
-    private Node node;
     public SOConstelationBase constelationBase;
     private void OnEnable()
     {

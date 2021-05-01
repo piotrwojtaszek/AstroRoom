@@ -8,16 +8,23 @@ public class ConstelationWindow : EditorWindow
 {
     public int nodesCount;
     public bool[,] adjMatrix;
-    public List<GameObject> helpers;
+    public GameObject inSceneHelper;
     public List<Node> nodes;
     int tempNodesCount;
     bool displayMatrixToggle = false;
+
     [MenuItem("Window/Constelation")]
     public static void ShowWindow()
     {
-        GetWindow<ConstelationWindow>("Composition");
+        EditorWindow editorWindow = GetWindow<ConstelationWindow>("Composition");
+        editorWindow.autoRepaintOnSceneChange = true;
+        editorWindow.Show();
     }
 
+    private void Awake()
+    {
+        /* GameObject[] find = GameObject.FindObjectsOfType(typeof())*/
+    }
     private void OnGUI()
     {
 
@@ -32,7 +39,6 @@ public class ConstelationWindow : EditorWindow
 
                 nodesCount = tempNodesCount;
                 adjMatrix = new bool[nodesCount, nodesCount];
-                helpers = new List<GameObject>();
                 nodes = new List<Node>();
             }
             Repaint();
@@ -40,48 +46,39 @@ public class ConstelationWindow : EditorWindow
 
         if (nodesCount != 0)
         {
-            if (GUILayout.Button("Display matrix"))
+            if (GUILayout.Button("Display nodes"))
             {
-                string row = "";
-                for (int i = 0; i < adjMatrix.GetLength(0); i++)
-                {
+                /*                string row = "";
+                                for (int i = 0; i < adjMatrix.GetLength(0); i++)
+                                {
 
-                    for (int j = 0; j < adjMatrix.GetLength(1); j++)
-                    {
-                        if (adjMatrix[i, j] == false)
-                            row += "0";
-                        if (adjMatrix[i, j] == true)
-                            row += "1";
-                        row += " ";
-                    }
-                    row += '\n';
-                }
-                Debug.Log(row);
+                                    for (int j = 0; j < adjMatrix.GetLength(1); j++)
+                                    {
+                                        if (adjMatrix[i, j] == false)
+                                            row += "0";
+                                        if (adjMatrix[i, j] == true)
+                                            row += "1";
+                                        row += " ";
+                                    }
+                                    row += '\n';
+                                }
+                                Debug.Log(row);*/
+                inSceneHelper = new GameObject("Constelation Helper");
+                inSceneHelper.AddComponent<ConstelationInSceneHelper>();
+                
             }
-
-            /*            if (GUILayout.Button("Add node") && helpers.Count< adjMatrix.GetLength(0))
-                        {
-                            Node node = new Node(Vector3.zero, helpers.Count);
-                            nodes.Add(node);
-                            Repaint();
-                        }*/
 
             if (GUILayout.Button("Restart"))
             {
                 nodesCount = 0;
-                foreach (GameObject helper in helpers)
-                {
-                    DestroyImmediate(helper);
-                }
-                helpers.Clear();
+                DestroyImmediate(inSceneHelper);
                 nodes.Clear();
             }
-            if (GUILayout.Button("Display adj matrix"))
+
+            if (GUILayout.Button("Display matrix"))
             {
                 displayMatrixToggle = !displayMatrixToggle;
             }
-
-
 
             if (displayMatrixToggle)
             {
