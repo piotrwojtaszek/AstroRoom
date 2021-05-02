@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a5b5df833699540b821cd0414cf375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constelationPreset: {fileID: 0}
+  constelationPreset: {fileID: 11400000, guid: c9c296137ee120446ba64a4f6c6b9108, type: 2}
 --- !u!4 &544015670
 Transform:
   m_ObjectHideFlags: 0

@@ -8,9 +8,10 @@ public class ConstelationInSceneHelperEditor : Editor
 
     public int tmpMatrixSize;
     SerializedProperty constelationPreset;
-    int id_1 = -1;
-    int id_2 = -1;
+    int id_1 = 0;
+    int id_2 = 0;
     int checkId;
+    bool displayOpt = false;
     void OnEnable()
     {
         constelationPreset = serializedObject.FindProperty("constelationPreset");
@@ -35,8 +36,6 @@ public class ConstelationInSceneHelperEditor : Editor
             tmpMatrixSize = EditorGUILayout.IntField(tmpMatrixSize);
             if (GUILayout.Button("Confirm"))
             {
-
-                /*              baseScript.constelationPreset.matrixSize = tmpMatrixSize;*/
                 baseScript.constelationPreset.adjMatrix = new bool[tmpMatrixSize, tmpMatrixSize];
                 baseScript.constelationPreset.nodes = new Node[tmpMatrixSize];
                 for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
@@ -48,23 +47,24 @@ public class ConstelationInSceneHelperEditor : Editor
             GUILayout.EndHorizontal();
         }
 
+        GUILayout.BeginHorizontal();
+        GUIStyle style = new GUIStyle();
+        style.alignment = TextAnchor.MiddleCenter;
+
+        GUILayout.Label(" ", GUILayout.Width(30));
+        for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0) - 1; i++)
+        {
+            GUILayout.Label(i.ToString(), GUILayout.Width(29));
+        }
+        GUILayout.EndHorizontal();
+
         if (baseScript.constelationPreset.adjMatrix.GetLength(0) > 0)
         {
-            GUILayout.BeginHorizontal();
-            GUIStyle style = new GUIStyle();
-            style.alignment = TextAnchor.MiddleCenter;
-
-            GUILayout.Label(" ", GUILayout.Width(30));
-            for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
-            {
-                GUILayout.Label(i.ToString(), GUILayout.Width(29));
-            }
-            GUILayout.EndHorizontal();
-            for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
+            for (int i = baseScript.constelationPreset.adjMatrix.GetLength(0) - 1; i >= 1; i--)
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                for (int j = 0; j < baseScript.constelationPreset.adjMatrix.GetLength(1); j++)
+                for (int j = 0; j < i; j++)
                 {
                     if (i == j)
                     {
@@ -75,40 +75,80 @@ public class ConstelationInSceneHelperEditor : Editor
                     else
                     {
                         baseScript.constelationPreset.adjMatrix[i, j] = EditorGUILayout.Toggle(baseScript.constelationPreset.adjMatrix[i, j], GUILayout.Width(30));
+                        baseScript.constelationPreset.adjMatrix[j, i] = baseScript.constelationPreset.adjMatrix[i, j];
                     }
                 }
                 GUILayout.EndHorizontal();
             }
-            GUILayout.Space(20);
-            GUILayout.BeginHorizontal();
-            GUILayout.Label("ID:");
-            id_1 = EditorGUILayout.IntField(id_1);
-            GUILayout.Label("<======>");
-            id_2 = EditorGUILayout.IntField(id_2);
-            GUILayout.EndHorizontal();
-            if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
-                if (GUILayout.Button("Make connection"))
-                {
-                    baseScript.constelationPreset.adjMatrix[id_1, id_2] = true;
-                    baseScript.constelationPreset.adjMatrix[id_2, id_1] = true;
-                }
 
             GUILayout.Space(20);
-            GUILayout.BeginHorizontal();
-            GUILayout.Label("ID to check:");
-            checkId = EditorGUILayout.IntField(checkId);
-            if (GUILayout.Button("Connection from node"))
+            if (displayOpt == false)
+                if (GUILayout.Button("SHOW MORE"))
+                {
+                    displayOpt = true;
+                }
+
+            if (displayOpt)
             {
-                string temp = "Checked:  ";
-                for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
-                {
-                    temp += baseScript.constelationPreset.adjMatrix[checkId, i] + " ";
-                }
-                Debug.Log(temp);
-            }
-            GUILayout.EndHorizontal();
-        }
+                GUIStyle connectionStyle = new GUIStyle();
+                connectionStyle.alignment = TextAnchor.MiddleCenter;
+                connectionStyle.normal.textColor = Color.white;
+                GUILayout.BeginHorizontal();
+                GUILayout.BeginVertical();
+                GUILayout.Label("ID", connectionStyle);
+                id_1 = EditorGUILayout.IntField(id_1);
+                GUILayout.EndVertical();
+                GUILayout.BeginVertical();
+                GUILayout.Label(" ");
+                GUILayout.Label("<--->");
+                GUILayout.EndVertical();
+                GUILayout.BeginVertical();
+                GUILayout.Label("ID", connectionStyle);
+                id_2 = EditorGUILayout.IntField(id_2);
+                GUILayout.EndVertical();
+                GUILayout.EndHorizontal();
 
+                GUILayout.BeginHorizontal();
+                if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
+                    if (GUILayout.Button("Make connection"))
+                    {
+                        baseScript.constelationPreset.adjMatrix[id_1, id_2] = true;
+                        baseScript.constelationPreset.adjMatrix[id_2, id_1] = true;
+                    }
+
+                if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
+                    if (GUILayout.Button("Delete connection"))
+                    {
+                        baseScript.constelationPreset.adjMatrix[id_1, id_2] = false;
+                        baseScript.constelationPreset.adjMatrix[id_2, id_1] = false;
+                    }
+                GUILayout.EndHorizontal();
+
+                GUILayout.Space(20);
+
+                if (GUILayout.Button("COLLAPSE"))
+                {
+                    displayOpt = false;
+                }
+            }
+
+
+            /* GUILayout.Space(20);
+             GUILayout.BeginHorizontal();
+             GUILayout.Label("ID to check:");
+             checkId = EditorGUILayout.IntField(checkId);
+             if (GUILayout.Button("Connection from node"))
+             {
+                 string temp = "Checked:  ";
+                 for (int i = 0; i < baseScript.constelationPreset.adjMatrix.GetLength(0); i++)
+                 {
+                     temp += baseScript.constelationPreset.adjMatrix[checkId, i] + " ";
+                 }
+                 Debug.Log(temp);
+             }
+             GUILayout.EndHorizontal();*/
+        }
+        EditorUtility.SetDirty(target);
         serializedObject.ApplyModifiedProperties();
     }
     private void OnSceneGUI()

@@ -11,11 +11,21 @@ public class ConstelationInSceneHelper : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        Gizmos.color = new Color(0f, 1f, 0f, 0.1f);
+        Gizmos.DrawCube(new Vector3(0, 1f), new Vector3(4f, 1.5f));
+
+        Gizmos.color = new Color(0.9f,  0.8f, 0f, 0.15f);
+        Gizmos.DrawCube(new Vector3(2.75f, 1f), new Vector3(1.5f, 1.5f));
+        Gizmos.DrawCube(new Vector3(-2.75f, 1f), new Vector3(1.5f, 1.5f));
+        Gizmos.color = new Color(1f, 0f, 0f, 0.15f);
+        Gizmos.DrawCube(new Vector3(0f, 0f), new Vector3(7f, .5f));
+        Gizmos.DrawCube(new Vector3(0f, 2f), new Vector3(7f, .5f));
+
         Gizmos.color = Color.yellow;
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
             for (int i = 0; i < constelationPreset.adjMatrix.GetLength(0); i++)
             {
-                Gizmos.DrawSphere(constelationPreset.nodes[i].position, .125f);
+                Gizmos.DrawSphere(constelationPreset.nodes[i].position, .1f);
                 GUIStyle style = new GUIStyle();
                 style.fontStyle = FontStyle.Bold;
                 style.normal.textColor = Color.red;
@@ -25,18 +35,10 @@ public class ConstelationInSceneHelper : MonoBehaviour
             }
 
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
-        {
-
             for (int i = 0; i < constelationPreset.adjMatrix.GetLength(0); i++)
                 for (int j = i; j < constelationPreset.adjMatrix.GetLength(1); j++)
-                {
                     if (constelationPreset.adjMatrix[i, j] == true)
-                    {
                         Gizmos.DrawLine(constelationPreset.nodes[i].position, constelationPreset.nodes[j].position);
-                        Debug.LogWarning("Twice:" + i + "  and   " + j);
-                    }
 
-                }
-        }
     }
 }

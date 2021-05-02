@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
-    public bool[,] adjMatrix;
-    public Node[] nodes;
+    public bool[,] adjMatrix = new bool[0,0];
+    public Node[] nodes = new Node[0];
     private void OnEnable()
     {
         hideFlags = HideFlags.DontUnloadUnusedAsset;
