@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
-    public bool[,] adjMatrix = new bool[0,0];
-    public Node[] nodes = new Node[0];
-    private void OnEnable()
-    {
-        hideFlags = HideFlags.DontUnloadUnusedAsset;
-    }
+    public string conName;
+    public Matrix adjMatrix;
+    public Node[] nodes;
+    /*    private void OnEnable()
+        {
+            hideFlags = HideFlags.DontUnloadUnusedAsset;
+        }*/
     /*    public int matrixSize;*/
 }
 [System.Serializable]
@@ -23,6 +23,13 @@ public class Edge
     public int j_2;
 
 }
+[System.Serializable]
+public class Matrix
+{
+    public bool[,] adjMatrix;
+
+}
+
 [System.Serializable]
 public class Node
 {
