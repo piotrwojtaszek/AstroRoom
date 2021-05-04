@@ -10,7 +10,7 @@ public class ConInGameController : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
-            for (int i = 0; i < constelationPreset.adjMatrix.adjMatrix.GetLength(0); i++)
+            for (int i = 0; i < constelationPreset.size; i++)
             {
                 Gizmos.DrawSphere(constelationPreset.nodes[i].position + transform.position, .1f);
                 GUIStyle style = new GUIStyle();
@@ -18,14 +18,14 @@ public class ConInGameController : MonoBehaviour
                 style.normal.textColor = Color.red;
                 style.fontSize = 20;
                 style.alignment = TextAnchor.MiddleCenter;
-                UnityEditor.Handles.Label(constelationPreset.nodes[i].position + new Vector3(0f, -.2f)+ transform.position, "ID: " + i, style);
+                UnityEditor.Handles.Label(constelationPreset.nodes[i].position + new Vector3(0f, -.2f) + transform.position, "ID: " + i, style);
             }
 
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
-            for (int i = 0; i < constelationPreset.adjMatrix.adjMatrix.GetLength(0); i++)
-                for (int j = i; j < constelationPreset.adjMatrix.adjMatrix.GetLength(1); j++)
-                    if (constelationPreset.adjMatrix.adjMatrix[i, j] == true)
-                        Gizmos.DrawLine(constelationPreset.nodes[i].position+transform.position, constelationPreset.nodes[j].position+transform.position);
+            for (int i = 0; i < constelationPreset.size; i++)
+                for (int j = i; j < constelationPreset.size; j++)
+                    if (constelationPreset.adjMatrix[i * constelationPreset.size + j] == true)
+                        Gizmos.DrawLine(constelationPreset.nodes[i].position + transform.position, constelationPreset.nodes[j].position + transform.position);
         if (constelationPreset != null)
         {
             GUIStyle style = new GUIStyle();

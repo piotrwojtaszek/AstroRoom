@@ -5,8 +5,6 @@ using UnityEditor;
 [CustomEditor(typeof(ConstelationInSceneHelper))]
 public class ConstelationInSceneHelperEditor : Editor
 {
-
-    public int tmpMatrixSize;
     SerializedProperty constelationPreset;
     int id_1 = 0;
     int id_2 = 0;
@@ -39,17 +37,17 @@ public class ConstelationInSceneHelperEditor : Editor
                 }*/
 
 
-        if (baseScript.constelationPreset.adjMatrix.adjMatrix == null)
+        if (baseScript.constelationPreset.adjMatrix == null)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label("How many nodes?");
 
-            tmpMatrixSize = EditorGUILayout.IntField(tmpMatrixSize);
+            baseScript.constelationPreset.size = EditorGUILayout.IntField(baseScript.constelationPreset.size);
             if (GUILayout.Button("Confirm"))
             {
 
-                baseScript.constelationPreset.nodes = new Node[tmpMatrixSize];
-                baseScript.constelationPreset.adjMatrix.adjMatrix = new bool[baseScript.constelationPreset.nodes.Length, baseScript.constelationPreset.nodes.Length];
+                baseScript.constelationPreset.nodes = new Node[baseScript.constelationPreset.size];
+                baseScript.constelationPreset.adjMatrix = new bool[baseScript.constelationPreset.size * baseScript.constelationPreset.size];
                 for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
                 {
                     Node node = new Node(new Vector3(i, 1f));
@@ -60,7 +58,7 @@ public class ConstelationInSceneHelperEditor : Editor
 
             GUILayout.EndHorizontal();
         }
-        if (baseScript.constelationPreset.adjMatrix.adjMatrix == null)
+        if (baseScript.constelationPreset.adjMatrix == null)
         {
             return;
         }
@@ -70,19 +68,19 @@ public class ConstelationInSceneHelperEditor : Editor
         style.alignment = TextAnchor.MiddleCenter;
 
         GUILayout.Label(" ", GUILayout.Width(30));
-        for (int i = 0; i < baseScript.constelationPreset.adjMatrix.adjMatrix.GetLength(0) - 1; i++)
+        for (int i = 0; i < baseScript.constelationPreset.size - 1; i++)
         {
             GUILayout.Label(i.ToString(), GUILayout.Width(29));
         }
         GUILayout.EndHorizontal();
 
-        if (baseScript.constelationPreset.adjMatrix.adjMatrix.Length > 0)
+        if (baseScript.constelationPreset.adjMatrix.Length > 0)
         {
-            for (int i = baseScript.constelationPreset.adjMatrix.adjMatrix.GetLength(0) - 1; i >= 1; i--)
+            for (int i = 0; i < baseScript.constelationPreset.size; i++)
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j < baseScript.constelationPreset.size; j++)
                 {
                     if (i == j)
                     {
@@ -92,8 +90,10 @@ public class ConstelationInSceneHelperEditor : Editor
                     }
                     else
                     {
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[i, j] = EditorGUILayout.Toggle(baseScript.constelationPreset.adjMatrix.adjMatrix[i, j], GUILayout.Width(30));
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[j, i] = baseScript.constelationPreset.adjMatrix.adjMatrix[i, j];
+                        int row = baseScript.constelationPreset.size * i;
+                        baseScript.constelationPreset.adjMatrix[row + j] = EditorGUILayout.Toggle(baseScript.constelationPreset.adjMatrix[row + j], GUILayout.Width(30));
+                        int inverted = baseScript.constelationPreset.size * j;
+                        baseScript.constelationPreset.adjMatrix[inverted+i] = baseScript.constelationPreset.adjMatrix[row + j];
                         serializedObject.ApplyModifiedProperties();
                     }
                 }
@@ -131,15 +131,15 @@ public class ConstelationInSceneHelperEditor : Editor
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Make connection"))
                     {
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[id_1, id_2] = true;
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[id_2, id_1] = true;
+                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = true;
+                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = true;
                     }
 
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Delete connection"))
                     {
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[id_1, id_2] = false;
-                        baseScript.constelationPreset.adjMatrix.adjMatrix[id_2, id_1] = false;
+                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = false;
+                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = false;
                     }
                 GUILayout.EndHorizontal();
 
@@ -190,21 +190,19 @@ public class ConstelationInSceneHelperEditor : Editor
                 temp += "\n";
             }
             Debug.Log(temp);*/
-            Debug.Log(baseScript.constelationPreset.adjMatrix.adjMatrix[0, 0]);
         }
         serializedObject.ApplyModifiedProperties();
-        if(GUI.changed)
+        if (GUI.changed)
         {
-/*            AssetDatabase.SaveAssets();*/
-/*            EditorUtility.SetDirty(target);*/
+            EditorUtility.SetDirty(target);
         }
     }
 
-    
+
     private void OnSceneGUI()
     {
         ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
-        if (baseScript.constelationPreset == null || baseScript.constelationPreset.adjMatrix.adjMatrix == null)
+        if (baseScript.constelationPreset == null || baseScript.constelationPreset.adjMatrix == null)
             return;
         if (baseScript.constelationPreset.nodes.Length == 0)
             return;

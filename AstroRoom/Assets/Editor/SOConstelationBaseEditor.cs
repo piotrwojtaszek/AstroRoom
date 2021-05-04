@@ -10,18 +10,17 @@ public class SOConstelationBaseEditor : Editor
     {
         base.DrawDefaultInspector();
         SOConstelationBase baseScript = (SOConstelationBase)target;
-        string temp = "";
 
-        if (baseScript.adjMatrix.adjMatrix == null)
-            return;
+/*        if (baseScript.adjMatrix == null)
+            return;*/
 
-        for (int i = 0; i < baseScript.adjMatrix.adjMatrix.GetLength(0); i++)
+/*        for (int i = 0; i < baseScript.adjMatrix.GetLength(0); i++)
         {
 
 
-            for (int j = 0; j < baseScript.adjMatrix.adjMatrix.GetLength(0); j++)
+            for (int j = 0; j < baseScript.adjMatrix.GetLength(0); j++)
             {
-                if (baseScript.adjMatrix.adjMatrix[i, j] == false)
+                if (baseScript.adjMatrix[i, j] == false)
                 {
                     temp += "0 ";
                 }
@@ -32,6 +31,6 @@ public class SOConstelationBaseEditor : Editor
             }
             EditorGUILayout.LabelField(temp);
             temp = "";
-        }
+        }*/
     }
 }

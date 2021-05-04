@@ -4,9 +4,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
-    public string conName;
-    public Matrix adjMatrix;
+    public string conName = "NEW";
+    public bool[] adjMatrix;
     public Node[] nodes;
+    public int size;
     /*    private void OnEnable()
         {
             hideFlags = HideFlags.DontUnloadUnusedAsset;
@@ -26,10 +27,13 @@ public class Edge
 [System.Serializable]
 public class Matrix
 {
-    public bool[,] adjMatrix;
+    public bool content;
+    public Matrix(bool _value)
+    {
+        content = _value;
+    }
 
 }
-
 [System.Serializable]
 public class Node
 {
