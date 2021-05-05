@@ -27,7 +27,7 @@ public class ConstelationInSceneHelperEditor : Editor
 
         EditorGUILayout.BeginHorizontal();
         EditorGUILayout.LabelField("Constelation name");
-        baseScript.constelationPreset.conName = EditorGUILayout.TextField(baseScript.constelationPreset.conName);
+        baseScript.constelationPreset.ConName = EditorGUILayout.TextField(baseScript.constelationPreset.ConName);
         EditorGUILayout.EndHorizontal();
 
         /*        if (baseScript.constelationPreset.adjMatrix == null)
@@ -37,28 +37,28 @@ public class ConstelationInSceneHelperEditor : Editor
                 }*/
 
 
-        if (baseScript.constelationPreset.adjMatrix == null)
+        if (baseScript.constelationPreset.AdjMatrix == null)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label("How many nodes?");
 
-            baseScript.constelationPreset.size = EditorGUILayout.IntField(baseScript.constelationPreset.size);
+            baseScript.constelationPreset.Size = EditorGUILayout.IntField(baseScript.constelationPreset.Size);
             if (GUILayout.Button("Confirm"))
             {
 
-                baseScript.constelationPreset.nodes = new Node[baseScript.constelationPreset.size];
-                baseScript.constelationPreset.adjMatrix = new bool[baseScript.constelationPreset.size * baseScript.constelationPreset.size];
-                for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
+                baseScript.constelationPreset.Nodes = new Node[baseScript.constelationPreset.Size];
+                baseScript.constelationPreset.AdjMatrix = new bool[baseScript.constelationPreset.Size * baseScript.constelationPreset.Size];
+                for (int i = 0; i < baseScript.constelationPreset.Nodes.Length; i++)
                 {
                     Node node = new Node(new Vector3(i, 1f));
-                    baseScript.constelationPreset.nodes[i] = node;
+                    baseScript.constelationPreset.Nodes[i] = node;
                 }
                 serializedObject.ApplyModifiedProperties();
             }
 
             GUILayout.EndHorizontal();
         }
-        if (baseScript.constelationPreset.adjMatrix == null)
+        if (baseScript.constelationPreset.AdjMatrix == null)
         {
             return;
         }
@@ -68,19 +68,19 @@ public class ConstelationInSceneHelperEditor : Editor
         style.alignment = TextAnchor.MiddleCenter;
 
         GUILayout.Label(" ", GUILayout.Width(30));
-        for (int i = 0; i < baseScript.constelationPreset.size - 1; i++)
+        for (int i = 0; i < baseScript.constelationPreset.Size - 1; i++)
         {
             GUILayout.Label(i.ToString(), GUILayout.Width(29));
         }
         GUILayout.EndHorizontal();
 
-        if (baseScript.constelationPreset.adjMatrix.Length > 0)
+        if (baseScript.constelationPreset.AdjMatrix.Length > 0)
         {
-            for (int i = 0; i < baseScript.constelationPreset.size; i++)
+            for (int i = 0; i < baseScript.constelationPreset.Size; i++)
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                for (int j = 0; j < baseScript.constelationPreset.size; j++)
+                for (int j = 0; j < baseScript.constelationPreset.Size; j++)
                 {
                     if (i == j)
                     {
@@ -90,10 +90,10 @@ public class ConstelationInSceneHelperEditor : Editor
                     }
                     else
                     {
-                        int row = baseScript.constelationPreset.size * i;
-                        baseScript.constelationPreset.adjMatrix[row + j] = EditorGUILayout.Toggle(baseScript.constelationPreset.adjMatrix[row + j], GUILayout.Width(30));
-                        int inverted = baseScript.constelationPreset.size * j;
-                        baseScript.constelationPreset.adjMatrix[inverted+i] = baseScript.constelationPreset.adjMatrix[row + j];
+                        int row = baseScript.constelationPreset.Size * i;
+                        baseScript.constelationPreset.AdjMatrix[row + j] = EditorGUILayout.Toggle(baseScript.constelationPreset.AdjMatrix[row + j], GUILayout.Width(30));
+                        int inverted = baseScript.constelationPreset.Size * j;
+                        baseScript.constelationPreset.AdjMatrix[inverted+i] = baseScript.constelationPreset.AdjMatrix[row + j];
                         serializedObject.ApplyModifiedProperties();
                     }
                 }
@@ -131,15 +131,15 @@ public class ConstelationInSceneHelperEditor : Editor
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Make connection"))
                     {
-                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = true;
-                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = true;
+                        baseScript.constelationPreset.AdjMatrix[id_1 + 1 * id_2] = true;
+                        baseScript.constelationPreset.AdjMatrix[id_2 + 1 * id_1] = true;
                     }
 
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Delete connection"))
                     {
-                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = false;
-                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = false;
+                        baseScript.constelationPreset.AdjMatrix[id_1 + 1 * id_2] = false;
+                        baseScript.constelationPreset.AdjMatrix[id_2 + 1 * id_1] = false;
                     }
                 GUILayout.EndHorizontal();
 
@@ -195,6 +195,7 @@ public class ConstelationInSceneHelperEditor : Editor
         if (GUI.changed)
         {
             EditorUtility.SetDirty(target);
+            AssetDatabase.SaveAssets();
         }
     }
 
@@ -202,12 +203,12 @@ public class ConstelationInSceneHelperEditor : Editor
     private void OnSceneGUI()
     {
         ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
-        if (baseScript.constelationPreset == null || baseScript.constelationPreset.adjMatrix == null)
+        if (baseScript.constelationPreset == null || baseScript.constelationPreset.AdjMatrix == null)
             return;
-        if (baseScript.constelationPreset.nodes.Length == 0)
+        if (baseScript.constelationPreset.Nodes.Length == 0)
             return;
 
-        foreach (Node node in baseScript.constelationPreset.nodes)
+        foreach (Node node in baseScript.constelationPreset.Nodes)
         {
             node.position = Handles.PositionHandle(node.position, Quaternion.identity);
         }
@@ -215,7 +216,7 @@ public class ConstelationInSceneHelperEditor : Editor
 
     bool IsNodesExists(SOConstelationBase preset, int _id_1, int _id_2)
     {
-        if (_id_1 >= preset.nodes.Length || _id_2 >= preset.nodes.Length || _id_1 < 0 || _id_2 < 0 || id_1 == id_2)
+        if (_id_1 >= preset.Nodes.Length || _id_2 >= preset.Nodes.Length || _id_1 < 0 || _id_2 < 0 || id_1 == id_2)
             return false;
         return true;
     }
