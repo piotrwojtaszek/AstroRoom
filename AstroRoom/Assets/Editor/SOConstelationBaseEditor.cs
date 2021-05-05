@@ -9,7 +9,6 @@ public class SOConstelationBaseEditor : Editor
     public override void OnInspectorGUI()
     {
         base.DrawDefaultInspector();
-        SOConstelationBase baseScript = (SOConstelationBase)target;
 
 /*        if (baseScript.adjMatrix == null)
             return;*/

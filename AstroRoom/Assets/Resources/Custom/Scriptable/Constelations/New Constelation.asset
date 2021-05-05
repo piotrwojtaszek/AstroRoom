@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
   m_Name: New Constelation
   m_EditorClassIdentifier: 
-  conName: NEW
-  adjMatrix: 
-  nodes: []
-  size: 0
+  conName: swan
+  adjMatrix: 00000000000000010000000100010000000100000000000000
+  nodes:
+  - position: {x: 0, y: 1, z: 0}
+  - position: {x: 1, y: 1.3079381, z: 0}
+  - position: {x: 2, y: 0.5310704, z: 0}
+  - position: {x: 3, y: 1, z: 0}
+  - position: {x: 4, y: 1, z: 0}
+  size: 5

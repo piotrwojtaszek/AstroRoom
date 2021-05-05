@@ -4,22 +4,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Constelation", menuName = "Extended/Constelation")]
 public class SOConstelationBase : ScriptableObject
 {
-    public string ConName { get { return conName; } set { conName = value; } }
-    [SerializeField]
-    public string conName = "NEW";
-    public bool[] AdjMatrix { get { return adjMatrix; } set { adjMatrix = value; } }
-    [SerializeField]
-    private bool[] adjMatrix;
-    public Node[] Nodes { get { return nodes; } set { nodes = value; } }
-    [SerializeField]
-    private Node[] nodes;
-    public int Size { get { return size; } set { size = value; } }
-    [SerializeField]
-    private int size;
-        private void OnEnable()
-        {
-            hideFlags = HideFlags.DontUnloadUnusedAsset;
-        }
+    public string conName;
+    public bool[] adjMatrix;
+    public Node[] nodes;
+    public int size;
+
+    public void Save()
+    {
+        conName = "HI";
+        size = 10;
+    }
+
     /*    public int matrixSize;*/
 }
 [System.Serializable]
