@@ -76,11 +76,11 @@ public class ConstelationInSceneHelperEditor : Editor
 
         if (baseScript.constelationPreset.adjMatrix.Length > 0)
         {
-            for (int i = 0; i < baseScript.constelationPreset.size; i++)
+            for (int i = baseScript.constelationPreset.size-1; i > 0; i--)
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                for (int j = 0; j < baseScript.constelationPreset.size; j++)
+                for (int j = 0; j < i; j++)
                 {
                     if (i == j)
                     {
@@ -167,17 +167,11 @@ public class ConstelationInSceneHelperEditor : Editor
              }
              GUILayout.EndHorizontal();*/
         }
-
-        if (GUILayout.Button("Show matrix"))
-        {
-            ConDataSave.Save();
-        }
         serializedObject.ApplyModifiedProperties();
         if (GUI.changed)
         {
             string path = AssetDatabase.GetAssetPath(baseScript.constelationPreset).ToString();
-
-            SOConstelationBase temp = new SOConstelationBase();
+            SOConstelationBase temp = ScriptableObject.CreateInstance<SOConstelationBase>();
             temp.adjMatrix = baseScript.constelationPreset.adjMatrix;
             temp.conName = baseScript.constelationPreset.conName;
             temp.nodes= baseScript.constelationPreset.nodes;
@@ -187,6 +181,19 @@ public class ConstelationInSceneHelperEditor : Editor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             baseScript.constelationPreset = temp;
+            EditorUtility.SetDirty(target);
+            Debug.Log("CHANGED");
+        }
+
+        if (GUILayout.Button("RESET"))
+        {
+            baseScript.constelationPreset.adjMatrix = null;
+            baseScript.constelationPreset.nodes = null;
+            baseScript.constelationPreset.conName= null;
+            baseScript.constelationPreset.size = 0;
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+
             EditorUtility.SetDirty(target);
             Debug.Log("CHANGED");
         }
@@ -205,6 +212,7 @@ public class ConstelationInSceneHelperEditor : Editor
         {
             node.position = Handles.PositionHandle(node.position, Quaternion.identity);
         }
+
     }
 
     bool IsNodesExists(SOConstelationBase preset, int _id_1, int _id_2)
