@@ -8,14 +8,6 @@ public class SOConstelationBase : ScriptableObject
     public bool[] adjMatrix;
     public Node[] nodes;
     public int size;
-
-    public void Save()
-    {
-        conName = "HI";
-        size = 10;
-    }
-
-    /*    public int matrixSize;*/
 }
 [System.Serializable]
 public class Edge
