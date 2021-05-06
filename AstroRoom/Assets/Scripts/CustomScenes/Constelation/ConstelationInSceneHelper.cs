@@ -25,7 +25,7 @@ public class ConstelationInSceneHelper : MonoBehaviour
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
             for (int i = 0; i < constelationPreset.size; i++)
             {
-                Gizmos.DrawSphere(constelationPreset.nodes[i].position, .1f);
+                Gizmos.DrawSphere(constelationPreset.nodes[i].position, .075f);
                 GUIStyle style = new GUIStyle();
                 style.fontStyle = FontStyle.Bold;
                 style.normal.textColor = Color.red;

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
+  m_Name: New Constelation 2
+  m_EditorClassIdentifier: 
+  conName: "Wo\u017Anica"
+  adjMatrix: 00010000000000010001010000000001000001010000010000010000000001010000000000010000000100000000000100
+  nodes:
+  - position: {x: -1.4534892, y: 1.5824635, z: 0}
+  - position: {x: -0.7765411, y: 1.2430354, z: 0}
+  - position: {x: 0.17217498, y: 1.2091806, z: 0}
+  - position: {x: -0.79042256, y: 0.5174959, z: 0}
+  - position: {x: 0.19011503, y: 0.48075834, z: 0}
+  - position: {x: 0.83260274, y: 1.5894586, z: 0}
+  - position: {x: 1.4623771, y: 1.734787, z: 0}
+  size: 7
