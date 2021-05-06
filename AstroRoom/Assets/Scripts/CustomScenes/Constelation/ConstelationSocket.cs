@@ -8,7 +8,7 @@ public class ConstelationSocket : MonoBehaviour
     [HideInInspector]
     public int id;
     Color baseColor;
-    public static List<int> selected = new List<int>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class ConstelationSocket : MonoBehaviour
     }
     private void Update()
     {
-        if (selected.Contains(id))
+        if (ConstelationController.instance.selected.Contains(id))
         {
             GetComponent<Renderer>().material.color = Color.red;
 
@@ -36,28 +36,19 @@ public class ConstelationSocket : MonoBehaviour
 
     public void SocketSelect()
     {
-        if (!selected.Contains(id))
+        if (!ConstelationController.instance.selected.Contains(id))
         {
-            if (selected.Count == 1)
-                AddEdge();
+            if (ConstelationController.instance.selected.Count == 2)
+                ConstelationController.instance.selected.RemoveAt(0);
             else
-                /*                selected.RemoveAt(0);*/
-                selected.Add(id);
+                ConstelationController.instance.selected.Add(id);
 
         }
         else
         {
-            selected.Remove(id);
+            ConstelationController.instance.selected.Remove(id);
         }
-    }
-    public void AddEdge()
-    {
-        selected.Add(id);
-        GameObject line = Instantiate(Resources.Load("Custom/Scriptable/Constelations/ConstelationEdgePrefab") as GameObject, transform);
-        LineRenderer lineRenderer = line.GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0, ConstelationController.instance.constelationPreset.nodes[selected[0]].position + new Vector3(0, 0, transform.position.z));
-        lineRenderer.SetPosition(1, ConstelationController.instance.constelationPreset.nodes[selected[1]].position + new Vector3(0, 0, transform.position.z));
-        selected.Clear();
+        ConstelationController.instance.CheckConnection();
     }
     public void SocketDeselect()
     {
