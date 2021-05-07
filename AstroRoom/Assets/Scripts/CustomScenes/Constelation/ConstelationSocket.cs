@@ -2,27 +2,31 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
+using UnityEngine.Events;
 public class ConstelationSocket : MonoBehaviour
 {
     [HideInInspector]
     public int id;
     Color baseColor;
+    public InputActionReference teleportationActivationReference;
 
+    [Space]
+    public UnityEvent onTeleportationActive;
+    public UnityEvent onTeleportationCancel;
     // Start is called before the first frame update
     void Start()
-    {
-        /*        ConstelationEvents.current.onSocketTriggerEnter += SocketTriggerEnter;
-                ConstelationEvents.current.onSocketTriggerExit += SocketTriggerExit;*/
+    {//a hdyby dodawaæ na hover Action do triggera , a na exit usuwaæ ?????
         baseColor = GetComponent<Renderer>().material.color;
-    }
 
-    public void SocketTriggerExit(int id)
-    {
-        /*GetComponent<Renderer>().material.color = Color.red;*/
+
+        teleportationActivationReference.action.performed += TeleportationActive;
+        teleportationActivationReference.action.canceled += TeleportationCancel;
     }
     private void Update()
     {
+
+        //zamiast tego zrobiæ Action w ConstelationCOntroller która jest wywo³ywana w momencie zaznaczenia
         if (ConstelationController.instance.selected.Contains(id))
         {
             GetComponent<Renderer>().material.color = Color.red;
@@ -49,10 +53,6 @@ public class ConstelationSocket : MonoBehaviour
             ConstelationController.instance.selected.Remove(id);
         }
         ConstelationController.instance.CheckConnection();
-    }
-    public void SocketDeselect()
-    {
-        GetComponent<Renderer>().material.color = baseColor;
     }
 
 
