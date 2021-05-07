@@ -16,10 +16,16 @@ public class TeleportController : MonoBehaviour
     public UnityEvent onTeleportationActive;
     public UnityEvent onTeleportationCancel;
 
-    private void Start()
+    private void OnEnable()
     {
         teleportationActivationReference.action.performed += TeleportationActive;
         teleportationActivationReference.action.canceled += TeleportationCancel;
+    }
+
+    private void OnDisable()
+    {
+        teleportationActivationReference.action.performed -= TeleportationActive;
+        teleportationActivationReference.action.canceled -= TeleportationCancel;
     }
 
     private void TeleportationCancel(InputAction.CallbackContext obj) => Invoke("DeactivateTeleporter", .1f);
