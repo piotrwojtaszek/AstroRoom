@@ -7,7 +7,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class InteractionController : MonoBehaviour
 {
     public ActionBasedSnapTurnProvider locomotionSnapProvider;
-    public GameObject teleportationController;
 
     public InputActionReference interactionActivationReference;
 
@@ -23,18 +22,15 @@ public class InteractionController : MonoBehaviour
 
     private void InteractionCancel(InputAction.CallbackContext obj) => onGrabCancel.Invoke();
 
-    private void DeactivateTeleporter() => onGrabCancel.Invoke();
-
     private void InteractionActive(InputAction.CallbackContext obj) => onGrabActive.Invoke();
 
 
-    public void DisableSnapTurning()
-    {
-        locomotionSnapProvider.rightHandSnapTurnAction.action.Disable();
-    }
+    public void DisableSnapTurningRight() => locomotionSnapProvider.rightHandSnapTurnAction.action.Disable();
 
-    public void EnableSnapTurning()
-    {
-        locomotionSnapProvider.rightHandSnapTurnAction.action.Enable();
-    }
+    public void EnableSnapTurningRight() => locomotionSnapProvider.rightHandSnapTurnAction.action.Enable();
+
+    public void DisableSnapTurningLeft() => locomotionSnapProvider.leftHandSnapTurnAction.action.Disable();
+
+    public void EnableSnapTurningLeft() => locomotionSnapProvider.leftHandSnapTurnAction.action.Enable();
+
 }
