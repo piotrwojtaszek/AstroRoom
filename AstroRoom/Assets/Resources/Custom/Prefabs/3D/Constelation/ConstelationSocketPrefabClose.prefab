@@ -117,22 +117,10 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7135306576705405766}
         m_TargetAssemblyTypeName: ConstelationSocket, Assembly-CSharp
-        m_MethodName: SocketSelect
+        m_MethodName: OnHoverEnter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -142,6 +130,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7135306576705405766}
+        m_TargetAssemblyTypeName: ConstelationSocket, Assembly-CSharp
+        m_MethodName: OnHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -191,3 +203,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  socketActivationReference:
+  - {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  - {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  onSocketHoverEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7135306576705405766}
+        m_TargetAssemblyTypeName: ConstelationSocket, Assembly-CSharp
+        m_MethodName: SocketSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSocketHoverExit:
+    m_PersistentCalls:
+      m_Calls: []

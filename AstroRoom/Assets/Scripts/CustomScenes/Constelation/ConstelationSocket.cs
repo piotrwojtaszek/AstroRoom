@@ -9,19 +9,16 @@ public class ConstelationSocket : MonoBehaviour
     [HideInInspector]
     public int id;
     Color baseColor;
-    public InputActionReference teleportationActivationReference;
+    public List<InputActionReference> socketActivationReference;
+
 
     [Space]
-    public UnityEvent onTeleportationActive;
-    public UnityEvent onTeleportationCancel;
+    public UnityEvent<int> onSocketHoverEnter;
+    public UnityEvent<int> onSocketHoverExit;
     // Start is called before the first frame update
     void Start()
     {//a hdyby dodawaæ na hover Action do triggera , a na exit usuwaæ ?????
         baseColor = GetComponent<Renderer>().material.color;
-
-
-        teleportationActivationReference.action.performed += TeleportationActive;
-        teleportationActivationReference.action.canceled += TeleportationCancel;
     }
     private void Update()
     {
@@ -55,5 +52,46 @@ public class ConstelationSocket : MonoBehaviour
         ConstelationController.instance.CheckConnection();
     }
 
+    //na hover += a na exit -=
+    public void OnHoverEnter()
+    {
+        foreach (InputActionReference inputAction in socketActivationReference)
+        {
+            inputAction.action.performed += SocketHoverEnter;
+        }
 
+        /*  socketActivationReference.action.canceled += SocketHoverExit;*/
+
+    }
+
+    public void OnHoverExit()
+    {
+        foreach (InputActionReference inputAction in socketActivationReference)
+        {
+            inputAction.action.performed -= SocketHoverEnter;
+            /*socketActivationReference.action.canceled -= SocketHoverExit;*/
+        }
+
+    }
+
+
+    private void SocketHoverExit(InputAction.CallbackContext obj)
+    {
+        onSocketHoverExit.Invoke(id);
+    }
+
+
+    private void SocketHoverEnter(InputAction.CallbackContext obj)
+    {
+        onSocketHoverEnter.Invoke(id);
+    }
+
+    public void EnterMessage()
+    {
+        Debug.Log("Hover enter");
+    }
+    public void ExitMessage()
+    {
+        Debug.Log("Hover exit");
+    }
 }

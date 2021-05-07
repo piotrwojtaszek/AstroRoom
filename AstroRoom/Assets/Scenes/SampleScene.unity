@@ -264,36 +264,6 @@ Transform:
   m_Father: {fileID: 80138577}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &404702837
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 404702838}
-  m_Layer: 0
-  m_Name: ConstelationPrefabSocketFar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &404702838
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404702837}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4377759, y: 1.4517603, z: 18.450361}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525721599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,7 +1863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1489845179
 Transform:
   m_ObjectHideFlags: 0
@@ -1921,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   constelationPreset: {fileID: 11400000, guid: 6a16d42cae4e1fb4ba59f1108973a64b, type: 2}
-  socketPrefab: {fileID: 7135306576705405775, guid: dc041f397b9d434469feb75640675ee7, type: 3}
+  socketPrefab: {fileID: 8742799652838827574, guid: c1e217297230255498dcba825c496eec, type: 3}
   edgePrefab: {fileID: 4018691394387136339, guid: 92bd9a0774cbda344b6189284b80bd94, type: 3}
 --- !u!1 &1499450432
 GameObject:
@@ -2037,8 +2007,8 @@ Camera:
   m_GameObject: {fileID: 1515538530}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0.051362682, b: 0.13207549, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
