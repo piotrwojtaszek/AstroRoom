@@ -194,6 +194,7 @@ public class ConstelationInSceneHelperEditor : Editor
         if (gizmos)
             foreach (Node node in baseScript.constelationPreset.nodes)
             {
+                // w sumie to powinno byæ node.position + transform.position, ale zrobi siê z teog nieskoñcona pêtla wiêæ poiwnno byæ jakiœbufor vec3 temp = handles, a potem node.position = temp - transform.position;
                 node.position = Handles.PositionHandle(node.position, Quaternion.identity);
             }
     }
