@@ -209,8 +209,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291885427}
-  m_LocalRotation: {x: -0, y: -0.21345554, z: -0, w: 0.97695285}
-  m_LocalPosition: {x: 5.267108, y: 0, z: -10.782281}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.997575, y: 0, z: 0.24125805}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -232,7 +232,7 @@ MonoBehaviour:
   a: 12
   speed: 1.6
   b: 12
-  orbits: 1.91
+  orbits: 0
 --- !u!135 &291885430
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -339,7 +339,7 @@ TrailRenderer:
   m_Time: 10
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -367,8 +367,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -443,8 +443,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330914557}
-  m_LocalRotation: {x: 0, y: -0.7875341, z: -0, w: 0.61627114}
-  m_LocalPosition: {x: 28.145815, y: 0, z: 6.9866347}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 28.999996, y: 0, z: 0.012390442}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -466,7 +466,7 @@ MonoBehaviour:
   a: 29
   speed: 0.034
   b: 29
-  orbits: 0.04
+  orbits: 0
 --- !u!135 &330914560
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -601,8 +601,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -677,8 +677,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408511867}
-  m_LocalRotation: {x: -0, y: 0.59744936, z: -0, w: 0.8019066}
-  m_LocalPosition: {x: -9.391611, y: 0, z: -3.434769}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 9.98737, y: 0, z: 0.5024432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -700,7 +700,7 @@ MonoBehaviour:
   a: 10
   speed: 4
   b: 10
-  orbits: 4.77
+  orbits: 0.01
 --- !u!135 &408511870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ TrailRenderer:
   m_Time: 2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -835,8 +835,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -911,8 +911,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491960064}
-  m_LocalRotation: {x: 0, y: -0.73674583, z: -0, w: 0.6761699}
-  m_LocalPosition: {x: 35.86734, y: 0, z: 3.087697}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 36, y: 0, z: 0.0054286723}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -934,7 +934,7 @@ MonoBehaviour:
   a: 36
   speed: 0.012
   b: 36
-  orbits: 0.01
+  orbits: 0
 --- !u!135 &491960067
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1069,8 +1069,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1145,8 +1145,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242794569}
-  m_LocalRotation: {x: -0, y: 0.4280856, z: -0, w: 0.90373826}
-  m_LocalPosition: {x: -12.297561, y: 0, z: -10.235722}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 15.999637, y: 0, z: 0.10776839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   a: 16
   speed: 0.536
   b: 16
-  orbits: 0.64
+  orbits: 0
 --- !u!135 &1242794572
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1275,7 +1275,7 @@ TrailRenderer:
   m_Time: 25
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1303,8 +1303,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1379,8 +1379,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352513740}
-  m_LocalRotation: {x: -0, y: 0.8777008, z: -0, w: -0.47920898}
-  m_LocalPosition: {x: 18.492098, y: 0, z: 11.918152}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 21.999989, y: 0, z: 0.02211681}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1402,7 +1402,7 @@ MonoBehaviour:
   a: 22
   speed: 0.08
   b: 22
-  orbits: 0.1
+  orbits: 0
 --- !u!135 &1352513743
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1537,8 +1537,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1595,21 +1595,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleportation Area
       objectReference: {fileID: 0}
+    - target: {fileID: 2961924368876355276, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355278, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355278, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.998965
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355278, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.998965
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355278, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8.998965
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355278, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1682,8 +1686,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701040153}
-  m_LocalRotation: {x: 0, y: -0.722092, z: -0, w: 0.69179714}
-  m_LocalPosition: {x: 44.958527, y: 0, z: 1.931591}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 45, y: 0, z: 0.0033929201}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1705,7 +1709,7 @@ MonoBehaviour:
   a: 45
   speed: 0.006
   b: 45
-  orbits: 0.01
+  orbits: 0
 --- !u!135 &1701040156
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1840,8 +1844,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1926,7 +1930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787002998}
   m_LocalRotation: {x: -0, y: -0.02240811, z: -0, w: 0.99974895}
-  m_LocalPosition: {x: 0, y: 3.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1920929924}
@@ -2065,8 +2069,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992562552}
-  m_LocalRotation: {x: -0, y: 0.937149, z: -0, w: -0.34892958}
-  m_LocalPosition: {x: 8.994868, y: 0, z: 10.72811}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 13.998895, y: 0, z: 0.17592457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -2088,7 +2092,7 @@ MonoBehaviour:
   a: 14
   speed: 1
   b: 14
-  orbits: 1.19
+  orbits: 0
 --- !u!135 &1992562555
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2195,7 +2199,7 @@ TrailRenderer:
   m_Time: 20
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.25
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -2223,8 +2227,8 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 0.25882354}
-      key1: {r: 1, g: 1, b: 1, a: 0.8627451}
-      key2: {r: 1, g: 1, b: 1, a: 0.8627451}
+      key1: {r: 1, g: 1, b: 1, a: 0.5882353}
+      key2: {r: 1, g: 1, b: 1, a: 0.5882353}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
