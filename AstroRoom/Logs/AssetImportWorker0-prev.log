@@ -15,12 +15,12 @@ C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49630
+50109
 Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
 C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.36 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 1.05 ms.
+Refreshing native plugins compatible for Editor in 54.16 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.87 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
@@ -36,23 +36,23 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001940 seconds.
+Registered in 0.001821 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 52.73 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
+Refreshing native plugins compatible for Editor in 49.43 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.559 seconds
+- Completed reload, in  1.539 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002600 seconds.
+Registered in 0.002559 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.19 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
+Refreshing native plugins compatible for Editor in 49.66 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -64,134 +64,60 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
+- Completed reload, in  0.916 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Unloading 2991 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 142.6 MB.
-System memory in use after: 142.8 MB.
+System memory in use before: 142.7 MB.
+System memory in use after: 142.9 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3451.
-Total: 2.640300 ms (FindLiveObjects: 0.367100 ms CreateObjectMapping: 0.078500 ms MarkObjects: 2.119000 ms  DeleteObjects: 0.074600 ms)
+Total: 2.226700 ms (FindLiveObjects: 0.300700 ms CreateObjectMapping: 0.078400 ms MarkObjects: 1.787900 ms  DeleteObjects: 0.058700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08626495fbe86d4927ef2c14236b2d7') in 0.207940 seconds
-  Import took 0.213126 seconds .
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationPrefabSocketFar.prefab
+  artifactKey: Guid(c1e217297230255498dcba825c496eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationPrefabSocketFar.prefab using Guid(c1e217297230255498dcba825c496eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89fec4328ccd0e0e00cfaec2edfc1cc') in 0.166765 seconds
+  Import took 0.171171 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.087243 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa9a08d9a273bfa570ae00c9169c611') in 0.019497 seconds
-  Import took 0.024391 seconds .
+  Time since last request: 0.000225 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationEdgePrefab.prefab
+  artifactKey: Guid(92bd9a0774cbda344b6189284b80bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationEdgePrefab.prefab using Guid(92bd9a0774cbda344b6189284b80bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3535b692fe7b91c0fe530f71c95884') in 0.003603 seconds
+  Import took 0.007298 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.786940 seconds.
+  Time since last request: 0.000198 seconds.
   path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
   artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cab675510300dc914a9e080f23cd4a8') in 0.008785 seconds
-  Import took 0.014545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.779023 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86bc901227fe49ce822416d520bfbb9') in 0.011603 seconds
-  Import took 0.017149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.592371 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59421e560a3649221d95d19d708879c3') in 0.009063 seconds
-  Import took 0.013781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.808843 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdb2fdc2e2c09787c48a344290f204c') in 0.008426 seconds
-  Import took 0.013399 seconds .
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7526e0389b9ee1069319361c77b01d47') in 0.038762 seconds
+  Import took 0.042580 seconds .
 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002433 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.842 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.2 MB.
-System memory in use after: 138.4 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.1 MB.
+System memory in use after: 83.4 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3501.
-Total: 2.175900 ms (FindLiveObjects: 0.271400 ms CreateObjectMapping: 0.072200 ms MarkObjects: 1.784500 ms  DeleteObjects: 0.046800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 52.682399 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c00c51cc70ddf5298c9cc468d6a3d1') in 0.396195 seconds
-  Import took 0.400868 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.343791 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80ac4e2717774f7fc181942ed23734c') in 0.009088 seconds
-  Import took 0.013719 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.931242 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abba2d15cf77f1c12bf1100e4b93908') in 0.008023 seconds
-  Import took 0.012854 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.029447 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f170ae1e42e20570481ee22fe4fad6e') in 0.007824 seconds
-  Import took 0.012118 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3525.
+Total: 2.616900 ms (FindLiveObjects: 0.285100 ms CreateObjectMapping: 0.074300 ms MarkObjects: 2.211400 ms  DeleteObjects: 0.045300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002424 seconds.
+Registered in 0.002336 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
@@ -203,33 +129,191 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.854 seconds
+- Completed reload, in  0.863 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
 Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.4 MB.
-System memory in use after: 138.6 MB.
+System memory in use before: 138.2 MB.
+System memory in use after: 138.4 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3541.
-Total: 2.205800 ms (FindLiveObjects: 0.265600 ms CreateObjectMapping: 0.073800 ms MarkObjects: 1.818400 ms  DeleteObjects: 0.047200 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3502.
+Total: 2.548300 ms (FindLiveObjects: 0.341500 ms CreateObjectMapping: 0.076100 ms MarkObjects: 2.071300 ms  DeleteObjects: 0.058200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 117.603716 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80746c6e7a9f75fd3d7373f8b375e107') in 0.154976 seconds
-  Import took 0.159678 seconds .
+  Time since last request: 216.601234 seconds.
+  path: Assets/Scripts/Player/Rig/InteractionController.cs
+  artifactKey: Guid(0cc8c7a81f795fc41a3d7268dd9fbfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/Rig/InteractionController.cs using Guid(0cc8c7a81f795fc41a3d7268dd9fbfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485e35e29bf6251f4e65a0a8357afbc9') in 0.007831 seconds
+  Import took 0.012388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008942 seconds.
+  path: Assets/Scripts/Player/Rig/InteractionController.cs
+  artifactKey: Guid(0cc8c7a81f795fc41a3d7268dd9fbfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player/Rig/InteractionController.cs using Guid(0cc8c7a81f795fc41a3d7268dd9fbfe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485e35e29bf6251f4e65a0a8357afbc9') in 0.001658 seconds
+  Import took 0.005591 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002648 seconds.
+Registered in 0.003091 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.860 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.3 MB.
+System memory in use after: 138.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3507.
+Total: 2.252000 ms (FindLiveObjects: 0.325700 ms CreateObjectMapping: 0.073000 ms MarkObjects: 1.802700 ms  DeleteObjects: 0.049800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.3 MB.
+System memory in use after: 138.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3511.
+Total: 2.560400 ms (FindLiveObjects: 0.284200 ms CreateObjectMapping: 0.074700 ms MarkObjects: 2.137300 ms  DeleteObjects: 0.063400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002623 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.874 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.3 MB.
+System memory in use after: 138.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3515.
+Total: 2.511700 ms (FindLiveObjects: 0.307400 ms CreateObjectMapping: 0.074100 ms MarkObjects: 2.067700 ms  DeleteObjects: 0.061600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3519.
+Total: 2.294100 ms (FindLiveObjects: 0.278200 ms CreateObjectMapping: 0.075700 ms MarkObjects: 1.886400 ms  DeleteObjects: 0.052700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002510 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.863 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3523.
+Total: 2.210600 ms (FindLiveObjects: 0.281700 ms CreateObjectMapping: 0.072700 ms MarkObjects: 1.806300 ms  DeleteObjects: 0.048900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002446 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
@@ -241,57 +325,85 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
+- Completed reload, in  0.895 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.5 MB.
-System memory in use after: 138.7 MB.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3581.
-Total: 2.318000 ms (FindLiveObjects: 0.290600 ms CreateObjectMapping: 0.075400 ms MarkObjects: 1.898900 ms  DeleteObjects: 0.052300 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3527.
+Total: 2.547100 ms (FindLiveObjects: 0.474200 ms CreateObjectMapping: 0.081100 ms MarkObjects: 1.931900 ms  DeleteObjects: 0.058900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
-Received Import Request.
-  Time since last request: 135.071840 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ab0a4d065b090e1204a9b3549613e4') in 0.157965 seconds
-  Import took 0.162669 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
 
-========================================================================
-Received Import Request.
-  Time since last request: 11.624013 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5733d736c7d4dea44c43628472dfe8ec') in 0.007522 seconds
-  Import took 0.012363 seconds .
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
-========================================================================
-Received Import Request.
-  Time since last request: 9.500291 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1fbdeaf1336eed7048333c0fa7ad4b1') in 0.012021 seconds
-  Import took 0.016753 seconds .
+Mono: successfully reloaded assembly
+- Completed reload, in  0.870 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 5.637064 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9c5046265041bb40e791be872855e2') in 0.008437 seconds
-  Import took 0.013028 seconds .
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3531.
+Total: 2.235800 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.074400 ms MarkObjects: 1.823500 ms  DeleteObjects: 0.053000 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002704 seconds.
+Registered in 0.002428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3535.
+Total: 2.410800 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.076100 ms MarkObjects: 1.968000 ms  DeleteObjects: 0.058000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002574 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
@@ -303,95 +415,18 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.891 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.7 MB.
-System memory in use after: 138.9 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3621.
-Total: 2.288500 ms (FindLiveObjects: 0.270300 ms CreateObjectMapping: 0.074300 ms MarkObjects: 1.892800 ms  DeleteObjects: 0.050300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 142.725096 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4318773185871e98826b595c918f49') in 0.155796 seconds
-  Import took 0.162288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.029910 seconds.
-  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab
-  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefabClose.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5c82f2f3061dfcfd8318032bcbfdda') in 0.007958 seconds
-  Import took 0.012370 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002420 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
 - Completed reload, in  0.881 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.8 MB.
-System memory in use after: 139.0 MB.
+Unloading 2857 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 138.6 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3661.
-Total: 5.037000 ms (FindLiveObjects: 0.332200 ms CreateObjectMapping: 0.078800 ms MarkObjects: 4.452800 ms  DeleteObjects: 0.171200 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3539.
+Total: 2.429200 ms (FindLiveObjects: 0.258800 ms CreateObjectMapping: 0.073000 ms MarkObjects: 2.031800 ms  DeleteObjects: 0.064300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002369 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
-
-(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.867 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.8 MB.
-System memory in use after: 139.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3665.
-Total: 2.589800 ms (FindLiveObjects: 0.366500 ms CreateObjectMapping: 0.080300 ms MarkObjects: 2.086200 ms  DeleteObjects: 0.055700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

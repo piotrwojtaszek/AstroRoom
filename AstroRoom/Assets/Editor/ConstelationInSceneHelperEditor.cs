@@ -7,6 +7,8 @@ public class ConstelationInSceneHelperEditor : Editor
 {
     SerializedProperty constelationPreset;
     bool gizmos = true;
+    Vector3 snap;
+
     void OnEnable()
     {
         constelationPreset = serializedObject.FindProperty("constelationPreset");
@@ -17,13 +19,15 @@ public class ConstelationInSceneHelperEditor : Editor
         serializedObject.Update();
         ConstelationInSceneHelper baseScript = (ConstelationInSceneHelper)target;
 
-        EditorGUILayout.PropertyField(constelationPreset, new GUIContent("Constelation preset"));
+        /*EditorGUILayout.LabelField("Constelation preset", GUILayout.Width(300));*/
+        EditorGUILayout.PropertyField(constelationPreset);
         serializedObject.ApplyModifiedProperties();
         if (baseScript.constelationPreset == null)
             return;
 
+        GUILayout.Space(15);
         EditorGUILayout.BeginHorizontal();
-        EditorGUILayout.LabelField("Constelation name");
+        EditorGUILayout.LabelField("Constellation name");
         baseScript.constelationPreset.conName = EditorGUILayout.TextField(baseScript.constelationPreset.conName);
         EditorGUILayout.EndHorizontal();
 
@@ -40,7 +44,7 @@ public class ConstelationInSceneHelperEditor : Editor
                 baseScript.constelationPreset.adjMatrix = new bool[baseScript.constelationPreset.size * baseScript.constelationPreset.size];
                 for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
                 {
-                    Node node = new Node(new Vector3(i, 1f));
+                    Node node = new Node(new Vector3(i, 1f), 0.5f);
                     baseScript.constelationPreset.nodes[i] = node;
                 }
                 serializedObject.ApplyModifiedProperties();
@@ -52,6 +56,9 @@ public class ConstelationInSceneHelperEditor : Editor
         {
             return;
         }
+
+        GUILayout.Space(15);
+        EditorGUILayout.LabelField("Constellation connections");
 
         GUILayout.BeginHorizontal();
         GUIStyle style = new GUIStyle();
@@ -90,7 +97,7 @@ public class ConstelationInSceneHelperEditor : Editor
                 GUILayout.EndHorizontal();
             }
 
-            GUILayout.Space(20);
+            GUILayout.Space(30);
             /*                GUIStyle connectionStyle = new GUIStyle();
                             connectionStyle.alignment = TextAnchor.MiddleCenter;
                             connectionStyle.normal.textColor = Color.white;
@@ -124,7 +131,51 @@ public class ConstelationInSceneHelperEditor : Editor
                                     baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = false;
                                 }*//*
                             GUILayout.EndHorizontal();*/
-            GUILayout.Space(20);
+
+            GUILayout.Label("Size of stars");
+            EditorGUILayout.Space(10);
+            for (int i = 0; i < baseScript.constelationPreset.size; i++)
+            {
+                GUILayout.BeginHorizontal();
+                GUILayout.Label(i.ToString(), GUILayout.Width(30));
+                baseScript.constelationPreset.nodes[i].size = EditorGUILayout.Slider(baseScript.constelationPreset.nodes[i].size, 0.1f, .75f, GUILayout.MaxWidth(400));
+                GUILayout.EndHorizontal();
+            }
+
+            GUILayout.Space(30);
+            GUILayout.Label("Nodes positions");
+            EditorGUILayout.Space(10);
+            for (int i = 0; i < baseScript.constelationPreset.size; i++)
+            {
+                GUILayout.BeginHorizontal();
+                GUILayout.Label(i.ToString(), GUILayout.Width(30));
+                baseScript.constelationPreset.nodes[i].position.x = EditorGUILayout.FloatField(baseScript.constelationPreset.nodes[i].position.x, GUILayout.MaxWidth(100));
+                baseScript.constelationPreset.nodes[i].position.y = EditorGUILayout.FloatField(baseScript.constelationPreset.nodes[i].position.y, GUILayout.MaxWidth(100));
+                baseScript.constelationPreset.nodes[i].position.z = EditorGUILayout.FloatField(baseScript.constelationPreset.nodes[i].position.z, GUILayout.MaxWidth(100));
+                GUILayout.EndHorizontal();
+
+            }
+
+            GUILayout.Space(30);
+
+            GUILayout.Label("Move entire constellation");
+            GUILayout.BeginHorizontal();
+            
+            GUILayout.Label("Vector" ,GUILayout.MaxWidth(60));
+            GUILayout.Label("X", GUILayout.MaxWidth(12));
+            snap.x = EditorGUILayout.FloatField(snap.x, GUILayout.MaxWidth(50));
+            GUILayout.Label("Y", GUILayout.MaxWidth(12));
+            snap.y = EditorGUILayout.FloatField(snap.y, GUILayout.MaxWidth(50));
+            GUILayout.Label("Z", GUILayout.MaxWidth(12));
+            snap.z = EditorGUILayout.FloatField(snap.z, GUILayout.MaxWidth(50));
+            if (GUILayout.Button("MOVE", GUILayout.MaxWidth(75)))
+            {
+                MoveAllStars(snap, baseScript);
+            }
+
+            GUILayout.EndHorizontal();
+
+            GUILayout.Space(30);
             if (GUILayout.Button("GIZMOS VISIBILITY"))
             {
                 gizmos = !gizmos;
@@ -148,7 +199,7 @@ public class ConstelationInSceneHelperEditor : Editor
             }
             GUILayout.Space(40);
 
-            if (GUILayout.Button("RESET"))
+            /*if (GUILayout.Button("RESET"))
             {
                 baseScript.constelationPreset.adjMatrix = null;
                 baseScript.constelationPreset.nodes = null;
@@ -157,24 +208,25 @@ public class ConstelationInSceneHelperEditor : Editor
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
                 EditorUtility.SetDirty(target);
-            }
+
+            }*/
             GUILayout.Space(20);
         }
 
 
         if (GUI.changed)
         {
-/*            string path = AssetDatabase.GetAssetPath(baseScript.constelationPreset).ToString();
-            SOConstelationBase temp = ScriptableObject.CreateInstance<SOConstelationBase>();
-            temp.adjMatrix = baseScript.constelationPreset.adjMatrix;
-            temp.conName = baseScript.constelationPreset.conName;
-            temp.nodes = baseScript.constelationPreset.nodes;
-            temp.size = baseScript.constelationPreset.size;
-            AssetDatabase.DeleteAsset(path);
-            AssetDatabase.CreateAsset(temp, path);
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-            baseScript.constelationPreset = temp;*/
+            /*            string path = AssetDatabase.GetAssetPath(baseScript.constelationPreset).ToString();
+                        SOConstelationBase temp = ScriptableObject.CreateInstance<SOConstelationBase>();
+                        temp.adjMatrix = baseScript.constelationPreset.adjMatrix;
+                        temp.conName = baseScript.constelationPreset.conName;
+                        temp.nodes = baseScript.constelationPreset.nodes;
+                        temp.size = baseScript.constelationPreset.size;
+                        AssetDatabase.DeleteAsset(path);
+                        AssetDatabase.CreateAsset(temp, path);
+                        AssetDatabase.SaveAssets();
+                        AssetDatabase.Refresh();
+                        baseScript.constelationPreset = temp;*/
             EditorUtility.SetDirty(target);
         }
 
@@ -195,7 +247,9 @@ public class ConstelationInSceneHelperEditor : Editor
             foreach (Node node in baseScript.constelationPreset.nodes)
             {
                 // w sumie to powinno byæ node.position + transform.position, ale zrobi siê z teog nieskoñcona pêtla wiêæ poiwnno byæ jakiœbufor vec3 temp = handles, a potem node.position = temp - transform.position;
-                node.position = Handles.PositionHandle(node.position, Quaternion.identity);
+                Vector3 buffor = Handles.PositionHandle(node.position + baseScript.transform.position, Quaternion.identity);
+                node.position = buffor - baseScript.transform.position;
+                Repaint();
             }
     }
 
@@ -205,4 +259,12 @@ public class ConstelationInSceneHelperEditor : Editor
                 return false;
             return true;
         }*/
+
+    void MoveAllStars(Vector3 delta, ConstelationInSceneHelper baseScript)
+    {
+        for(int i =0;i<baseScript.constelationPreset.size;i++)
+        {
+            baseScript.constelationPreset.nodes[i].position += delta;
+        }
+    }
 }
