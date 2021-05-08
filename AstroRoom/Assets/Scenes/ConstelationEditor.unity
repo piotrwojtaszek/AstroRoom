@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405051393}
+  - component: {fileID: 405051392}
   m_Layer: 0
   m_Name: Socket
   m_TagString: Untagged
@@ -139,6 +140,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &405051392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405051391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50c0f3120e45614180f10e785349c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constelationPreset: {fileID: 0}
+  socketPrefab: {fileID: 7135306576705405775, guid: dc041f397b9d434469feb75640675ee7, type: 3}
+  edgePrefab: {fileID: 4018691394387136339, guid: 92bd9a0774cbda344b6189284b80bd94, type: 3}
+  selected: 
 --- !u!4 &405051393
 Transform:
   m_ObjectHideFlags: 0
@@ -147,7 +164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405051391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2442173, y: 1.8081098, z: 16.826729}
+  m_LocalPosition: {x: 0, y: 1.80801, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

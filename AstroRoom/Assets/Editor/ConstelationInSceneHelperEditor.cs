@@ -132,6 +132,17 @@ public class ConstelationInSceneHelperEditor : Editor
                                 }*//*
                             GUILayout.EndHorizontal();*/
 
+            GUILayout.Label("Stars name");
+            EditorGUILayout.Space(10);
+            for (int i = 0; i < baseScript.constelationPreset.size; i++)
+            {
+                GUILayout.BeginHorizontal();
+                GUILayout.Label(i.ToString(), GUILayout.Width(30));
+                baseScript.constelationPreset.nodes[i].starName = EditorGUILayout.TextField(baseScript.constelationPreset.nodes[i].starName, GUILayout.MaxWidth(400));
+                GUILayout.EndHorizontal();
+            }
+
+            GUILayout.Space(30);
             GUILayout.Label("Size of stars");
             EditorGUILayout.Space(10);
             for (int i = 0; i < baseScript.constelationPreset.size; i++)
@@ -160,8 +171,8 @@ public class ConstelationInSceneHelperEditor : Editor
 
             GUILayout.Label("Move entire constellation");
             GUILayout.BeginHorizontal();
-            
-            GUILayout.Label("Vector" ,GUILayout.MaxWidth(60));
+
+            GUILayout.Label("Vector", GUILayout.MaxWidth(60));
             GUILayout.Label("X", GUILayout.MaxWidth(12));
             snap.x = EditorGUILayout.FloatField(snap.x, GUILayout.MaxWidth(50));
             GUILayout.Label("Y", GUILayout.MaxWidth(12));
@@ -262,7 +273,7 @@ public class ConstelationInSceneHelperEditor : Editor
 
     void MoveAllStars(Vector3 delta, ConstelationInSceneHelper baseScript)
     {
-        for(int i =0;i<baseScript.constelationPreset.size;i++)
+        for (int i = 0; i < baseScript.constelationPreset.size; i++)
         {
             baseScript.constelationPreset.nodes[i].position += delta;
         }

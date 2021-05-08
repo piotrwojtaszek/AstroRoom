@@ -53,7 +53,8 @@ public class IConstealtion : MonoBehaviour
         {
             GameObject nodeObj = Instantiate(socketPrefab, transform);
             nodeObj.transform.localPosition = node.position;
-            nodeObj.GetComponent<ConstelationSocket>().id = i;
+            nodeObj.transform.localScale = Vector3.one * node.size;
+            nodeObj.GetComponent<INode>().id = i;
             nodes[i] = nodeObj.transform;
             i++;
         }

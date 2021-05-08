@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
-  m_Name: New Constelation
+  m_Name: Swan
   m_EditorClassIdentifier: 
   conName: Swan
   adjMatrix: 000100000000010001000000000100010101000001000000000001000000000001000000
   nodes:
   - position: {x: -1.1843963, y: 0.7471545, z: 0}
-    size: 0.15
+    size: 0.4
   - position: {x: -0.35555604, y: 0.40065432, z: 0}
     size: 0.4
   - position: {x: 0.48644823, y: 0.053307414, z: 0}
-    size: 0.307
+    size: 0.3
   - position: {x: 1.3277543, y: -0.23292756, z: 0}
     size: 0.5
   - position: {x: 1.0963404, y: 0.5888505, z: 0}
-    size: 0.367
+    size: 0.3
   - position: {x: -0.003997326, y: -0.37545103, z: 0}
-    size: 0.456
+    size: 0.4
   size: 6

@@ -4,10 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
-public class ConstelationSocket : MonoBehaviour
+public class ConstelationSocket : INode
 {
-    [HideInInspector]
-    public int id;
     Color baseColor;
     public List<InputActionReference> socketActivationReference;
 
