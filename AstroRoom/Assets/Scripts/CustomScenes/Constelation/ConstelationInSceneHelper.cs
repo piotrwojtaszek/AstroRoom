@@ -38,7 +38,9 @@ public class ConstelationInSceneHelper : MonoBehaviour
                 style.normal.textColor = Color.red;
                 style.fontSize = 20;
                 style.alignment = TextAnchor.MiddleCenter;
+#if UNITY_EDITOR
                 UnityEditor.Handles.Label(constelationPreset.nodes[i].position + new Vector3(0f, -.2f)+ transform.position, "ID: " + i, style);
+#endif
             }
 
         if (constelationPreset != null && constelationPreset.adjMatrix != null)
@@ -53,7 +55,9 @@ public class ConstelationInSceneHelper : MonoBehaviour
             style.normal.textColor = Color.white;
             style.fontSize = 30;
             style.alignment = TextAnchor.MiddleCenter;
+#if UNITY_EDITOR
             UnityEditor.Handles.Label(transform.position + new Vector3(0f, 2.5f), constelationPreset.conName,style);
+#endif
         }
 
 
