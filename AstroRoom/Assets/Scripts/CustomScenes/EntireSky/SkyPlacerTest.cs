@@ -9,12 +9,37 @@ public class SkyPlacerTest : MonoBehaviour
     private List<StarSettings> m_stars = new List<StarSettings>();
     public float distance = 100f;
 
+    private float y;
+    private float z;
+    private bool rotateX;
+    [SerializeField]
+    private float rotationSpeed;
+    public bool isReady = false;
+
     void Awake()
     {
         for (int i = 0; i < m_starsAmount; i++)
         {
             StartCoroutine(Randomm());
         }
+        transform.localRotation = Quaternion.Euler(89f, 0f, 0f);
+    }
+
+    private void Update()
+    {
+
+        if (isReady == false)
+            return;
+        y += Time.deltaTime * rotationSpeed;
+
+        if (y > 360.0f)
+        {
+            y = 0.0f;
+        }
+
+
+        /*transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles.x+y, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);*/
+        transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotationSpeed);
     }
 
     // Update is called once per frame
