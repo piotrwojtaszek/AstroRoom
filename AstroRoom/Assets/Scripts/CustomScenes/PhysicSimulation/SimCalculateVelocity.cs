@@ -5,12 +5,12 @@ using UnityEngine;
 public class SimCalculateVelocity : MonoBehaviour
 {
 
-    public SimGravityObject relativeTo;
+    private SimGravityObject relativeTo;
     public SimGravityObject gravityObject;
     // Start is called before the first frame update
     void Awake()
     {
-
+        relativeTo = GetComponent<SimGravityObject>().relativeTo;
     }
 
     // Update is called once per frame
@@ -22,6 +22,7 @@ public class SimCalculateVelocity : MonoBehaviour
         if (relativeTo == null)
             return;
         float dist = (transform.position - relativeTo.transform.position).magnitude;
+
         gravityObject.initialVelocity.x = Mathf.Sqrt((Constant.gravitionalConstant * relativeTo.GetComponent<Rigidbody>().mass) / dist);
     }
 }

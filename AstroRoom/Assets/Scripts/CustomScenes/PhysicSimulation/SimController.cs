@@ -39,5 +39,5 @@ public class SimController : MonoBehaviour
 [SerializeField]
 public static class Constant
 {
-    public static float gravitionalConstant = 66.7f;
+    public static float gravitionalConstant = 6.67f;
 }

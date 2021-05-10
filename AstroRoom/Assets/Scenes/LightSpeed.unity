@@ -577,4 +577,6 @@ MonoBehaviour:
   m_starsAmount: 100
   distance: 100
   rotationSpeed: 1
-  isReady: 0
+  isReady: 1
+  yAmount: 0.1
+  xAmount: -0.01

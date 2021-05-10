@@ -15,6 +15,8 @@ public class SkyPlacerTest : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
     public bool isReady = false;
+    public float yAmount;
+    public float xAmount;
 
     void Awake()
     {
@@ -39,7 +41,10 @@ public class SkyPlacerTest : MonoBehaviour
 
 
         /*transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles.x+y, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);*/
-        transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotationSpeed);
+        /*        transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotationSpeed);
+                transform.rotation += Quaternion.Euler(89f, 0f, 0f);*/
+        transform.Rotate(0, yAmount, 0, Space.Self);
+        transform.Rotate(xAmount, 0, 0, Space.World);
     }
 
     // Update is called once per frame
@@ -48,7 +53,7 @@ public class SkyPlacerTest : MonoBehaviour
     {
 
         GameObject obj = Instantiate(m_prefab, transform);
-        Vector3 randomRotation = new Vector3(UnityEngine.Random.Range(0f, 360f), UnityEngine.Random.Range(-179f, 20f), 0f);
+        Vector3 randomRotation = new Vector3(UnityEngine.Random.Range(0f, 360f), UnityEngine.Random.Range(-178f, 178f), 0f);
         obj.transform.position = new Vector3(0f, 0f, distance);
         obj.transform.RotateAround(transform.position, Vector3.right, randomRotation.y);
         obj.transform.RotateAround(transform.position, Vector3.up, randomRotation.x);

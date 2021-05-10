@@ -286,7 +286,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 240000
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 282.6662, y: 0, z: 0}
+  initialVelocity: {x: 89.386894, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &609845286
 MonoBehaviour:
@@ -511,7 +511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 609845285}
 --- !u!114 &609845287
 MonoBehaviour:
@@ -542,6 +541,8 @@ GameObject:
   - component: {fileID: 989498702}
   - component: {fileID: 989498708}
   - component: {fileID: 989498709}
+  - component: {fileID: 989498710}
+  - component: {fileID: 989498711}
   m_Layer: 0
   m_Name: Earth (1)
   m_TagString: Untagged
@@ -563,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 455.5128, y: 0, z: 0}
+  initialVelocity: {x: 107.54563, y: 0, z: 61.806164}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &989498703
 Rigidbody:
@@ -650,8 +651,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989498701}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -77.149994}
+  m_LocalRotation: {x: 0.22787596, y: -0.25058243, z: 0.060815975, w: 0.9389262}
+  m_LocalPosition: {x: 42.7, y: 59, z: -74.3}
   m_LocalScale: {x: 8.210509, y: 8.210509, z: 8.210509}
   m_Children: []
   m_Father: {fileID: 0}
@@ -664,12 +665,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989498701}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 989498702}
 --- !u!114 &989498709
 MonoBehaviour:
@@ -684,6 +684,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightSource: {fileID: 586219468}
+--- !u!114 &989498710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989498701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f135617c6937d694091f4493aa8f3d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityObject: {fileID: 989498702}
+--- !u!114 &989498711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989498701}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c0f314ee991b141bb9a1047a9d8d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityObject: {fileID: 0}
 --- !u!1 &1070148185
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 333.1276, y: 0, z: 0}
+  initialVelocity: {x: 105.3442, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1070148187
 Rigidbody:
@@ -827,7 +853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 1070148186}
 --- !u!114 &1070148193
 MonoBehaviour:
@@ -871,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83828e4f06b55e45b8b6b6e39e469c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStep: 0.05
+  timeStep: 0.0118
 --- !u!4 &1198706479
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,7 +1053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 609845285}
   gravityObject: {fileID: 1353462109}
 --- !u!1 &1438979352
 GameObject:
@@ -1067,7 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 181.89182, y: 0, z: 0}
+  initialVelocity: {x: 57.519245, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1438979354
 Rigidbody:
@@ -1173,7 +1197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 1438979353}
 --- !u!114 &1438979360
 MonoBehaviour:
@@ -1204,6 +1227,8 @@ GameObject:
   - component: {fileID: 1508037044}
   - component: {fileID: 1508037050}
   - component: {fileID: 1508037051}
+  - component: {fileID: 1508037053}
+  - component: {fileID: 1508037052}
   m_Layer: 0
   m_Name: Earth (4)
   m_TagString: Untagged
@@ -1225,7 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 212.69582, y: 0, z: 0}
+  initialVelocity: {x: 63.114376, y: 0, z: 22.86479}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1508037045
 Rigidbody:
@@ -1313,7 +1338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508037043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -353.84998}
+  m_LocalPosition: {x: 121, y: 0, z: -334}
   m_LocalScale: {x: 104.97607, y: 104.97607, z: 104.97607}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1326,12 +1351,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508037043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 1508037044}
 --- !u!114 &1508037051
 MonoBehaviour:
@@ -1346,6 +1370,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightSource: {fileID: 586219468}
+--- !u!114 &1508037052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508037043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c0f314ee991b141bb9a1047a9d8d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityObject: {fileID: 0}
+--- !u!114 &1508037053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508037043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f135617c6937d694091f4493aa8f3d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityObject: {fileID: 1508037044}
 --- !u!1 &1762228415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 158.85616, y: 0, z: 0}
+  initialVelocity: {x: 50.23473, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1762228417
 Rigidbody:
@@ -1489,7 +1539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 1762228416}
 --- !u!114 &1762228423
 MonoBehaviour:
@@ -1541,7 +1590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 246.59503, y: 0, z: 0}
+  initialVelocity: {x: 77.9802, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &1883034915
 Rigidbody:
@@ -1647,7 +1696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 1883034914}
 --- !u!114 &1883034921
 MonoBehaviour:
@@ -1699,7 +1747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyType: 1
   relativeTo: {fileID: 586219463}
-  initialVelocity: {x: 167.16605, y: 0, z: 0}
+  initialVelocity: {x: 52.86255, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &2044521932
 Rigidbody:
@@ -1805,7 +1853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799d7af7340aeb246a2e49910470c5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relativeTo: {fileID: 586219463}
   gravityObject: {fileID: 2044521931}
 --- !u!114 &2044521938
 MonoBehaviour:
