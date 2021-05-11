@@ -19,7 +19,7 @@ public class SimController : MonoBehaviour
             return _instance;
         }
     }
-    [Range(0f, 0.05f)]
+    [Range(0f, 0.1f)]
     public float timeStep = .01f;
 
     private void Awake()
@@ -33,11 +33,15 @@ public class SimController : MonoBehaviour
         {
             bodies[i].Move(bodies);
         }
+        for (int i = 0; i < bodies.Length; i++)
+        {
+            bodies[i].UpdatePosition(timeStep);
+        }
     }
 }
 
 [SerializeField]
 public static class Constant
 {
-    public static float gravitionalConstant = 6.67f;
+    public static float gravitionalConstant = .0667f;
 }

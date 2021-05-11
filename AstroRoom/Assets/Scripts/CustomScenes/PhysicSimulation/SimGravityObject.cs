@@ -64,12 +64,12 @@ public class SimGravityObject : MonoBehaviour
     private void UpdateVelocityMoon(SimGravityObject relative)
     {
 
-        transform.RotateAround(transform.parent.position, transform.up , 5f * Time.deltaTime);
+        transform.RotateAround(transform.parent.position, transform.up, 5f * Time.deltaTime);
 
 
     }
 
-    public void UpdateVelocity(float timeStep)
+    public void UpdatePosition(float timeStep)
     {
         rb.MovePosition(rb.position + velocity * timeStep);
     }
@@ -79,15 +79,15 @@ public class SimGravityObject : MonoBehaviour
         if (bodyType == BodyType.Static)
             return;
 
-        if (bodyType == BodyType.Free)
+        else if (bodyType == BodyType.Free)
             UpdateVelocity(allBodies);
 
-        if (bodyType == BodyType.Planet)
+        else if (bodyType == BodyType.Planet)
             UpdateVelocityPlanet(allBodies);
 
-        if (bodyType == BodyType.Moon)
+        else if (bodyType == BodyType.Moon)
             UpdateVelocityMoon(relativeTo);
-        UpdateVelocity(SimController.Instance.timeStep);
+/*        UpdatePosition(SimController.Instance.timeStep);*/
     }
 }
 
