@@ -3,7 +3,11 @@ guid: 1b716ab810be6bc4580e9dcff69fca40
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - comparisonController: {instanceID: 0}
+  - celestialBodiesList: {fileID: 11400000, guid: f9392ee1a4877d14d867d6922b294d38, type: 2}
+  - scrollContent: {instanceID: 0}
+  - listFragment: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

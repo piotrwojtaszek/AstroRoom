@@ -16,7 +16,7 @@ public class SkyPlacerTest : MonoBehaviour
     private float rotationSpeed;
     public bool isReady = false;
     public float yAmount;
-    public float xAmount;
+    public float startRotationX;
 
     void Awake()
     {
@@ -24,7 +24,7 @@ public class SkyPlacerTest : MonoBehaviour
         {
             StartCoroutine(Randomm());
         }
-        transform.localRotation = Quaternion.Euler(89f, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(startRotationX, 0f, 0f);
     }
 
     private void Update()
@@ -44,7 +44,7 @@ public class SkyPlacerTest : MonoBehaviour
         /*        transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotationSpeed);
                 transform.rotation += Quaternion.Euler(89f, 0f, 0f);*/
         transform.Rotate(0, yAmount, 0, Space.Self);
-        transform.Rotate(xAmount, 0, 0, Space.World);
+
     }
 
     // Update is called once per frame
