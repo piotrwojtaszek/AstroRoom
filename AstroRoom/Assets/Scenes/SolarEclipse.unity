@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moonPivot: {fileID: 1938089745}
+  sun: {fileID: 821560597}
 --- !u!1 &821560593
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821560593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 37.9, z: 250}
+  m_LocalPosition: {x: 0, y: 60.2, z: 217.8}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -379,7 +380,7 @@ Transform:
   m_GameObject: {fileID: 1311019465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10.916, y: 10.916, z: 10.916}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
