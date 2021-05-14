@@ -13,9 +13,9 @@ public class MoonRotator : MonoBehaviour
     [SerializeField] Transform target;//poit where is total eclipse
     [SerializeField] AnimationCurve curve;
     Color normal = new Color(1f, 0.9380f, 0.9009f, 1f);
-    [SerializeField]Renderer moonRenderer = null;
+    [SerializeField] Renderer moonRenderer = null;
     Color normalMoonColor;
-    [SerializeField] Renderer eclipseBloom=null;
+    [SerializeField] Renderer eclipseBloom = null;
     Color normalEclipseColor = new Color(1f, 1f, 1f, 0f);
     private void Start()
     {
@@ -38,7 +38,7 @@ public class MoonRotator : MonoBehaviour
             directionalLight.eulerAngles = new Vector3(posX, directionalLight.eulerAngles.y, directionalLight.eulerAngles.z);
 
             Color temp = new Color(normal.r - graph / 5f, normal.g - graph / 4f, normal.b - graph / 4f, 1f);
-            Color tempMoon = new Color(normalMoonColor.r*(1f-graph) , normalMoonColor.g * (1f - graph), normalMoonColor.b * (1f - graph), 1f);
+            Color tempMoon = new Color(normalMoonColor.r * (1f - graph), normalMoonColor.g * (1f - graph), normalMoonColor.b * (1f - graph), 1f);
             Color tempEclipse = new Color(1f, 1f, 1f, graph);
             moonRenderer.material.SetColor("_BaseColor", tempMoon);
             eclipseBloom.material.SetColor("_BaseColor", tempEclipse);
