@@ -6,6 +6,19 @@ using UnityEngine.UI;
 using TMPro;
 public class SolarEclipseController : MonoBehaviour
 {
+    public static SolarEclipseController Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<SolarEclipseController>();
+            }
+
+            return _instance;
+        }
+    }
+    private static SolarEclipseController _instance;
     public Transform moonPivot;
     public Transform sun;
     public float triggerDistance = 40f;
@@ -13,9 +26,8 @@ public class SolarEclipseController : MonoBehaviour
     float xAngle = 0f;
     float yAngle = 0f;
     float distance = 200f;
-    [SerializeField]
-    [Range(0.75f, 2.25f)]
-    float zoom = 1f;
+    [Range(0.7f, 1f)]
+    public float zoom = 1f;
     float deltaPosition = 50f;
     public Slider slider;
     public TextMeshProUGUI uGUI;
@@ -27,8 +39,9 @@ public class SolarEclipseController : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateDevices", 0f, 2f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.up, 30f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.left, 20f);
+        moonPivot.RotateAround(Vector3.zero, Vector3.up, 0f);
+        moonPivot.RotateAround(Vector3.zero, Vector3.left, 40f);
+
     }
 
     // Update is called once per frame
@@ -56,7 +69,7 @@ public class SolarEclipseController : MonoBehaviour
     void MoonMovement(Vector2 inputValue)
     {
         float multiplier = 1f;
-        if(deltaPosition < triggerDistance)
+        if (deltaPosition < triggerDistance)
         {
             multiplier = deltaPosition / triggerDistance;
             multiplier = movementMultipier.Evaluate(multiplier);
@@ -64,8 +77,8 @@ public class SolarEclipseController : MonoBehaviour
 
         yAngle = Mathf.Lerp(yAngle, inputValue.y, Time.deltaTime * 0.5f);
         xAngle = Mathf.Lerp(xAngle, inputValue.x, Time.deltaTime * 0.5f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.up, xAngle * Time.deltaTime * 4f * multiplier);
-        moonPivot.RotateAround(Vector3.zero, Vector3.left, yAngle * Time.deltaTime * 4f * multiplier);
+        moonPivot.RotateAround(Vector3.zero, Vector3.up, xAngle * Time.deltaTime * 8f * multiplier);
+        moonPivot.RotateAround(Vector3.zero, Vector3.left, yAngle * Time.deltaTime * 8f * multiplier);
     }
 
     Vector3 GetPerfectEclipsePosition()
@@ -80,8 +93,8 @@ public class SolarEclipseController : MonoBehaviour
         Vector3 newPosition = (moonPivot.position - Vector3.zero).normalized * distance * (1f / zoom);
         moonPivot.position = Vector3.Lerp(moonPivot.position, newPosition, Time.deltaTime * 0.75f);
 
-        newPosition = (sun.position - Vector3.zero).normalized * (distance + 120f) * (1f / zoom);
-        sun.position = Vector3.Lerp(sun.position, newPosition, Time.deltaTime * 0.75f);
+        /*        newPosition = (sun.position - Vector3.zero).normalized * (distance + 120f) * (1f / zoom);
+                sun.position = Vector3.Lerp(sun.position, newPosition, Time.deltaTime * 0.75f);*/
     }
 
     void ProcessPositionOnAmbientLight()
@@ -89,8 +102,8 @@ public class SolarEclipseController : MonoBehaviour
         if (deltaPosition < triggerDistance)
         {
             float graph = deltaPosition / triggerDistance;
-            graph = curve.Evaluate(graph) * 23f;
-            Debug.Log(graph);
+            graph = curve.Evaluate(graph) * 23f * Mathf.Sqrt(zoom);
+
 
             directionalLight.rotation = Quaternion.Euler(10f - graph, 180f, 0f);
         }

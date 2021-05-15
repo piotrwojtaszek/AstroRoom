@@ -737,7 +737,7 @@
     },
     "m_Name": "EclipseShadowOffset",
     "m_DefaultReferenceName": "Vector2_3a3b990be8d04c629f5a523d8d489a30",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_EclipseShadowOffset",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -1126,7 +1126,7 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 0,
-    "m_NormalMapSpace": 0
+    "m_NormalMapSpace": 1
 }
 
 {
