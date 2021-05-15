@@ -14,7 +14,7 @@ public class SolarEclipseController : MonoBehaviour
     float yAngle = 0f;
     float distance = 200f;
     [SerializeField]
-    [Range(0.75f, 1.75f)]
+    [Range(0.75f, 2.25f)]
     float zoom = 1f;
     float deltaPosition = 50f;
     public Slider slider;
@@ -78,10 +78,10 @@ public class SolarEclipseController : MonoBehaviour
     {
 
         Vector3 newPosition = (moonPivot.position - Vector3.zero).normalized * distance * (1f / zoom);
-        moonPivot.position = Vector3.Lerp(moonPivot.position, newPosition, Time.deltaTime * 0.35f);
+        moonPivot.position = Vector3.Lerp(moonPivot.position, newPosition, Time.deltaTime * 0.75f);
 
         newPosition = (sun.position - Vector3.zero).normalized * (distance + 120f) * (1f / zoom);
-        sun.position = Vector3.Lerp(sun.position, newPosition, Time.deltaTime * 0.35f);
+        sun.position = Vector3.Lerp(sun.position, newPosition, Time.deltaTime * 0.75f);
     }
 
     void ProcessPositionOnAmbientLight()
