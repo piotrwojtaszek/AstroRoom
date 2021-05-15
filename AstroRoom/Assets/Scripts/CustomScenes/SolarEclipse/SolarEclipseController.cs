@@ -28,13 +28,13 @@ public class SolarEclipseController : MonoBehaviour
     float distance = 200f;
     [Range(0.7f, 1f)]
     public float zoom = 1f;
-    float deltaPosition = 50f;
+    public float deltaPosition = 50f;
     public Slider slider;
     public TextMeshProUGUI uGUI;
     public Transform directionalLight;
     [SerializeField] AnimationCurve curve;
     [SerializeField] AnimationCurve movementMultipier;
-    Vector3 perfectEclipsePosition;
+    public Vector3 perfectEclipsePosition;
     // Start is called before the first frame update
     void Start()
     {
