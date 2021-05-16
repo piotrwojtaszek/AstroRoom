@@ -40,14 +40,16 @@ public class SolarExlipseModelController : MonoBehaviour
 
         Vector2 direction = (SolarEclipseController.Instance.perfectEclipsePosition - SolarEclipseController.Instance.moon.position).normalized;
 
-        if (SolarEclipseController.Instance.deltaPosition < SolarEclipseController.Instance.triggerDistance)
+        ; if (SolarEclipseController.Instance.deltaPosition < SolarEclipseController.Instance.triggerDistance)
         {
             float calculated = SolarEclipseController.Instance.deltaPosition / SolarEclipseController.Instance.triggerDistance * 0.5f;
-            earthMaterial.material.SetVector("_EclipseShadowOffset", new Vector2(calculated * -direction.x, calculated * direction.y));
+            float calculatedY = calculated * direction.y;
+            calculatedY = Mathf.Clamp(calculatedY, -.5f, .5f);
+            earthMaterial.material.SetVector("_EclipseShadowOffset", new Vector2(calculated * -direction.x, calculatedY));
         }
         else
         {
-            earthMaterial.material.SetVector("_EclipseShadowOffset", new Vector2(0.5f * direction.x, 0.5f * direction.y));
+            earthMaterial.material.SetVector("_EclipseShadowOffset", new Vector2(0.5f * direction.x, 0.5f * Mathf.Sign(direction.y)));
         }
     }
 }
