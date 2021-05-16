@@ -19,7 +19,7 @@ public class SolarEclipseController : MonoBehaviour
         }
     }
     private static SolarEclipseController _instance;
-    public Transform moonPivot;
+    public Transform moon;
     public Transform sun;
     public float triggerDistance = 40f;
     List<InputDevice> inputDevices = new List<InputDevice>();
@@ -39,8 +39,8 @@ public class SolarEclipseController : MonoBehaviour
     void Start()
     {
         InvokeRepeating("UpdateDevices", 0f, 2f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.up, 0f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.left, 40f);
+        moon.RotateAround(Vector3.zero, Vector3.up, 20f);
+        moon.RotateAround(Vector3.zero, Vector3.left, 40f);
 
     }
 
@@ -77,21 +77,21 @@ public class SolarEclipseController : MonoBehaviour
 
         yAngle = Mathf.Lerp(yAngle, inputValue.y, Time.deltaTime * 0.5f);
         xAngle = Mathf.Lerp(xAngle, inputValue.x, Time.deltaTime * 0.5f);
-        moonPivot.RotateAround(Vector3.zero, Vector3.up, xAngle * Time.deltaTime * 8f * multiplier);
-        moonPivot.RotateAround(Vector3.zero, Vector3.left, yAngle * Time.deltaTime * 8f * multiplier);
+        moon.RotateAround(Vector3.zero, Vector3.up, xAngle * Time.deltaTime * 8f * multiplier);
+        moon.RotateAround(Vector3.zero, Vector3.left, yAngle * Time.deltaTime * 8f * multiplier);
     }
 
     Vector3 GetPerfectEclipsePosition()
     {
-        perfectEclipsePosition = (sun.position - Vector3.zero).normalized * (moonPivot.position - Vector3.zero).magnitude;
+        perfectEclipsePosition = (sun.position - Vector3.zero).normalized * (moon.position - Vector3.zero).magnitude;
         return perfectEclipsePosition;
     }
 
     void ProcessZoom()
     {
 
-        Vector3 newPosition = (moonPivot.position - Vector3.zero).normalized * distance * (1f / zoom);
-        moonPivot.position = Vector3.Lerp(moonPivot.position, newPosition, Time.deltaTime * 0.75f);
+        Vector3 newPosition = (moon.position - Vector3.zero).normalized * distance * (1f / zoom);
+        moon.position = Vector3.Lerp(moon.position, newPosition, Time.deltaTime * 0.75f);
 
         /*        newPosition = (sun.position - Vector3.zero).normalized * (distance + 120f) * (1f / zoom);
                 sun.position = Vector3.Lerp(sun.position, newPosition, Time.deltaTime * 0.75f);*/
@@ -113,12 +113,12 @@ public class SolarEclipseController : MonoBehaviour
     {
         if (deltaPosition < 4f && input <= 0.1f)
         {
-            moonPivot.position = Vector3.Lerp(moonPivot.position, GetPerfectEclipsePosition(), Time.deltaTime * .25f);
+            moon.position = Vector3.Lerp(moon.position, GetPerfectEclipsePosition(), Time.deltaTime * .25f);
         }
     }
 
     void CalculateDeltaPosition()
     {
-        deltaPosition = (moonPivot.position - GetPerfectEclipsePosition()).magnitude;
+        deltaPosition = (moon.position - GetPerfectEclipsePosition()).magnitude;
     }
 }
