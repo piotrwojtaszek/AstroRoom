@@ -65,6 +65,7 @@ public class IConstealtion : MonoBehaviour
         int i = 0;
         GameObject parent = new GameObject(ConstelationPreset.conName);
         parent.transform.SetParent(transform);
+        parent.AddComponent<ConstelationCustomLOD>();
         parent.transform.position = transform.position + new Vector3( 0, 0, 50f);
         foreach (Node node in ConstelationPreset.nodes)
         {

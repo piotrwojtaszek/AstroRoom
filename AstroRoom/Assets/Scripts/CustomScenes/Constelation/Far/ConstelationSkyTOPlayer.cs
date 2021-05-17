@@ -11,8 +11,8 @@ public class ConstelationSkyTOPlayer : MonoBehaviour
         for (; ; )
         {
             transform.parent.position = Vector3.Lerp(transform.parent.position, finded, Time.deltaTime * .5f);
-            transform.parent.localScale = Vector3.Lerp(transform.parent.localScale, Vector3.one, Time.deltaTime * .7f);
-            transform.parent.rotation = Quaternion.Lerp(transform.parent.rotation, Quaternion.Euler(0, 0, 0), Time.deltaTime * .7f);
+            transform.parent.localScale = Vector3.Lerp(transform.parent.localScale, Vector3.one, Time.deltaTime * .51f);
+            transform.parent.rotation = Quaternion.Lerp(transform.parent.rotation, Quaternion.Euler(0, 0, 0), Time.deltaTime * .5f);
             if ((transform.parent.position - finded).magnitude < 0.01f)
             {
                 break;
