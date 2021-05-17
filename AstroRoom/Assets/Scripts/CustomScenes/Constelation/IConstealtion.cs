@@ -59,13 +59,13 @@ public class IConstealtion : MonoBehaviour
         }
     }
 
-    protected void CreateNodesAndChild()
+    protected GameObject CreateNodesAndChild()
     {
         nodes = new Transform[ConstelationPreset.size];
         int i = 0;
         GameObject parent = new GameObject(ConstelationPreset.conName);
         parent.transform.SetParent(transform);
-        parent.transform.position = transform.position;
+        parent.transform.position = transform.position + new Vector3( 0, 0, 50f);
         foreach (Node node in ConstelationPreset.nodes)
         {
             GameObject nodeObj = Instantiate(socketPrefab, parent.transform);
@@ -78,5 +78,7 @@ public class IConstealtion : MonoBehaviour
         parent.transform.localScale = Vector3.one * 4f;
         parent.transform.RotateAround(Vector3.zero, Vector3.up, ConstelationPreset.skyPosition.y);
         parent.transform.RotateAround(Vector3.zero, Vector3.left, ConstelationPreset.skyPosition.x);
+        parent.AddComponent<ConstelationFarInteractor>();
+        return parent;
     }
 }

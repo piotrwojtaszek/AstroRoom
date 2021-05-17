@@ -7,7 +7,7 @@ public class ConstelationSkyDisplay : IConstealtion
     protected override void Awake()
     {
         CopyMatrix();
-        CreateNodesAndChild();
+        GameObject parent = CreateNodesAndChild();
     }
 
 }

@@ -28,5 +28,38 @@ public class ConstelationController : IConstealtion
                     selected.Clear();
                 }
         }
+        CheckIfCompleted();
+    }
+
+    public void CheckIfCompleted()
+    {
+        for (int i = 0; i < ConstelationPreset.size; i++)
+            for (int j = 0; j < ConstelationPreset.size; j++)
+            {
+                if (ConstelationPreset.adjMatrix[ConstelationPreset.size * i + j] != adjMatrixCheck[i, j])
+                    return;
+            }
+
+        StartCoroutine(BackToSky());
+        Debug.Log("COMPLETED");
+    }
+
+    IEnumerator BackToSky()
+    {
+        Transform finded = FindObjectOfType<ConstelationFarInteractor>().transform;
+
+        for (; ; )
+        {
+            transform.position = Vector3.Lerp(transform.position, finded.position, Time.deltaTime * .2f);
+            if ((transform.position - finded.position).magnitude < 2f)
+            {
+                break;
+            }
+            yield return null;
+        }
+
+        Destroy(gameObject);
+
+        yield return null;
     }
 }
