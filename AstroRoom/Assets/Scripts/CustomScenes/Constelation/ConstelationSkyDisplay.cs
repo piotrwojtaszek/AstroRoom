@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ConstelationSkyDisplay : IConstealtion
 {
-/*    private void Start()
+    protected override void Awake()
     {
-        for (int i = 0; i < ConstelationPreset.size; i++)
-        {
-            for(int j=0;j<ConstelationPreset.size-i;j++)
-            {
-
-            }
-        }
-    }*/
+        CopyMatrix();
+        CreateNodesAndChild();
+    }
 
 }

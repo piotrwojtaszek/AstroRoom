@@ -46,3 +46,4 @@ MonoBehaviour:
     size: 0.135
     starName: 
   size: 10
+  skyPosition: {x: 40, y: 10}

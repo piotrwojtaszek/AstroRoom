@@ -8,6 +8,7 @@ public class SOConstelationBase : ScriptableObject
     public bool[] adjMatrix;
     public Node[] nodes;
     public int size;
+    public Vector2 skyPosition;
 }
 
 [System.Serializable]

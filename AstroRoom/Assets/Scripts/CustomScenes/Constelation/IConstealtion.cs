@@ -15,7 +15,6 @@ public class IConstealtion : MonoBehaviour
     protected virtual void Awake()
     {
         CopyMatrix();
-        CreateNodes();
     }
 
     protected void CreateConnection(int id_1, int id_2)
@@ -58,5 +57,26 @@ public class IConstealtion : MonoBehaviour
             nodes[i] = nodeObj.transform;
             i++;
         }
+    }
+
+    protected void CreateNodesAndChild()
+    {
+        nodes = new Transform[ConstelationPreset.size];
+        int i = 0;
+        GameObject parent = new GameObject(ConstelationPreset.conName);
+        parent.transform.SetParent(transform);
+        parent.transform.position = transform.position;
+        foreach (Node node in ConstelationPreset.nodes)
+        {
+            GameObject nodeObj = Instantiate(socketPrefab, parent.transform);
+            nodeObj.transform.localPosition = node.position;
+            nodeObj.transform.localScale = Vector3.one * node.size;
+            nodeObj.GetComponent<INode>().id = i;
+            nodes[i] = nodeObj.transform;
+            i++;
+        }
+        parent.transform.localScale = Vector3.one * 4f;
+        parent.transform.RotateAround(Vector3.zero, Vector3.up, ConstelationPreset.skyPosition.y);
+        parent.transform.RotateAround(Vector3.zero, Vector3.left, ConstelationPreset.skyPosition.x);
     }
 }

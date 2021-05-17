@@ -10,6 +10,7 @@ public class ConstelationController : IConstealtion
     protected override void Awake()
     {
         base.Awake();
+        CreateNodes();
         instance = this;
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
     }
