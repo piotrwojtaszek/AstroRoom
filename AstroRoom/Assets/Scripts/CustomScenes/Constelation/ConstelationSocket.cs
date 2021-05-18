@@ -8,7 +8,7 @@ public class ConstelationSocket : INode
 {
     Color baseColor;
     public List<InputActionReference> socketActivationReference;
-
+    public ConstelationController constelationController;
 
     [Space]
     public UnityEvent<int> onSocketHoverEnter;
@@ -22,7 +22,7 @@ public class ConstelationSocket : INode
     {
 
         //zamiast tego zrobiæ Action w ConstelationCOntroller która jest wywo³ywana w momencie zaznaczenia
-        if (ConstelationController.instance.selected.Contains(id))
+        if (constelationController.selected.Contains(id))
         {
             GetComponent<Renderer>().material.color = Color.red;
 
@@ -35,19 +35,19 @@ public class ConstelationSocket : INode
 
     public void SocketSelect()
     {
-        if (!ConstelationController.instance.selected.Contains(id))
+        if (!constelationController.selected.Contains(id))
         {
-            if (ConstelationController.instance.selected.Count == 2)
-                ConstelationController.instance.selected.RemoveAt(0);
+            if (constelationController.selected.Count == 2)
+                constelationController.selected.RemoveAt(0);
             else
-                ConstelationController.instance.selected.Add(id);
+                constelationController.selected.Add(id);
 
         }
         else
         {
-            ConstelationController.instance.selected.Remove(id);
+            constelationController.selected.Remove(id);
         }
-        ConstelationController.instance.CheckConnection();
+        constelationController.CheckConnection();
     }
 
     //na hover += a na exit -=

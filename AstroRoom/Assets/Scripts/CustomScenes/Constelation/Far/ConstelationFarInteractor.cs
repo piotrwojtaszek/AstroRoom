@@ -5,47 +5,34 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Events;
 public class ConstelationFarInteractor : MonoBehaviour
 {
-    public GameObject quad;
-    public List<Transform> targets = new List<Transform>();
-    // Start is called before the first frame update
     private void Start()
     {
-        if (transform.childCount == 0)
-            return;
-
-        foreach (Transform child in transform)
-        {
-            targets.Add(child);
-        }
-        if (targets.Count == 0)
-            return;
-
-        Bounds bounds = GetCenterPoint();
-
-
-        GameObject createdQuad = Instantiate(quad, transform);
-        createdQuad.transform.position = bounds.center;
-        createdQuad.transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, bounds.size.z / 2f);
+        OnCreate();
     }
-
-    void LateUpdate()
+    public void OnCreate()
     {
-
-
-
+        Bounds bounds = GetCenterPoint();
+        transform.position = bounds.center;
+        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, bounds.size.z / 2f);
     }
+
 
     Bounds GetCenterPoint()
     {
-        if (targets.Count == 1)
-            return new Bounds(Vector3.zero, Vector3.zero);
-        var bounds = new Bounds(targets[0].position, Vector3.zero);
-        for (int i = 0; i < targets.Count; i++)
+        List<Transform> objectsToEncaplsulate = new List<Transform>();
+        foreach (Transform child in transform.parent)
         {
-            bounds.Encapsulate(targets[i].position);
+            if (child.GetComponent<ConstelationSocket>() != null)
+            {
+                objectsToEncaplsulate.Add(child);
+            }
         }
 
+        var bounds = new Bounds(Vector3.zero, Vector3.zero);
+        for (int i = 0; i < objectsToEncaplsulate.Count; i++)
+        {
+            bounds.Encapsulate(objectsToEncaplsulate[i].position);
+        }
         return bounds;
     }
-
 }

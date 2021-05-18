@@ -6,6 +6,8 @@ public class ConstelationSkyTOPlayer : MonoBehaviour
 {
     IEnumerator BackToPlayer()
     {
+        GameObject temporary = new GameObject("Origin of constelation");
+        temporary.transform.position = transform.position;
         Vector3 finded = new Vector3(0f, 1f, 2.5f);
 
         for (; ; )
@@ -20,7 +22,8 @@ public class ConstelationSkyTOPlayer : MonoBehaviour
             yield return null;
         }
 
-        Destroy(gameObject);
+        GetComponent<Collider>().enabled = false;
+
 
         yield return null;
     }

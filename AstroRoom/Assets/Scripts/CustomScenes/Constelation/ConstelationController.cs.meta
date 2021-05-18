@@ -3,7 +3,10 @@ guid: d50c0f3120e45614180f10e785349c5c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - constelationPreset: {instanceID: 0}
+  - socketPrefab: {fileID: 7135306576705405775, guid: dc041f397b9d434469feb75640675ee7, type: 3}
+  - edgePrefab: {fileID: 4018691394387136339, guid: 92bd9a0774cbda344b6189284b80bd94, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConstelationSkyDisplay : IConstealtion
+public class ConstelationSkyDisplay : MonoBehaviour
 {
-    protected override void Awake()
+    public SOConstelationList constelationList;
+    public GameObject constelationControllerPrefab;
+    void Awake()
     {
-        CopyMatrix();
-        GameObject parent = CreateNodesAndChild();
+        foreach(SOConstelationBase fragment in constelationList.listOfBodies)
+        {
+            GameObject newObject = Instantiate(constelationControllerPrefab, transform);
+            newObject.GetComponent<ConstelationController>().OnCreated(fragment);
+        }
     }
 
 }

@@ -4,15 +4,19 @@ using UnityEngine;
 using System;
 public class ConstelationController : IConstealtion
 {
-    public static ConstelationController instance;
+    public GameObject onHoverPrefab;
     private bool[,] adjMatrixCheck;
+    [HideInInspector]
     public List<int> selected = new List<int>();
-    protected override void Awake()
+    public override void OnCreated(SOConstelationBase constelationPreset)
     {
-        base.Awake();
-        CreateNodes();
-        instance = this;
+        ConstelationPreset = constelationPreset;
+        base.OnCreated(constelationPreset);
+
+        transform.name = ConstelationPreset.conName;
+        CreateNodesAndChild(this);
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
+        CreateOnHoverEffect();
     }
 
     public void CheckConnection()
@@ -24,7 +28,7 @@ public class ConstelationController : IConstealtion
                 {
                     adjMatrixCheck[selected[0], selected[1]] = true;
                     adjMatrixCheck[selected[1], selected[0]] = true;
-                    CreateConnection(selected[0], selected[1]);
+                    CreateConnection(selected[0], selected[1], this);
                     selected.Clear();
                 }
         }
@@ -40,26 +44,29 @@ public class ConstelationController : IConstealtion
                     return;
             }
 
-        StartCoroutine(BackToSky());
-        Debug.Log("COMPLETED");
+        /*StartCoroutine(BackToSky());*/
     }
 
-    IEnumerator BackToSky()
-    {
-        Transform finded = FindObjectOfType<ConstelationFarInteractor>().transform;
-
-        for (; ; )
+    /*    IEnumerator BackToSky()
         {
-            transform.position = Vector3.Lerp(transform.position, finded.position, Time.deltaTime * .2f);
-            if ((transform.position - finded.position).magnitude < 2f)
+            Transform finded = FindObjectOfType<ConstelationFarInteractor>().transform;
+
+            for (; ; )
             {
-                break;
+                transform.position = Vector3.Lerp(transform.position, finded.position, Time.deltaTime * .2f);
+                if ((transform.position - finded.position).magnitude < 2f)
+                {
+                    break;
+                }
+                yield return null;
             }
+
+            Destroy(gameObject);
+
             yield return null;
-        }
-
-        Destroy(gameObject);
-
-        yield return null;
+        }*/
+    private void CreateOnHoverEffect()
+    {
+        Instantiate(onHoverPrefab, transform);
     }
 }

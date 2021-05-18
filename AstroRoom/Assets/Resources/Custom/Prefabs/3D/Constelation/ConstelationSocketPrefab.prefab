@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7135306576705405762}
   - component: {fileID: 7135306576705405761}
   - component: {fileID: 7135306576705405766}
+  - component: {fileID: 793277390325476679}
   m_Layer: 7
   m_Name: ConstelationSocketPrefabClose
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 511d3e256d29c784eacfa8da50936274, type: 2}
+  - {fileID: 2100000, guid: cd0e5562e7355ed479c1bc9889ff6283, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -206,6 +207,7 @@ MonoBehaviour:
   socketActivationReference:
   - {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   - {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  constelationController: {fileID: 0}
   onSocketHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -224,3 +226,17 @@ MonoBehaviour:
   onSocketHoverExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &793277390325476679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135306576705405775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8410cea2a7daf1a42b365fc280af5b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowDetail: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  highDetail: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
