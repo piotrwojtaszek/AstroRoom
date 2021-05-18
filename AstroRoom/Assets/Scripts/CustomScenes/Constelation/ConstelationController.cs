@@ -8,6 +8,7 @@ public class ConstelationController : IConstealtion
     private bool[,] adjMatrixCheck;
     [HideInInspector]
     public List<int> selected = new List<int>();
+    private Transform persistantPosition = null;
     public override void OnCreated(SOConstelationBase constelationPreset)
     {
         ConstelationPreset = constelationPreset;
@@ -44,29 +45,38 @@ public class ConstelationController : IConstealtion
                     return;
             }
 
-        /*StartCoroutine(BackToSky());*/
+        StartCoroutine(BackToSky());
     }
 
-    /*    IEnumerator BackToSky()
+    IEnumerator BackToSky()
+    {
+        for (; ; )
         {
-            Transform finded = FindObjectOfType<ConstelationFarInteractor>().transform;
-
-            for (; ; )
+            transform.position = Vector3.Lerp(transform.position, persistantPosition.position, Time.deltaTime * .5f);
+            transform.localScale = Vector3.Lerp(transform.localScale, persistantPosition.localScale, Time.deltaTime * .51f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, persistantPosition.rotation, Time.deltaTime * .5f);
+            if ((transform.position - persistantPosition.position).magnitude < 0.01f)
             {
-                transform.position = Vector3.Lerp(transform.position, finded.position, Time.deltaTime * .2f);
-                if ((transform.position - finded.position).magnitude < 2f)
-                {
-                    break;
-                }
-                yield return null;
+                break;
             }
-
-            Destroy(gameObject);
-
             yield return null;
-        }*/
+        }
+        Destroy(persistantPosition.gameObject);
+        persistantPosition = null;
+        yield return null;
+    }
     private void CreateOnHoverEffect()
     {
-        Instantiate(onHoverPrefab, transform);
+        GameObject hoverObj = Instantiate(onHoverPrefab, transform);
+        hoverObj.GetComponent<ConstelationSkyTOPlayer>().onSelected += OnSelected;
+    }
+
+    private void OnSelected()
+    {
+        persistantPosition = new GameObject(transform.name + " HOLDER").transform;
+        persistantPosition.SetParent(transform.parent);
+        persistantPosition.transform.position = transform.position;
+        persistantPosition.transform.localScale = transform.localScale;
+        persistantPosition.transform.rotation = transform.rotation;
     }
 }

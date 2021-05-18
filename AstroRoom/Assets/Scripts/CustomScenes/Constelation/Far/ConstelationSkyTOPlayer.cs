@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class ConstelationSkyTOPlayer : MonoBehaviour
 {
+
+    public UnityAction onSelected;
+
     IEnumerator BackToPlayer()
     {
+        GetComponent<Collider>().enabled = false;
         GameObject temporary = new GameObject("Origin of constelation");
         temporary.transform.position = transform.position;
         Vector3 finded = new Vector3(0f, 1f, 2.5f);
@@ -21,15 +25,12 @@ public class ConstelationSkyTOPlayer : MonoBehaviour
             }
             yield return null;
         }
-
-        GetComponent<Collider>().enabled = false;
-
-
         yield return null;
     }
 
     public void Selected()
     {
         StartCoroutine(BackToPlayer());
+        onSelected?.Invoke();
     }
 }
