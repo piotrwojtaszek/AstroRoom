@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using UnityEngine.Events;
 public class ConstelationController : IConstealtion
 {
     public GameObject onHoverPrefab;
     private bool[,] adjMatrixCheck;
     [HideInInspector]
     public List<int> selected = new List<int>();
-    private Transform persistantPosition = null;
+    public Transform persistantPosition = null;
+    public UnityAction onComplete = null;
+    public UnityAction onSelected = null;
+    public UnityAction onSkyPosition = null;
+    public GameObject hoverObject;
     public override void OnCreated(SOConstelationBase constelationPreset)
     {
         ConstelationPreset = constelationPreset;
@@ -17,7 +21,7 @@ public class ConstelationController : IConstealtion
         transform.name = ConstelationPreset.conName;
         CreateNodesAndChild(this);
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
-        CreateOnHoverEffect();
+        CreatePersistantPositionObject();
     }
 
     public void CheckConnection()
@@ -45,36 +49,13 @@ public class ConstelationController : IConstealtion
                     return;
             }
 
-        StartCoroutine(BackToSky());
+        onComplete?.Invoke();
     }
 
-    IEnumerator BackToSky()
-    {
-        for (; ; )
-        {
-            transform.position = Vector3.Lerp(transform.position, persistantPosition.position, Time.deltaTime * .5f);
-            transform.localScale = Vector3.Lerp(transform.localScale, persistantPosition.localScale, Time.deltaTime * .51f);
-            transform.rotation = Quaternion.Lerp(transform.rotation, persistantPosition.rotation, Time.deltaTime * .5f);
-            if ((transform.position - persistantPosition.position).magnitude < 0.01f)
-            {
-                break;
-            }
-            yield return null;
-        }
-        Destroy(persistantPosition.gameObject);
-        persistantPosition = null;
-        yield return null;
-    }
-    private void CreateOnHoverEffect()
-    {
-        GameObject hoverObj = Instantiate(onHoverPrefab, transform);
-        hoverObj.GetComponent<ConstelationSkyTOPlayer>().onSelected += OnSelected;
-    }
-
-    private void OnSelected()
+    void CreatePersistantPositionObject()
     {
         persistantPosition = new GameObject(transform.name + " HOLDER").transform;
-        persistantPosition.SetParent(transform.parent);
+        persistantPosition.SetParent(transform.parent.transform);
         persistantPosition.transform.position = transform.position;
         persistantPosition.transform.localScale = transform.localScale;
         persistantPosition.transform.rotation = transform.rotation;

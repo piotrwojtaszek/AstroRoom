@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 641660419601914646}
   - component: {fileID: 1856613570581601472}
   - component: {fileID: 6379765893340665788}
-  - component: {fileID: 3984119134697922351}
+  - component: {fileID: 5944356292767051101}
   m_Layer: 0
   m_Name: ConstealionFarHover
   m_TagString: Untagged
@@ -161,9 +161,9 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3984119134697922351}
-        m_TargetAssemblyTypeName: ConstelationSkyTOPlayer, Assembly-CSharp
-        m_MethodName: Selected
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ConstelationMove, Assembly-CSharp
+        m_MethodName: OnSelectedPerform
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3984119134697922351
+--- !u!114 &5944356292767051101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6987060897438514343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cd9cbbf9a33a8c49ba616957df5320f, type: 3}
+  m_Script: {fileID: 11500000, guid: bef5f433c040a6345a620db84ce6bdf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  constelationController: {fileID: 0}

@@ -5,22 +5,29 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Events;
 public class ConstelationFarInteractor : MonoBehaviour
 {
+    public ConstelationController constelationController;
+
     private void Start()
     {
-        OnCreate();
+        constelationController.onSkyPosition += OnSkyPosition;
+        constelationController.onSelected += OnSelected;
+        Invoke("OnCreate", .5f);
     }
     public void OnCreate()
     {
         Bounds bounds = GetCenterPoint();
         transform.position = bounds.center;
-        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, bounds.size.z / 2f);
+        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f);
+
+
+        //Debug.Log(transform.lossyScale);
     }
 
 
     Bounds GetCenterPoint()
     {
         List<Transform> objectsToEncaplsulate = new List<Transform>();
-        foreach (Transform child in transform.parent)
+        foreach (Transform child in constelationController.transform)
         {
             if (child.GetComponent<ConstelationSocket>() != null)
             {
@@ -28,11 +35,21 @@ public class ConstelationFarInteractor : MonoBehaviour
             }
         }
 
-        var bounds = new Bounds(Vector3.zero, Vector3.zero);
+        var bounds = new Bounds(objectsToEncaplsulate[0].position, Vector3.zero);
         for (int i = 0; i < objectsToEncaplsulate.Count; i++)
         {
             bounds.Encapsulate(objectsToEncaplsulate[i].position);
         }
         return bounds;
+    }
+
+    public void OnSkyPosition()
+    {
+        GetComponent<Collider>().enabled = true;
+    }
+
+    public void OnSelected()
+    {
+        GetComponent<Collider>().enabled = false;
     }
 }

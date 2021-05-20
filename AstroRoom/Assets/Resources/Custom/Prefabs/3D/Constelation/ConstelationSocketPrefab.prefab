@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7135306576705405766}
   - component: {fileID: 793277390325476679}
   m_Layer: 7
-  m_Name: ConstelationSocketPrefabClose
+  m_Name: ConstelationSocketPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
