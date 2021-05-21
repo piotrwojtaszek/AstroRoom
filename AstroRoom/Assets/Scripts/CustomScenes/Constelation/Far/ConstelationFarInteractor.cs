@@ -9,14 +9,18 @@ public class ConstelationFarInteractor : MonoBehaviour
 
     private void Start()
     {
-        constelationController.onSkyPosition += OnSkyPosition;
-        constelationController.onSelected += OnSelected;
+/*        constelationController.onSkyPosition += OnSkyPosition;
+        constelationController.onSelected += OnSelected;*/
+
+        ConstelationEvents.Instance.onSelected += DisableCollider;
+        ConstelationEvents.Instance.onSkyPosition += EnableCollider;
+
     }
     public void OnCreate()
     {
         Bounds bounds = GetCenterPoint();
         transform.position = bounds.center;
-        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f,1f);
+        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, 1f);
 
 
         //Debug.Log(transform.lossyScale);
@@ -42,12 +46,12 @@ public class ConstelationFarInteractor : MonoBehaviour
         return bounds;
     }
 
-    public void OnSkyPosition()
+    public void EnableCollider()
     {
         GetComponent<Collider>().enabled = true;
     }
 
-    public void OnSelected()
+    public void DisableCollider()
     {
         GetComponent<Collider>().enabled = false;
     }

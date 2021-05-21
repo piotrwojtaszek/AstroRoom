@@ -18,13 +18,11 @@ public class ConsteltionLOD : MonoBehaviour
     private void FarLOD()
     {
         GetComponent<MeshFilter>().mesh = lowDetail;
-        GetComponent<Collider>().enabled = false;
     }
 
     private void CloseLOD()
     {
         GetComponent<MeshFilter>().mesh = highDetail;
-        GetComponent<Collider>().enabled = true;
     }
 
 

@@ -11,8 +11,7 @@ public class ConstelationController : IConstealtion
     public Transform persistantPosition = null;
     public UnityAction onComplete = null;
     public UnityAction onSelected = null;
-    public UnityAction onSkyPosition = null;
-    public UnityAction onCreated = null;
+    public UnityAction onReady = null;
     public GameObject hoverObject;
     public override void OnCreated(SOConstelationBase constelationPreset)
     {

@@ -17,6 +17,8 @@ public class ConstelationSocket : INode
     void Start()
     {//a hdyby dodawaæ na hover Action do triggera , a na exit usuwaæ ?????
         baseColor = GetComponent<Renderer>().material.color;
+        constelationController.onReady += EnableCollider;
+        constelationController.onComplete += DisableCollider;
     }
     private void Update()
     {
@@ -50,46 +52,13 @@ public class ConstelationSocket : INode
         constelationController.CheckConnection();
     }
 
-    //na hover += a na exit -=
-    public void OnHoverEnter()
+    public void EnableCollider()
     {
-        foreach (InputActionReference inputAction in socketActivationReference)
-        {
-            inputAction.action.performed += SocketHoverEnter;
-        }
-
-        /*  socketActivationReference.action.canceled += SocketHoverExit;*/
-
+        GetComponent<Collider>().enabled = true;
     }
 
-    public void OnHoverExit()
+    public void DisableCollider()
     {
-        foreach (InputActionReference inputAction in socketActivationReference)
-        {
-            inputAction.action.performed -= SocketHoverEnter;
-            /*socketActivationReference.action.canceled -= SocketHoverExit;*/
-        }
-
-    }
-
-
-    private void SocketHoverExit(InputAction.CallbackContext obj)
-    {
-        onSocketHoverExit.Invoke(id);
-    }
-
-
-    private void SocketHoverEnter(InputAction.CallbackContext obj)
-    {
-        onSocketHoverEnter.Invoke(id);
-    }
-
-    public void EnterMessage()
-    {
-        Debug.Log("Hover enter");
-    }
-    public void ExitMessage()
-    {
-        Debug.Log("Hover exit");
+        GetComponent<Collider>().enabled = false;
     }
 }

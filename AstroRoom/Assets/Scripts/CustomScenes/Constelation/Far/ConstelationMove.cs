@@ -14,8 +14,17 @@ public class ConstelationMove : MonoBehaviour
         constelationController.onComplete += OnCompleteTrigger;
     }
 
-    public void OnSelectedTrigger() => StartCoroutine(MoveTowardsPlayer());
-    public void OnCompleteTrigger() => StartCoroutine(BackToSky());
+    public void OnSelectedTrigger()
+    {
+        StopAllCoroutines();
+        StartCoroutine(MoveTowardsPlayer());
+    }
+    public void OnCompleteTrigger()
+    {
+        StopAllCoroutines();
+        StartCoroutine(BackToSky());
+    }
+
     IEnumerator BackToSky()
     {
         for (; ; )
@@ -30,17 +39,20 @@ public class ConstelationMove : MonoBehaviour
                 transform.rotation = constelationController.persistantPosition.rotation;
                 break;
             }
-            constelationController.onSkyPosition?.Invoke();
+            //constelationController.onSkyPosition?.Invoke();
+
             yield return null;
         }
+
+        ConstelationEvents.Instance.onSkyPosition?.Invoke();
     }
 
     IEnumerator MoveTowardsPlayer()
     {
-        Debug.Log("MOve ");
-        constelationController.persistantPosition.transform.position = transform.position;
-        constelationController.persistantPosition.transform.localScale = transform.localScale;
-        constelationController.persistantPosition.transform.rotation = transform.rotation;
+        ConstelationEvents.Instance.onSelected?.Invoke();
+        /*        constelationController.persistantPosition.transform.position = transform.position;
+                constelationController.persistantPosition.transform.localScale = transform.localScale;
+                constelationController.persistantPosition.transform.rotation = transform.rotation;*/
         Vector3 finded = new Vector3(0f, 1.25f, 2.5f);
 
         for (; ; )
@@ -57,6 +69,7 @@ public class ConstelationMove : MonoBehaviour
             }
             yield return null;
         }
+        constelationController.onReady?.Invoke();
         yield return null;
     }
 
