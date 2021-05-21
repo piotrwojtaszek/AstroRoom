@@ -17,13 +17,14 @@ public class SimDisplayFakePlanets : MonoBehaviour
             GameObject temporary = Instantiate(planetPrefab, transform);
             temporary.name = fragment.name;
             temporary.GetComponent<Renderer>().material = fragment.GetComponent<Renderer>().material;
+            temporary.GetComponent<MatchFakeShadow>().lightSource = fragment.GetComponent<MatchFakeShadow>().lightSource;
             fakePlanets.Add(temporary);
-            Debug.Log("1");
-
         }
+
+        SimControllerEvents.Instance.onChangeMode += ChangeMode;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         for (int i = 0; i < planets.Count; i++)
         {
@@ -52,4 +53,23 @@ public class SimDisplayFakePlanets : MonoBehaviour
                     Gizmos.DrawSphere(direction * planetsDistance[i], 1f);
             }
         }*/
+    void ChangeMode()
+    {
+        foreach (GameObject fragment in fakePlanets)
+        {
+            fragment.GetComponent<Renderer>().enabled = !fragment.GetComponent<Renderer>().enabled;
+            fragment.GetComponent<Collider>().enabled = !fragment.GetComponent<Collider>().enabled;
+            fragment.GetComponent<TrailRenderer>().Clear();
+            fragment.GetComponent<TrailRenderer>().enabled = !fragment.GetComponent<TrailRenderer>().enabled;
+        }
+
+        foreach (GameObject fragment in planets)
+        {
+            fragment.GetComponent<Renderer>().enabled = !fragment.GetComponent<Renderer>().enabled;
+            fragment.GetComponent<Collider>().enabled = !fragment.GetComponent<Collider>().enabled;
+            fragment.GetComponent<TrailRenderer>().Clear();
+            fragment.GetComponent<TrailRenderer>().enabled = !fragment.GetComponent<TrailRenderer>().enabled;
+
+        }
+    }
 }
