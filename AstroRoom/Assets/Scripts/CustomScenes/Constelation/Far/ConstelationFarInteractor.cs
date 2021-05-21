@@ -11,13 +11,12 @@ public class ConstelationFarInteractor : MonoBehaviour
     {
         constelationController.onSkyPosition += OnSkyPosition;
         constelationController.onSelected += OnSelected;
-        Invoke("OnCreate", .5f);
     }
     public void OnCreate()
     {
         Bounds bounds = GetCenterPoint();
         transform.position = bounds.center;
-        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f);
+        transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f,1f);
 
 
         //Debug.Log(transform.lossyScale);

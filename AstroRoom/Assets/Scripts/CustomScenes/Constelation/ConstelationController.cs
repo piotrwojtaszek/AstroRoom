@@ -12,6 +12,7 @@ public class ConstelationController : IConstealtion
     public UnityAction onComplete = null;
     public UnityAction onSelected = null;
     public UnityAction onSkyPosition = null;
+    public UnityAction onCreated = null;
     public GameObject hoverObject;
     public override void OnCreated(SOConstelationBase constelationPreset)
     {
@@ -22,6 +23,7 @@ public class ConstelationController : IConstealtion
         CreateNodesAndChild(this);
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
         CreatePersistantPositionObject();
+        hoverObject.GetComponent<ConstelationFarInteractor>().OnCreate();
     }
 
     public void CheckConnection()
