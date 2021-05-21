@@ -19,6 +19,7 @@ public class SolarSystemController : MonoBehaviour
     }
     [Range(.01f, 2f)]
     public float sizeMultiplier = 1f;
+    [Range(.001f, .25f)]
     public float speedMultiplier = 1f;
 
     private void Update()

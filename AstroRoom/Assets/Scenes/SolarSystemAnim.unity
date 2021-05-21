@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 291885429}
   - component: {fileID: 291885434}
   - component: {fileID: 291885433}
+  - component: {fileID: 291885435}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -213,8 +214,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291885427}
-  m_LocalRotation: {x: 0, y: -0.7417418, z: -0, w: 0.6706856}
-  m_LocalPosition: {x: 12, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.72338766, z: -0, w: 0.6904422}
+  m_LocalPosition: {x: 11.980545, y: 0, z: 0.68304014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -236,7 +237,7 @@ MonoBehaviour:
   a: 12
   speed: 1.6
   b: 12
-  orbits: 0
+  orbits: 0.01
 --- !u!135 &291885430
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -427,6 +428,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &291885435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291885427}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330914557
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +455,7 @@ GameObject:
   - component: {fileID: 330914559}
   - component: {fileID: 330914564}
   - component: {fileID: 330914563}
+  - component: {fileID: 330914565}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -456,8 +470,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330914557}
-  m_LocalRotation: {x: 0, y: -0.7078617, z: -0, w: 0.7063511}
-  m_LocalPosition: {x: 29, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7074567, z: -0, w: 0.70675665}
+  m_LocalPosition: {x: 28.999979, y: 0, z: 0.03509592}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -670,6 +684,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &330914565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330914557}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &408511867
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +711,7 @@ GameObject:
   - component: {fileID: 408511869}
   - component: {fileID: 408511874}
   - component: {fileID: 408511873}
+  - component: {fileID: 408511875}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -699,8 +726,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408511867}
-  m_LocalRotation: {x: 0, y: -0.790155, z: -0, w: 0.6129071}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.74707, z: -0, w: 0.66474545}
+  m_LocalPosition: {x: 9.898815, y: 0, z: 1.4189644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -722,7 +749,7 @@ MonoBehaviour:
   a: 10
   speed: 4
   b: 10
-  orbits: 0
+  orbits: 0.02
 --- !u!135 &408511870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -913,6 +940,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &408511875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408511867}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491960064
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +967,7 @@ GameObject:
   - component: {fileID: 491960066}
   - component: {fileID: 491960071}
   - component: {fileID: 491960070}
+  - component: {fileID: 491960072}
   m_Layer: 0
   m_Name: Uran
   m_TagString: Untagged
@@ -942,8 +982,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491960064}
-  m_LocalRotation: {x: 0, y: -0.7073733, z: -0, w: 0.7068402}
-  m_LocalPosition: {x: 36, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7072303, z: -0, w: 0.7069832}
+  m_LocalPosition: {x: 35.999996, y: 0, z: 0.015376713}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1156,6 +1196,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &491960072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491960064}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1177068884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1178,6 +1230,10 @@ PrefabInstance:
     - target: {fileID: 878585342873576770, guid: 29514c187c5ea0142877f4ccd06b55af, type: 3}
       propertyPath: m_Name
       value: SceneChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 878585342873576770, guid: 29514c187c5ea0142877f4ccd06b55af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 878585342873576771, guid: 29514c187c5ea0142877f4ccd06b55af, type: 3}
       propertyPath: m_RootOrder
@@ -1240,6 +1296,7 @@ GameObject:
   - component: {fileID: 1242794571}
   - component: {fileID: 1242794576}
   - component: {fileID: 1242794575}
+  - component: {fileID: 1242794577}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -1254,8 +1311,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242794569}
-  m_LocalRotation: {x: 0, y: -0.71891296, z: -0, w: 0.6951002}
-  m_LocalPosition: {x: 16, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.71260405, z: -0, w: 0.7015665}
+  m_LocalPosition: {x: 15.997088, y: 0, z: 0.30523774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1468,6 +1525,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1242794577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242794569}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1352513740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,6 +1552,7 @@ GameObject:
   - component: {fileID: 1352513742}
   - component: {fileID: 1352513747}
   - component: {fileID: 1352513746}
+  - component: {fileID: 1352513748}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -1497,8 +1567,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352513740}
-  m_LocalRotation: {x: 0, y: -0.70888174, z: -0, w: 0.70532745}
-  m_LocalPosition: {x: 22, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.70793, z: -0, w: 0.7062826}
+  m_LocalPosition: {x: 21.99991, y: 0, z: 0.062645786}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -1711,6 +1781,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1352513748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352513740}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1376679143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,6 +1803,10 @@ PrefabInstance:
     - target: {fileID: 2961924368876355273, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_Name
       value: Teleportation Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961924368876355273, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2961924368876355276, guid: 5ad2aacaede302441a5565593f5bafd9, type: 3}
       propertyPath: m_Enabled
@@ -1799,6 +1885,7 @@ GameObject:
   - component: {fileID: 1701040155}
   - component: {fileID: 1701040160}
   - component: {fileID: 1701040159}
+  - component: {fileID: 1701040161}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -1813,8 +1900,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701040153}
-  m_LocalRotation: {x: 0, y: -0.70724005, z: -0, w: 0.7069735}
-  m_LocalPosition: {x: 45, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7071685, z: -0, w: 0.707045}
+  m_LocalPosition: {x: 45, y: 0, z: 0.009610446}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -2027,6 +2114,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1701040161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701040153}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1787002998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sizeMultiplier: 1
-  speedMultiplier: 0.1
+  speedMultiplier: 0.07725
 --- !u!4 &1787003000
 Transform:
   m_ObjectHideFlags: 0
@@ -2065,7 +2164,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787002998}
-  m_LocalRotation: {x: -0, y: -0.02240811, z: -0, w: 0.99974895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2080,7 +2179,7 @@ Transform:
   - {fileID: 1701040154}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -2.568, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1920929923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2290,7 @@ GameObject:
   - component: {fileID: 1992562554}
   - component: {fileID: 1992562559}
   - component: {fileID: 1992562558}
+  - component: {fileID: 1992562560}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -2205,8 +2305,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992562552}
-  m_LocalRotation: {x: 0, y: -0.7289687, z: -0, w: 0.6845471}
-  m_LocalPosition: {x: 14, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.71732783, z: -0, w: 0.6967358}
+  m_LocalPosition: {x: 13.991132, y: 0, z: 0.49821422}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1787003000}
@@ -2228,7 +2328,7 @@ MonoBehaviour:
   a: 14
   speed: 1
   b: 14
-  orbits: 0
+  orbits: 0.01
 --- !u!135 &1992562555
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2417,5 +2517,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 715b0106970f28e4eb65302bb28a64be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1992562560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992562552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef922a39750a042b73a22ffa16df22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
