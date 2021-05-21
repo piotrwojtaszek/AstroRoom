@@ -18,7 +18,7 @@ public class TestUI : MonoBehaviour
     void Update()
     {
         slider.value = SimController.Instance.timeStep;
-        textTimeStep.text = SimController.Instance.timeStep.ToString();
+        textTimeStep.text = SimController.Instance.timeStep.ToString("F3");
     }
     public void Change()
     {
