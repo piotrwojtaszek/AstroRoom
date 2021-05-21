@@ -5,9 +5,13 @@ using UnityEngine;
 public class Trail : MonoBehaviour
 {
     TrailRenderer trailRenderer;
+    SolarSystemOrbitController systemOrbitController;
+    float originalVertexDist;
     private void Awake()
     {
         trailRenderer = GetComponent<TrailRenderer>();
+        systemOrbitController = GetComponent<SolarSystemOrbitController>();
+        originalVertexDist=trailRenderer.minVertexDistance;
 
     }
     // Start is called before the first frame update
@@ -19,6 +23,8 @@ public class Trail : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        trailRenderer.minVertexDistance = originalVertexDist * SolarSystemController.Instance.sizeMultiplier;
+        trailRenderer.widthMultiplier = SolarSystemController.Instance.sizeMultiplier;
+        trailRenderer.time = 1f / systemOrbitController.speed / SolarSystemController.Instance.speedMultiplier;
     }
 }

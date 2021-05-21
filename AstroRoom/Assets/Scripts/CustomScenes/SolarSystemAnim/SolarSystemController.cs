@@ -17,8 +17,12 @@ public class SolarSystemController : MonoBehaviour
             return _instance;
         }
     }
-
-    public float sizeMultiplier=1f;
+    [Range(.01f, 2f)]
+    public float sizeMultiplier = 1f;
     public float speedMultiplier = 1f;
 
+    private void Update()
+    {
+        transform.localScale = Vector3.one * sizeMultiplier;
+    }
 }
