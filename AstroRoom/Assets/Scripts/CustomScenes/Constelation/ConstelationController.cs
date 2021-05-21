@@ -23,6 +23,8 @@ public class ConstelationController : IConstealtion
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
         CreatePersistantPositionObject();
         hoverObject.GetComponent<ConstelationFarInteractor>().OnCreate();
+        onComplete += SaveState;
+        CheckIfAlreadyCompleted();
     }
 
     public void CheckConnection()
@@ -60,5 +62,37 @@ public class ConstelationController : IConstealtion
         persistantPosition.transform.position = transform.position;
         persistantPosition.transform.localScale = transform.localScale;
         persistantPosition.transform.rotation = transform.rotation;
+    }
+
+    void SaveState()
+    {
+        Debug.Log("SAVE");
+        PlayerPrefs.SetInt(ConstelationPreset.name, 1);
+    }
+
+    void CheckIfAlreadyCompleted()
+    {
+        if (PlayerPrefs.GetInt(ConstelationPreset.name, 0) == 1)
+        {
+            AutoComplete();
+        }
+    }
+
+    void AutoComplete()
+    {
+        for (int x = 0; x < ConstelationPreset.size; x++)
+        {
+            for (int y = 0; y < x; y++)
+            {
+                if (adjMatrix[x, y] && adjMatrix[y, x])
+                    if (adjMatrixCheck[x, y] == false || adjMatrixCheck[y, x])
+                    {
+                        adjMatrixCheck[x, y] = true;
+                        adjMatrixCheck[y, x] = true;
+                        CreateConnection(x, y, this);
+                    }
+            }
+        }
+
     }
 }

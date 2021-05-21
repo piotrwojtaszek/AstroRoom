@@ -80,4 +80,5 @@ public class IConstealtion : MonoBehaviour
         gameObject.transform.RotateAround(Vector3.zero, Vector3.left, ConstelationPreset.skyPosition.x);
         
     }
+
 }
