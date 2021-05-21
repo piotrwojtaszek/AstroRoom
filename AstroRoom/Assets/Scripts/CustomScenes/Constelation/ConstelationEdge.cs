@@ -11,6 +11,7 @@ public class ConstelationEdge : MonoBehaviour
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
+        ConstelationEvents.Instance.onProgressReset += DestroyMe;
     }
 
     private void Update()
@@ -18,5 +19,11 @@ public class ConstelationEdge : MonoBehaviour
         lineRenderer.SetPosition(0, constelationController.nodes[id_1].position);
         lineRenderer.SetPosition(1, constelationController.nodes[id_2].position);
         lineRenderer.widthMultiplier = transform.lossyScale.x/20f;
+    }
+
+    void DestroyMe()
+    {
+        ConstelationEvents.Instance.onProgressReset -= DestroyMe;
+        Destroy(gameObject);
     }
 }

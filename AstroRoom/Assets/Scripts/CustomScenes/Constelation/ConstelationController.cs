@@ -25,6 +25,7 @@ public class ConstelationController : IConstealtion
         hoverObject.GetComponent<ConstelationFarInteractor>().OnCreate();
         onComplete += SaveState;
         CheckIfAlreadyCompleted();
+        ConstelationEvents.Instance.onProgressReset += OnProgressReset;
     }
 
     public void CheckConnection()
@@ -93,6 +94,10 @@ public class ConstelationController : IConstealtion
                     }
             }
         }
+    }
 
+    void OnProgressReset()
+    {
+        adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
     }
 }

@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - lowDetail: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   - highDetail: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  - materialLowDetail: {instanceID: 0}
+  - materialHighDetail: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
