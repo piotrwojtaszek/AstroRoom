@@ -15,11 +15,13 @@ public class SolarSystemOrbitController : MonoBehaviour
     float z;
     public float b = 1f;
     public double orbits = 0f;
+    TrailRenderer trail;
     private void Start()
     {
-
+        trail = GetComponent<TrailRenderer>();
+        SolarSystemController.Instance.onSizeChange += ClearTrail;
     }
-    void Update()
+    void FixedUpdate()
     {
         if (speed == 0f)
             return;
@@ -33,4 +35,11 @@ public class SolarSystemOrbitController : MonoBehaviour
 
         orbits = System.Math.Round((angle * 60f) / 360f, 2);
     }
+
+    void ClearTrail()
+    {
+        trail.Clear();
+    }
+
+
 }

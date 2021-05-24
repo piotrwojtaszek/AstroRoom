@@ -27,6 +27,7 @@ public class ConstelationMove : MonoBehaviour
 
     IEnumerator BackToSky()
     {
+        transform.SetParent(constelationController.persistantPosition.parent.transform);
         for (; ; )
         {
             transform.position = Vector3.Lerp(transform.position, constelationController.persistantPosition.position, Time.deltaTime * .5f);
@@ -54,6 +55,7 @@ public class ConstelationMove : MonoBehaviour
                 constelationController.persistantPosition.transform.localScale = transform.localScale;
                 constelationController.persistantPosition.transform.rotation = transform.rotation;*/
         Vector3 finded = new Vector3(0f, 1.25f, 2.5f);
+        transform.SetParent(null);
 
         for (; ; )
         {

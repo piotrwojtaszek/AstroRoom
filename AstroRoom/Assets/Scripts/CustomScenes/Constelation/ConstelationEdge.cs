@@ -16,11 +16,16 @@ public class ConstelationEdge : MonoBehaviour
 
     private void Update()
     {
-        lineRenderer.SetPosition(0, constelationController.nodes[id_1].position);
-        lineRenderer.SetPosition(1, constelationController.nodes[id_2].position);
+        UpdatePos();
         lineRenderer.widthMultiplier = transform.lossyScale.x/20f;
     }
 
+
+    public void UpdatePos()
+    {
+        lineRenderer.SetPosition(0, constelationController.nodes[id_1].position);
+        lineRenderer.SetPosition(1, constelationController.nodes[id_2].position);
+    }
     void DestroyMe()
     {
         ConstelationEvents.Instance.onProgressReset -= DestroyMe;

@@ -2382,6 +2382,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1130311857}
   - component: {fileID: 1130311858}
+  - component: {fileID: 1130311859}
+  - component: {fileID: 1130311860}
   m_Layer: 0
   m_Name: ---Sky---
   m_TagString: Untagged
@@ -2419,6 +2421,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   constelationList: {fileID: 11400000, guid: 6f5008125edf3c8418104b6b65926e6d, type: 2}
   constelationControllerPrefab: {fileID: 6401290934849393957, guid: 0dabe8733e7454f49b109bff6130c423, type: 3}
+--- !u!114 &1130311859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130311856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30d377a7fa1a2b64b804958883d0e348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1130311860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130311856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28cddcdc367a2ce4aa639ace3d80802d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 7611288824097711816}
 --- !u!1001 &1176890530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2550,7 +2577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1499450433
 Transform:
   m_ObjectHideFlags: 0

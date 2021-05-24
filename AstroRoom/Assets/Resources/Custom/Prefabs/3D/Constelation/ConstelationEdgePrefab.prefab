@@ -144,3 +144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id_1: 0
   id_2: 0
+  constelationController: {fileID: 0}

@@ -24,6 +24,7 @@ public class IConstealtion : MonoBehaviour
         lineControler.constelationController = controller;
         lineControler.id_1 = id_1;
         lineControler.id_2 = id_2;
+        lineControler.UpdatePos();
     }
 
     protected bool VerifyConnection(int id_1, int id_2)
