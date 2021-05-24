@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87b03a9156f4c354092569d553704fcb, type: 3}
-  m_Name: Jupiter
+  m_Name: Sun
   m_EditorClassIdentifier: 
   properties:
-    bodyName: Jupiter
-    graphicPrefab: {fileID: 911840940513796575, guid: 0f09e81245d56b54a845910ba8beb3ad, type: 3}
-    size: 11
+    bodyName: Sun
+    graphicPrefab: {fileID: 3323356507539486190, guid: 0c3fbcbba3b86e44781bec3fadbd3577, type: 3}
+    size: 109

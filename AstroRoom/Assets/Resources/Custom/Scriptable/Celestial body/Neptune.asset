@@ -15,3 +15,4 @@ MonoBehaviour:
   properties:
     bodyName: Neptune
     graphicPrefab: {fileID: 5134596180782562830, guid: 43d39cfba4309f943865ab6344af11b4, type: 3}
+    size: 3.95

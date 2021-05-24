@@ -15,3 +15,4 @@ MonoBehaviour:
   properties:
     bodyName: Uranus
     graphicPrefab: {fileID: 1432048092255918115, guid: 131ee86b922cea042b7433556dc65c2e, type: 3}
+    size: 4

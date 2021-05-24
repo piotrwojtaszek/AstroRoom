@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbaafc6386c4a84c8fa92fb47ba185f, type: 3}
+  m_Name: Celestal Bodies List and Sun
+  m_EditorClassIdentifier: 
+  listOfBodies:
+  - {fileID: 11400000, guid: 7ea8a3c17f51c9e45af6c2a0b7b5f2ea, type: 2}
+  - {fileID: 11400000, guid: 008c9c3c46cb0374f85e653d0b3f1bb1, type: 2}
+  - {fileID: 11400000, guid: 7c76af2f8141d784488982f4012c7c4a, type: 2}
+  - {fileID: 11400000, guid: b72102a974eda114c9836e3a131ccbc8, type: 2}
+  - {fileID: 11400000, guid: 5e592e546251e7840bb7c0e686301c22, type: 2}
+  - {fileID: 11400000, guid: abff4e83cf35e5045b7bbe65a9133077, type: 2}
+  - {fileID: 11400000, guid: 78199ac4a89832b4da4b46ef92f538c1, type: 2}
+  - {fileID: 11400000, guid: a53f121d2c2abd746956a395159b1565, type: 2}
+  - {fileID: 11400000, guid: 561dc02ed9f5f474088f40f7fe5dd410, type: 2}

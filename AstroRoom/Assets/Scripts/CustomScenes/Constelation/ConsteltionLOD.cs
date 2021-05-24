@@ -21,12 +21,14 @@ public class ConsteltionLOD : MonoBehaviour
     {
         GetComponent<MeshFilter>().mesh = lowDetail;
         GetComponent<Renderer>().material = materialLowDetail;
+        GetComponent<LookAtCamera>().enabled = true;
     }
 
     private void CloseLOD()
     {
         GetComponent<MeshFilter>().mesh = highDetail;
         GetComponent<Renderer>().material = materialHighDetail;
+        GetComponent<LookAtCamera>().enabled = false;
     }
 
 

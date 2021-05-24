@@ -15,3 +15,4 @@ MonoBehaviour:
   properties:
     bodyName: Saturn
     graphicPrefab: {fileID: 2987831372171259325, guid: ff19c0a230566a04d85e81f3dddd3f67, type: 3}
+    size: 9

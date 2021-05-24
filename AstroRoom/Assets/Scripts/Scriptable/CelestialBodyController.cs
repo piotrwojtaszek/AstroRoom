@@ -5,6 +5,7 @@ using UnityEngine;
 public class CelestialBodyController : ScriptableObject
 {
     public CelestialBodyProperties properties;
+
 }
 
 [System.Serializable]
@@ -14,7 +15,8 @@ public class CelestialBodyProperties
     private string bodyName;
     [SerializeField]
     private GameObject graphicPrefab;
-
+    [SerializeField]
+    private float size;
 
     public string Name
     {
@@ -29,6 +31,14 @@ public class CelestialBodyProperties
         get
         {
             return graphicPrefab;
+        }
+    }
+
+    public float Size
+    {
+        get
+        {
+            return size;
         }
     }
 }

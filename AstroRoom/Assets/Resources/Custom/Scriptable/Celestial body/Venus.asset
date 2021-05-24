@@ -15,3 +15,4 @@ MonoBehaviour:
   properties:
     bodyName: Venus
     graphicPrefab: {fileID: 1864345885006152893, guid: b49f4d0a01edbf2479b781c369b216d1, type: 3}
+    size: 0.99

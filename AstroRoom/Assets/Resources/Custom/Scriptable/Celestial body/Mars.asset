@@ -15,3 +15,4 @@ MonoBehaviour:
   properties:
     bodyName: Mars
     graphicPrefab: {fileID: 6044437799303063273, guid: da7a212841294464aa9fd63829ec5bfd, type: 3}
+    size: 0.53
