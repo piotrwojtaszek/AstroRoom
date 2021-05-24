@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GravityChanger : MonoBehaviour
 {
-    public LayerMask gravityObjectMask;
     public float gravity;
     public Color gravityColor;
     // Start is called before the first frame update
@@ -20,8 +19,9 @@ public class GravityChanger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == gravityObjectMask)
+        if(other.gameObject.layer == LayerMask.NameToLayer("GravityObject"))
         {
+            Debug.Log("hy");
             other.gameObject.GetComponent<ArtificialGravity>().gravity = gravity;
             other.gameObject.GetComponent<Renderer>().material.color = gravityColor;
         }

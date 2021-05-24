@@ -67,7 +67,6 @@ public class ConstelationController : IConstealtion
 
     void SaveState()
     {
-        Debug.Log("SAVE");
         PlayerPrefs.SetInt(ConstelationPreset.name, 1);
     }
 
