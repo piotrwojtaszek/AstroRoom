@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class SolarEclipseRotate : MonoBehaviour
 {
     public Transform objectToRotate;
-    public Transform relativeTo;
+    public Transform earth;
+    public Transform sun;
     Slider slider;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,8 @@ public class SolarEclipseRotate : MonoBehaviour
     // Update is called once per frame
     public void Rotate()
     {
+        Vector3 rotateAround = earth.position - sun.position;
         float delta = slider.value - objectToRotate.rotation.eulerAngles.y;
-        objectToRotate.RotateAround(relativeTo.position, Vector3.up, delta);
+        objectToRotate.Rotate(Vector3.up, delta);
     }
 }

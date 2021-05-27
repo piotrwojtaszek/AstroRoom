@@ -11,17 +11,10 @@ public class GravityChanger : MonoBehaviour
     {
         GetComponent<Renderer>().material.color = gravityColor;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("GravityObject"))
         {
-            Debug.Log("hy");
             other.gameObject.GetComponent<ArtificialGravity>().gravity = gravity;
             other.gameObject.GetComponent<Renderer>().material.color = gravityColor;
         }

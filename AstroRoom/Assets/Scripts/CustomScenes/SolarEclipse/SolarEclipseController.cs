@@ -30,7 +30,6 @@ public class SolarEclipseController : MonoBehaviour
     public float zoom = 1f;
     public float deltaPosition = 50f;
     public Slider slider;
-    public TextMeshProUGUI uGUI;
     public Transform directionalLight;
     [SerializeField] AnimationCurve curve;
     [SerializeField] AnimationCurve movementMultipier;
@@ -59,7 +58,6 @@ public class SolarEclipseController : MonoBehaviour
         ProcessPositionOnAmbientLight();
         ProcessZoom();
         zoom = slider.value;
-        uGUI.text = "Zoom: " + slider.value.ToString("F1") + "x";
     }
 
     void UpdateDevices()

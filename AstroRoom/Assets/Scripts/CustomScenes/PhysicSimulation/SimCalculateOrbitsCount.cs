@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimCalculateOrbitsCount : MonoBehaviour
+public class SimCalculateOrbitsCount : IOrbitsCount
 {
-    public int orbitsCount = -1;
     public LayerMask layerMask;
-    private bool alreadyHit = false;
+    private bool alreadyHit = true;
     // Start is called before the first frame update
     void Start()
     {

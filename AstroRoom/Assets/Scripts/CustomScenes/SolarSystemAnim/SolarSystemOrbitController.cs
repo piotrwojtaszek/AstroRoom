@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteAlways]
-public class SolarSystemOrbitController : MonoBehaviour
+public class SolarSystemOrbitController : IOrbitsCount
 {
     public Transform center;
     public float a = 1f; //a is in AU, Semimajor Axis
@@ -14,7 +14,7 @@ public class SolarSystemOrbitController : MonoBehaviour
     float x;
     float z;
     public float b = 1f;
-    public double orbits = 0f;
+    public float orbits = 0f;
     TrailRenderer trail;
     private void Start()
     {
@@ -33,7 +33,9 @@ public class SolarSystemOrbitController : MonoBehaviour
         z = Mathf.Sin(angle) * b; // b is the  Radius in the z direction
         transform.localPosition = new Vector3(x, transform.localPosition.y, z);
 
-        orbits = System.Math.Round((angle * 60f) / 360f, 2);
+        orbits = (float)System.Math.Round((angle * 60f) / 360f, 2);
+        orbitsCount = Mathf.FloorToInt(orbits);
+
     }
 
     void ClearTrail()
