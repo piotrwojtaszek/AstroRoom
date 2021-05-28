@@ -7,7 +7,7 @@ public class UICelestialListFragment : MonoBehaviour
     private CelestialBodyController celestialProperties;
     private UIComparisonController comparisonController;
     public TextMeshProUGUI nameField;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class UICelestialListFragment : MonoBehaviour
     }
 
 
-    public void SetFragment(CelestialBodyController bodyProperties,UIComparisonController controller)
+    public void SetFragment(CelestialBodyController bodyProperties, UIComparisonController controller)
     {
         celestialProperties = bodyProperties;
         comparisonController = controller;

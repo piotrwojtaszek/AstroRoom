@@ -13,10 +13,10 @@ public class UICelestialList : MonoBehaviour
 
     private void Awake()
     {
-        foreach(CelestialBodyController body in celestialBodiesList.listOfBodies)
+        foreach (CelestialBodyController body in celestialBodiesList.listOfBodies)
         {
             GameObject fragment = Instantiate(listFragment, scrollContent);
-            fragment.GetComponent<UICelestialListFragment>().SetFragment(body,comparisonController);
+            fragment.GetComponent<UICelestialListFragment>().SetFragment(body, comparisonController);
         }
     }
 }

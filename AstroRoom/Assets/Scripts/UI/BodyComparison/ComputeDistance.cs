@@ -16,12 +16,12 @@ public class ComputeDistance : MonoBehaviour
         if (origin_1.childCount == 0 || origin_2.childCount == 0)
             return;
 
-        Debug.Log("Sprawdzam: " + origin_1.GetChild(0).transform.lossyScale + "     Drugie: " + origin_2.GetChild(0).transform.lossyScale);
         if (origin_1.GetChild(0).transform.lossyScale.x >= origin_2.GetChild(0).transform.lossyScale.x)
         {
             origin_1.GetChild(0).transform.localPosition = new Vector3(0, 0, origin_1.GetChild(0).transform.lossyScale.x / 1.5f);
             origin_2.GetChild(0).transform.localPosition = new Vector3(0, 0, origin_1.GetChild(0).transform.lossyScale.x / 1.5f);
         }
+
         if (origin_1.GetChild(0).transform.lossyScale.x < origin_2.GetChild(0).transform.lossyScale.x)
         {
             origin_2.GetChild(0).transform.localPosition = new Vector3(0, 0, origin_2.GetChild(0).transform.lossyScale.x / 1.5f);

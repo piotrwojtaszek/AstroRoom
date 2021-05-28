@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteAlways]
 public class SolarSystemOrbitController : IOrbitsCount
 {
     public Transform center;
@@ -33,8 +32,8 @@ public class SolarSystemOrbitController : IOrbitsCount
         z = Mathf.Sin(angle) * b; // b is the  Radius in the z direction
         transform.localPosition = new Vector3(x, transform.localPosition.y, z);
 
-        orbits = (float)System.Math.Round((angle * 60f) / 360f, 2);
-        orbitsCount = Mathf.FloorToInt(orbits);
+        orbits = (float)System.Math.Round((angle * 72f) / 360f, 2);
+        orbitsCount = Mathf.FloorToInt(angle / (Mathf.PI * 2f));
 
     }
 
