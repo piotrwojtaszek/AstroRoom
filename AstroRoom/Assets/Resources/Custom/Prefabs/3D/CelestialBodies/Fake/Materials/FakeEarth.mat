@@ -50,7 +50,7 @@ Material:
     m_Floats: []
     m_Colors:
     - Vector2_3a3b990be8d04c629f5a523d8d489a30: {r: 0.25, g: 0, b: 0, a: 0}
-    - Vector2_9b8ac70f97a34910bab180bcdfb775c6: {r: 0.25, g: 0, b: 0, a: 0}
+    - Vector2_9b8ac70f97a34910bab180bcdfb775c6: {r: -0.5, g: 0, b: 0, a: 0}
     - Vector2_9ccbce28c0b842d7b29ca207e7b3bcc5: {r: 0, g: 0, b: 0, a: 0}
     - Vector3_b40bc7a0c5614b76a613abad594bf369: {r: 1.86, g: 0, b: -1, a: 0}
   m_BuildTextureStacks: []
