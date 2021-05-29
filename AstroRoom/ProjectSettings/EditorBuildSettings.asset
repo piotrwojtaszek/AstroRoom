@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainBase.unity
+    guid: d1d4fd801777f4c49bf913d550af606e
+  - enabled: 1
     path: Assets/Scenes/Constelations.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Physics.unity
     guid: 0e939a9b6929cfc4caa08d0d9cfeab74
-  - enabled: 1
-    path: Assets/Scenes/SkyBox.unity
-    guid: bec175acfb5c08843b806f8b03fbe6bf
   - enabled: 1
     path: Assets/Scenes/Gravity.unity
     guid: 6e1089b45048e86468ef2d956e644b43
