@@ -13,6 +13,7 @@ public class SolarEclipseZMove : MonoBehaviour
     {
         slider = GetComponent<Slider>();
         zOrigin = objectToMove.position.z;
+        Move();
     }
 
 
