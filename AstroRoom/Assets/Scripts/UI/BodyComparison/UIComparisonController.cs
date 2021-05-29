@@ -47,7 +47,8 @@ public class UIComparisonController : MonoBehaviour
 
     IEnumerator EnableRenderer(GameObject obj)
     {
-        obj.GetComponent<MeshRenderer>().enabled = true;
         yield return new WaitForSeconds(.03f);
+        obj.GetComponent<MeshRenderer>().enabled = true;
+
     }
 }
