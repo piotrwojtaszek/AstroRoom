@@ -11,7 +11,8 @@ public class Trail : MonoBehaviour
     {
         trailRenderer = GetComponent<TrailRenderer>();
         systemOrbitController = GetComponent<SolarSystemOrbitController>();
-        originalVertexDist=trailRenderer.minVertexDistance;
+        originalVertexDist = trailRenderer.minVertexDistance;
+        SolarSystemController.Instance.onSizeChange += ResetTrail;
 
     }
     // Start is called before the first frame update
@@ -27,4 +28,6 @@ public class Trail : MonoBehaviour
         trailRenderer.widthMultiplier = SolarSystemController.Instance.sizeMultiplier;
         trailRenderer.time = 1f / systemOrbitController.speed / SolarSystemController.Instance.speedMultiplier;
     }
+
+    public void ResetTrail() => trailRenderer.Clear();
 }

@@ -21,11 +21,11 @@ public class ConstelationInSceneHelper : MonoBehaviour
                 Gizmos.color = new Color(1f, 0f, 0f, 0.15f);
                 Gizmos.DrawCube(new Vector3(0f, 0f), new Vector3(7f, .5f));
                 Gizmos.DrawCube(new Vector3(0f, 2f), new Vector3(7f, .5f));*/
-        size = new Vector3(8f, 3f);
-        Gizmos.color = new Color(0.9f, 1f, 0.1f, 0.1f);
+        size = new Vector3(10f, 3f);
+        Gizmos.color = new Color(0.3f, .3f, 1f, 0.4f);
         Gizmos.DrawCube(transform.position, size);
-        Gizmos.color = new Color(0, 0, 1f, 0.3f);
-        Gizmos.DrawCube(transform.position, new Vector3(5f,size.y));
+        Gizmos.color = new Color(1f, 0, 0, 0.4f);
+        Gizmos.DrawCube(transform.position-Vector3.up*2f, new Vector3(10f,1f));
 
 
         Gizmos.color = Color.yellow;

@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   constelationPreset: {fileID: 11400000, guid: 2c210cd5636aa674eaaa5ebeb1b71f65, type: 2}
-  size: {x: 8, y: 3, z: 0}
+  size: {x: 10, y: 3, z: 0}
 --- !u!4 &793945154
 Transform:
   m_ObjectHideFlags: 0
