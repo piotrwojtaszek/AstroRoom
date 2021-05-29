@@ -21,11 +21,11 @@ public class GravityComparisonShow : MonoBehaviour
     {
         for (; ; )
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(2.5f);
             top.SetActive(false);
 
 
-            yield return new WaitForSeconds(6f);
+            yield return new WaitForSeconds(4.5f);
             top.SetActive(true);
             object_1.position = origin_1;
             object_2.position = origin_2;

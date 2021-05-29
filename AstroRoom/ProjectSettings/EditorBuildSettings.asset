@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SolarSystemAnim.unity
     guid: ac2c1b047bc87fc4e806ff0bf19b0de7
   - enabled: 1
-    path: Assets/Scenes/Physics.unity
+    path: Assets/Scenes/SolarSystemSim.unity
     guid: 0e939a9b6929cfc4caa08d0d9cfeab74
   - enabled: 1
     path: Assets/Scenes/Gravity.unity
