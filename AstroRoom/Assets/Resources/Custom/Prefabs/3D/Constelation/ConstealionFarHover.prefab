@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 70af66ecd32a4c542ba3d76ab1b14e54, type: 2}
+  - {fileID: 2100000, guid: f8c6fe178177063428db532982cc9797, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,3 +216,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   constelationController: {fileID: 0}
+  constelationName: {fileID: 0}

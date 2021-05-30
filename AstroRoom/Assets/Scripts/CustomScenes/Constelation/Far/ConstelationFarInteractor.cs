@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Events;
+using TMPro;
 public class ConstelationFarInteractor : MonoBehaviour
 {
     public ConstelationController constelationController;
-
+    public GameObject constelationName;
     private void Start()
     {
-/*        constelationController.onSkyPosition += OnSkyPosition;
-        constelationController.onSelected += OnSelected;*/
+        /*        constelationController.onSkyPosition += OnSkyPosition;
+                constelationController.onSelected += OnSelected;*/
 
         ConstelationEvents.Instance.onSelected += DisableCollider;
         ConstelationEvents.Instance.onSkyPosition += EnableCollider;
+
 
     }
     public void OnCreate()
@@ -21,7 +23,8 @@ public class ConstelationFarInteractor : MonoBehaviour
         Bounds bounds = GetCenterPoint();
         transform.position = bounds.center;
         transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, 1f);
-
+        constelationName.GetComponent<TextMeshPro>().text = constelationController.ConstelationPreset.conName;
+        constelationName.transform.localPosition = new Vector3(0f, bounds.size.y / 2.5f, 0f);
 
         //Debug.Log(transform.lossyScale);
     }

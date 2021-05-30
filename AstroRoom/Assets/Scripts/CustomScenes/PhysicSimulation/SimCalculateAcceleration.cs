@@ -25,7 +25,6 @@ public class SimCalculateAcceleration : MonoBehaviour
         gravityObject.initialVelocity.x = Mathf.Sqrt((Constant.gravitionalConstant * relativeTo.GetComponent<Rigidbody>().mass) / dist);
         Vector3 dotProduct = Vector3.Cross(transform.position, relativeTo.transform.position);
         Vector3 nowy = new Vector3(dotProduct.z, -dotProduct.y, dotProduct.x);
-        Gizmos.DrawRay(transform.position, nowy.normalized);
         Force();
     }
 
