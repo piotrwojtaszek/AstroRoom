@@ -18,4 +18,6 @@ public class ConstelationEvents : MonoBehaviour
     public UnityAction onSelected;
     public UnityAction onSkyPosition;
     public UnityAction onProgressReset;
+    public UnityAction onComplete;
+    public UnityAction onAlmostComplete;
 }

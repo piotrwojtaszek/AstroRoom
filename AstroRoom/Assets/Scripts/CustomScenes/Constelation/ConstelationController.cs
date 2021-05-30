@@ -26,6 +26,7 @@ public class ConstelationController : IConstealtion
         onComplete += SaveState;
         CheckIfAlreadyCompleted();
         ConstelationEvents.Instance.onProgressReset += OnProgressReset;
+        onReady += CheckIfCompleted;
     }
 
     public void CheckConnection()
@@ -52,8 +53,15 @@ public class ConstelationController : IConstealtion
                 if (ConstelationPreset.adjMatrix[ConstelationPreset.size * i + j] != adjMatrixCheck[i, j])
                     return;
             }
+        ConstelationEvents.Instance.onAlmostComplete?.Invoke();
+        ConstelationEvents.Instance.onComplete += Complete;
 
+    }
+
+    void Complete()
+    {
         onComplete?.Invoke();
+        ConstelationEvents.Instance.onComplete -= Complete;
     }
 
     void CreatePersistantPositionObject()

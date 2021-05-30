@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1490077987827580666}
   - component: {fileID: 6639149299440059566}
   - component: {fileID: 5309521036615901729}
-  - component: {fileID: 515085652310502456}
   m_Layer: 5
   m_Name: UI_ChangeScene
   m_TagString: Untagged
@@ -135,18 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenesName: 0
---- !u!114 &515085652310502456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3503030310241478728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba826c2c36a873498632fbccf028588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4135898186313078538
 GameObject:
   m_ObjectHideFlags: 0
