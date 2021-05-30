@@ -24,7 +24,7 @@ public class ConstelationFarInteractor : MonoBehaviour
         transform.position = bounds.center;
         transform.localScale = new Vector3(bounds.size.x / 2f, bounds.size.y / 2f, 1f);
         constelationName.GetComponent<TextMeshPro>().text = constelationController.ConstelationPreset.conName;
-        constelationName.transform.localPosition = new Vector3(0f, bounds.size.y / 2.5f, 0f);
+        constelationName.transform.localPosition = new Vector3(0f, bounds.size.y / 2f, 0f);
 
         //Debug.Log(transform.lossyScale);
     }
