@@ -35,6 +35,7 @@ public class SolarEclipseController : MonoBehaviour
     [SerializeField] AnimationCurve movementMultipier;
     public Vector3 perfectEclipsePosition;
     Color normal = new Color(1f, 0.9380f, 0.9009f, 1f);
+    public Renderer bloomTexture;
     // Start is called before the first frame update
     void Start()
     {
@@ -102,6 +103,7 @@ public class SolarEclipseController : MonoBehaviour
         {
             float graph = deltaPosition / triggerDistance;
             ChangeAmbientColor(curve.Evaluate(graph) * zoom);
+            ControllBloom(curve.Evaluate(graph) * zoom);
             graph = curve.Evaluate(graph) * 23f * zoom;
 
 
@@ -127,5 +129,10 @@ public class SolarEclipseController : MonoBehaviour
     {
         Color temp = new Color(normal.r - graph / 1.5f, normal.g - graph / 1.5f, normal.b - graph / 1.5f, 1f);
         RenderSettings.ambientLight = temp;
+    }
+
+    void ControllBloom(float graph)
+    {
+        bloomTexture.material.color = new Color(1f, 1f, 1f, graph);
     }
 }
