@@ -1934,6 +1934,12 @@ MonoBehaviour:
   - 36
   - 45
   planetPrefab: {fileID: 1768213222720165612, guid: 2ebb7f2af48422341b9219099ce04194, type: 3}
+  planetPrefabSaturn: {fileID: 1768213222720165612, guid: 3215f9f59f6edb641b187316727f73fb, type: 3}
+  sizeSmall: 0.8
+  sizeBig: 2
+  sizeMultiplier: 1
+  trail: 1
+  height: 0
 --- !u!1 &6229478592937144283
 GameObject:
   m_ObjectHideFlags: 0

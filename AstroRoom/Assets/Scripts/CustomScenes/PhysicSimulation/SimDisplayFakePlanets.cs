@@ -9,6 +9,7 @@ public class SimDisplayFakePlanets : MonoBehaviour
     public List<float> planetsDistance;
     private List<GameObject> fakePlanets = new List<GameObject>();
     public GameObject planetPrefab;
+    public GameObject planetPrefabSaturn;
     public float sizeSmall = .8f;
     public float sizeBig = 2f;
     public float sizeMultiplier = 1f;
@@ -18,7 +19,11 @@ public class SimDisplayFakePlanets : MonoBehaviour
     {
         foreach (GameObject fragment in planets)
         {
-            GameObject temporary = Instantiate(planetPrefab, transform);
+            GameObject temporary = null;
+            if (fragment.name == "Saturn")
+                temporary = Instantiate(planetPrefabSaturn, transform);
+            else
+                temporary = Instantiate(planetPrefab, transform);
             temporary.name = fragment.name;
             temporary.GetComponent<Renderer>().material = fragment.GetComponent<Renderer>().material;
             temporary.GetComponent<MatchFakeShadow>().lightSource = fragment.GetComponent<MatchFakeShadow>().lightSource;
