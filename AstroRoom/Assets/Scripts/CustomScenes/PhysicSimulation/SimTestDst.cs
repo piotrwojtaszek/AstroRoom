@@ -22,7 +22,7 @@ public class SimTestDst : MonoBehaviour
 
         float dst = (Vector3.zero - gravityObject.transform.position).magnitude;
         float okres = (2f * Mathf.PI * dst / gravityObject.initialVelocity.magnitude);
-        orbitalTime = okres * Time.deltaTime/SimController.Instance.timeStep;
+        orbitalTime = okres * Time.fixedDeltaTime/SimController.Instance.timeStep;
 
     }
 }
