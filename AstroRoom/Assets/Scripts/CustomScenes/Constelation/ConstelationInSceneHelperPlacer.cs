@@ -9,6 +9,8 @@ public class ConstelationInSceneHelperPlacer : MonoBehaviour
 
     private void Update()
     {
+        if (sceneHelper == null)
+            return;
         transform.rotation = Quaternion.Euler(-sceneHelper.constelationPreset.skyPosition.x, sceneHelper.constelationPreset.skyPosition.y, 0f);
     }
 

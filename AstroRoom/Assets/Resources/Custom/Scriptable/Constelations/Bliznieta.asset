@@ -68,3 +68,5 @@ MonoBehaviour:
     starName: 
   size: 17
   skyPosition: {x: 35.8, y: -24}
+  boundCenter: {x: 0.67, y: 0.36}
+  boundSize: {x: 8.04, y: 4.7}

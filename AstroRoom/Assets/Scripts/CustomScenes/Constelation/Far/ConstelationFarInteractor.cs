@@ -20,19 +20,15 @@ public class ConstelationFarInteractor : MonoBehaviour
     }
     public void OnCreate()
     {
-        StartCoroutine(Create());
+        Bounds bounds = GetCenterPoint();
+        transform.localPosition = constelationController.ConstelationPreset.boundCenter;
+        transform.localScale = new Vector3(constelationController.ConstelationPreset.boundSize.x, constelationController.ConstelationPreset.boundSize.y, 1f);
+        constelationName.GetComponent<TextMeshPro>().text = constelationController.ConstelationPreset.conName;
+        constelationName.transform.localPosition = new Vector3(0f, constelationController.ConstelationPreset.boundSize.y/2f + 1f, 0f);
 
         //Debug.Log(transform.lossyScale);
     }
-    IEnumerator Create()
-    {
-        yield return new WaitForSeconds(1f);
-        Bounds bounds = GetCenterPoint();
-        transform.position = bounds.center;
-        transform.localScale = new Vector3(bounds.extents.x, bounds.size.y / 2f, 1f);
-        constelationName.GetComponent<TextMeshPro>().text = constelationController.ConstelationPreset.conName;
-        constelationName.transform.localPosition = new Vector3(0f, bounds.extents.y, 0f);
-    }
+
 
     Bounds GetCenterPoint()
     {
@@ -45,7 +41,7 @@ public class ConstelationFarInteractor : MonoBehaviour
             }
         }
 
-        var bounds = new Bounds(transform.position, Vector3.zero);
+        var bounds = new Bounds(objectsToEncaplsulate[0].position, Vector3.zero);
         for (int i = 0; i < objectsToEncaplsulate.Count; i++)
         {
             bounds.Encapsulate(objectsToEncaplsulate[i].position);
@@ -61,11 +57,5 @@ public class ConstelationFarInteractor : MonoBehaviour
     public void DisableCollider()
     {
         GetComponent<Collider>().enabled = false;
-    }
-
-    private void OnDrawGizmos()
-    {
-        var bounds = GetCenterPoint();
-        Gizmos.DrawCube(bounds.center, new Vector3(bounds.extents.x, bounds.extents.y, 1f));
     }
 }

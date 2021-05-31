@@ -12,15 +12,7 @@ public class ConstelationInSceneHelper : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        /*        Gizmos.color = new Color(0f, 1f, 0f, 0.1f);
-                Gizmos.DrawCube(new Vector3(0, 1f), new Vector3(4f, 1.5f));
 
-                Gizmos.color = new Color(0.9f, 0.8f, 0f, 0.15f);
-                Gizmos.DrawCube(new Vector3(2.75f, 1f), new Vector3(1.5f, 1.5f));
-                Gizmos.DrawCube(new Vector3(-2.75f, 1f), new Vector3(1.5f, 1.5f));
-                Gizmos.color = new Color(1f, 0f, 0f, 0.15f);
-                Gizmos.DrawCube(new Vector3(0f, 0f), new Vector3(7f, .5f));
-                Gizmos.DrawCube(new Vector3(0f, 2f), new Vector3(7f, .5f));*/
         size = new Vector3(10f, 3f);
         Gizmos.color = new Color(0.3f, .3f, 1f, 0.4f);
         Gizmos.DrawCube(transform.position, size);
