@@ -380,7 +380,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 2
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -762,6 +762,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1572,6 +1576,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1743,6 +1751,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2304,6 +2316,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3093,7 +3109,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 26
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3472,6 +3488,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3974,6 +3994,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7611288824097711816}
+    - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169748, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

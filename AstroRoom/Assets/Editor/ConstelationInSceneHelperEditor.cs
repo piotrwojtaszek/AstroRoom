@@ -27,24 +27,24 @@ public class ConstelationInSceneHelperEditor : Editor
 
         GUILayout.Space(15);
         EditorGUILayout.BeginHorizontal();
-        EditorGUILayout.LabelField("Constellation name");
+        EditorGUILayout.LabelField("NAZWA GWIAZDOZBIORU");
         baseScript.constelationPreset.conName = EditorGUILayout.TextField(baseScript.constelationPreset.conName);
         EditorGUILayout.EndHorizontal();
 
         if (baseScript.constelationPreset.adjMatrix == null)
         {
             GUILayout.BeginHorizontal();
-            GUILayout.Label("How many nodes?");
+            GUILayout.Label("ILOå∆ GWIAZD");
 
             baseScript.constelationPreset.size = EditorGUILayout.IntField(baseScript.constelationPreset.size);
-            if (GUILayout.Button("Confirm"))
+            if (GUILayout.Button("POTWIERDè"))
             {
 
                 baseScript.constelationPreset.nodes = new Node[baseScript.constelationPreset.size];
                 baseScript.constelationPreset.adjMatrix = new bool[baseScript.constelationPreset.size * baseScript.constelationPreset.size];
                 for (int i = 0; i < baseScript.constelationPreset.nodes.Length; i++)
                 {
-                    Node node = new Node(new Vector3(i, 1f), 0.5f);
+                    Node node = new Node(new Vector3(i, 1f), 0.25f);
                     baseScript.constelationPreset.nodes[i] = node;
                 }
                 serializedObject.ApplyModifiedProperties();
@@ -58,7 +58,7 @@ public class ConstelationInSceneHelperEditor : Editor
         }
 
         GUILayout.Space(15);
-        EditorGUILayout.LabelField("Constellation connections");
+        EditorGUILayout.LabelField("MACIERZ S•SIEDZTWA");
 
         GUILayout.BeginHorizontal();
         GUIStyle style = new GUIStyle();
@@ -132,18 +132,18 @@ public class ConstelationInSceneHelperEditor : Editor
                                 }*//*
                             GUILayout.EndHorizontal();*/
 
-            GUILayout.Label("Stars name");
-            EditorGUILayout.Space(10);
-            for (int i = 0; i < baseScript.constelationPreset.size; i++)
-            {
-                GUILayout.BeginHorizontal();
-                GUILayout.Label(i.ToString(), GUILayout.Width(30));
-                baseScript.constelationPreset.nodes[i].starName = EditorGUILayout.TextField(baseScript.constelationPreset.nodes[i].starName, GUILayout.MaxWidth(400));
-                GUILayout.EndHorizontal();
-            }
+            /*            GUILayout.Label("Stars name");
+                        EditorGUILayout.Space(10);
+                        for (int i = 0; i < baseScript.constelationPreset.size; i++)
+                        {
+                            GUILayout.BeginHorizontal();
+                            GUILayout.Label(i.ToString(), GUILayout.Width(30));
+                            baseScript.constelationPreset.nodes[i].starName = EditorGUILayout.TextField(baseScript.constelationPreset.nodes[i].starName, GUILayout.MaxWidth(400));
+                            GUILayout.EndHorizontal();
+                        }*/
 
             GUILayout.Space(30);
-            GUILayout.Label("Size of stars");
+            GUILayout.Label("WielkoúÊ gwiazd");
             EditorGUILayout.Space(10);
             for (int i = 0; i < baseScript.constelationPreset.size; i++)
             {
@@ -154,7 +154,7 @@ public class ConstelationInSceneHelperEditor : Editor
             }
 
             GUILayout.Space(30);
-            GUILayout.Label("Nodes positions");
+            GUILayout.Label("Pozycje gwiazd");
             EditorGUILayout.Space(10);
             for (int i = 0; i < baseScript.constelationPreset.size; i++)
             {
@@ -166,10 +166,23 @@ public class ConstelationInSceneHelperEditor : Editor
                 GUILayout.EndHorizontal();
 
             }
+            GUILayout.Space(30);
+            GUILayout.Label("Pozycja gwiazdozbioru");
+            EditorGUILayout.Space(10);
+
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("WysokoúÊ nad horyzontem", GUILayout.Width(30));
+            baseScript.constelationPreset.skyPosition.x = EditorGUILayout.Slider(baseScript.constelationPreset.skyPosition.x, -90f, 90f, GUILayout.MaxWidth(400));
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Pozycja w poziomie", GUILayout.Width(30));
+            baseScript.constelationPreset.skyPosition.y = EditorGUILayout.Slider(baseScript.constelationPreset.skyPosition.y, -180f, 180f, GUILayout.MaxWidth(400));
+            GUILayout.EndHorizontal();
+
 
             GUILayout.Space(30);
 
-            GUILayout.Label("Move entire constellation");
+            GUILayout.Label("PrzesuÒ wszystko");
             GUILayout.BeginHorizontal();
 
             GUILayout.Label("Vector", GUILayout.MaxWidth(60));
@@ -179,7 +192,7 @@ public class ConstelationInSceneHelperEditor : Editor
             snap.y = EditorGUILayout.FloatField(snap.y, GUILayout.MaxWidth(50));
             GUILayout.Label("Z", GUILayout.MaxWidth(12));
             snap.z = EditorGUILayout.FloatField(snap.z, GUILayout.MaxWidth(50));
-            if (GUILayout.Button("MOVE", GUILayout.MaxWidth(75)))
+            if (GUILayout.Button("RUSZ", GUILayout.MaxWidth(75)))
             {
                 MoveAllStars(snap, baseScript);
             }
@@ -187,12 +200,12 @@ public class ConstelationInSceneHelperEditor : Editor
             GUILayout.EndHorizontal();
 
             GUILayout.Space(30);
-            if (GUILayout.Button("GIZMOS VISIBILITY"))
+            if (GUILayout.Button("UCHWYTY"))
             {
                 gizmos = !gizmos;
             }
             GUILayout.Space(10);
-            if (GUILayout.Button("SAVE"))
+            if (GUILayout.Button("ZAPISZ"))
             {
                 string path = AssetDatabase.GetAssetPath(baseScript.constelationPreset).ToString();
                 SOConstelationBase temp = ScriptableObject.CreateInstance<SOConstelationBase>();
@@ -200,6 +213,7 @@ public class ConstelationInSceneHelperEditor : Editor
                 temp.conName = baseScript.constelationPreset.conName;
                 temp.nodes = baseScript.constelationPreset.nodes;
                 temp.size = baseScript.constelationPreset.size;
+                temp.skyPosition = baseScript.constelationPreset.skyPosition;
                 AssetDatabase.DeleteAsset(path);
                 AssetDatabase.CreateAsset(temp, path);
                 AssetDatabase.SaveAssets();

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Earth
   m_EditorClassIdentifier: 
   properties:
-    bodyName: Earth
+    bodyName: Ziemia
     graphicPrefab: {fileID: 3323356507539486190, guid: 2c5820015740d7f4caa7f565b4987c1d, type: 3}
     size: 1

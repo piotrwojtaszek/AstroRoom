@@ -37,4 +37,4 @@ MonoBehaviour:
     size: 0.3
     starName: 
   size: 7
-  skyPosition: {x: 20, y: 0}
+  skyPosition: {x: 20.3, y: 0}

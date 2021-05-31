@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sun
   m_EditorClassIdentifier: 
   properties:
-    bodyName: Sun
+    bodyName: "S\u0142o\u0144ce"
     graphicPrefab: {fileID: 3323356507539486190, guid: 0c3fbcbba3b86e44781bec3fadbd3577, type: 3}
     size: 109

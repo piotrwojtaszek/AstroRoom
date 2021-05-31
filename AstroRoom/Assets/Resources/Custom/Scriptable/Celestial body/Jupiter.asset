@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Jupiter
   m_EditorClassIdentifier: 
   properties:
-    bodyName: Jupiter
+    bodyName: Jowisz
     graphicPrefab: {fileID: 911840940513796575, guid: 0f09e81245d56b54a845910ba8beb3ad, type: 3}
     size: 11

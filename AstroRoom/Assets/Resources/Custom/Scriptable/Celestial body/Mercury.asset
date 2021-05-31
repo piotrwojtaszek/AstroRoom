@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mercury
   m_EditorClassIdentifier: 
   properties:
-    bodyName: Mercury
+    bodyName: Merkury
     graphicPrefab: {fileID: 145551101114744257, guid: 9b5eddb48c48dfb45846411df9364667, type: 3}
     size: 0.33

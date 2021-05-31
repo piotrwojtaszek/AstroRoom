@@ -9,6 +9,8 @@ public class SOConstelationBase : ScriptableObject
     public Node[] nodes;
     public int size;
     public Vector2 skyPosition;
+    public Vector2 boundCenter;
+    public Vector2 boundSize;
 }
 
 [System.Serializable]
