@@ -6,6 +6,7 @@ public class SimTestDst : MonoBehaviour
 {
     private SimGravityObject relativeTo;
     public SimGravityObject gravityObject;
+    public SimCalculateAcceleration simCalculate;
     public float orbitalTime;
     void Start()
     {
@@ -18,11 +19,13 @@ public class SimTestDst : MonoBehaviour
     {
         if (gravityObject == null)
             gravityObject = GetComponent<SimGravityObject>();
-
-
+        if (simCalculate == null)
+            simCalculate = GetComponent<SimCalculateAcceleration>();
+        if (simCalculate != null)
+            simCalculate.Force();
         float dst = (Vector3.zero - gravityObject.transform.position).magnitude;
         float okres = (2f * Mathf.PI * dst / gravityObject.initialVelocity.magnitude);
-        orbitalTime = okres * Time.fixedDeltaTime/SimController.Instance.timeStep;
+        orbitalTime = okres * Time.fixedDeltaTime / SimController.Instance.timeStep;
 
     }
 }

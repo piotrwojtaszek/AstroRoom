@@ -995,6 +995,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98d29a7716482d41914c067987c60c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &905838698 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6229478592407341626, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+  m_PrefabInstance: {fileID: 1413914504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f135617c6937d694091f4493aa8f3d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &907577400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9007362701284985267, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
@@ -1652,6 +1663,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: -0.7098432
       objectReference: {fileID: 0}
+    - target: {fileID: 9007362701829194650, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9007362701829194651, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2127,7 +2142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591348853716, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97
+      value: 98.7
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591348853718, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitsCount
@@ -2187,7 +2202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591939446115, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.29
+      value: 38.751
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591939446122, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
@@ -2223,7 +2238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592407341618, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.73
+      value: 13.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478592407341620, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592407341623, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
@@ -2239,7 +2258,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592407341625, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitalTime
-      value: 7.404402
+      value: 8.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478592407341625, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: simCalculate
+      value: 
+      objectReference: {fileID: 905838698}
+    - target: {fileID: 6229478592407341626, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592467610606, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Name
@@ -2363,7 +2390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592937144269, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 369.08
+      value: 363.1
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592937144271, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitsCount
@@ -2379,7 +2406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478593140854154, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 183
+      value: 180.8
       objectReference: {fileID: 0}
     - target: {fileID: 6229478593140854159, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
@@ -2387,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229478593271003684, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 577.04
+      value: 567.6
       objectReference: {fileID: 0}
     - target: {fileID: 6229478593271003686, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitsCount

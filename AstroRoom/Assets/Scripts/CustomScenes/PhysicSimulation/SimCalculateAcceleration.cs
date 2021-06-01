@@ -11,6 +11,7 @@ public class SimCalculateAcceleration : MonoBehaviour
     {
         relativeTo = GetComponent<SimGravityObject>().relativeTo;
         gravityObject = GetComponent<SimGravityObject>();
+        Force();
     }
 
     // Update is called once per frame
@@ -21,14 +22,10 @@ public class SimCalculateAcceleration : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        float dist = (transform.position - relativeTo.transform.position).magnitude;
-        gravityObject.initialVelocity.x = Mathf.Sqrt((Constant.gravitionalConstant * relativeTo.GetComponent<Rigidbody>().mass) / dist);
-        Vector3 dotProduct = Vector3.Cross(transform.position, relativeTo.transform.position);
-        Vector3 nowy = new Vector3(dotProduct.z, -dotProduct.y, dotProduct.x);
-        Force();
+
     }
 
-    void Force()
+    public void Force()
     {
         float sqrDst = (relativeTo.GetComponent<Rigidbody>().position - gravityObject.GetComponent<Rigidbody>().position).magnitude;
         Vector3 forceDir = (relativeTo.GetComponent<Rigidbody>().position - gravityObject.GetComponent<Rigidbody>().position).normalized;
