@@ -5,15 +5,11 @@ using UnityEngine;
 public class SimGravityObject : MonoBehaviour
 {
     public BodyType bodyType = BodyType.Planet;
-
     public Rigidbody rb { get; set; }
     public SimGravityObject relativeTo;
-
     public Vector3 initialVelocity;
-
     [HideInInspector]
     public Vector3 velocity;
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -38,9 +34,9 @@ public class SimGravityObject : MonoBehaviour
         }
     }
 
-    public void UpdatePosition(float timeStep)
+    public void UpdatePosition()
     {
-        rb.MovePosition(rb.position + velocity * timeStep);
+        rb.MovePosition(rb.position + velocity * SimController.Instance.timeStep);
     }
 
     public void Move(SimGravityObject[] allBodies)

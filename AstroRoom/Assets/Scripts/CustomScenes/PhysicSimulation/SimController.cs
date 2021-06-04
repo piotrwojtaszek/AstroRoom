@@ -35,7 +35,7 @@ public class SimController : MonoBehaviour
         }
         for (int i = 0; i < bodies.Length; i++)
         {
-            bodies[i].UpdatePosition(timeStep);
+            bodies[i].UpdatePosition();
         }
     }
 }

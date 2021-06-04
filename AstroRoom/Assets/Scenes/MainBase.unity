@@ -2197,8 +2197,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591823678290, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478591823678290, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: initialVelocity.z
-      value: 46.96
+      value: 298.7548
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591939446112, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled

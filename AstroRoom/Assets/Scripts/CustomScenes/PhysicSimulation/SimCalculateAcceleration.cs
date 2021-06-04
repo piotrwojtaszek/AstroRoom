@@ -31,9 +31,7 @@ public class SimCalculateAcceleration : MonoBehaviour
         Vector3 forceDir = (relativeTo.GetComponent<Rigidbody>().position - gravityObject.GetComponent<Rigidbody>().position).normalized;
 
         float acceleration = Mathf.Sqrt(Constant.gravitionalConstant * relativeTo.GetComponent<Rigidbody>().mass / sqrDst);
-        Vector3 nowy = new Vector3(forceDir.z, 0, -forceDir.x);
-        var dotProduct = Vector3.Dot(nowy, forceDir * acceleration);
-        nowy = new Vector3(forceDir.z, 0, -forceDir.x).normalized;
-        gravityObject.GetComponent<SimGravityObject>().initialVelocity = nowy * acceleration;
+        Vector3 initialDir = new Vector3(forceDir.z, 0, -forceDir.x).normalized;
+        gravityObject.GetComponent<SimGravityObject>().initialVelocity = initialDir * acceleration;
     }
 }
