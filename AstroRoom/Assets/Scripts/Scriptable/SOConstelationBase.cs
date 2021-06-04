@@ -11,6 +11,7 @@ public class SOConstelationBase : ScriptableObject
     public Vector2 skyPosition;
     public Vector2 boundCenter;
     public Vector2 boundSize;
+    public float titleHeight;
 }
 
 [System.Serializable]

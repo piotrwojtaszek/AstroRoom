@@ -40,3 +40,4 @@ MonoBehaviour:
   skyPosition: {x: 20.3, y: 0}
   boundCenter: {x: 0, y: -0.29}
   boundSize: {x: 3.6, y: 1.97}
+  titleHeight: 0

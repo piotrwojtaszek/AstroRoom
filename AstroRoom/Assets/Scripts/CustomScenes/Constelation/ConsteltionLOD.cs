@@ -30,6 +30,4 @@ public class ConsteltionLOD : MonoBehaviour
         GetComponent<Renderer>().material = materialHighDetail;
         GetComponent<LookAtCamera>().enabled = false;
     }
-
-
 }

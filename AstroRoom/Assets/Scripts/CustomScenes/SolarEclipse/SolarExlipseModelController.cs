@@ -40,7 +40,7 @@ public class SolarExlipseModelController : MonoBehaviour
 
         Vector2 direction = (SolarEclipseController.Instance.perfectEclipsePosition - SolarEclipseController.Instance.moon.position).normalized;
 
-        ; if (SolarEclipseController.Instance.deltaPosition < SolarEclipseController.Instance.triggerDistance)
+        if (SolarEclipseController.Instance.deltaPosition < SolarEclipseController.Instance.triggerDistance)
         {
             float calculated = SolarEclipseController.Instance.deltaPosition / SolarEclipseController.Instance.triggerDistance * 0.5f;
             float calculatedY = calculated * direction.y;

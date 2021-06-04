@@ -5,24 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainBase.unity
     guid: d1d4fd801777f4c49bf913d550af606e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Constelations.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SolarSystemSim.unity
     guid: 0e939a9b6929cfc4caa08d0d9cfeab74
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SolarSystemAnim.unity
     guid: ac2c1b047bc87fc4e806ff0bf19b0de7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SolarEclipse.unity
     guid: 1954ce59841c283489eb5c3222c11796
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gravity.unity
     guid: 6e1089b45048e86468ef2d956e644b43
+  - enabled: 1
+    path: Assets/Scenes/Wireframe.unity
+    guid: 06ccf490aea95c840bc203e01f848326
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0dc968cf2d88b4a4fab2ca2fedf31f82, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3a2eaaa3c1e00134aba9a23a0356c33a, type: 2}

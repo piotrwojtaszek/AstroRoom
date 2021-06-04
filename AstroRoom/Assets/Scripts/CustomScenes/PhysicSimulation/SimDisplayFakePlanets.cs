@@ -66,6 +66,10 @@ public class SimDisplayFakePlanets : MonoBehaviour
     {
         foreach (GameObject fragment in fakePlanets)
         {
+            foreach(Transform child in fragment.transform)
+            {
+                child.GetComponent<Renderer>().enabled = !child.GetComponent<Renderer>().enabled;
+            }
             fragment.GetComponent<Renderer>().enabled = !fragment.GetComponent<Renderer>().enabled;
             fragment.GetComponent<Collider>().enabled = !fragment.GetComponent<Collider>().enabled;
             fragment.GetComponent<TrailRenderer>().Clear();
