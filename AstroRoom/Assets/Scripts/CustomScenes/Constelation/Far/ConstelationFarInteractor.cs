@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.Events;
 using TMPro;
 public class ConstelationFarInteractor : MonoBehaviour
 {
@@ -10,13 +8,8 @@ public class ConstelationFarInteractor : MonoBehaviour
     public GameObject constelationName;
     private void Start()
     {
-        /*        constelationController.onSkyPosition += OnSkyPosition;
-                constelationController.onSelected += OnSelected;*/
-
         ConstelationEvents.Instance.onSelected += DisableCollider;
         ConstelationEvents.Instance.onSkyPosition += EnableCollider;
-
-
     }
     public void OnCreate()
     {
@@ -24,9 +17,7 @@ public class ConstelationFarInteractor : MonoBehaviour
         transform.localPosition = constelationController.ConstelationPreset.boundCenter;
         transform.localScale = new Vector3(constelationController.ConstelationPreset.boundSize.x, constelationController.ConstelationPreset.boundSize.y, 1f);
         constelationName.GetComponent<TextMeshPro>().text = constelationController.ConstelationPreset.conName;
-        constelationName.transform.localPosition = new Vector3(0f, constelationController.ConstelationPreset.boundSize.y/2f + 1f, 0f);
-
-        //Debug.Log(transform.lossyScale);
+        constelationName.transform.localPosition = constelationController.ConstelationPreset.titleHeight;
     }
 
 

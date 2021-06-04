@@ -13,9 +13,9 @@ public class ConstelationInSceneHelper : MonoBehaviour
     void OnDrawGizmos()
     {
 
-        size = new Vector3(10f, 3f);
+        size = new Vector3(10f, 5f);
         Gizmos.color = new Color(0.3f, .3f, 1f, 0.4f);
-        Gizmos.DrawCube(transform.position, size);
+        Gizmos.DrawCube(transform.position+Vector3.up, size);
         Gizmos.color = new Color(1f, 0, 0, 0.4f);
         Gizmos.DrawCube(transform.position - Vector3.up * 2f, new Vector3(10f, 1f));
 
@@ -47,7 +47,7 @@ public class ConstelationInSceneHelper : MonoBehaviour
             style.fontSize = 30;
             style.alignment = TextAnchor.MiddleCenter;
 #if UNITY_EDITOR
-            UnityEditor.Handles.Label(transform.position + new Vector3(0f, 2.5f), constelationPreset.conName, style);
+            UnityEditor.Handles.Label(transform.position + (Vector3)constelationPreset.titleHeight, constelationPreset.conName, style);
 #endif
         }
 

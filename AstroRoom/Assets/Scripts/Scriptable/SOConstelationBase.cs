@@ -11,7 +11,7 @@ public class SOConstelationBase : ScriptableObject
     public Vector2 skyPosition;
     public Vector2 boundCenter;
     public Vector2 boundSize;
-    public float titleHeight;
+    public Vector2 titleHeight;
 }
 
 [System.Serializable]
@@ -19,7 +19,6 @@ public class Node
 {
     public Vector3 position;
     public float size;
-    public string starName;
     public Node(Vector3 _position, float _size)
     {
         position = _position;
