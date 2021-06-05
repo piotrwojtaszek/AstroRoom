@@ -22,7 +22,7 @@ public class SimController : MonoBehaviour
     [Range(0f, 0.1f)]
     public float timeStep = .01f;
 
-    private void Awake()
+    private void Start()
     {
         bodies = FindObjectsOfType<SimGravityObject>();
     }

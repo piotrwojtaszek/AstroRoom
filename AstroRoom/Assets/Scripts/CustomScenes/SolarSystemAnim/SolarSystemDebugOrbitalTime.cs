@@ -13,6 +13,6 @@ public class SolarSystemDebugOrbitalTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(1f / GetComponent<SolarSystemOrbitController>().speed / SolarSystemController.Instance.speedMultiplier);
+        Debug.Log(1f / GetComponent<SolarSystemOrbitController>().speed / SolarSystemController.Instance.speedMultiplier);
     }
 }

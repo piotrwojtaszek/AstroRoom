@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimCalculateVelocity : MonoBehaviour
 {
 
-    private SimGravityObject relativeTo;
+/*    private SimGravityObject relativeTo;
     public SimGravityObject gravityObject;
     // Start is called before the first frame update
     void Awake()
@@ -24,5 +24,5 @@ public class SimCalculateVelocity : MonoBehaviour
         float dist = (transform.position - relativeTo.transform.position).magnitude;
 
         gravityObject.initialVelocity.x = Mathf.Sqrt((Constant.gravitionalConstant * relativeTo.GetComponent<Rigidbody>().mass) / dist);
-    }
+    }*/
 }

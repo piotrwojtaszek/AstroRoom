@@ -4,28 +4,32 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class SimTestDst : MonoBehaviour
 {
-    private SimGravityObject relativeTo;
     public SimGravityObject gravityObject;
     public SimCalculateAcceleration simCalculate;
     public float orbitalTime;
-    void Start()
-    {
-        /*        relativeTo = GetComponent<SimGravityObject>().relativeTo;
-                gravityObject = GetComponent<SimGravityObject>();*/
-    }
 
-    // Update is called once per frame
+    private void Start()
+    {
+        if (gravityObject == null)
+            gravityObject = GetComponent<SimGravityObject>();
+        if (simCalculate == null)
+            simCalculate = GetComponent<SimCalculateAcceleration>();
+    }
     void Update()
     {
         if (gravityObject == null)
             gravityObject = GetComponent<SimGravityObject>();
         if (simCalculate == null)
             simCalculate = GetComponent<SimCalculateAcceleration>();
-        if (simCalculate != null)
-            simCalculate.Force();
-        float dst = (Vector3.zero - gravityObject.transform.position).magnitude;
-        float okres = (2f * Mathf.PI * dst / gravityObject.initialVelocity.magnitude);
-        orbitalTime = okres * Time.fixedDeltaTime / SimController.Instance.timeStep;
+
+        float sqrDst = (gravityObject.relativeTo.transform.position - GetComponent<Rigidbody>().position).magnitude;
+        Vector3 forceDir = (gravityObject.relativeTo.transform.position - GetComponent<Rigidbody>().position).normalized;
+
+        float acceleration = Mathf.Sqrt(Constant.gravitionalConstant * gravityObject.relativeTo.GetComponent<Rigidbody>().mass / sqrDst);
+        Vector3 initialDir = new Vector3(forceDir.z, 0, -forceDir.x).normalized;
+
+        float okres = (2f * Mathf.PI * sqrDst / (initialDir * acceleration).magnitude);
+        orbitalTime = okres * (1f / 72f) / SimController.Instance.timeStep;
 
     }
 }
