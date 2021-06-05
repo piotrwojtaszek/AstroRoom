@@ -22,8 +22,6 @@ public class SolarSystemOrbitController : IOrbitsCount
     {
         if (speed == 0f)
             return;
-
-        transform.LookAt(center);
         calculatedSpeed = (2f * Mathf.PI) / (1f / speed) * SolarSystemController.Instance.speedMultiplier;
         angle += calculatedSpeed * Time.deltaTime;
         x = Mathf.Cos(angle) * radius;
@@ -40,3 +38,4 @@ public class SolarSystemOrbitController : IOrbitsCount
 
 
 }
+//        transform.LookAt(center);
