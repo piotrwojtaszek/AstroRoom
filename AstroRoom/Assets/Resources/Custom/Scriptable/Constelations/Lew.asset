@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
+  m_Name: Lew
+  m_EditorClassIdentifier: 
+  conName: Lew
+  adjMatrix: 000100000001000000010001000000000000000100010000000000000001000100000000000000010001010000010000000100000000000000000100000100000000000000010001000000000000000100
+  nodes:
+  - position: {x: -2.7113824, y: -0.55422413, z: 0}
+    size: 0.25
+  - position: {x: -1.6007384, y: -0.11786139, z: 0}
+    size: 0.25
+  - position: {x: 1.4183856, y: 0.25122237, z: 0}
+    size: 0.25
+  - position: {x: 0.94329107, y: 1.1945902, z: 0}
+    size: 0.25
+  - position: {x: 0.105137974, y: 1.5447747, z: 0}
+    size: 0.25
+  - position: {x: -1.8284768, y: 0.7378969, z: 0}
+    size: 0.25
+  - position: {x: -0.25228146, y: 2.1380935, z: 0}
+    size: 0.25
+  - position: {x: 0.3015794, y: 2.7316823, z: 0}
+    size: 0.25
+  - position: {x: 0.81534517, y: 2.4720178, z: 0}
+    size: 0.25
+  size: 9
+  skyPosition: {x: 13.5, y: 44}
+  boundCenter: {x: -0.54, y: 1.09}
+  boundSize: {x: 4.95, y: 3.91}
+  titleHeight: {x: -0.78, y: 3.38}

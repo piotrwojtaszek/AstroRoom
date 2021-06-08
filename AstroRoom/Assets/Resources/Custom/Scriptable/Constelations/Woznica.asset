@@ -17,27 +17,20 @@ MonoBehaviour:
   nodes:
   - position: {x: -1.4534892, y: 0.18246365, z: 0}
     size: 0.225
-    starName: 
   - position: {x: -0.7765411, y: -0.1569649, z: 0}
     size: 0.217
-    starName: 
   - position: {x: 0.17217498, y: -0.19081974, z: 0}
     size: 0.217
-    starName: 
   - position: {x: -0.79042256, y: -0.88250434, z: 0}
     size: 0.178
-    starName: 
   - position: {x: 0.19011503, y: -0.91924196, z: 0}
     size: 0.133
-    starName: 
   - position: {x: 0.83260274, y: 0.18945837, z: 0}
     size: 0.232
-    starName: 
   - position: {x: 1.4623771, y: 0.33478713, z: 0}
     size: 0.3
-    starName: 
   size: 7
-  skyPosition: {x: 20.3, y: 0}
+  skyPosition: {x: 1.7, y: 0}
   boundCenter: {x: 0, y: -0.29}
   boundSize: {x: 3.6, y: 1.97}
   titleHeight: {x: -0.4, y: 1.11}

@@ -17,57 +17,40 @@ MonoBehaviour:
   nodes:
   - position: {x: -2.107723, y: 2.1639318, z: 0}
     size: 0.442
-    starName: 
   - position: {x: -3.0062013, y: 0.95134604, z: 0}
     size: 0.446
-    starName: 
   - position: {x: -2.2177522, y: 0.48570335, z: 0}
     size: 0.23
-    starName: 
   - position: {x: -3.0383582, y: -0.24701643, z: 0}
     size: 0.23
-    starName: 
   - position: {x: -0.9736239, y: -0.16150469, z: 0}
     size: 0.23
-    starName: 
   - position: {x: -0.08645055, y: -1.0712321, z: 0}
     size: 0.23
-    starName: 
   - position: {x: 1.599496, y: -1.4935539, z: 0}
     size: 0.23
-    starName: 
   - position: {x: 2.3825293, y: -0.7779827, z: 0}
     size: 0.374
-    starName: 
   - position: {x: 0.5920805, y: -0.44528407, z: 0}
     size: 0.248
-    starName: 
   - position: {x: -1.6547272, y: 0.9901134, z: 0}
     size: 0.25
-    starName: 
   - position: {x: -1.110981, y: 1.6155955, z: 0}
     size: 0.25
-    starName: 
   - position: {x: -0.629591, y: 2.2786345, z: 0}
     size: 0.25
-    starName: 
   - position: {x: 0.8312906, y: 0.9938489, z: 0}
     size: 0.25
-    starName: 
   - position: {x: 2.648562, y: 0.19205445, z: 0}
     size: 0.252
-    starName: 
   - position: {x: 3.1383946, y: 0.76086295, z: 0}
     size: 0.256
-    starName: 
   - position: {x: 3.8650267, y: 0.8700999, z: 0}
     size: 0.182
-    starName: 
   - position: {x: 4.3833556, y: 1.0864722, z: 0}
     size: 0.329
-    starName: 
   size: 17
-  skyPosition: {x: 35.8, y: -24}
+  skyPosition: {x: 20, y: -20}
   boundCenter: {x: 0.67, y: 0.36}
   boundSize: {x: 8.04, y: 4.7}
   titleHeight: {x: 0.3, y: 3.09}

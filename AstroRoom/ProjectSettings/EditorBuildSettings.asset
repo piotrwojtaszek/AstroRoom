@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainBase.unity
     guid: d1d4fd801777f4c49bf913d550af606e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Constelations.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Gravity.unity
     guid: 6e1089b45048e86468ef2d956e644b43
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Wireframe.unity
     guid: 06ccf490aea95c840bc203e01f848326
   m_configObjects:

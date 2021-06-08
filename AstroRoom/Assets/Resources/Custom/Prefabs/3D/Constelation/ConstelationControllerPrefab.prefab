@@ -180,7 +180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6401290934849393958}
   - component: {fileID: 8763725870607383115}
-  - component: {fileID: 7094321902998570198}
   - component: {fileID: -3078883700391206173}
   m_Layer: 0
   m_Name: ConstelationControllerPrefab
@@ -224,18 +223,6 @@ MonoBehaviour:
   selected: 
   persistantPosition: {fileID: 0}
   hoverObject: {fileID: 4839637534819953714}
---- !u!114 &7094321902998570198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6401290934849393957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfbaa3db614045b4abde16960cc559b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-3078883700391206173
 MonoBehaviour:
   m_ObjectHideFlags: 0

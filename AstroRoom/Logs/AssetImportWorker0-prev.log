@@ -1,0 +1,1495 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'pl' Physical Memory: 16298 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49711
+Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 126.19 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.80 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.6663
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001811 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 131.01 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.529 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003418 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 134.64 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.0 MB.
+System memory in use after: 158.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3513.
+Total: 2.463500 ms (FindLiveObjects: 0.350100 ms CreateObjectMapping: 0.082800 ms MarkObjects: 1.944100 ms  DeleteObjects: 0.085500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2693727e17a59bee2063ec892d41764d') in 0.197567 seconds
+  Import took 0.203349 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.3 MB.
+System memory in use after: 150.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3564.
+Total: 2.532400 ms (FindLiveObjects: 0.343800 ms CreateObjectMapping: 0.080400 ms MarkObjects: 2.044600 ms  DeleteObjects: 0.062300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 3371.740762 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationEdgePrefab.prefab
+  artifactKey: Guid(92bd9a0774cbda344b6189284b80bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationEdgePrefab.prefab using Guid(92bd9a0774cbda344b6189284b80bd94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3d46d6d4da86d6ee4c72f1a9844547') in 0.023534 seconds
+  Import took 0.030797 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003528 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.4 MB.
+System memory in use after: 150.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3568.
+Total: 2.528200 ms (FindLiveObjects: 0.332800 ms CreateObjectMapping: 0.081300 ms MarkObjects: 2.041400 ms  DeleteObjects: 0.071700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 423.673384 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f89282ba6a055d0f12d45a5d799525') in 0.017149 seconds
+  Import took 0.022966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.018065 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e333898249f62a0abaf233046fc0ac') in 0.004734 seconds
+  Import took 0.010222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 862.501665 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d45bb41e373789aa8ef209adeb646a') in 0.004093 seconds
+  Import took 0.009415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.724455 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e67b5641582695f0fb726837b94f3e0') in 0.002069 seconds
+  Import took 0.007417 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003193 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3572.
+Total: 2.541800 ms (FindLiveObjects: 0.292700 ms CreateObjectMapping: 0.072700 ms MarkObjects: 2.109400 ms  DeleteObjects: 0.066100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 92.745734 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset
+  artifactKey: Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset using Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f84c40f140390fe719b045170b0cc6f') in 0.017104 seconds
+  Import took 0.022877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028731 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset
+  artifactKey: Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset using Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f84c40f140390fe719b045170b0cc6f') in 0.002125 seconds
+  Import took 0.006176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.941057 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset
+  artifactKey: Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset using Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6ccbc2b0a35cc5f91584d4f375d90f') in 0.002423 seconds
+  Import took 0.007508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008092 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset
+  artifactKey: Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset using Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6ccbc2b0a35cc5f91584d4f375d90f') in 0.002086 seconds
+  Import took 0.005969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.115419 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Swan.asset
+  artifactKey: Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Swan.asset using Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26057c54550e43be9dc3246029026434') in 0.002406 seconds
+  Import took 0.007556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Swan.asset
+  artifactKey: Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Swan.asset using Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26057c54550e43be9dc3246029026434') in 0.002062 seconds
+  Import took 0.005843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.869089 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b843e2bbb4bd287072e32afb426ebf') in 0.002552 seconds
+  Import took 0.007723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029618 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b843e2bbb4bd287072e32afb426ebf') in 0.002172 seconds
+  Import took 0.006871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.888530 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c181b40a78dbfc42e5493702468bf0') in 0.002211 seconds
+  Import took 0.007515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027624 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c181b40a78dbfc42e5493702468bf0') in 0.002122 seconds
+  Import took 0.006622 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003337 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3576.
+Total: 2.259000 ms (FindLiveObjects: 0.298200 ms CreateObjectMapping: 0.069900 ms MarkObjects: 1.831300 ms  DeleteObjects: 0.058900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 102.223552 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset
+  artifactKey: Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset using Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a2ee991ab300891539a5ffc0177b98') in 0.012131 seconds
+  Import took 0.017726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.181586 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Lew.asset
+  artifactKey: Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Lew.asset using Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8c12e779bf457f8216fdc66d5ed6f3') in 0.003223 seconds
+  Import took 0.008690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.269995 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Lew.asset
+  artifactKey: Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Lew.asset using Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab88a90fdc8adb11fbe4ab626761a9c1') in 0.002143 seconds
+  Import took 0.007357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 334.796608 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3391d72f4405a73a31d13f64a164512') in 0.004097 seconds
+  Import took 0.009580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017963 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3391d72f4405a73a31d13f64a164512') in 0.003305 seconds
+  Import took 0.008173 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3580.
+Total: 2.245800 ms (FindLiveObjects: 0.246300 ms CreateObjectMapping: 0.075000 ms MarkObjects: 1.867100 ms  DeleteObjects: 0.056600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 171.695695 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4c17d9cdfdf022064b6d5d5d14d874') in 0.017880 seconds
+  Import took 0.024050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.593883 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f2070eab1e893e3ceae89249c358cf') in 0.002866 seconds
+  Import took 0.008146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031883 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f2070eab1e893e3ceae89249c358cf') in 0.002136 seconds
+  Import took 0.006912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.136656 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Skorpion.asset
+  artifactKey: Guid(c364bcf5a0a173d43859a2d8c8de759a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Skorpion.asset using Guid(c364bcf5a0a173d43859a2d8c8de759a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ced1948c72b9cd1efda1f259769ce9') in 0.002358 seconds
+  Import took 0.007691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 495.159800 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75f13d295c7f5a1c75b0577feb58a18') in 0.004304 seconds
+  Import took 0.010364 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3584.
+Total: 2.558400 ms (FindLiveObjects: 0.386000 ms CreateObjectMapping: 0.086900 ms MarkObjects: 2.020100 ms  DeleteObjects: 0.064700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003524 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.850 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3588.
+Total: 2.393100 ms (FindLiveObjects: 0.325500 ms CreateObjectMapping: 0.071700 ms MarkObjects: 1.932600 ms  DeleteObjects: 0.062400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 190.717783 seconds.
+  path: Assets/Scripts/CustomScenes/Constelation/ConstelationCustomLOD.cs
+  artifactKey: Guid(cfbaa3db614045b4abde16960cc559b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/Constelation/ConstelationCustomLOD.cs using Guid(cfbaa3db614045b4abde16960cc559b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce0722f02e48d96c6fee1e941f5e343') in 0.009268 seconds
+  Import took 0.015587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.823305 seconds.
+  path: Assets/Scripts/CustomScenes/Constelation/ConstelationCustomLOD.cs
+  artifactKey: Guid(cfbaa3db614045b4abde16960cc559b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/Constelation/ConstelationCustomLOD.cs using Guid(cfbaa3db614045b4abde16960cc559b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce0722f02e48d96c6fee1e941f5e343') in 0.001631 seconds
+  Import took 0.006130 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003642 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.5 MB.
+System memory in use after: 150.7 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3592.
+Total: 3.108600 ms (FindLiveObjects: 0.427800 ms CreateObjectMapping: 0.084200 ms MarkObjects: 2.515000 ms  DeleteObjects: 0.079900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.867 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.6 MB.
+System memory in use after: 150.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3596.
+Total: 2.527100 ms (FindLiveObjects: 0.477300 ms CreateObjectMapping: 0.077900 ms MarkObjects: 1.895500 ms  DeleteObjects: 0.075600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003165 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.6 MB.
+System memory in use after: 150.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3600.
+Total: 2.310900 ms (FindLiveObjects: 0.263700 ms CreateObjectMapping: 0.093600 ms MarkObjects: 1.893400 ms  DeleteObjects: 0.059000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.6 MB.
+System memory in use after: 150.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3604.
+Total: 2.276600 ms (FindLiveObjects: 0.315100 ms CreateObjectMapping: 0.093700 ms MarkObjects: 1.800800 ms  DeleteObjects: 0.065900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 536.363093 seconds.
+  path: Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs
+  artifactKey: Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs using Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6565d277e1c24119722e8b8e1f7e6b5d') in 0.004820 seconds
+  Import took 0.010203 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.6 MB.
+System memory in use after: 150.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3608.
+Total: 2.527000 ms (FindLiveObjects: 0.280800 ms CreateObjectMapping: 0.080800 ms MarkObjects: 2.093400 ms  DeleteObjects: 0.070900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 96.003155 seconds.
+  path: Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs
+  artifactKey: Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs using Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01b61812faedca5df66d19e0bc730e4') in 0.004848 seconds
+  Import took 0.010732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.498895 seconds.
+  path: Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs
+  artifactKey: Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/Constelation/ConsteltionLOD.cs using Guid(8410cea2a7daf1a42b365fc280af5b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01b61812faedca5df66d19e0bc730e4') in 0.001708 seconds
+  Import took 0.006481 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.6 MB.
+System memory in use after: 150.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3612.
+Total: 2.960000 ms (FindLiveObjects: 0.368200 ms CreateObjectMapping: 0.080800 ms MarkObjects: 2.440800 ms  DeleteObjects: 0.068900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 356.535045 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967a4ef75122eed451b39ca9f80e0333') in 0.012422 seconds
+  Import took 0.018003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.133088 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba8c4d101fdb2e25fcec33e94c87d9c') in 0.003066 seconds
+  Import took 0.008913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024743 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba8c4d101fdb2e25fcec33e94c87d9c') in 0.002156 seconds
+  Import took 0.006888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 119.872245 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bac4fb83e208afaceb52f9750c520a') in 0.004451 seconds
+  Import took 0.009880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.454487 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14664a13de23818c1992ed40208b90fe') in 0.152999 seconds
+  Import took 0.158692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.331059 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_04.fbx
+  artifactKey: Guid(22b8c036ce727fb49bbc47cd7c655811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_04.fbx using Guid(22b8c036ce727fb49bbc47cd7c655811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d6dcfc351a1b1a24621206beb3ab95') in 0.049541 seconds
+  Import took 0.054986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_07.fbx
+  artifactKey: Guid(4d25c206abf9ca845b2b494b41faf01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_07.fbx using Guid(4d25c206abf9ca845b2b494b41faf01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca7abc29c4cb563871df59e9c33c5d3') in 0.011326 seconds
+  Import took 0.016631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Imported/SimpleNaturePack/Models/Tree_02.fbx
+  artifactKey: Guid(4471b1f7f824e4d44887e1364c6fc61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/SimpleNaturePack/Models/Tree_02.fbx using Guid(4471b1f7f824e4d44887e1364c6fc61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7a09c21b3ff2a00f74198bbb8ed3c3') in 0.010977 seconds
+  Import took 0.016185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_06.fbx
+  artifactKey: Guid(caeb19dcfc0f2d74f9632767d1568ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_06.fbx using Guid(caeb19dcfc0f2d74f9632767d1568ad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50d517f37a93ef2caa96200bf7c0015') in 0.011055 seconds
+  Import took 0.016190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_02.fbx
+  artifactKey: Guid(b3580228dbcff5f42ba9cdd1214b5850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_02.fbx using Guid(b3580228dbcff5f42ba9cdd1214b5850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5972e5dc18fb5db1c3c4c16d28534fd') in 0.010641 seconds
+  Import took 0.015831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/SimpleNaturePack/Models/Tree_01.fbx
+  artifactKey: Guid(6c7eaede4efc960409fb9ef2dfb77f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/SimpleNaturePack/Models/Tree_01.fbx using Guid(6c7eaede4efc960409fb9ef2dfb77f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61dc773bc7ea63df036569a5d625dab') in 0.011078 seconds
+  Import took 0.016013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Imported/SimpleNaturePack/Models/Tree_03.fbx
+  artifactKey: Guid(69f0af3a0a6c73b4ab4b89eb82cdc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/SimpleNaturePack/Models/Tree_03.fbx using Guid(69f0af3a0a6c73b4ab4b89eb82cdc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761308252b802c2a897ae179049afff2') in 0.009962 seconds
+  Import took 0.015001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_m_01.fbx
+  artifactKey: Guid(fff70d09bc73b7244a19ffa4e56bcbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_m_01.fbx using Guid(fff70d09bc73b7244a19ffa4e56bcbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fe927049be181f37e9d26cda01516b') in 0.011744 seconds
+  Import took 0.017522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_m_02.fbx
+  artifactKey: Guid(51617aeeb50dae844939dd76b1bfd129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_m_02.fbx using Guid(51617aeeb50dae844939dd76b1bfd129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa410b91885306fb0cc59a03c57b59e8') in 0.011198 seconds
+  Import took 0.016080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_01.fbx
+  artifactKey: Guid(c4ccd8b5952eabc4cbe80da1dec6528c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_01.fbx using Guid(c4ccd8b5952eabc4cbe80da1dec6528c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae47b841c6a58eb4c4c2df74ea2c6aa3') in 0.010280 seconds
+  Import took 0.015284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_04.fbx
+  artifactKey: Guid(22b8c036ce727fb49bbc47cd7c655811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_04.fbx using Guid(22b8c036ce727fb49bbc47cd7c655811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d6dcfc351a1b1a24621206beb3ab95') in 0.008792 seconds
+  Import took 0.013615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_s_01.fbx
+  artifactKey: Guid(c1b36b58908cb10489127fb0758fdcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Water/Water_s_01.fbx using Guid(c1b36b58908cb10489127fb0758fdcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c62a046231a2abeeab8f5663734750f') in 0.009853 seconds
+  Import took 0.014634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_03.fbx
+  artifactKey: Guid(5ec307b825a5e4441b84831639a0fb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_03.fbx using Guid(5ec307b825a5e4441b84831639a0fb09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a527659cbb5538739b47aa1e4ec6c1') in 0.010654 seconds
+  Import took 0.016011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_08.fbx
+  artifactKey: Guid(97d35cff6e0ef3242a98383fe981e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_08.fbx using Guid(97d35cff6e0ef3242a98383fe981e6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e156630b5152f02798bf091b0856097') in 0.010427 seconds
+  Import took 0.015345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_05.fbx
+  artifactKey: Guid(b1450e07f9f525f4c9f5bfe5da3ffad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_m_05.fbx using Guid(b1450e07f9f525f4c9f5bfe5da3ffad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66070d3f7093a22052c8cb7c407a49f3') in 0.010109 seconds
+  Import took 0.014604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_04.fbx
+  artifactKey: Guid(c2cac5172acc6284eb24b78648387165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_04.fbx using Guid(c2cac5172acc6284eb24b78648387165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a3ab31c59a5d3bb2631f000dd11831') in 0.009884 seconds
+  Import took 0.014585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014935 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_04.fbx
+  artifactKey: Guid(c2cac5172acc6284eb24b78648387165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Bonus Assets/Meshes/Terrain/Terrain_s_04.fbx using Guid(c2cac5172acc6284eb24b78648387165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a3ab31c59a5d3bb2631f000dd11831') in 0.008435 seconds
+  Import took 0.013399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.364411 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_Letter_Q_01.fbx
+  artifactKey: Guid(6dd530daa84d49d41bd197452e8299ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_Letter_Q_01.fbx using Guid(6dd530daa84d49d41bd197452e8299ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a4fafcf49fd003a3a4515de2a79f3f') in 0.009820 seconds
+  Import took 0.015229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_01.fbx
+  artifactKey: Guid(7889a2323af84394a8c7e8cc9ce096ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_01.fbx using Guid(7889a2323af84394a8c7e8cc9ce096ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd139ff5021bec03948c2a3934ac537f5') in 0.009666 seconds
+  Import took 0.014813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Crate_Question_01.fbx
+  artifactKey: Guid(78bd0c4c873f8654197ff2905740f24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Crate_Question_01.fbx using Guid(78bd0c4c873f8654197ff2905740f24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5677936fa59cf6191798732468d8f3ff') in 0.010660 seconds
+  Import took 0.015394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_Letter_Question_01.fbx
+  artifactKey: Guid(307c68ba3296dfa4da3f6bcb7fa19e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_Letter_Question_01.fbx using Guid(307c68ba3296dfa4da3f6bcb7fa19e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781804df7d63890a98ac1c1f3f054d2c') in 0.010452 seconds
+  Import took 0.015227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_02.fbx
+  artifactKey: Guid(2a0ebe52fc32c31418ae08b12480c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_02.fbx using Guid(2a0ebe52fc32c31418ae08b12480c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1b2ade7573bb4404a6fbe9fa47dcd3') in 0.009894 seconds
+  Import took 0.014584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008337 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_02.fbx
+  artifactKey: Guid(2a0ebe52fc32c31418ae08b12480c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Prop_Tree_Square_02.fbx using Guid(2a0ebe52fc32c31418ae08b12480c4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1b2ade7573bb4404a6fbe9fa47dcd3') in 0.009961 seconds
+  Import took 0.014742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.963004 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2cf9750fdce97434e1fe21c7a7d0ba6') in 0.006835 seconds
+  Import took 0.012181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.052492 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00653467f02cc5e31319df828bb9224b') in 0.006745 seconds
+  Import took 0.011806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.486475 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationControllerPrefab.prefab
+  artifactKey: Guid(0dabe8733e7454f49b109bff6130c423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationControllerPrefab.prefab using Guid(0dabe8733e7454f49b109bff6130c423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a69a0b0f64996cfcfb84fb8157e7f7e') in 0.053122 seconds
+  Import took 0.058635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1755.326553 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_SpeechBubble_02.fbx
+  artifactKey: Guid(5333d2a68ee64424f85d034a2304cfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_SpeechBubble_02.fbx using Guid(5333d2a68ee64424f85d034a2304cfd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9418f61b35a187adafe87579059743cc') in 0.011182 seconds
+  Import took 0.016479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Veh_Car_Sports_01.fbx
+  artifactKey: Guid(773fa55be186bfc46910c191c5c57d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Veh_Car_Sports_01.fbx using Guid(773fa55be186bfc46910c191c5c57d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7568ad9ea8d11666941721bd8bde9756') in 0.043728 seconds
+  Import took 0.048289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_01.fbx
+  artifactKey: Guid(e49c959f3097f964e85dde87cf1eca2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_01.fbx using Guid(e49c959f3097f964e85dde87cf1eca2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be6e4a1b6c18c332f2af9bcdc4b87e9') in 0.009989 seconds
+  Import took 0.014724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_02.fbx
+  artifactKey: Guid(e8ba51a934eb276468729107e5d3143f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_02.fbx using Guid(e8ba51a934eb276468729107e5d3143f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ceec36df25c359bd81b00e96beb0047') in 0.010004 seconds
+  Import took 0.014826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_03.fbx
+  artifactKey: Guid(041af9d6be7b54e4cbc5136070a39312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_03.fbx using Guid(041af9d6be7b54e4cbc5136070a39312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9d3879d70db47668864815eb8e15cc') in 0.010551 seconds
+  Import took 0.015728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_SpeechBubble_03.fbx
+  artifactKey: Guid(66f901ebe5e22804e91ae584b9ae5b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Icon_SpeechBubble_03.fbx using Guid(66f901ebe5e22804e91ae584b9ae5b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7c96f1deaf2cc08836a03a73953980') in 0.009885 seconds
+  Import took 0.015358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_01P.fbx
+  artifactKey: Guid(48add65712a68664db1c16a2ac14f5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_01P.fbx using Guid(48add65712a68664db1c16a2ac14f5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61393f1cb8f316775afed11cea7f28f4') in 0.010760 seconds
+  Import took 0.016474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_04.fbx
+  artifactKey: Guid(b24046b972ef6b94d9697f66c8032769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_04.fbx using Guid(b24046b972ef6b94d9697f66c8032769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cb4533b168ffb5087af4231e117e77') in 0.010776 seconds
+  Import took 0.016203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_05.fbx
+  artifactKey: Guid(ce8f07fe59a27e54a9a176b4f97f75ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_05.fbx using Guid(ce8f07fe59a27e54a9a176b4f97f75ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360f5670e0820af214313e81ae68e1a3') in 0.010584 seconds
+  Import took 0.015514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_04.fbx
+  artifactKey: Guid(b24046b972ef6b94d9697f66c8032769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_04.fbx using Guid(b24046b972ef6b94d9697f66c8032769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cb4533b168ffb5087af4231e117e77') in 0.009183 seconds
+  Import took 0.014141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006694 seconds.
+  path: Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_05.fbx
+  artifactKey: Guid(ce8f07fe59a27e54a9a176b4f97f75ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/PolygonPrototype/Models/SM_Primitive_Sphere_05.fbx using Guid(ce8f07fe59a27e54a9a176b4f97f75ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360f5670e0820af214313e81ae68e1a3') in 0.009798 seconds
+  Import took 0.014691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.219043 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_01.fbx
+  artifactKey: Guid(a8f40fa568515094091f1badfa9ecd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_01.fbx using Guid(a8f40fa568515094091f1badfa9ecd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd548c96a2c7383233cf3c43690b102d5') in 0.010445 seconds
+  Import took 0.015680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_02.fbx
+  artifactKey: Guid(9a09626e27b83194abf91701b9b9fa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_02.fbx using Guid(9a09626e27b83194abf91701b9b9fa67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7855f191c04145caf8e2144454db4ec6') in 0.009863 seconds
+  Import took 0.014322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_04.fbx
+  artifactKey: Guid(efc8a1d138b206545bb8e3521213b0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_04.fbx using Guid(efc8a1d138b206545bb8e3521213b0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90ef5af4a9c05d807a2fb9d63461b4b') in 0.009759 seconds
+  Import took 0.015434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_01.fbx
+  artifactKey: Guid(7e7deb0cf8214204586aa3e728388b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_01.fbx using Guid(7e7deb0cf8214204586aa3e728388b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e293cfbc2f33437cf58d07ed3a751e') in 0.010514 seconds
+  Import took 0.015141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_09.fbx
+  artifactKey: Guid(8a3c059d5fd191d4982939f57959fbe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_09.fbx using Guid(8a3c059d5fd191d4982939f57959fbe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5176c7759252c5c7906f5245d7e570') in 0.010308 seconds
+  Import took 0.014525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_03.fbx
+  artifactKey: Guid(5ff53f0af37d9e2448af1a0867c314e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_03.fbx using Guid(5ff53f0af37d9e2448af1a0867c314e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf681f0226a3fe2c62bbdb386082e809') in 0.010108 seconds
+  Import took 0.015300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_01.fbx
+  artifactKey: Guid(b419a3f0e9949b546b0c4d6085123c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_01.fbx using Guid(b419a3f0e9949b546b0c4d6085123c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d97dcd93741da11b9a1f2601e66b80') in 0.009668 seconds
+  Import took 0.014693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_04.fbx
+  artifactKey: Guid(cce972e190fbf5341afd0ce4065469a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_04.fbx using Guid(cce972e190fbf5341afd0ce4065469a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fa8889009ba0abfb7e7c7a564803438') in 0.010225 seconds
+  Import took 0.015367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_05.fbx
+  artifactKey: Guid(40b1265165d506744b90016e9c245011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_05.fbx using Guid(40b1265165d506744b90016e9c245011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7040194440514ea23e2770ae974eef5a') in 0.009205 seconds
+  Import took 0.014368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_03.fbx
+  artifactKey: Guid(a475398c622eb0847b9c1f12415ff90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_03.fbx using Guid(a475398c622eb0847b9c1f12415ff90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13553b39aba54079c2aa8c2c68342f42') in 0.009993 seconds
+  Import took 0.014769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_08.fbx
+  artifactKey: Guid(54d87dcbd7a80c246abbd447b747e02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_08.fbx using Guid(54d87dcbd7a80c246abbd447b747e02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31556e2c6ceb4cb0b2aad2937299d3e9') in 0.010773 seconds
+  Import took 0.016378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_03.fbx
+  artifactKey: Guid(71d290c0d61ae2443a83856ab7aa6d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_03.fbx using Guid(71d290c0d61ae2443a83856ab7aa6d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836e15d3edf189a982ab15b5e6c71944') in 0.009302 seconds
+  Import took 0.014549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_04.fbx
+  artifactKey: Guid(6e6803f93d6995841b1602236b554781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_04.fbx using Guid(6e6803f93d6995841b1602236b554781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd01d04cf4e569a04c6643116d5330b') in 0.010521 seconds
+  Import took 0.015459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_04.fbx
+  artifactKey: Guid(5b2882d3aae382c4d8c34c75f82a6deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_04.fbx using Guid(5b2882d3aae382c4d8c34c75f82a6deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5c5748484f8f6fd1538f026ae1ae0f') in 0.009393 seconds
+  Import took 0.013965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_07.fbx
+  artifactKey: Guid(493801f57683ce5438731868b4080103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_07.fbx using Guid(493801f57683ce5438731868b4080103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060c08a22796d817b3e1c24f9a212426') in 0.011026 seconds
+  Import took 0.015615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_01.fbx
+  artifactKey: Guid(c3a459ad52d3eef4297deed0a4723988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_01.fbx using Guid(c3a459ad52d3eef4297deed0a4723988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecda7b66a6d3874da96762a2543eab94') in 0.009461 seconds
+  Import took 0.014391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_02.fbx
+  artifactKey: Guid(003497db8b5669f489deb1859333b939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_02.fbx using Guid(003497db8b5669f489deb1859333b939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d12ba12b7a8a82596f72057426cc10') in 0.010125 seconds
+  Import took 0.014818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_04.fbx
+  artifactKey: Guid(795faada49bedd2439796d51c895673c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_04.fbx using Guid(795faada49bedd2439796d51c895673c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c086814758ff914d935bce38206dcc6b') in 0.009887 seconds
+  Import took 0.015038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_02.fbx
+  artifactKey: Guid(52794947cedb3f54aa762610f7a55b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_02.fbx using Guid(52794947cedb3f54aa762610f7a55b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5e105190f03a4cd33b016bb3af4395') in 0.010057 seconds
+  Import took 0.014777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_02.fbx
+  artifactKey: Guid(883acedcbd093d6448b61155738531c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_02.fbx using Guid(883acedcbd093d6448b61155738531c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ebe79b069b36258c95e23fba35a7ba') in 0.010667 seconds
+  Import took 0.017258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_01.fbx
+  artifactKey: Guid(627e2c110c9ebe94f87089e588dfbbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_b_OneS_01.fbx using Guid(627e2c110c9ebe94f87089e588dfbbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0c96df85b778365a669653fc03b542') in 0.010597 seconds
+  Import took 0.015502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_02.fbx
+  artifactKey: Guid(35832648ac166eb47a2d647aea7e84d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_02.fbx using Guid(35832648ac166eb47a2d647aea7e84d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef55f7ef40ace0521f476f19373a138') in 0.010251 seconds
+  Import took 0.014896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_10.fbx
+  artifactKey: Guid(e71e12804b3928d4d8c4a6f69ac7c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_10.fbx using Guid(e71e12804b3928d4d8c4a6f69ac7c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f0c1d964a8c4bba642d1336749ab8b') in 0.009496 seconds
+  Import took 0.014304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_03.fbx
+  artifactKey: Guid(967f22e5b637d4f4dba85a770612b09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_b_TwoS_03.fbx using Guid(967f22e5b637d4f4dba85a770612b09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758bce01f537ad696f6644990f864e51') in 0.010507 seconds
+  Import took 0.015377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_05.fbx
+  artifactKey: Guid(a22e957ac09b9a94aa47da514c5e4538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlane_a_TwoS_05.fbx using Guid(a22e957ac09b9a94aa47da514c5e4538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e4f79577d1ae2f09e9c92625c8a9b8') in 0.010536 seconds
+  Import took 0.015431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_05.fbx
+  artifactKey: Guid(b0172e9711b720c4fbb7d267cb88b8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_05.fbx using Guid(b0172e9711b720c4fbb7d267cb88b8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141ea1d77e9518855eb3b0d39a0cba48') in 0.009538 seconds
+  Import took 0.014565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_06.fbx
+  artifactKey: Guid(f8f0e363f14bd584893927ce71498649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_06.fbx using Guid(f8f0e363f14bd584893927ce71498649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ca4983dc9199c66bbd6a70e371b0db') in 0.010389 seconds
+  Import took 0.015326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_03.fbx
+  artifactKey: Guid(efe4094bf9d5947439e4973df0d21c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/OneSide/GrassPlane_a_OneS_03.fbx using Guid(efe4094bf9d5947439e4973df0d21c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fa442a2676552f05dbaba259c92767') in 0.009395 seconds
+  Import took 0.014977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005410 seconds.
+  path: Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_06.fbx
+  artifactKey: Guid(f8f0e363f14bd584893927ce71498649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Low Poly Vegetation Pack/Vegetation Assets/Meshes/Grass/GrassPlane/TwoSide/GrassPlanes_a_TwoS_06.fbx using Guid(f8f0e363f14bd584893927ce71498649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ca4983dc9199c66bbd6a70e371b0db') in 0.009229 seconds
+  Import took 0.013716 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003880 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.1 MB.
+System memory in use after: 151.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3655.
+Total: 2.661400 ms (FindLiveObjects: 0.371000 ms CreateObjectMapping: 0.077300 ms MarkObjects: 2.147300 ms  DeleteObjects: 0.064900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 13.547851 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'facc87a29037b423349d5e8cbca89be0') in 0.148343 seconds
+  Import took 0.153925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.700902 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/CelestialBodies/Fake/Shader Graphs_FakeShadow 1.mat
+  artifactKey: Guid(57ae3b40163fe0b43a9b63c3d2eacbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/CelestialBodies/Fake/Shader Graphs_FakeShadow 1.mat using Guid(57ae3b40163fe0b43a9b63c3d2eacbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2906cb5e045845e372fd5bfaae5ee7a4') in 0.164875 seconds
+  Import took 0.170130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002737 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/CelestialBodies/Fake/Shader Graphs_FakeShadow 1.mat
+  artifactKey: Guid(57ae3b40163fe0b43a9b63c3d2eacbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/CelestialBodies/Fake/Shader Graphs_FakeShadow 1.mat using Guid(57ae3b40163fe0b43a9b63c3d2eacbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2906cb5e045845e372fd5bfaae5ee7a4') in 0.091849 seconds
+  Import took 0.096350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.077831 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044185c269c715bb4d43fa4c5ba0ff57') in 0.007155 seconds
+  Import took 0.012665 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.908 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.4 MB.
+System memory in use after: 151.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3727.
+Total: 2.541600 ms (FindLiveObjects: 0.304100 ms CreateObjectMapping: 0.072300 ms MarkObjects: 2.100900 ms  DeleteObjects: 0.063600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003341 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.903 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.4 MB.
+System memory in use after: 151.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3731.
+Total: 2.384200 ms (FindLiveObjects: 0.322700 ms CreateObjectMapping: 0.072500 ms MarkObjects: 1.930100 ms  DeleteObjects: 0.058000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003691 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 2906 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.4 MB.
+System memory in use after: 151.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3735.
+Total: 2.899100 ms (FindLiveObjects: 0.349300 ms CreateObjectMapping: 0.075700 ms MarkObjects: 2.401700 ms  DeleteObjects: 0.070300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.4 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3735.
+Total: 2.605700 ms (FindLiveObjects: 0.351000 ms CreateObjectMapping: 0.082100 ms MarkObjects: 2.071100 ms  DeleteObjects: 0.100500 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.4 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3735.
+Total: 2.636400 ms (FindLiveObjects: 0.354100 ms CreateObjectMapping: 0.077900 ms MarkObjects: 2.121100 ms  DeleteObjects: 0.082300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 467.073897 seconds.
+  path: Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab
+  artifactKey: Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Prefabs/3D/Constelation/ConstelationSocketPrefab.prefab using Guid(dc041f397b9d434469feb75640675ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2460a154f42a113202edb30c2366d5b6') in 0.152342 seconds
+  Import took 0.158764 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3798.
+Total: 3.046700 ms (FindLiveObjects: 0.333600 ms CreateObjectMapping: 0.080300 ms MarkObjects: 2.557700 ms  DeleteObjects: 0.074100 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.5 MB.
+System memory in use after: 98.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3798.
+Total: 3.824300 ms (FindLiveObjects: 0.645100 ms CreateObjectMapping: 0.109400 ms MarkObjects: 2.984800 ms  DeleteObjects: 0.083300 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
