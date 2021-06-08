@@ -25,7 +25,7 @@ public class SimTestDst : MonoBehaviour
         float sqrDst = (gravityObject.relativeTo.transform.position - GetComponent<Rigidbody>().position).magnitude;
         Vector3 forceDir = (gravityObject.relativeTo.transform.position - GetComponent<Rigidbody>().position).normalized;
 
-        float acceleration = Mathf.Sqrt(Constant.gravitionalConstant * gravityObject.relativeTo.GetComponent<Rigidbody>().mass / sqrDst);
+        float acceleration = Mathf.Sqrt(Constant.constG * gravityObject.relativeTo.GetComponent<Rigidbody>().mass / sqrDst);
         Vector3 initialDir = new Vector3(forceDir.z, 0, -forceDir.x).normalized;
 
         float okres = (2f * Mathf.PI * sqrDst / (initialDir * acceleration).magnitude);

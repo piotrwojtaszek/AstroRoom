@@ -31,7 +31,7 @@ public class SimController : MonoBehaviour
     {
         for (int i = 0; i < bodies.Length; i++)
         {
-            bodies[i].Move(bodies);
+            bodies[i].UpdateVelocity(bodies);
         }
         for (int i = 0; i < bodies.Length; i++)
         {
@@ -43,5 +43,5 @@ public class SimController : MonoBehaviour
 [SerializeField]
 public static class Constant
 {
-    public static float gravitionalConstant = .0667f;
+    public static float constG = .0667f;
 }
