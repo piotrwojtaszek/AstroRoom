@@ -27,6 +27,8 @@ public class ConstelationController : IConstealtion
         CheckIfAlreadyCompleted();
         ConstelationEvents.Instance.onProgressReset += OnProgressReset;
         onReady += CheckIfCompleted;
+        ConstelationEvents.Instance.toHide += MakeSmall;
+        ConstelationEvents.Instance.makeNormal += MakeNormal;
     }
 
     public void CheckConnection()
@@ -106,5 +108,14 @@ public class ConstelationController : IConstealtion
     void OnProgressReset()
     {
         adjMatrixCheck = new bool[ConstelationPreset.size, ConstelationPreset.size];
+    }
+
+    public void MakeSmall()
+    {
+        transform.localScale = Vector3.one * 0.01f;
+    }
+    public void MakeNormal()
+    {
+        transform.localScale = Vector3.one * 4f;
     }
 }

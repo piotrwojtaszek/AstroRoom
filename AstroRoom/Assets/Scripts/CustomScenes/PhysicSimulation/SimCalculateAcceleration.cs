@@ -5,10 +5,13 @@ public class SimCalculateAcceleration : MonoBehaviour
 {
     private SimGravityObject relativeTo;
     public SimGravityObject gravityObject;
- 
+    Rigidbody otherBody;
+    Rigidbody rb;
     void OnEnable()
     {
         relativeTo = GetComponent<SimGravityObject>().relativeTo;
+        otherBody = relativeTo.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         Force();
     }
 
@@ -24,10 +27,10 @@ public class SimCalculateAcceleration : MonoBehaviour
 
     public void Force()
     {
-        float sqrDst = (relativeTo.GetComponent<Rigidbody>().position - GetComponent<Rigidbody>().position).magnitude;
-        Vector3 forceDir = (relativeTo.GetComponent<Rigidbody>().position - GetComponent<Rigidbody>().position).normalized;
+        float sqrDst = (otherBody.position - rb.position).magnitude;
+        Vector3 forceDir = (otherBody.position - rb.position).normalized;
 
-        float acceleration = Mathf.Sqrt(Constant.constG * relativeTo.GetComponent<Rigidbody>().mass / sqrDst);
+        float acceleration = Mathf.Sqrt(Constant.constG * otherBody.mass / sqrDst);
         Vector3 initialDir = new Vector3(forceDir.z, 0, -forceDir.x).normalized;
         GetComponent<SimGravityObject>().initialVelocity = initialDir * acceleration;
     }

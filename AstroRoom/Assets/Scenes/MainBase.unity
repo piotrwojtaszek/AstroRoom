@@ -255,13 +255,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262806504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.258819, y: 0, z: 0, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9312, y: 1.9312, z: 1.9312}
   m_Children: []
   m_Father: {fileID: 825562965}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
 --- !u!64 &262806506
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -777,6 +777,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bd1b613bbe6d643bbb15ec255dc5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &686386130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6229478591957531099, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+  m_PrefabInstance: {fileID: 1413914504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05df2816100c3d40943d45dbf166c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &686386131 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6229478591957531092, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+  m_PrefabInstance: {fileID: 1413914504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &700418549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2084526491464759789, guid: 4f7fcb7fbb5409949903c2390a6bc5e5, type: 3}
@@ -1264,6 +1280,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9007362700373104824, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Name
+      value: Wenus
+      objectReference: {fileID: 0}
     - target: {fileID: 9007362700373104830, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: a
       value: 0.9
@@ -1364,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9007362700525382832, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Name
+      value: Merkury
+      objectReference: {fileID: 0}
     - target: {fileID: 9007362700525382838, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: a
       value: 0.65
@@ -1456,6 +1480,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: -0.7150696
       objectReference: {fileID: 0}
+    - target: {fileID: 9007362700819717811, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Name
+      value: Ziemia
+      objectReference: {fileID: 0}
     - target: {fileID: 9007362700819717812, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1531,6 +1559,10 @@ PrefabInstance:
     - target: {fileID: 9007362701110909393, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.7071557
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007362701110909394, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Name
+      value: Neptun
       objectReference: {fileID: 0}
     - target: {fileID: 9007362701110909418, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_Enabled
@@ -1635,6 +1667,10 @@ PrefabInstance:
     - target: {fileID: 9007362701452636422, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.7077816
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007362701452636423, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
+      propertyPath: m_Name
+      value: Jowisz
       objectReference: {fileID: 0}
     - target: {fileID: 9007362701452636440, guid: 6750d2857eae6f6449c67a4cccc21c3d, type: 3}
       propertyPath: m_Enabled
@@ -2161,6 +2197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1907250399}
     m_Modifications:
+    - target: {fileID: 6229478591348853666, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Name
+      value: Jowisz
+      objectReference: {fileID: 0}
     - target: {fileID: 6229478591348853667, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2192,6 +2232,10 @@ PrefabInstance:
     - target: {fileID: 6229478591823678277, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitsCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478591823678282, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591823678283, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
@@ -2228,6 +2272,10 @@ PrefabInstance:
     - target: {fileID: 6229478591823678287, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478591823678289, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Name
+      value: Merkury
       objectReference: {fileID: 0}
     - target: {fileID: 6229478591823678290, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
@@ -2289,6 +2337,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6229478591957531099, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 686386131}
+    - target: {fileID: 6229478591957531099, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: relativeTo
+      value: 
+      objectReference: {fileID: 686386130}
     - target: {fileID: 6229478592407341612, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: orbitsCount
       value: 0
@@ -2308,6 +2364,10 @@ PrefabInstance:
     - target: {fileID: 6229478592407341623, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478592407341624, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Name
+      value: Wenus
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592407341624, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_IsActive
@@ -2396,6 +2456,10 @@ PrefabInstance:
     - target: {fileID: 6229478592590554963, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478592590554965, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Name
+      value: Ziemia
       objectReference: {fileID: 0}
     - target: {fileID: 6229478592596021811, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: trail
@@ -2508,6 +2572,10 @@ PrefabInstance:
     - target: {fileID: 6229478593271003695, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
       propertyPath: initialVelocity.z
       value: 1.0840311
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229478593271003698, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}
+      propertyPath: m_Name
+      value: Neptun
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6229478593271003694, guid: 13b6e6536c5453d46ae0a2d69d3a6240, type: 3}

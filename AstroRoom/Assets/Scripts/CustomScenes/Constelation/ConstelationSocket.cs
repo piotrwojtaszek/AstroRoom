@@ -69,7 +69,6 @@ public class ConstelationSocket : INode
     {
         GetComponent<Collider>().enabled = false;
     }
-
     public void SetBaseColor()
     {
         GetComponent<Renderer>().material.color = baseColor;

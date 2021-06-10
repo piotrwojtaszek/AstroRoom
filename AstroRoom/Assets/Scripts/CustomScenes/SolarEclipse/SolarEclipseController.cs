@@ -26,7 +26,7 @@ public class SolarEclipseController : MonoBehaviour
     float xAngle = 0f;
     float yAngle = 0f;
     float distance = 200f;
-    [Range(0.7f, 1f)]
+    [Range(0.4f, 1f)]
     public float zoom = 1f;
     public float deltaPosition = 50f;
     public Slider slider;
@@ -36,6 +36,8 @@ public class SolarEclipseController : MonoBehaviour
     public Vector3 perfectEclipsePosition;
     Color normal = new Color(1f, 0.9380f, 0.9009f, 1f);
     public Renderer bloomTexture;
+    public bool isSkybox = true;
+    public Renderer sunMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -103,12 +105,11 @@ public class SolarEclipseController : MonoBehaviour
         {
             float graph = deltaPosition / triggerDistance;
             ChangeAmbientColor(curve.Evaluate(graph) * zoom);
-            ControllBloom(curve.Evaluate(graph) * zoom);
+            if (isSkybox)
+                ControllBloom(curve.Evaluate(graph) * zoom);
             graph = curve.Evaluate(graph) * 23f * zoom;
-
-
-            directionalLight.rotation = Quaternion.Euler(11f - graph, 180f, 0f);
-
+            if (isSkybox)
+                directionalLight.rotation = Quaternion.Euler(11f - graph, 180f, 0f);
         }
     }
 
@@ -134,5 +135,23 @@ public class SolarEclipseController : MonoBehaviour
     void ControllBloom(float graph)
     {
         bloomTexture.material.color = new Color(1f, 1f, 1f, graph);
+    }
+
+    public void ChangeSkyboxMode()
+    {
+        if (isSkybox)
+        {
+            directionalLight.rotation = Quaternion.Euler(11f, 180f, 0f);
+            sunMaterial.material.color = new Color32(255, 255, 255, 255);
+            bloomTexture.material.color = new Color(1f, 1f, 1f, 0f);
+            ProcessPositionOnAmbientLight();
+        }
+        else
+        {
+            sunMaterial.material.color = new Color32(255, 255, 4, 255);
+            bloomTexture.material.color = new Color(1f, 1f, 1f, 0f);
+            directionalLight.rotation = Quaternion.Euler(-90f, 180f, 0f);
+        }
+
     }
 }

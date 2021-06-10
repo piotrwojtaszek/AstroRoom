@@ -16,11 +16,17 @@ public class ConstelationMove : MonoBehaviour
 
     public void OnSelectedTrigger()
     {
+        ConstelationEvents.Instance.toHide -= constelationController.MakeSmall;
+        ConstelationEvents.Instance.makeNormal -= constelationController.MakeNormal;
+        ConstelationEvents.Instance.toHide?.Invoke();
         StopAllCoroutines();
         StartCoroutine(MoveTowardsPlayer());
     }
     public void OnCompleteTrigger()
     {
+        ConstelationEvents.Instance.toHide += constelationController.MakeSmall;
+        ConstelationEvents.Instance.makeNormal?.Invoke();
+        ConstelationEvents.Instance.makeNormal += constelationController.MakeNormal;
         StopAllCoroutines();
         StartCoroutine(BackToSky());
     }

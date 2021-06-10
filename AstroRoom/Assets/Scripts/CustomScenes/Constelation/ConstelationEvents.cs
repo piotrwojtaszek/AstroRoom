@@ -20,4 +20,6 @@ public class ConstelationEvents : MonoBehaviour
     public UnityAction onProgressReset;
     public UnityAction onComplete;
     public UnityAction onAlmostComplete;
+    public UnityAction toHide;
+    public UnityAction makeNormal;
 }
