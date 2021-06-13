@@ -12,6 +12,7 @@ public class SOConstelationBase : ScriptableObject
     public Vector2 boundCenter;
     public Vector2 boundSize;
     public Vector2 titleHeight;
+    public Sprite guideImage;
 }
 
 [System.Serializable]

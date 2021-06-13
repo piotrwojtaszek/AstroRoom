@@ -34,3 +34,4 @@ MonoBehaviour:
   boundCenter: {x: 0, y: -0.29}
   boundSize: {x: 3.6, y: 1.97}
   titleHeight: {x: -0.4, y: 1.11}
+  guideImage: {fileID: 2800000, guid: f252d7dd14bfb2541bab6c893fe66b14, type: 3}

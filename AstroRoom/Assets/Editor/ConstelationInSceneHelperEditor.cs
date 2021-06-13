@@ -221,6 +221,12 @@ public class ConstelationInSceneHelperEditor : Editor
             }
 
             GUILayout.EndHorizontal();
+            GUILayout.Space(30);
+
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Poradnik", GUILayout.MaxWidth(75));
+            baseScript.constelationPreset.guideImage = (Sprite)EditorGUILayout.ObjectField(baseScript.constelationPreset.guideImage, typeof(Sprite), true, GUILayout.MaxWidth(200));
+            GUILayout.EndHorizontal();
 
             GUILayout.Space(30);
             if (GUILayout.Button("ZAPISZ"))
@@ -235,6 +241,7 @@ public class ConstelationInSceneHelperEditor : Editor
                 temp.boundCenter = baseScript.constelationPreset.boundCenter;
                 temp.boundSize = baseScript.constelationPreset.boundSize;
                 temp.titleHeight = baseScript.constelationPreset.titleHeight;
+                temp.guideImage = baseScript.constelationPreset.guideImage;
                 AssetDatabase.DeleteAsset(path);
                 AssetDatabase.CreateAsset(temp, path);
                 AssetDatabase.SaveAssets();

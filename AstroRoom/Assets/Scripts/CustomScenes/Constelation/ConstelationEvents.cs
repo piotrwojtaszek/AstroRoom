@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 public class ConstelationEvents : MonoBehaviour
 {
     private static ConstelationEvents instance;
@@ -22,4 +23,5 @@ public class ConstelationEvents : MonoBehaviour
     public UnityAction onAlmostComplete;
     public UnityAction toHide;
     public UnityAction makeNormal;
+    public Func<Sprite> currentSelected;
 }

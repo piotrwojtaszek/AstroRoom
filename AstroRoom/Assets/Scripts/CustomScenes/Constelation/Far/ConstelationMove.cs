@@ -81,5 +81,13 @@ public class ConstelationMove : MonoBehaviour
         yield return null;
     }
 
-    public void OnSelectedPerform() => constelationController.onSelected?.Invoke();
+    public void OnSelectedPerform()
+    {
+        ConstelationEvents.Instance.currentSelected = CurrentGuide;
+        constelationController.onSelected?.Invoke();
+    }
+    public Sprite CurrentGuide()
+    {
+        return constelationController.ConstelationPreset.guideImage;
+    }
 }

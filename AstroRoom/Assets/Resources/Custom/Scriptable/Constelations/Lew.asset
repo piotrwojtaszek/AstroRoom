@@ -37,4 +37,5 @@ MonoBehaviour:
   skyPosition: {x: 13.5, y: 44}
   boundCenter: {x: -0.54, y: 1.09}
   boundSize: {x: 4.95, y: 3.91}
-  titleHeight: {x: -0.78, y: 3.38}
+  titleHeight: {x: -0.78, y: 3.68}
+  guideImage: {fileID: 2800000, guid: d334e6e730f88614ea75c37a964d08f9, type: 3}
