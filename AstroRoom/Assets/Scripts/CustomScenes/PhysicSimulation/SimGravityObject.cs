@@ -11,7 +11,11 @@ public class SimGravityObject : MonoBehaviour
     public Vector3 velocity;
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+            rb = GetComponent<Rigidbody>();
+        if (bodyType == BodyType.Static)
+            return;
+        initialVelocity = GetComponent<SimCalculateAcceleration>().Force(relativeTo.GetComponent<Rigidbody>(), rb);
         velocity = initialVelocity;
     }
 
