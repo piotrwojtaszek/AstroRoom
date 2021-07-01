@@ -8,12 +8,13 @@ public class SceneChanger : MonoBehaviour
 
     public enum ScenesName
     {
-        MainBase = 0,
-        Constelations = 1,
-        SolarSystemSim = 2,
-        SolarSystemAnim = 3,
-        SolarEclipse = 4,
-        Gravity = 5
+        Tutorial = 0,
+        MainBase = 1,
+        Constelations = 2,
+        SolarSystemSim = 3,
+        SolarSystemAnim = 4,
+        SolarEclipse = 5,
+        Gravity = 6
     }
 
     public ScenesName scenesName = ScenesName.MainBase;
