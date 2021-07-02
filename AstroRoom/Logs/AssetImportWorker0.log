@@ -770,3 +770,310 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 13.47 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3758.
+Total: 9.833900 ms (FindLiveObjects: 0.692200 ms CreateObjectMapping: 0.336700 ms MarkObjects: 8.740400 ms  DeleteObjects: 0.062200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2181.146797 seconds.
+  path: Assets/Scenes/FakeShadow.unity
+  artifactKey: Guid(922220991cdcc844c9e4d3ee4c5c6ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FakeShadow.unity using Guid(922220991cdcc844c9e4d3ee4c5c6ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b21c27f58b475aa6752c85a731189b') in 0.026483 seconds
+  Import took 0.040954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.371723 seconds.
+  path: Assets/Scenes/Tutorial.unity
+  artifactKey: Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tutorial.unity using Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e791557868fd72ca2ee44824afeb40') in 0.005712 seconds
+  Import took 0.023511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020648 seconds.
+  path: Assets/Scenes/Tutorial.unity
+  artifactKey: Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tutorial.unity using Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e791557868fd72ca2ee44824afeb40') in 0.005884 seconds
+  Import took 0.017625 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 11.92 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3758.
+Total: 8.118600 ms (FindLiveObjects: 0.619600 ms CreateObjectMapping: 0.290100 ms MarkObjects: 7.157000 ms  DeleteObjects: 0.049000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 579.241633 seconds.
+  path: Assets/Scenes/SolarSystemSim.unity
+  artifactKey: Guid(0e939a9b6929cfc4caa08d0d9cfeab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SolarSystemSim.unity using Guid(0e939a9b6929cfc4caa08d0d9cfeab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812166df532d02d6d9afd6172b3bd552') in 0.094452 seconds
+  Import took 0.108261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.560782 seconds.
+  path: Assets/Scenes/Tutorial.unity
+  artifactKey: Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tutorial.unity using Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ec4e53c8475ba751181b52b930220e') in 0.009340 seconds
+  Import took 0.020355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.806788 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/psd_128/icon/icon_socialmedia.psd
+  artifactKey: Guid(fa804056ee56da64290d84b2f707fe30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/psd_128/icon/icon_socialmedia.psd using Guid(fa804056ee56da64290d84b2f707fe30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b160b8d1a05239ea817196267df7f38d') in 0.332859 seconds
+  Import took 0.345573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_7.png
+  artifactKey: Guid(d481b3308ed0230479baa557fc50f00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_7.png using Guid(d481b3308ed0230479baa557fc50f00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12af1bf671dc2cd4cf42cbb71d74a4ea') in 0.052289 seconds
+  Import took 0.063643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_17.png
+  artifactKey: Guid(ac0505b657a21924ab10d0342ed8bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_17.png using Guid(ac0505b657a21924ab10d0342ed8bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827afad4087ac623bd1e362afb85dc4e') in 0.049181 seconds
+  Import took 0.058996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_9.png
+  artifactKey: Guid(8609c3bef4f026f4ca4f8716e5940331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_9.png using Guid(8609c3bef4f026f4ca4f8716e5940331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '539bd1775a57d1f9c5206c7d79a739b2') in 0.022697 seconds
+  Import took 0.034387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_15.png
+  artifactKey: Guid(b06fcdd819bf7114780a9ca0c9a4d974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_15.png using Guid(b06fcdd819bf7114780a9ca0c9a4d974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89530e24c588f9394ccc13e2b800650f') in 0.045563 seconds
+  Import took 0.055514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_1.png
+  artifactKey: Guid(3c6d0271f51cba749b7eb452853b66cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_1.png using Guid(3c6d0271f51cba749b7eb452853b66cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25947cb3f3462b820cc1fe005424fd2') in 0.021401 seconds
+  Import took 0.031983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_12.png
+  artifactKey: Guid(ae35ebf92da01434e896c6fa2d3dbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_12.png using Guid(ae35ebf92da01434e896c6fa2d3dbe22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd495bf8f3e05e89887ed49275deab3db') in 0.022922 seconds
+  Import took 0.037767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_1.png
+  artifactKey: Guid(3c6d0271f51cba749b7eb452853b66cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_1.png using Guid(3c6d0271f51cba749b7eb452853b66cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25947cb3f3462b820cc1fe005424fd2') in 0.042210 seconds
+  Import took 0.052369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_3.png
+  artifactKey: Guid(54d315b79068ee3408985672f3744952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_3.png using Guid(54d315b79068ee3408985672f3744952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d2a1f48dc033906c72370b8183266e') in 0.020830 seconds
+  Import took 0.031273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_4.png
+  artifactKey: Guid(06e061faee4a4b54289566ab8c1a450d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_4.png using Guid(06e061faee4a4b54289566ab8c1a450d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f90cf5ddf0e65a86581ae2c4fc7188') in 0.024884 seconds
+  Import took 0.035968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_16.png
+  artifactKey: Guid(7e1387a18a69b0e4382bb54bfeaae58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_16.png using Guid(7e1387a18a69b0e4382bb54bfeaae58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28dd128fab41c500fb0f1a29e95f577') in 0.024814 seconds
+  Import took 0.036061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_6.png
+  artifactKey: Guid(3085f1adc0fa5ca4f96d5d3592f18307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_6.png using Guid(3085f1adc0fa5ca4f96d5d3592f18307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330c779e4ea91242f7192fc665cfcbe9') in 0.020142 seconds
+  Import took 0.030034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_2.png
+  artifactKey: Guid(67cfe619075c24643b289b3a98af4241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_2.png using Guid(67cfe619075c24643b289b3a98af4241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8762cc0d31456f610d755d97d4b96506') in 0.021787 seconds
+  Import took 0.029803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_5.png
+  artifactKey: Guid(1cb80d780f25e5f45b13e088f8682383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_5.png using Guid(1cb80d780f25e5f45b13e088f8682383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b3508d27e58f66123c8ac909876104') in 0.019230 seconds
+  Import took 0.027794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_8.png
+  artifactKey: Guid(5d24fc2f2e4b3b94b8e88bfdf0e70c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_8.png using Guid(5d24fc2f2e4b3b94b8e88bfdf0e70c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5503bbcd20afb6bf8bb07847ac35b7') in 0.024356 seconds
+  Import took 0.032596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_11.png
+  artifactKey: Guid(a985896c9e24e3d49ab4b7ff3340bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_11.png using Guid(a985896c9e24e3d49ab4b7ff3340bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481090a6d68b7f3b1a97700c0b21805c') in 0.021144 seconds
+  Import took 0.029846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_19.png
+  artifactKey: Guid(dd8f15f068002d94a8eefa7245c71c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_19.png using Guid(dd8f15f068002d94a8eefa7245c71c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7491419352f7831d52636ecb04a3b7e6') in 0.020161 seconds
+  Import took 0.030163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_10.png
+  artifactKey: Guid(d4090c4bf31311e4ba5c6be481698c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_10.png using Guid(d4090c4bf31311e4ba5c6be481698c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece31b99e22c8d62c70518eead056393') in 0.020893 seconds
+  Import took 0.030831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_14.png
+  artifactKey: Guid(5ec92387347388d48a48db63447e1fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_14.png using Guid(5ec92387347388d48a48db63447e1fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a861512ac64d38a39a854b456ece2c18') in 0.019483 seconds
+  Import took 0.029088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_18.png
+  artifactKey: Guid(a0ae955437961a440925e7c40306e6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_18.png using Guid(a0ae955437961a440925e7c40306e6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b788d37dab4ee0a35e92a930776fe7c6') in 0.020320 seconds
+  Import took 0.029846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_13.png
+  artifactKey: Guid(324bf5ae1dc6aab4eb919f1341d3af19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_socialmedia/icon_socialmedia_13.png using Guid(324bf5ae1dc6aab4eb919f1341d3af19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fd0d997c7e08ebbedb3cc5462d9ccd') in 0.020911 seconds
+  Import took 0.029114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.609796 seconds.
+  path: Assets/Scripts/Tutorial/UISocketTutorial.cs
+  artifactKey: Guid(e0e4ebb3159ffde4796d46695e66a8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tutorial/UISocketTutorial.cs using Guid(e0e4ebb3159ffde4796d46695e66a8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053ca8f6bba80e7f948c8a3e5c2c07db') in 0.020517 seconds
+  Import took 0.055804 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Piotr\Documents\Git\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Piotr\Documents\Git\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.157 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.29 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.0 MB.
+System memory in use after: 146.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3766.
+Total: 4.280700 ms (FindLiveObjects: 0.434500 ms CreateObjectMapping: 0.264400 ms MarkObjects: 3.546000 ms  DeleteObjects: 0.032800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007467 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\Piotr\Documents\Git\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Piotr\Documents\Git\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.944 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.1 MB.
+System memory in use after: 146.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3770.
+Total: 5.074700 ms (FindLiveObjects: 0.590500 ms CreateObjectMapping: 0.344800 ms MarkObjects: 4.097300 ms  DeleteObjects: 0.039800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 279.479025 seconds.
+  path: Assets/Scripts/Tutorial/UISocketTutorial.cs
+  artifactKey: Guid(e0e4ebb3159ffde4796d46695e66a8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tutorial/UISocketTutorial.cs using Guid(e0e4ebb3159ffde4796d46695e66a8ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c42aa60c6d097ede5dd7a55764055ab') in 0.011306 seconds
+  Import took 0.021794 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
