@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'pl' Physical Memory: 16298 MB
+OS: 'Windows 10 Home; OS build 19043.1081; Version 2009; 64bit' Language: 'pl' Physical Memory: 16298 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,79 +11,1582 @@ C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60239
-Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
-C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+64733
+Successfully changed project path to: C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
+C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 135.32 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.70 ms.
+Refreshing native plugins compatible for Editor in 131.97 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.76 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
+[Subsystems] Discovering subsystems at path C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
     Vendor:   
     VRAM:     5980 MB
-    Driver:   27.21.14.6677
+    Driver:   30.0.14.7111
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001360 seconds.
+Registered in 0.002005 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 139.16 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 146.21 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.428 seconds
+- Completed reload, in  1.892 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003959 seconds.
+Registered in 0.005005 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 170.84 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 140.36 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
 
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  1.018 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.95 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 3192 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 162.5 MB.
-System memory in use after: 162.7 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.24 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 3188 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.8 MB.
+System memory in use after: 152.0 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3651.
-Total: 2.537400 ms (FindLiveObjects: 0.513400 ms CreateObjectMapping: 0.103900 ms MarkObjects: 1.841900 ms  DeleteObjects: 0.077300 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3627.
+Total: 2.421700 ms (FindLiveObjects: 0.406900 ms CreateObjectMapping: 0.076700 ms MarkObjects: 1.864300 ms  DeleteObjects: 0.073200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Scriptable/SOConstelationBase.cs
-  artifactKey: Guid(2504a84f097a7c0458c2f4b6ce093275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Scriptable/SOConstelationBase.cs using Guid(2504a84f097a7c0458c2f4b6ce093275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c847d3afbff0df8ec127e883c2cacef3') in 0.017199 seconds
-  Import took 0.022434 seconds .
+  path: Assets/Scenes/MainBase.unity
+  artifactKey: Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainBase.unity using Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f09c3040fece6487e9492e741ee076c') in 0.014747 seconds
+  Import took 0.020619 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 8.636360 seconds.
+  path: Assets/Scenes/MainBase 1.unity
+  artifactKey: Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainBase 1.unity using Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325595787c4db6f82dcb5af5ed677679') in 0.003765 seconds
+  Import took 0.009074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.757142 seconds.
+  path: Assets/Scenes/Tuorial.unity
+  artifactKey: Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Tuorial.unity using Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc47f6804220e49e3ee1e853b08ef60') in 0.003905 seconds
+  Import took 0.009132 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.84 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.1 MB.
+System memory in use after: 140.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3631.
+Total: 2.460500 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.076000 ms MarkObjects: 2.055400 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.1 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3635.
+Total: 2.487900 ms (FindLiveObjects: 0.339700 ms CreateObjectMapping: 0.090500 ms MarkObjects: 2.041700 ms  DeleteObjects: 0.014800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 806.761898 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/uranusringtrans (1).png
+  artifactKey: Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/uranusringtrans (1).png using Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d12fe3d4f7b31857e2c3d10c0a264d') in 0.108667 seconds
+  Import took 0.115546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/venusmap.jpg
+  artifactKey: Guid(b47f144fb679e6f4896cadcc70cf1e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/venusmap.jpg using Guid(b47f144fb679e6f4896cadcc70cf1e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec65c7d008fc00ee8759e16e0c43eb2') in 0.040969 seconds
+  Import took 0.045665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Woznica.png
+  artifactKey: Guid(f252d7dd14bfb2541bab6c893fe66b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Woznica.png using Guid(f252d7dd14bfb2541bab6c893fe66b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c6e48993d01aebc1d500ba2fdf9e49') in 0.023165 seconds
+  Import took 0.028628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/uranusringtrans (1).png
+  artifactKey: Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/uranusringtrans (1).png using Guid(cdd71fa1e568f6544907e25dcb0c71d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d12fe3d4f7b31857e2c3d10c0a264d') in 0.007526 seconds
+  Import took 0.013033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.309814 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/uranusmap (1).jpg
+  artifactKey: Guid(ba8dd07fe4c159742bed479ebcfb36e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/uranusmap (1).jpg using Guid(ba8dd07fe4c159742bed479ebcfb36e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6dc8cf42d832193e8fc895d22155f8f') in 0.012264 seconds
+  Import took 0.017743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/uranusringcolour (1).jpg
+  artifactKey: Guid(b96f201bfc33f5f44954b75918cdfa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/uranusringcolour (1).jpg using Guid(b96f201bfc33f5f44954b75918cdfa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4def69d3d061f405036e4ffdad2bf685') in 0.010371 seconds
+  Import took 0.015244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_28_bread_.png
+  artifactKey: Guid(b915a7ee8a2712a43a9ed2e24541c454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_28_bread_.png using Guid(b915a7ee8a2712a43a9ed2e24541c454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04758024ea8df9f92e4c099f9282222d') in 0.011629 seconds
+  Import took 0.016692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_27_grave_.png
+  artifactKey: Guid(ea48f42d704ced14b89d95cf206a788f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_27_grave_.png using Guid(ea48f42d704ced14b89d95cf206a788f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd325a769222e1f4fc181f4ecb04389') in 0.010612 seconds
+  Import took 0.015171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_25_compas_.png
+  artifactKey: Guid(fa2077f29659ea042b6a6d4073a1e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_25_compas_.png using Guid(fa2077f29659ea042b6a6d4073a1e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1005ad859b42ef2a4a7696105b803db5') in 0.011041 seconds
+  Import took 0.016423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_26_clock_.png
+  artifactKey: Guid(ea4fcfc6c39de3047a90ef3617f5e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_26_clock_.png using Guid(ea4fcfc6c39de3047a90ef3617f5e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1389bdba553a49d6c3b67d79ac0a0509') in 0.010446 seconds
+  Import took 0.015569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.137547 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_23_gear_.png
+  artifactKey: Guid(9a58f5069a59d1644b55a5aadc5dd58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_23_gear_.png using Guid(9a58f5069a59d1644b55a5aadc5dd58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e868facab18fa97d6894c82c3400d9a0') in 0.010913 seconds
+  Import took 0.016337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_21_doorlock_close_.png
+  artifactKey: Guid(314683cca5e417b43924e07f86de60c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_21_doorlock_close_.png using Guid(314683cca5e417b43924e07f86de60c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3aef7d362b7c4d4cc0881735d2432c') in 0.010203 seconds
+  Import took 0.015343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_22_doorlock_open_.png
+  artifactKey: Guid(c6c47a3be151e3a49b453e77e8c8ad08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_22_doorlock_open_.png using Guid(c6c47a3be151e3a49b453e77e8c8ad08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5871e780f34b97bb528c697930e4f878') in 0.012269 seconds
+  Import took 0.017773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_20_stop_.png
+  artifactKey: Guid(f050b492e03119344b04cf01a3486662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_20_stop_.png using Guid(f050b492e03119344b04cf01a3486662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065c2da39aecf3a4287a49a6f10e5771') in 0.009973 seconds
+  Import took 0.015721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_18_medal_first_.png
+  artifactKey: Guid(8c6c5cadf2600cc43b004355565fb20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_18_medal_first_.png using Guid(8c6c5cadf2600cc43b004355565fb20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8751d5c07774beacc243b8e28ee9e162') in 0.011795 seconds
+  Import took 0.016967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_18_next2_.png
+  artifactKey: Guid(27f0ae5f9f59faa49b5f2d3caa5d157c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_18_next2_.png using Guid(27f0ae5f9f59faa49b5f2d3caa5d157c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f72badf80058daf34f8230155b8406') in 0.010557 seconds
+  Import took 0.015395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_17_message_points_.png
+  artifactKey: Guid(c8e927090ec80f74599f34a1441516d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_17_message_points_.png using Guid(c8e927090ec80f74599f34a1441516d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10a3027145f9149c4f71625d30494c3') in 0.011956 seconds
+  Import took 0.016994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_24_diamond_.png
+  artifactKey: Guid(c9f0cc0739579d541a08ac2c78d3e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_24_diamond_.png using Guid(c9f0cc0739579d541a08ac2c78d3e605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97fcc68f5e77c8e7d5875af1fa8fea3') in 0.010188 seconds
+  Import took 0.015255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_19_medal_second_.png
+  artifactKey: Guid(073de9e27afe2a644bb5e5d7ae711591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_19_medal_second_.png using Guid(073de9e27afe2a644bb5e5d7ae711591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937506d58c4602643810627595f2c32b') in 0.010320 seconds
+  Import took 0.015349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_19_previoust2_.png
+  artifactKey: Guid(ce5dfcf0b45530443bd2fbf805c38d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_19_previoust2_.png using Guid(ce5dfcf0b45530443bd2fbf805c38d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502b9c4ef3bf8bea09d84325ed495916') in 0.011131 seconds
+  Import took 0.015988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_17_medal_star_.png
+  artifactKey: Guid(7cfcc6c1dda63e349915e75ac5579034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_17_medal_star_.png using Guid(7cfcc6c1dda63e349915e75ac5579034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1b43159815b5dcf5be4ca9f6d24310') in 0.010888 seconds
+  Import took 0.015821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_20_medal_third_.png
+  artifactKey: Guid(da0383a1e92f2c848be282995c8cbe71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_20_medal_third_.png using Guid(da0383a1e92f2c848be282995c8cbe71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b028b184d3575b1bc7a75e348109215') in 0.013416 seconds
+  Import took 0.018787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055586 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_15_beer_.png
+  artifactKey: Guid(72ab64089a5d479418dd109d905e40de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_15_beer_.png using Guid(72ab64089a5d479418dd109d905e40de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b16badea19c840c495230fdf6e0a1e7') in 0.011599 seconds
+  Import took 0.017135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_14_wrench_.png
+  artifactKey: Guid(93af7b787a2d66e468add73213a37970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_14_wrench_.png using Guid(93af7b787a2d66e468add73213a37970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d951447e54066da670da3cbfdc0d81') in 0.010378 seconds
+  Import took 0.016069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_15_list_.png
+  artifactKey: Guid(32a4f33563139ce4da97630a9d7a3722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_15_list_.png using Guid(32a4f33563139ce4da97630a9d7a3722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae0d67242d930f96306e2950e0350ae') in 0.011801 seconds
+  Import took 0.016783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_14_key_.png
+  artifactKey: Guid(71c2aae20a433fc498da71248e974a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_14_key_.png using Guid(71c2aae20a433fc498da71248e974a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0fa6ad19cb2c1e3a26cd382da40f2f') in 0.009836 seconds
+  Import took 0.014382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_16_crown_.png
+  artifactKey: Guid(dba0c48d5a7e35f4bb87f2e8b57499d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_16_crown_.png using Guid(dba0c48d5a7e35f4bb87f2e8b57499d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05c2cafa7a7b19f0c6a96e5738a1ba3') in 0.011336 seconds
+  Import took 0.016439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_13_campfire_.png
+  artifactKey: Guid(8c500d54ff99a5546a4409724f9b5579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_13_campfire_.png using Guid(8c500d54ff99a5546a4409724f9b5579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b3f3f9d4c0ee2fef815a5d656e5340') in 0.010587 seconds
+  Import took 0.016035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_16_message_.png
+  artifactKey: Guid(cb7ca257a8138af498d6bd8fe71bbbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_16_message_.png using Guid(cb7ca257a8138af498d6bd8fe71bbbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a7cba9674ab3a6b0ddc31e2f975395') in 0.011504 seconds
+  Import took 0.016709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_13_cursor_arrow_down_al_.png
+  artifactKey: Guid(aaa9d832f967d2c4f863066eaf3a277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_13_cursor_arrow_down_al_.png using Guid(aaa9d832f967d2c4f863066eaf3a277e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e5c3d579b71df45af2cb08abf1506c4') in 0.010675 seconds
+  Import took 0.016498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_13_points_ver_.png
+  artifactKey: Guid(4ddc3c228fdfb984eb497be43e4b91b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_13_points_ver_.png using Guid(4ddc3c228fdfb984eb497be43e4b91b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89aeb2bad8fe9ca7bdb809991f40fb79') in 0.010917 seconds
+  Import took 0.015866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_14_points_hor_.png
+  artifactKey: Guid(c6ba52c3e8af5b341995cc343e85e4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_14_points_hor_.png using Guid(c6ba52c3e8af5b341995cc343e85e4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbba0147c8e7f9d9864d3f42770b042') in 0.009992 seconds
+  Import took 0.015239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.672897 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_9_kunai_.png
+  artifactKey: Guid(9b0be4ef9a8e4b34eaa96ebc919f52a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_9_kunai_.png using Guid(9b0be4ef9a8e4b34eaa96ebc919f52a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93cf832efd63bd765b4eb38f71160487') in 0.011927 seconds
+  Import took 0.017112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_9_silhouette_+_.png
+  artifactKey: Guid(5639e7536f629884f907d06a418a7da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_9_silhouette_+_.png using Guid(5639e7536f629884f907d06a418a7da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3cb4d43b1185e5aeddd05aa358772e') in 0.010846 seconds
+  Import took 0.015998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_magnifier_+_.png
+  artifactKey: Guid(22fb9c2bd4a40f34e8897156a2986091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_magnifier_+_.png using Guid(22fb9c2bd4a40f34e8897156a2986091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b9ae653def797bb6993d8d73fad3f9') in 0.012526 seconds
+  Import took 0.018234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_10_cursor_!_al_.png
+  artifactKey: Guid(8589811d8f6629443ad2c9be7e027110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_10_cursor_!_al_.png using Guid(8589811d8f6629443ad2c9be7e027110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8514d7f9d384ba5b59724acf6c7b1dd') in 0.010722 seconds
+  Import took 0.015490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_eye_light_.png
+  artifactKey: Guid(0d6fe719ca1a6304b86fd5a8d517fa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_eye_light_.png using Guid(0d6fe719ca1a6304b86fd5a8d517fa48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3a9e418eccd5d5a9c5bd9754776365') in 0.012031 seconds
+  Import took 0.016767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_letter_open_.png
+  artifactKey: Guid(80ccf6426cf5d81439e0d2d0d5e3a670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_letter_open_.png using Guid(80ccf6426cf5d81439e0d2d0d5e3a670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e1a68bd9ce5768d0fd8b97387284bd') in 0.010520 seconds
+  Import took 0.015259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_57.png
+  artifactKey: Guid(21ec3e4c0fb4f294489efeb2318ced38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_57.png using Guid(21ec3e4c0fb4f294489efeb2318ced38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50577e5f8f40e8ef92c9fa226cadfd63') in 0.010017 seconds
+  Import took 0.014638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_56.png
+  artifactKey: Guid(1fb580928b9f8064a9047705a9fda5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_56.png using Guid(1fb580928b9f8064a9047705a9fda5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a736e968dcc6086495d0e9a8c67b4272') in 0.009377 seconds
+  Import took 0.015004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_25.png
+  artifactKey: Guid(27941d793d57a2b42a0f237f6c7464f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_25.png using Guid(27941d793d57a2b42a0f237f6c7464f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502d49e5eee7767108ebbe03ccae91ce') in 0.009013 seconds
+  Import took 0.014089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_2.png
+  artifactKey: Guid(e70a799ac340a994b947d05ad10960cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_2.png using Guid(e70a799ac340a994b947d05ad10960cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575f803b05bbcb231b42831eda8cdf9b') in 0.008637 seconds
+  Import took 0.013133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_35.png
+  artifactKey: Guid(1523865d391e20b4588569ac5f3e51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_35.png using Guid(1523865d391e20b4588569ac5f3e51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251f07d13c86b90eaf61b48c230e87b0') in 0.009403 seconds
+  Import took 0.014390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_6_cloud_.png
+  artifactKey: Guid(6de84b3b23aed7c44bbf4fa283ffb05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_6_cloud_.png using Guid(6de84b3b23aed7c44bbf4fa283ffb05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2331e4b275b946030bbfff6d4335c0') in 0.010056 seconds
+  Import took 0.014788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_2.png
+  artifactKey: Guid(785ede5020194ba45981195cfde5744d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_2.png using Guid(785ede5020194ba45981195cfde5744d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c3b7dfb536d9791dc83806c8d14e3f') in 0.009639 seconds
+  Import took 0.014508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_53.png
+  artifactKey: Guid(97ea7e178858c9345bdbaab26b6faf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_53.png using Guid(97ea7e178858c9345bdbaab26b6faf63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1167a962a7c10a5a66e2683544fa67') in 0.010342 seconds
+  Import took 0.015658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_10.png
+  artifactKey: Guid(e8853183c4323f2429a4704cdc8d2438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_10.png using Guid(e8853183c4323f2429a4704cdc8d2438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab8f1797dcce52504f95a7e5f7e9694') in 0.009691 seconds
+  Import took 0.014247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_5.png
+  artifactKey: Guid(2df876bba8583d84aab333b66328927c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_5.png using Guid(2df876bba8583d84aab333b66328927c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642625ae61ccd1215493c229371b9d3f') in 0.008358 seconds
+  Import took 0.013949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/8k_sun.jpg
+  artifactKey: Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/8k_sun.jpg using Guid(30169ef43026b72439b418e4966b8906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdfe4fe55355ffd89b236dc246b0e9b') in 0.035306 seconds
+  Import took 0.039858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_10_arrow_rounded_down_.png
+  artifactKey: Guid(40bc671eec4518e4493b412f42d18029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_10_arrow_rounded_down_.png using Guid(40bc671eec4518e4493b412f42d18029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cd9ceadf21a4d91f62586bbd52f865') in 0.010264 seconds
+  Import took 0.015652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_37.png
+  artifactKey: Guid(92cc699403073f345a4133ec3200aa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_37.png using Guid(92cc699403073f345a4133ec3200aa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3887b7cb2c6d154e51a678b1f78d5b33') in 0.009524 seconds
+  Import took 0.014727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_9_next_.png
+  artifactKey: Guid(6707ba99377107d46a8f396f7aa37bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_9_next_.png using Guid(6707ba99377107d46a8f396f7aa37bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabb1485089cab2d6922003d14531b78') in 0.012563 seconds
+  Import took 0.017149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_8.png
+  artifactKey: Guid(59f20d5be789e744cb48941e4dfe54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_8.png using Guid(59f20d5be789e744cb48941e4dfe54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc873dfb7e0b7998b671c14eb819be29') in 0.009039 seconds
+  Import took 0.014438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_34.png
+  artifactKey: Guid(94c4d8b43e2fe9548952fd99044140a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_34.png using Guid(94c4d8b43e2fe9548952fd99044140a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee3654e7263f83ffa60d9dcc746423f') in 0.010057 seconds
+  Import took 0.014780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_48.png
+  artifactKey: Guid(1850f2d6aa7f1d14781034f5a15d060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_48.png using Guid(1850f2d6aa7f1d14781034f5a15d060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62161b658b038017b0d52ee0faad0bc') in 0.009799 seconds
+  Import took 0.015490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_27.png
+  artifactKey: Guid(9f3c3b52e32ce7f4fbc50aa72de0d8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_27.png using Guid(9f3c3b52e32ce7f4fbc50aa72de0d8c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bb85371331f322f0eef887eb0018fd') in 0.008897 seconds
+  Import took 0.014319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_40.png
+  artifactKey: Guid(f2899a6b965c3764fadd990be2ae8dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_40.png using Guid(f2899a6b965c3764fadd990be2ae8dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747c430e57faad448b56235fc5b5082d') in 0.008967 seconds
+  Import took 0.014014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_44.png
+  artifactKey: Guid(171c690fc86873e4186934bed9ae3e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_44.png using Guid(171c690fc86873e4186934bed9ae3e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb2b5e287bea354d4f2425f2902dd94') in 0.009760 seconds
+  Import took 0.014988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_137.png
+  artifactKey: Guid(4dd3654e08a5e954496b25c3e1904b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_137.png using Guid(4dd3654e08a5e954496b25c3e1904b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565adf7a8ca00bd91aa7736006655128') in 0.009380 seconds
+  Import took 0.015030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_54.png
+  artifactKey: Guid(8b86956239618a74cb659cceee14a1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_54.png using Guid(8b86956239618a74cb659cceee14a1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e585e02606e6e94a2ea0b33981e23f') in 0.010904 seconds
+  Import took 0.015456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_52.png
+  artifactKey: Guid(554a1878311b9214eaca52ddfd06ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_52.png using Guid(554a1878311b9214eaca52ddfd06ada4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24380516969c9e21ff87388ec6fc6c7') in 0.008907 seconds
+  Import took 0.014021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_11.png
+  artifactKey: Guid(aa7a99267efea8a43905bb5593060723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_11.png using Guid(aa7a99267efea8a43905bb5593060723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d1fa551f6afcd15cdc17e025c66ba0') in 0.009280 seconds
+  Import took 0.013723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_26.png
+  artifactKey: Guid(fc230b0c30965bd40aadc9df250fe471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_26.png using Guid(fc230b0c30965bd40aadc9df250fe471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01f3fa5186025d504c5768c4a4237c6b') in 0.008588 seconds
+  Import took 0.013197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_59.png
+  artifactKey: Guid(4b3a8f4d6424f944888cc09db055873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_59.png using Guid(4b3a8f4d6424f944888cc09db055873f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40bbcc83aa77b11434c48714eab5b69') in 0.009460 seconds
+  Import took 0.014707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_60.png
+  artifactKey: Guid(49fbbb476d93d7d45b7a77d990b1433e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_60.png using Guid(49fbbb476d93d7d45b7a77d990b1433e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c0736e553744534e566a81343391ab') in 0.009415 seconds
+  Import took 0.015208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_55.png
+  artifactKey: Guid(54e8363cdb3bff54fad881d2851a6945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_55.png using Guid(54e8363cdb3bff54fad881d2851a6945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1c7a7a202131923185613c5c717a42') in 0.008904 seconds
+  Import took 0.014488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_3.png
+  artifactKey: Guid(cdabda9fac095b646ae1a628ca359324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_3.png using Guid(cdabda9fac095b646ae1a628ca359324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ef12fe4ba3db5c3d2f477c360e06e1') in 0.009036 seconds
+  Import took 0.014357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_47.png
+  artifactKey: Guid(1993ed1fea246d245afbeafef8400f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_47.png using Guid(1993ed1fea246d245afbeafef8400f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e31dfdde52fd13fe77b52bf60fd13bc') in 0.010545 seconds
+  Import took 0.015266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_5_sword_.png
+  artifactKey: Guid(a59d6029d282ea148bf57966b0c2401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_5_sword_.png using Guid(a59d6029d282ea148bf57966b0c2401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46994bcb08c56563edb292f58dca5d16') in 0.011427 seconds
+  Import took 0.016785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_41.png
+  artifactKey: Guid(81063ec73660fcf46ab7f287ead16db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_41.png using Guid(81063ec73660fcf46ab7f287ead16db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6324b45f40414f1f40b7a6147d4aa427') in 0.010097 seconds
+  Import took 0.015450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_36.png
+  artifactKey: Guid(ae6c03cc399d1444cbdc30a84fb430f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_36.png using Guid(ae6c03cc399d1444cbdc30a84fb430f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f04887cc4d55563f4d4e0736d4b8cf') in 0.009496 seconds
+  Import took 0.014356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_9.png
+  artifactKey: Guid(a845d430fefb5044b820786e4e89e81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_9.png using Guid(a845d430fefb5044b820786e4e89e81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68fbe906da4638e22fa5dce9f854e76') in 0.009041 seconds
+  Import took 0.013984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_142.png
+  artifactKey: Guid(cef9db8f6edc6a1409cb0f559d948403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_142.png using Guid(cef9db8f6edc6a1409cb0f559d948403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e732d166bd74e456b05b7d2f6c25eddb') in 0.009448 seconds
+  Import took 0.014209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_28.png
+  artifactKey: Guid(acba78c13e42e7c449d9626097805366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_28.png using Guid(acba78c13e42e7c449d9626097805366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0ea67e2c9d3d5153a10280d3f90ff8') in 0.009393 seconds
+  Import took 0.014576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_46.png
+  artifactKey: Guid(dc5c5a410edfc1b48b1fca7b07431e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_46.png using Guid(dc5c5a410edfc1b48b1fca7b07431e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefe1dda05426c2e926828f7406f7f44') in 0.009500 seconds
+  Import took 0.014464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/2k_moon.jpg
+  artifactKey: Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/2k_moon.jpg using Guid(a836e2863c426ed4caba15e741a26c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9542df49abc1f5ba1ebe78f2ff9bbea8') in 0.022201 seconds
+  Import took 0.027283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_144.png
+  artifactKey: Guid(a79f55ef26df65f4b82083575a363e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_144.png using Guid(a79f55ef26df65f4b82083575a363e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa382d8ac0c65d15322a9338b4e87e9') in 0.010323 seconds
+  Import took 0.014873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_58.png
+  artifactKey: Guid(694786c7bd5cb684b9680558a1e5e241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_arrow/icon_arrow_58.png using Guid(694786c7bd5cb684b9680558a1e5e241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2782531eac658ea6d743d58b07097aaa') in 0.009549 seconds
+  Import took 0.014133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_39.png
+  artifactKey: Guid(5fd03e0cf536ad24ab7f138d61c7004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_39.png using Guid(5fd03e0cf536ad24ab7f138d61c7004c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567d6bf2c0558a617bc4a38cbdbc57e8') in 0.009614 seconds
+  Import took 0.014927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_140.png
+  artifactKey: Guid(83f53c8c2d41801499b8733b06778fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_140.png using Guid(83f53c8c2d41801499b8733b06778fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af72143dbed45a78857b4793fca35bf') in 0.008920 seconds
+  Import took 0.014097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_10_hammer_.png
+  artifactKey: Guid(7dfd68325eeac354d866d207e4d2744c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_10_hammer_.png using Guid(7dfd68325eeac354d866d207e4d2744c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6cccb6db9b18304dc020b35479ee85') in 0.010619 seconds
+  Import took 0.016638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_6_continue_.png
+  artifactKey: Guid(d42cfe7bed8439c439378d1a7e76f4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_6_continue_.png using Guid(d42cfe7bed8439c439378d1a7e76f4e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2515d9932599cc64a596484c7fc5e73f') in 0.010435 seconds
+  Import took 0.015337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_column_cross_.png
+  artifactKey: Guid(11e3d102a51b3e1409ff67d202690d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_column_cross_.png using Guid(11e3d102a51b3e1409ff67d202690d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c7c6dc6df3b5f95f222cdb8ef9a7f5') in 0.010942 seconds
+  Import took 0.016254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_29.png
+  artifactKey: Guid(0361422746a7f1f439e75141d00d645e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_29.png using Guid(0361422746a7f1f439e75141d00d645e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f440e71280a28bafc8a8c8f6af9f0c68') in 0.009625 seconds
+  Import took 0.014735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_7.png
+  artifactKey: Guid(9b785b131a77703469b01a3700abd31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_7.png using Guid(9b785b131a77703469b01a3700abd31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22099a1fed4235c2317507c33454a04d') in 0.009200 seconds
+  Import took 0.014677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_141.png
+  artifactKey: Guid(595488230bb565844b60b2501c61fd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_141.png using Guid(595488230bb565844b60b2501c61fd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d4e4b4b00e558d8fb8b45959e4e5aa') in 0.009195 seconds
+  Import took 0.014644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_136.png
+  artifactKey: Guid(ad33785a4116d81418e934123587b720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_136.png using Guid(ad33785a4116d81418e934123587b720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727dc62c766f627de762dac9945ec3e0') in 0.009478 seconds
+  Import took 0.014716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_5_x_.png
+  artifactKey: Guid(a3580baf4cda17643bebcd843ca5881f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_5_x_.png using Guid(a3580baf4cda17643bebcd843ca5881f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ffba58a619a71dc83fa56dbe57913ac') in 0.011562 seconds
+  Import took 0.016413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_38.png
+  artifactKey: Guid(dadf4a29fc229544492884c698d4b824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_38.png using Guid(dadf4a29fc229544492884c698d4b824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c32802d414546eee8f845e78adce5ba') in 0.010428 seconds
+  Import took 0.016124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/Update/bonus_03.png
+  artifactKey: Guid(8313108d2f2f39c49a04679f5f2da2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/Update/bonus_03.png using Guid(8313108d2f2f39c49a04679f5f2da2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ca278db4b2ddf96c1513f3d887f069') in 0.009884 seconds
+  Import took 0.014977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_9_plant3_.png
+  artifactKey: Guid(e6d90fea7c6f7be4fb361575b0b18ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_9_plant3_.png using Guid(e6d90fea7c6f7be4fb361575b0b18ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5985f9696cacb98a8bd927fe24fb68') in 0.011221 seconds
+  Import took 0.016417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_cursor_+_al_.png
+  artifactKey: Guid(8ee98e5afeb13384cb04affd2fccacf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_cursor_+_al_.png using Guid(8ee98e5afeb13384cb04affd2fccacf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ffe7be301c80db81edf424a9ab2e69') in 0.009440 seconds
+  Import took 0.015435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_head_gladiator_.png
+  artifactKey: Guid(e128b01dab70e7a498a78577123c2db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_head_gladiator_.png using Guid(e128b01dab70e7a498a78577123c2db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440d06fccddb6244880d0bda55e43b19') in 0.011190 seconds
+  Import took 0.015930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_30.png
+  artifactKey: Guid(fb0d7593e18163140b4c912f215a8cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_oval/button_oval_30.png using Guid(fb0d7593e18163140b4c912f215a8cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce67d580646d7506456fea4243f3c765') in 0.008550 seconds
+  Import took 0.013758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_lighthing_.png
+  artifactKey: Guid(ed8ef41e0593c444f89985400bb18768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_lighthing_.png using Guid(ed8ef41e0593c444f89985400bb18768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a49ab70afb931764fc11160b263bf8') in 0.010452 seconds
+  Import took 0.015647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_6.png
+  artifactKey: Guid(688c6a640c59949419d8037d561a0ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_6.png using Guid(688c6a640c59949419d8037d561a0ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e26a29d14d81cf5b6d598eadc547269') in 0.008184 seconds
+  Import took 0.012728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_magnifier_+_al_.png
+  artifactKey: Guid(37b9b8c550b05f044945caab59ea5946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_magnifier_+_al_.png using Guid(37b9b8c550b05f044945caab59ea5946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9850e38b5b864df7145e1afbf58b25') in 0.010742 seconds
+  Import took 0.015673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Bliznieta.png
+  artifactKey: Guid(28081ab0f5158f14b8301cc06b6d217a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Bliznieta.png using Guid(28081ab0f5158f14b8301cc06b6d217a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35fd14698a0b0deb2504c7f450b84b9') in 0.018241 seconds
+  Import took 0.023202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_6_barrel_.png
+  artifactKey: Guid(fdf81e4514a3ee343842aa1421113184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_6_barrel_.png using Guid(fdf81e4514a3ee343842aa1421113184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff2486f64fcd6f4584044797175c23b') in 0.010464 seconds
+  Import took 0.015053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_2_coin_.png
+  artifactKey: Guid(be5129279b1dfca4ab4fa9ddc1c574f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_2_coin_.png using Guid(be5129279b1dfca4ab4fa9ddc1c574f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055b4fd85363c41aac99a704e0e2fb3f') in 0.010112 seconds
+  Import took 0.015499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_45.png
+  artifactKey: Guid(a59d9793b14a2034ab6a445eb1107d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_45.png using Guid(a59d9793b14a2034ab6a445eb1107d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ca0d146776c4ae2612e7bb6e288913') in 0.009336 seconds
+  Import took 0.014010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_1.png
+  artifactKey: Guid(afbd0e53307014f4495c37e09031155f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square2/button_line_corner1_square2_1.png using Guid(afbd0e53307014f4495c37e09031155f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ebfe3f4298b10c95d9cac53ec66360') in 0.009208 seconds
+  Import took 0.013777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Custom/Textures/CelestialBodies/8k_sun_emmision.png
+  artifactKey: Guid(cfe3579003844634f8eca7bdfd52e814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Textures/CelestialBodies/8k_sun_emmision.png using Guid(cfe3579003844634f8eca7bdfd52e814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea847348d811573c4ee650334bff54a') in 0.023129 seconds
+  Import took 0.028100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_6_bottle_small_full_.png
+  artifactKey: Guid(667647984c5ed7f498543ddc58a219a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_6_bottle_small_full_.png using Guid(667647984c5ed7f498543ddc58a219a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599cd9b84473dafceabdf4ccc24d4d50') in 0.010771 seconds
+  Import took 0.015965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/Update/bonus_01.png
+  artifactKey: Guid(a5b6ecdbc26aa9f47b973c7481d1268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/Update/bonus_01.png using Guid(a5b6ecdbc26aa9f47b973c7481d1268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a609b466c190c7666417937452c852cf') in 0.009678 seconds
+  Import took 0.014319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_6_arrow_down_.png
+  artifactKey: Guid(515e1722bb0b86e4bb28c0aaade52e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_6_arrow_down_.png using Guid(515e1722bb0b86e4bb28c0aaade52e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f74fc91e46128cef471e6cf80b1ebf') in 0.010889 seconds
+  Import took 0.016060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_138.png
+  artifactKey: Guid(0a0c0d32e435e764d9ca3d7243b2bff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_138.png using Guid(0a0c0d32e435e764d9ca3d7243b2bff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e3ef51550827a70d0e59ce039d70cf') in 0.009071 seconds
+  Import took 0.013843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_139.png
+  artifactKey: Guid(67f35db8cd6a01e48b69754aaafa0e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_139.png using Guid(67f35db8cd6a01e48b69754aaafa0e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95286b3da864b853d910b574aefe5129') in 0.010895 seconds
+  Import took 0.015407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_1.png
+  artifactKey: Guid(9d0e87fc9a2b9cd418fac6970b6659ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_1.png using Guid(9d0e87fc9a2b9cd418fac6970b6659ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d415a2225cae6cee9267969da33422') in 0.008682 seconds
+  Import took 0.014280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_4.png
+  artifactKey: Guid(730ef695005bb7f458f56fc47285b0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_4.png using Guid(730ef695005bb7f458f56fc47285b0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d26006dedda2a66d93fb9ce1d2801a6') in 0.008858 seconds
+  Import took 0.013871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_3.png
+  artifactKey: Guid(429a69af6010d3146b933059f662d58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_rectangle/button_rectangle_3.png using Guid(429a69af6010d3146b933059f662d58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f72cf56b89eb427bcdd4e0b1f3450b4') in 0.008135 seconds
+  Import took 0.013040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_5_scroll_-_.png
+  artifactKey: Guid(790128c15d19af4439ebab9bad9afec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_5_scroll_-_.png using Guid(790128c15d19af4439ebab9bad9afec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c582adeec2555538d7146882bc2be546') in 0.011415 seconds
+  Import took 0.016931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_10_flag_destroyed_.png
+  artifactKey: Guid(2f5ddc8f7d908a24eba2215be6500082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_10_flag_destroyed_.png using Guid(2f5ddc8f7d908a24eba2215be6500082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e8d8d471c87ad43f4fe05bd3d5f6b9') in 0.011069 seconds
+  Import took 0.016002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_33.png
+  artifactKey: Guid(0e7aa80c458216b4ba3fdf919e6c853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner4_square3/button_line_corner4_square3_33.png using Guid(0e7aa80c458216b4ba3fdf919e6c853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7be3094268e1f7b32839a8b5a8e7b9e') in 0.009558 seconds
+  Import took 0.015247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_5_sun_empty_.png
+  artifactKey: Guid(a893af5c92e73d24bbea12aeb87df664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_5_sun_empty_.png using Guid(a893af5c92e73d24bbea12aeb87df664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f545de857747c7f956d44cc02bbdc6') in 0.010750 seconds
+  Import took 0.015386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/Update/bonus_02.png
+  artifactKey: Guid(7c164a8ab621d5b4cbfdafbb24034032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/Update/bonus_02.png using Guid(7c164a8ab621d5b4cbfdafbb24034032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b118694b3eb294ac2b168d478ce2a886') in 0.010420 seconds
+  Import took 0.015966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/Update/bonus_04.png
+  artifactKey: Guid(ef147e2665db3394ab8f3c2ade98cbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/Update/bonus_04.png using Guid(ef147e2665db3394ab8f3c2ade98cbf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c284c16cece90318b300fb6ad9da9c') in 0.011049 seconds
+  Import took 0.016264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_43.png
+  artifactKey: Guid(d111b9f7525416541bcc20aed468635e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button_line/button_line_corner1_square1/button_line_corner1_square1_43.png using Guid(d111b9f7525416541bcc20aed468635e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4062375509d3152015c14dc45817ed4d') in 0.009345 seconds
+  Import took 0.013979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/Clean Vector Icons/T_10_!_.png
+  artifactKey: Guid(3e382c1295a11054dacdc58d5933d206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/Clean Vector Icons/T_10_!_.png using Guid(3e382c1295a11054dacdc58d5933d206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f3a0dfd10322bb9a8cf00311c67896') in 0.011058 seconds
+  Import took 0.016431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_143.png
+  artifactKey: Guid(b1e6bd4a0d0784f42bb254382c819a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/icon/icon_controller/icon_controller_143.png using Guid(b1e6bd4a0d0784f42bb254382c819a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23479fab62c1d8319ba00768b25028c4') in 0.010042 seconds
+  Import took 0.015105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_3.png
+  artifactKey: Guid(74e4ce189f8d5af41a0fe93eb8531267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_3.png using Guid(74e4ce189f8d5af41a0fe93eb8531267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79776c5b3d901a2c3014b56c8e57c492') in 0.008506 seconds
+  Import took 0.013356 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004075 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.2 MB.
+System memory in use after: 143.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3651.
+Total: 2.224100 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.088600 ms MarkObjects: 1.805600 ms  DeleteObjects: 0.014700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 554.272978 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_29.png
+  artifactKey: Guid(dd1daf31d6471674aab0b72f274e43b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_29.png using Guid(dd1daf31d6471674aab0b72f274e43b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39fb4cbe0770a180fa6431c73dd91bb') in 0.050535 seconds
+  Import took 0.056104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_6.png
+  artifactKey: Guid(ef7a892f7674fb94bba717d4c7024d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_6.png using Guid(ef7a892f7674fb94bba717d4c7024d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10350e9f0e39a65de4d6c82cab37ca7b') in 0.012386 seconds
+  Import took 0.016959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_3.png
+  artifactKey: Guid(5dfd0e1f909492a4986a4e0fffc057eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_3.png using Guid(5dfd0e1f909492a4986a4e0fffc057eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e4a6f8a433da9b43ec46d19326ddcc') in 0.023305 seconds
+  Import took 0.028604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_4.png
+  artifactKey: Guid(7f4037cd4f555fe4cae67a6b0d1195d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_4.png using Guid(7f4037cd4f555fe4cae67a6b0d1195d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b2ea79e2f6068854f33e156de68530') in 0.017767 seconds
+  Import took 0.023322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_1.png
+  artifactKey: Guid(caac56f2f3c978d4d987cea9af1becc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_1.png using Guid(caac56f2f3c978d4d987cea9af1becc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42084fee6b1a58c5ac7ba70fab19154') in 0.008925 seconds
+  Import took 0.013652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_30.png
+  artifactKey: Guid(587c21098791d0140beea802ca08549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_30.png using Guid(587c21098791d0140beea802ca08549b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d6eb8943299bd19a457d001c4db61c') in 0.008460 seconds
+  Import took 0.013565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_7.png
+  artifactKey: Guid(785f83587866d514ba4b11be899858c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_7.png using Guid(785f83587866d514ba4b11be899858c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5d5e3989328a5cee0d1fc3c37fcc24') in 0.009700 seconds
+  Import took 0.014980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_5.png
+  artifactKey: Guid(9bb2ef2296bca114a9dec911ab800a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_5.png using Guid(9bb2ef2296bca114a9dec911ab800a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046cb14a45f4c5307a3660b3393cdf3f') in 0.009391 seconds
+  Import took 0.014202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_2.png
+  artifactKey: Guid(27533cc9775a1074f9d0e85c4ddf1224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_square1/button_corner_square1_2.png using Guid(27533cc9775a1074f9d0e85c4ddf1224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893c1a6c2531573f07e3c13aee3fb501') in 0.010397 seconds
+  Import took 0.014943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.250454 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_27.png
+  artifactKey: Guid(81b91ef2c18b21f4e9095b3e5b43cfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_27.png using Guid(81b91ef2c18b21f4e9095b3e5b43cfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4f05cd5af8e9075006c71a530daf61') in 0.007989 seconds
+  Import took 0.013080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_28.png
+  artifactKey: Guid(ab927fae207e97244afc233cc2bb4051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_28.png using Guid(ab927fae207e97244afc233cc2bb4051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30d3b92a017bfe7fc3f50d6a39cd4fb') in 0.008475 seconds
+  Import took 0.012876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_25.png
+  artifactKey: Guid(9a76e69bf913a5848aefed5a3a327ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_25.png using Guid(9a76e69bf913a5848aefed5a3a327ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143b858e343aab87877206e20ce37ab3') in 0.008362 seconds
+  Import took 0.013454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_26.png
+  artifactKey: Guid(49353354c9a799842a1758381d382c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_26.png using Guid(49353354c9a799842a1758381d382c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ccd5a598515758182830f382e1618f') in 0.008207 seconds
+  Import took 0.013390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_22.png
+  artifactKey: Guid(5f2ae1fa40d83a54ca249c729962ccf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_22.png using Guid(5f2ae1fa40d83a54ca249c729962ccf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4bf1c3998a1caedaea309bae3e9fb7') in 0.008141 seconds
+  Import took 0.013532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_23.png
+  artifactKey: Guid(9bfb66f313c5fe4439f319d701ed8636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_23.png using Guid(9bfb66f313c5fe4439f319d701ed8636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13763d0b7a1d740be071f8534e711c3c') in 0.008385 seconds
+  Import took 0.012882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_24.png
+  artifactKey: Guid(462e18ad03d865e48b6adda7ff335c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_24.png using Guid(462e18ad03d865e48b6adda7ff335c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1528aa0b19a3dec181459252f0a66081') in 0.008886 seconds
+  Import took 0.013362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_21.png
+  artifactKey: Guid(3513f8339e99fa94b89fc9c8e2799e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_21.png using Guid(3513f8339e99fa94b89fc9c8e2799e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df04c9b7545103fe38810f9d1d2e468') in 0.010202 seconds
+  Import took 0.014635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142884 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_19.png
+  artifactKey: Guid(80cb6b8d0bb63ef488e77c31e8035895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_19.png using Guid(80cb6b8d0bb63ef488e77c31e8035895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8767e4b5571070d77d5fa26e8dff6a36') in 0.008266 seconds
+  Import took 0.013642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_20.png
+  artifactKey: Guid(e0a801a451aa44949ac0bc98c4acf8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_20.png using Guid(e0a801a451aa44949ac0bc98c4acf8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8df6f6e801d922bc26e55eb8fde380') in 0.008227 seconds
+  Import took 0.013371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_16.png
+  artifactKey: Guid(3b0e4abeb68a2cd438fe658416efd77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_16.png using Guid(3b0e4abeb68a2cd438fe658416efd77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a6f872f3995a88c2d9f0478882fe91') in 0.008323 seconds
+  Import took 0.012875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_18.png
+  artifactKey: Guid(038143ad1acc6ce47a495bd09da9622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_18.png using Guid(038143ad1acc6ce47a495bd09da9622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5720d4004928c7c4c6713bd43c0122a6') in 0.008554 seconds
+  Import took 0.013035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_17.png
+  artifactKey: Guid(766aae686ea6594418763a12f1ad908e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_17.png using Guid(766aae686ea6594418763a12f1ad908e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74c70d186462bc5e38563e8f0fae35d') in 0.009058 seconds
+  Import took 0.013390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_13.png
+  artifactKey: Guid(5fd900414cf515649be67f8eaa45be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_13.png using Guid(5fd900414cf515649be67f8eaa45be34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8db25cad7e600533c2d586b171fd114') in 0.009042 seconds
+  Import took 0.014230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_12.png
+  artifactKey: Guid(dbf8edda6dc8e9644ab58f25d0c30814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_12.png using Guid(dbf8edda6dc8e9644ab58f25d0c30814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ab6e5307f054cb166081a63218400d') in 0.008436 seconds
+  Import took 0.013699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_14.png
+  artifactKey: Guid(0405e0a011ccd354fa271ae357a4256c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_14.png using Guid(0405e0a011ccd354fa271ae357a4256c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c249108afd310677a64605510c34419b') in 0.008229 seconds
+  Import took 0.013348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_15.png
+  artifactKey: Guid(34b90e4b4a356a9428f4c2c86abb4220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_15.png using Guid(34b90e4b4a356a9428f4c2c86abb4220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9145ed1540eebe1157dc974639badb8d') in 0.008691 seconds
+  Import took 0.013100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.872953 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_27.png
+  artifactKey: Guid(ca224906676eba34bb17542089aaa9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_27.png using Guid(ca224906676eba34bb17542089aaa9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7925684a1da270f2bda7ab1030654056') in 0.009628 seconds
+  Import took 0.014807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_28.png
+  artifactKey: Guid(48945a7443a66b242b7384d75e65ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_28.png using Guid(48945a7443a66b242b7384d75e65ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c52f3196374a524eb20ca4071b0afef') in 0.009048 seconds
+  Import took 0.014132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_15.png
+  artifactKey: Guid(2bee413fed2a91747918dfe036afab57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_15.png using Guid(2bee413fed2a91747918dfe036afab57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e2d8243620a81f5ec1d0ceb4815a52') in 0.008983 seconds
+  Import took 0.014269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_3.png
+  artifactKey: Guid(7fbfd22e9f3642f4193e9c75cc958d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_3.png using Guid(7fbfd22e9f3642f4193e9c75cc958d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152661d48ff8e670644714a33de1c92a') in 0.008664 seconds
+  Import took 0.013843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_9.png
+  artifactKey: Guid(6357a3a1177ca6e49bd5f9e3a270e48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_9.png using Guid(6357a3a1177ca6e49bd5f9e3a270e48e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe16e1c506bce1ec579f29df0b87935') in 0.008628 seconds
+  Import took 0.013058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_21.png
+  artifactKey: Guid(94cf9e51a56b6094a88e0f5925bbb7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_21.png using Guid(94cf9e51a56b6094a88e0f5925bbb7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655fcb52e53abee50e4416c11146cc3d') in 0.008067 seconds
+  Import took 0.012672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_1.png
+  artifactKey: Guid(988964b598abd02448d59d0b468636f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_1.png using Guid(988964b598abd02448d59d0b468636f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f198a373d953efd2ef505ae13532f5') in 0.008463 seconds
+  Import took 0.013022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_4.png
+  artifactKey: Guid(4afead76587e125418241d540179897a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_4.png using Guid(4afead76587e125418241d540179897a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85d874c27cbf380b56955384b424039') in 0.008946 seconds
+  Import took 0.013780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_8.png
+  artifactKey: Guid(8a629ea0dc847ac449dd73f13ac4faab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_8.png using Guid(8a629ea0dc847ac449dd73f13ac4faab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26484f6aff57cff7fcc88847321d22e1') in 0.007922 seconds
+  Import took 0.013015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_16.png
+  artifactKey: Guid(1ee7a1eef6a9b19458d0f0c73f29f365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_16.png using Guid(1ee7a1eef6a9b19458d0f0c73f29f365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23332eae1c60a4033e7d006613593d2') in 0.008248 seconds
+  Import took 0.012640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_20.png
+  artifactKey: Guid(03cd99ea61b0d9a48b3b3f5d9dbaa730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_20.png using Guid(03cd99ea61b0d9a48b3b3f5d9dbaa730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491d3af0d52a9938daeb1aabaeae087d') in 0.008361 seconds
+  Import took 0.012824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_2.png
+  artifactKey: Guid(cfb7c25edbf6f5946b82ca8d37b295e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle5/button_corner_rectangle5_2.png using Guid(cfb7c25edbf6f5946b82ca8d37b295e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbc76266f4956e23fcf0b8809a4ec0a') in 0.008504 seconds
+  Import took 0.013765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_22.png
+  artifactKey: Guid(cd9dc4cc41903034bb94ef04618685c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_22.png using Guid(cd9dc4cc41903034bb94ef04618685c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5961d622873e335599c54c2193cd9b21') in 0.008427 seconds
+  Import took 0.012911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_30.png
+  artifactKey: Guid(5aa69455b23e89648beb784acb4e2184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_30.png using Guid(5aa69455b23e89648beb784acb4e2184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4ce78452a08f64527836a0403a4f75') in 0.008001 seconds
+  Import took 0.013114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_29.png
+  artifactKey: Guid(89a210ab7e0c88a419bfbd4128fba406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle4/button_corner_rectangle4_29.png using Guid(89a210ab7e0c88a419bfbd4128fba406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e31a6f74a77717819ed50e082409e67') in 0.008379 seconds
+  Import took 0.012969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_17.png
+  artifactKey: Guid(251a918c1dd4ab0468a827a68563e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_17.png using Guid(251a918c1dd4ab0468a827a68563e36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a30e2e1939355a1ebe4f5c2f46246ad') in 0.007912 seconds
+  Import took 0.012365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_23.png
+  artifactKey: Guid(075a8df19edf1b149a3ccc7cc2f3ff32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_23.png using Guid(075a8df19edf1b149a3ccc7cc2f3ff32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c186c8d006ca716ee998ae9b018832ae') in 0.008897 seconds
+  Import took 0.013580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_19.png
+  artifactKey: Guid(17766de9db2afa3458ab5be3c08ddfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_19.png using Guid(17766de9db2afa3458ab5be3c08ddfd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7652010c1a8b128cf48bc5cf78aa24b') in 0.009474 seconds
+  Import took 0.013988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_1.png
+  artifactKey: Guid(215203083868ddb4caa30715d7cdb853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_1.png using Guid(215203083868ddb4caa30715d7cdb853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af58aa78aa8355be1e721ffb11aeb4a5') in 0.008705 seconds
+  Import took 0.013367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_2.png
+  artifactKey: Guid(605330d9d5c94914da5180ea18d23f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_2.png using Guid(605330d9d5c94914da5180ea18d23f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0655d244cdce4bcb004bbf3db5b4250') in 0.008433 seconds
+  Import took 0.013529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_7.png
+  artifactKey: Guid(4d982d5c28d425c40af7d10426951bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_7.png using Guid(4d982d5c28d425c40af7d10426951bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efd9480b90265222c48bd39a046efd0') in 0.008180 seconds
+  Import took 0.013552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_6.png
+  artifactKey: Guid(cc79dd7875daa7f41baae506458f09d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_6.png using Guid(cc79dd7875daa7f41baae506458f09d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '784dd19ce2917085a4abc6a162ae73da') in 0.008630 seconds
+  Import took 0.013906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_18.png
+  artifactKey: Guid(ec125610b1105c8468d180050f0e322d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_18.png using Guid(ec125610b1105c8468d180050f0e322d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad35ccfe3dd22ecdd6ba5d256c072fe1') in 0.008421 seconds
+  Import took 0.013542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_5.png
+  artifactKey: Guid(67d243d47dfefe440a3e6c1ab8df9e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Imported/CleanFlatIcon/png_128/button/button_corner_rectangle3/button_corner_rectangle3_5.png using Guid(67d243d47dfefe440a3e6c1ab8df9e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a0fa7c628650619e843897b6e6044a') in 0.008544 seconds
+  Import took 0.013299 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004278 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.72 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.4 MB.
+System memory in use after: 143.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3656.
+Total: 2.143900 ms (FindLiveObjects: 0.298800 ms CreateObjectMapping: 0.068000 ms MarkObjects: 1.762200 ms  DeleteObjects: 0.014100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
