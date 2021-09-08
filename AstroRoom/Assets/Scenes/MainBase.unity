@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -873,7 +873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169711, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: scenesName
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Camera
@@ -1763,7 +1763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169711, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: scenesName
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Camera
@@ -1938,7 +1938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169711, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: scenesName
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Camera
@@ -2623,7 +2623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169711, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: scenesName
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Camera
@@ -3795,7 +3795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169711, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: scenesName
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3477905601637169747, guid: b8c6cbd5092754142b3c488a42d72a68, type: 3}
       propertyPath: m_Camera

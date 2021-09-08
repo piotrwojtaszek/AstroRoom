@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2504a84f097a7c0458c2f4b6ce093275, type: 3}
+  m_Name: Nowa
+  m_EditorClassIdentifier: 
+  conName: Nowa konstelacja
+  adjMatrix: 000100000000010000010000000000010000000101000100000000010001000000000100
+  nodes:
+  - position: {x: -2.7705665, y: -0.5625405, z: 0}
+    size: 0.202
+  - position: {x: -2.049024, y: 0.7953155, z: 0}
+    size: 0.371
+  - position: {x: -0.10139826, y: -1.0872865, z: 0}
+    size: 0.25
+  - position: {x: 0.16490877, y: 1.9797344, z: 0}
+    size: 0.602
+  - position: {x: 2.1299653, y: 0.7276188, z: 0}
+    size: 0.416
+  - position: {x: 2.6885889, y: -0.82773924, z: 0}
+    size: 0.25
+  size: 6
+  skyPosition: {x: 26, y: 77}
+  boundCenter: {x: -0, y: 0.4}
+  boundSize: {x: 6.35, y: 4.09}
+  titleHeight: {x: -0.77, y: 3.03}
+  guideImage: {fileID: 21300000, guid: 38026b7e6fa6a7940b0a927263774ffd, type: 3}

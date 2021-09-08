@@ -130,16 +130,16 @@ public class ConstelationInSceneHelperEditor : Editor
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Stwórz po³¹czenie"))
                     {
-                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = true;
-                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = true;
+                        baseScript.constelationPreset.adjMatrix[id_1 * baseScript.constelationPreset.size + id_2] = true;
+                        baseScript.constelationPreset.adjMatrix[id_2 * baseScript.constelationPreset.size + id_1] = true;
                         serializedObject.ApplyModifiedProperties();
                     }
 
                 if (IsNodesExists(baseScript.constelationPreset, id_1, id_2))
                     if (GUILayout.Button("Usuñ po³¹czenie"))
                     {
-                        baseScript.constelationPreset.adjMatrix[id_1 + 1 * id_2] = false;
-                        baseScript.constelationPreset.adjMatrix[id_2 + 1 * id_1] = false;
+                        baseScript.constelationPreset.adjMatrix[id_1 * baseScript.constelationPreset.size + id_2] = false;
+                        baseScript.constelationPreset.adjMatrix[id_2 * baseScript.constelationPreset.size + id_1] = false;
                         serializedObject.ApplyModifiedProperties();
                     }
                 GUILayout.EndHorizontal();

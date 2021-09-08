@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'pl' Physical Memory: 16298 MB
+OS: 'Windows 10 Home; OS build 19043.1165; Version 2009; 64bit' Language: 'pl' Physical Memory: 16298 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,79 +11,587 @@ C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60239
-Successfully changed project path to: C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
-C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom
+61177
+Successfully changed project path to: C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
+C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 135.32 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.70 ms.
+Refreshing native plugins compatible for Editor in 122.46 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.75 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/piotr/Documents/PrywatneProjekty/AstroRoom/AstroRoom/Assets
+[Subsystems] Discovering subsystems at path C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
     Vendor:   
     VRAM:     5980 MB
-    Driver:   27.21.14.6677
+    Driver:   30.0.14.7111
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001360 seconds.
+Registered in 0.001978 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 139.16 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 128.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.428 seconds
+- Completed reload, in  1.601 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003959 seconds.
+Registered in 0.004439 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 170.84 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 130.10 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piotr\Documents\PrywatneProjekty\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
 
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  1.014 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.95 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 3192 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 162.5 MB.
-System memory in use after: 162.7 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.3 MB.
+System memory in use after: 152.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3651.
-Total: 2.537400 ms (FindLiveObjects: 0.513400 ms CreateObjectMapping: 0.103900 ms MarkObjects: 1.841900 ms  DeleteObjects: 0.077300 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3633.
+Total: 3.080400 ms (FindLiveObjects: 0.631900 ms CreateObjectMapping: 0.111500 ms MarkObjects: 2.230600 ms  DeleteObjects: 0.105200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Scriptable/SOConstelationBase.cs
-  artifactKey: Guid(2504a84f097a7c0458c2f4b6ce093275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Scriptable/SOConstelationBase.cs using Guid(2504a84f097a7c0458c2f4b6ce093275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c847d3afbff0df8ec127e883c2cacef3') in 0.017199 seconds
-  Import took 0.022434 seconds .
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf43dfed0b5f78f293f50546110c7b20') in 0.014801 seconds
+  Import took 0.020491 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Scenes/SolarSystemAnim.unity
+  artifactKey: Guid(ac2c1b047bc87fc4e806ff0bf19b0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SolarSystemAnim.unity using Guid(ac2c1b047bc87fc4e806ff0bf19b0de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c5815fdb5fa813e065e906e759af70') in 0.004132 seconds
+  Import took 0.008670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Scenes/SolarSystemSim.unity
+  artifactKey: Guid(0e939a9b6929cfc4caa08d0d9cfeab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SolarSystemSim.unity using Guid(0e939a9b6929cfc4caa08d0d9cfeab74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812166df532d02d6d9afd6172b3bd552') in 0.004029 seconds
+  Import took 0.008446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.180991 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb0535fd3d58a1c9fa195513b9c287') in 0.016944 seconds
+  Import took 0.022052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset
+  artifactKey: Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Woznica.asset using Guid(8c3e2026ff4e0914cbb048cf442e3e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ba93f4b5ed230504b110f5142da6bf') in 0.004649 seconds
+  Import took 0.009052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset
+  artifactKey: Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Bliznieta.asset using Guid(115cf214be2b74b4db2a109538d5e22c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb0535fd3d58a1c9fa195513b9c287') in 0.004142 seconds
+  Import took 0.008570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Swan.asset
+  artifactKey: Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Swan.asset using Guid(ae717f7f8ed037b4c9b9a191718c2e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f138d8aa309c108e504d583154d2692a') in 0.005702 seconds
+  Import took 0.010122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Lew.asset
+  artifactKey: Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Lew.asset using Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bc485b1e891f82456606f47f2d666c') in 0.004357 seconds
+  Import took 0.008674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset
+  artifactKey: Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Eagle.asset using Guid(6a16d42cae4e1fb4ba59f1108973a64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7227366a465f58bf700de46c9660a7d1') in 0.004235 seconds
+  Import took 0.008433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Lew.asset
+  artifactKey: Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Lew.asset using Guid(bdce74ec062920a4b9d5632f09d01d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bc485b1e891f82456606f47f2d666c') in 0.004366 seconds
+  Import took 0.009373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Skorpion.asset
+  artifactKey: Guid(c364bcf5a0a173d43859a2d8c8de759a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Skorpion.asset using Guid(c364bcf5a0a173d43859a2d8c8de759a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277f013a399500ac125c1447d3b52265') in 0.004274 seconds
+  Import took 0.009088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Orion.asset
+  artifactKey: Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Orion.asset using Guid(36b3a4edb6731c44e96dc6aeb4f63bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98819f14a3f588ef080986b4562d2249') in 0.004291 seconds
+  Import took 0.009248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Rak.asset
+  artifactKey: Guid(161cb3213f4955b42962b5450e7c7ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Rak.asset using Guid(161cb3213f4955b42962b5450e7c7ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3a4399436100421f2d31e73330f141') in 0.004525 seconds
+  Import took 0.009404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.269357 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures
+  artifactKey: Guid(bb9f9a85cd82e2b4a8088405c9b3a244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures using Guid(bb9f9a85cd82e2b4a8088405c9b3a244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910bbf42cf2fc49f04bfc903c18145b7') in 0.003845 seconds
+  Import took 0.008974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043402 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Labędz.png
+  artifactKey: Guid(31400ec98855ad24381ec941a0c77e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Labędz.png using Guid(31400ec98855ad24381ec941a0c77e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d6ca6e8524441546dc2634dc3f9dc4') in 0.066737 seconds
+  Import took 0.072063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Orzel.png
+  artifactKey: Guid(7ec422000069c71428214dc0176afbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Orzel.png using Guid(7ec422000069c71428214dc0176afbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddb5266ac102f8c6909111728b0b703') in 0.020594 seconds
+  Import took 0.025712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Lew.png
+  artifactKey: Guid(d334e6e730f88614ea75c37a964d08f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Lew.png using Guid(d334e6e730f88614ea75c37a964d08f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7422457e90041eefc3c5e1b0570e4fb7') in 0.018100 seconds
+  Import took 0.022763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Rak.png
+  artifactKey: Guid(51c58d55c53ee7746b6a15e1c7503782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Rak.png using Guid(51c58d55c53ee7746b6a15e1c7503782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a6eec2e209bd579740538b6a5bc5acb') in 0.018078 seconds
+  Import took 0.023539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Skorpion.png
+  artifactKey: Guid(323fbf0144dbae849a8920c983a71dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Skorpion.png using Guid(323fbf0144dbae849a8920c983a71dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c04964179bc04da9e4c5670651870a') in 0.017840 seconds
+  Import took 0.022318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Orion.png
+  artifactKey: Guid(59a7a09c384da674faa09c0926b947a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Orion.png using Guid(59a7a09c384da674faa09c0926b947a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5977408c5c69e0aeeb3a6e9c05b90dc1') in 0.018756 seconds
+  Import took 0.023759 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004186 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.87 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.80 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.3 MB.
+System memory in use after: 143.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3643.
+Total: 2.196900 ms (FindLiveObjects: 0.332600 ms CreateObjectMapping: 0.072700 ms MarkObjects: 1.776700 ms  DeleteObjects: 0.013600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 186.868590 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations
+  artifactKey: Guid(fbde05161370c8d4f9cf767ffe2b136e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations using Guid(fbde05161370c8d4f9cf767ffe2b136e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437190bceb1624d28d70098f559c89ef') in 0.010358 seconds
+  Import took 0.016416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.214527 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Celestal Bodies List and Sun.asset
+  artifactKey: Guid(def82ce2adb55864ca049037a9955753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Celestal Bodies List and Sun.asset using Guid(def82ce2adb55864ca049037a9955753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb12a1eb91e452a124bd073087b4ccc') in 0.022679 seconds
+  Import took 0.028025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293eb3e52cf3a9e06eec4083f4b4bdad') in 0.008423 seconds
+  Import took 0.013621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Celestal Bodies List.asset
+  artifactKey: Guid(f9392ee1a4877d14d867d6922b294d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Celestal Bodies List.asset using Guid(f9392ee1a4877d14d867d6922b294d38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18838c09b2c82ef2343b9bfe24772d99') in 0.006906 seconds
+  Import took 0.012286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.901795 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/New constelation.asset
+  artifactKey: Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/New constelation.asset using Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c63a7c6c876afa149a29ee67a183e0d') in 0.004841 seconds
+  Import took 0.010045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010036 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/New constelation.asset
+  artifactKey: Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/New constelation.asset using Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c63a7c6c876afa149a29ee67a183e0d') in 0.004052 seconds
+  Import took 0.009149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.838409 seconds.
+  path: Assets/Editor/ConstelationInSceneHelperEditor.cs
+  artifactKey: Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ConstelationInSceneHelperEditor.cs using Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b4ebece43228a6ee43ee82dc2a94a1') in 0.009156 seconds
+  Import took 0.014308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.072657 seconds.
+  path: Assets/Editor/ConstelationInSceneHelperEditor.cs
+  artifactKey: Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ConstelationInSceneHelperEditor.cs using Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b4ebece43228a6ee43ee82dc2a94a1') in 0.005403 seconds
+  Import took 0.010661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.899879 seconds.
+  path: Assets/Editor/SOConstelationBaseEditor.cs
+  artifactKey: Guid(364e094c56801a745945dc41872dc362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/SOConstelationBaseEditor.cs using Guid(364e094c56801a745945dc41872dc362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb18ac366c7a951f94978b7e2910dded') in 0.003834 seconds
+  Import took 0.008920 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004373 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.4 MB.
+System memory in use after: 143.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3649.
+Total: 2.472000 ms (FindLiveObjects: 0.335000 ms CreateObjectMapping: 0.080200 ms MarkObjects: 2.040700 ms  DeleteObjects: 0.015000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 417.239569 seconds.
+  path: Assets/Editor/ConstelationInSceneHelperEditor.cs
+  artifactKey: Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/ConstelationInSceneHelperEditor.cs using Guid(717915a007366684ea4506d27ecc80d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848b9cb56d5d257c197f06fb3cfcebbe') in 0.007310 seconds
+  Import took 0.012570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.021706 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset
+  artifactKey: Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset using Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1377134a2ada34bb98eb199dad1079b') in 0.011672 seconds
+  Import took 0.017109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003388 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset
+  artifactKey: Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/New Constelation.asset using Guid(a6337b84e7fbd3e47b13160a15169c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1377134a2ada34bb98eb199dad1079b') in 0.003969 seconds
+  Import took 0.008501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 252.904970 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset
+  artifactKey: Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset using Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989b4549f8bff550dc90de03f1e42528') in 0.004266 seconds
+  Import took 0.009950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012357 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset
+  artifactKey: Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset using Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989b4549f8bff550dc90de03f1e42528') in 0.003851 seconds
+  Import took 0.008916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 587.513092 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Nowa konstelacja.png
+  artifactKey: Guid(38026b7e6fa6a7940b0a927263774ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Nowa konstelacja.png using Guid(38026b7e6fa6a7940b0a927263774ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5293c1942afcda167a823c0899df4508') in 0.035884 seconds
+  Import took 0.041756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.093868 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Textures/Nowa konstelacja.png
+  artifactKey: Guid(38026b7e6fa6a7940b0a927263774ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Textures/Nowa konstelacja.png using Guid(38026b7e6fa6a7940b0a927263774ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58dbf4f09082194c8d0a42cdd1e10f8f') in 0.030122 seconds
+  Import took 0.035887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.324035 seconds.
+  path: Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset
+  artifactKey: Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Lists/Constelation List.asset using Guid(6f5008125edf3c8418104b6b65926e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0be43afaea4545fde220fc4b5c3466') in 0.014807 seconds
+  Import took 0.022262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.236701 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1470b670b4f0b763b07ac74be10f4350') in 0.004256 seconds
+  Import took 0.009558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000649 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1470b670b4f0b763b07ac74be10f4350') in 0.003906 seconds
+  Import took 0.009263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.885737 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset
+  artifactKey: Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset using Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e1c1423a007fded104214167ee000d') in 0.004811 seconds
+  Import took 0.010317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001082 seconds.
+  path: Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset
+  artifactKey: Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Custom/Scriptable/Constelations/Nowa.asset using Guid(ddc81ca4a2e80844e9a554494bc87e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e1c1423a007fded104214167ee000d') in 0.004403 seconds
+  Import took 0.008821 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005373 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.801 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3654.
+Total: 2.787800 ms (FindLiveObjects: 0.366900 ms CreateObjectMapping: 0.077100 ms MarkObjects: 2.322100 ms  DeleteObjects: 0.020500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 600.473262 seconds.
+  path: Assets/Scenes/ConstelationEditor.unity
+  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e67b5641582695f0fb726837b94f3e0') in 0.015725 seconds
+  Import took 0.021893 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.37 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.891 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.90 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3658.
+Total: 2.812600 ms (FindLiveObjects: 0.529100 ms CreateObjectMapping: 0.112000 ms MarkObjects: 2.148500 ms  DeleteObjects: 0.022100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004291 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.81 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.826 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.92 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3662.
+Total: 2.266800 ms (FindLiveObjects: 0.367500 ms CreateObjectMapping: 0.078400 ms MarkObjects: 1.802100 ms  DeleteObjects: 0.017900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004173 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:249 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\piowo\Documents\GitHub\AstroRoom\AstroRoom\Library\PackageCache\com.unity.xr.oculus@1.9.0\Runtime\OculusLoader.cs:234 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.5 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3666.
+Total: 2.590700 ms (FindLiveObjects: 0.453500 ms CreateObjectMapping: 0.087700 ms MarkObjects: 2.027800 ms  DeleteObjects: 0.020800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
