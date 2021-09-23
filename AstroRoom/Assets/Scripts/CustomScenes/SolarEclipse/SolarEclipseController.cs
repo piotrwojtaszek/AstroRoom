@@ -50,13 +50,15 @@ public class SolarEclipseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (var device in inputDevices)
-        {
-            device.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 inputValue);
+
+            var inputValue =new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
 
             MoonMovement(inputValue);
+
+
             MoonAutoMovement(inputValue.magnitude);
-        }
+        
         CalculateDeltaPosition();
         ProcessPositionOnAmbientLight();
         ProcessZoom();

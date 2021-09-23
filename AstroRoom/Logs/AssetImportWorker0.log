@@ -15,12 +15,12 @@ C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55935
+61944
 Successfully changed project path to: C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 122.61 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.75 ms.
+Refreshing native plugins compatible for Editor in 122.99 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.76 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/piowo/Documents/GitHub/AstroRoom/AstroRoom/Assets
@@ -36,23 +36,23 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001985 seconds.
+Registered in 0.002037 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 128.85 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 129.28 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.12 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.602 seconds
+- Completed reload, in  1.614 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004470 seconds.
+Registered in 0.004214 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 130.03 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
+Refreshing native plugins compatible for Editor in 134.41 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -64,53 +64,74 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.9.0/Runtime/OculusLoader.cs Line: 249)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.965 seconds
+- Completed reload, in  0.990 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.76 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.79 ms, found 6 plugins.
 Preloading 1 native plugins for Editor in 0.09 ms.
 Unloading 3195 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 153.1 MB.
-System memory in use after: 153.3 MB.
+System memory in use before: 153.4 MB.
+System memory in use after: 153.6 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3635.
-Total: 2.329500 ms (FindLiveObjects: 0.343600 ms CreateObjectMapping: 0.079000 ms MarkObjects: 1.819700 ms  DeleteObjects: 0.086600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/ConstelationEditor.unity
-  artifactKey: Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ConstelationEditor.unity using Guid(204600a7e638a964ca6681caf8506d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7d75ecce2c98d0602be409dbdf9362') in 0.014588 seconds
-  Import took 0.020032 seconds .
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3636.
+Total: 2.482600 ms (FindLiveObjects: 0.429700 ms CreateObjectMapping: 0.095000 ms MarkObjects: 1.878400 ms  DeleteObjects: 0.078700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.780810 seconds.
-  path: Assets/Scenes/MainBase.unity
-  artifactKey: Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainBase.unity using Guid(c37ca885ab0192441a285eac68c31c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6321e51078cbbfab4ad1565c9031ef') in 0.004031 seconds
-  Import took 0.011266 seconds .
+  path: Assets/Scripts
+  artifactKey: Guid(e4fb0e8941df9124e8236733531a21ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(e4fb0e8941df9124e8236733531a21ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06da647437b0c84a04ca375cc38c1c63') in 0.008197 seconds
+  Import took 0.013232 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.256743 seconds.
-  path: Assets/Scenes/Tutorial.unity
-  artifactKey: Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tutorial.unity using Guid(d1d4fd801777f4c49bf913d550af606e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ef892de96f6d4858835fe217cdeab5') in 0.006052 seconds
-  Import took 0.011089 seconds .
+  Time since last request: 2.315174 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimController.cs
+  artifactKey: Guid(f83828e4f06b55e45b8b6b6e39e469c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimController.cs using Guid(f83828e4f06b55e45b8b6b6e39e469c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f89eaf7e324483e2f24255be1001004') in 0.083310 seconds
+  Import took 0.088464 seconds .
 
 ========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 4.84 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.0 MB.
-System memory in use after: 83.2 MB.
+Received Import Request.
+  Time since last request: 0.282707 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimCalculateVelocity.cs
+  artifactKey: Guid(799d7af7340aeb246a2e49910470c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimCalculateVelocity.cs using Guid(799d7af7340aeb246a2e49910470c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a499ec2d5f79f2f288427652b3d68f34') in 0.004521 seconds
+  Import took 0.010848 seconds .
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3635.
-Total: 2.933400 ms (FindLiveObjects: 0.462300 ms CreateObjectMapping: 0.093100 ms MarkObjects: 2.363500 ms  DeleteObjects: 0.013700 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 8.097556 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimCalculateAcceleration.cs
+  artifactKey: Guid(f135617c6937d694091f4493aa8f3d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimCalculateAcceleration.cs using Guid(f135617c6937d694091f4493aa8f3d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe612f81ba6993a61571d73b0eef39ef') in 0.004431 seconds
+  Import took 0.009702 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 8.608947 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimTestDst.cs
+  artifactKey: Guid(96c0f314ee991b141bb9a1047a9d8d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimTestDst.cs using Guid(96c0f314ee991b141bb9a1047a9d8d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc2cb28195cf54c4356eed9ab7a59a2') in 0.004660 seconds
+  Import took 0.009888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.643670 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimGravityObject.cs
+  artifactKey: Guid(a05df2816100c3d40943d45dbf166c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimGravityObject.cs using Guid(a05df2816100c3d40943d45dbf166c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b87b2ba6b5a45148b622d365db6e3b8') in 0.020270 seconds
+  Import took 0.025484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001219 seconds.
+  path: Assets/Scripts/CustomScenes/PhysicSimulation/SimGravityObject.cs
+  artifactKey: Guid(a05df2816100c3d40943d45dbf166c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CustomScenes/PhysicSimulation/SimGravityObject.cs using Guid(a05df2816100c3d40943d45dbf166c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b87b2ba6b5a45148b622d365db6e3b8') in 0.003473 seconds
+  Import took 0.008200 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
